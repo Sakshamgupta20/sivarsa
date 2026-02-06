@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 // Hero & Background Images
 const imgHero = "/assets/hero-bg.png";
 const imgPattern2 = "/assets/pattern-dots.png";
@@ -76,7 +78,7 @@ export default function Landing() {
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <img alt="" className="absolute h-full left-[-5.86%] max-w-none top-0 w-[111.73%]" src={imgHero} />
             </div>
-            <div className="-translate-x-1/2 absolute border-[rgba(255,255,255,0)] border-b-2 border-solid content-stretch flex items-center justify-between left-1/2 px-[61px] py-[24px] top-0 w-[1440px]">
+            <div className="-translate-x-1/2 absolute border-[rgba(255,255,255,0)] border-b-2 border-solid content-stretch flex items-center justify-between left-1/2 px-[61px] py-[24px] top-0 w-[1440px] z-50">
               <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0">
                 <div className="col-1 h-[37.617px] ml-0 mt-[11.7%] relative row-1 w-[26.111px]">
                   <img alt="" className="block max-w-none size-full" src={imgGroup} />
@@ -85,23 +87,23 @@ export default function Landing() {
                   <p className="leading-[normal]">SIVARSA</p>
                 </div>
               </div>
-              <div className="content-stretch flex font-['Schibsted_Grotesk:Regular',sans-serif] font-normal gap-[84px] items-center justify-center leading-[0] relative shrink-0 text-[20px] text-white whitespace-nowrap animate-fade-in-down">
-                <div className="flex flex-col justify-center relative shrink-0 nav-item link-animated cursor-pointer">
-                  <p className="leading-[normal]">{`Home `}</p>
-                </div>
-                <div className="flex flex-col justify-center relative shrink-0 nav-item link-animated cursor-pointer">
-                  <p className="leading-[normal]">Services</p>
-                </div>
-                <div className="flex flex-col justify-center relative shrink-0 nav-item link-animated cursor-pointer">
-                  <p className="leading-[normal]">About</p>
-                </div>
-                <div className="flex flex-col justify-center relative shrink-0 nav-item link-animated cursor-pointer">
-                  <p className="leading-[normal]">Blog</p>
-                </div>
-                <div className="flex flex-col justify-center relative shrink-0 nav-item link-animated cursor-pointer">
-                  <p className="leading-[normal]">Contact Us</p>
-                </div>
-              </div>
+              <nav className="flex font-['Schibsted_Grotesk:Regular',sans-serif] font-normal gap-[84px] items-center justify-center relative shrink-0 text-[20px] text-white whitespace-nowrap animate-fade-in-down">
+                <Link href="/" className="nav-item link-animated cursor-pointer py-2 px-1">
+                  Home
+                </Link>
+                <Link href="/services/software-development" className="nav-item link-animated cursor-pointer py-2 px-1">
+                  Services
+                </Link>
+                <Link href="#about" className="nav-item link-animated cursor-pointer py-2 px-1">
+                  About
+                </Link>
+                <Link href="#blog" className="nav-item link-animated cursor-pointer py-2 px-1">
+                  Blog
+                </Link>
+                <Link href="#contact" className="nav-item link-animated cursor-pointer py-2 px-1">
+                  Contact Us
+                </Link>
+              </nav>
               <div className="bg-gradient-to-r content-stretch flex from-[#265df6] items-center justify-center p-[10px] relative rounded-[20px] shrink-0 to-[#7427ff] w-[168px] btn-animated hover-glow cursor-pointer animate-fade-in-down">
                 <div className="flex flex-col font-['Schibsted_Grotesk:Bold',sans-serif] font-bold justify-center leading-[0] relative shrink-0 text-[20px] text-white whitespace-nowrap">
                   <p className="leading-[normal]">LETS CHAT</p>
@@ -139,16 +141,16 @@ export default function Landing() {
                 <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic opacity-70 relative shrink-0 text-[22px] text-white w-[544px] whitespace-pre-wrap animate-fade-in-up delay-200">{`We build the software, attract the customers,  and hire the talent—so you can focus on building your business.`}</p>
                 <div className="content-stretch flex flex-col h-[96.121px] items-start justify-center relative shrink-0 w-[511px] animate-fade-in-up delay-300">
                   <div className="content-stretch flex gap-[31.6px] items-center justify-center relative shrink-0 w-[511px]">
-                    <div className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[270.089px] btn-animated cursor-pointer hover:shadow-lg">
-                      <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:Medium',sans-serif] font-medium h-[25px] justify-center leading-[0] left-[calc(50%-96.84px)] text-[20px] text-black top-[calc(50%-0.64px)] w-[193.75px]">
-                        <p className="leading-[normal] whitespace-pre-wrap">Book a Strategy Call</p>
-                      </div>
-                    </div>
-                    <div className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[210.089px] btn-animated cursor-pointer hover:shadow-lg">
-                      <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:Medium',sans-serif] font-medium justify-center leading-[0] left-[25.83px] text-[20px] text-black top-[24.43px] whitespace-nowrap">
-                        <p className="leading-[normal]">Explore services</p>
-                      </div>
-                    </div>
+                    <Link href="#contact" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[270.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
+                      <span className="font-['Schibsted_Grotesk:Medium',sans-serif] font-medium text-[20px] text-black">
+                        Book a Strategy Call
+                      </span>
+                    </Link>
+                    <Link href="/services/software-development" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[210.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
+                      <span className="font-['Schibsted_Grotesk:Medium',sans-serif] font-medium text-[20px] text-black">
+                        Explore services
+                      </span>
+                    </Link>
                   </div>
                 </div>
                 <div className="flex flex-col font-['Schibsted_Grotesk:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[20px] text-center text-white w-[677.504px]">
@@ -566,9 +568,9 @@ export default function Landing() {
           </div>
           <div className="bg-[#090909] content-stretch flex flex-col items-start relative shrink-0 w-full">
             <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-              <div className="bg-[#3f2fee] content-stretch flex flex-col items-center shrink-0 sticky top-0 w-full">
+              <div className="bg-[#3f2fee] content-stretch flex flex-col items-center shrink-0 sticky top-0 z-30 w-full">
                 <div className="h-[438.222px] max-w-[1360px] relative shrink-0 w-[1360px]">
-                  <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px]">
+                  <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px] animate-fade-in-up">
                     <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[0] not-italic relative shrink-0 text-[44.979px] text-white whitespace-nowrap">
                       <p className="leading-[54.4px]">Software Development</p>
                     </div>
@@ -622,9 +624,9 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-              <div className="bg-white content-stretch flex flex-col items-center shrink-0 sticky top-0 w-full">
+              <div className="bg-white content-stretch flex flex-col items-center shrink-0 sticky top-[60px] z-20 w-full">
                 <div className="h-[438.222px] max-w-[1360px] relative shrink-0 w-[1360px]">
-                  <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px]">
+                  <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px] animate-fade-in-up">
                     <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[45.156px] whitespace-nowrap">
                       <p className="leading-[54.4px]">{`Hr & Talent Management`}</p>
                     </div>
@@ -677,9 +679,9 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-              <div className="bg-[#ffd500] content-stretch flex flex-col items-center shrink-0 sticky top-0 w-full">
+              <div className="bg-[#ffd500] content-stretch flex flex-col items-center shrink-0 sticky top-[120px] z-10 w-full">
                 <div className="h-[438.222px] max-w-[1360px] relative shrink-0 w-[1360px]">
-                  <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px]">
+                  <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px] animate-fade-in-up">
                     <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[44.979px] whitespace-nowrap">
                       <p className="leading-[54.4px]">Growth Marketing</p>
                     </div>
@@ -1379,15 +1381,15 @@ export default function Landing() {
                     Information
                   </p>
                   <div className="content-stretch flex flex-col font-['Schibsted_Grotesk:Regular',sans-serif] font-normal gap-[4.738px] items-start relative shrink-0 text-[23.69px] w-full">
-                    <p className="relative shrink-0 w-full footer-link">
+                    <Link href="/services/software-development" className="relative shrink-0 w-full footer-link">
                       Services
-                    </p>
-                    <p className="relative shrink-0 w-full footer-link">
+                    </Link>
+                    <Link href="/services/software-development" className="relative shrink-0 w-full footer-link">
                       Software Development
-                    </p>
-                    <p className="relative shrink-0 w-full footer-link">
+                    </Link>
+                    <Link href="/services/growth-marketing" className="relative shrink-0 w-full footer-link">
                       Growth Marketing
-                    </p>
+                    </Link>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col gap-[28.426px] items-start min-h-px min-w-px relative">
@@ -1395,18 +1397,18 @@ export default function Landing() {
                     Menu
                   </p>
                   <div className="content-stretch flex flex-col font-['Schibsted_Grotesk:Regular',sans-serif] font-normal gap-[4.738px] items-start relative shrink-0 text-[23.69px] w-full">
-                    <p className="relative shrink-0 w-full footer-link cursor-pointer">
+                    <Link href="#blog" className="relative shrink-0 w-full footer-link cursor-pointer">
                       Blog
-                    </p>
-                    <p className="relative shrink-0 w-full footer-link cursor-pointer">
+                    </Link>
+                    <Link href="#contact" className="relative shrink-0 w-full footer-link cursor-pointer">
                       Contact Us
-                    </p>
-                    <p className="relative shrink-0 w-full footer-link cursor-pointer">
+                    </Link>
+                    <Link href="#about" className="relative shrink-0 w-full footer-link cursor-pointer">
                       About Us
-                    </p>
-                    <p className="relative shrink-0 w-full footer-link cursor-pointer">
+                    </Link>
+                    <Link href="#career" className="relative shrink-0 w-full footer-link cursor-pointer">
                       Career
-                    </p>
+                    </Link>
                   </div>
                 </div>
               </div>
