@@ -26,10 +26,10 @@ export default function ProcessSteps({
         {/* Title Section */}
         <div className="content-stretch flex items-end relative shrink-0 w-full animate-fade-in-up">
           <div className="content-stretch flex flex-col items-start relative shrink-0">
-            <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center not-italic relative shrink-0 text-[52.166px] text-white whitespace-nowrap">
+            <div className="flex flex-col font-[family-name:var(--font-headings)] justify-center not-italic relative shrink-0 text-[52.166px] text-white whitespace-nowrap">
               <p className="leading-[68.756px]">{title}</p>
             </div>
-            <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center not-italic relative shrink-0 text-[50.72px] text-[rgba(255,255,255,0.52)] whitespace-nowrap">
+            <div className="flex flex-col font-[family-name:var(--font-headings)] justify-center not-italic relative shrink-0 text-[50.72px] text-[rgba(255,255,255,0.52)] whitespace-nowrap">
               <p className="leading-[68.756px]">{subtitle}</p>
             </div>
           </div>

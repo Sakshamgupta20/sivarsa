@@ -38,8 +38,8 @@ export default function ContactPage() {
   }, []);
 
   return (
-    <div className="bg-white relative size-full overflow-x-hidden">
-      <div className="w-full flex flex-col items-center overflow-x-hidden">
+    <div className="bg-white relative size-full">
+      <div className="w-full flex flex-col items-center">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
           {/* Hero Section with Form */}
           <div className="min-h-[900px] overflow-clip relative shrink-0 w-full">
@@ -57,7 +57,7 @@ export default function ContactPage() {
               <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[80px] items-start justify-between">
                 {/* Left Content */}
                 <div className="flex flex-col items-start max-w-[434px]">
-                  <h1 className="font-['GT_Super_Ds_Trial:Bd',sans-serif] text-[40px] md:text-[55px] leading-[1.3] tracking-[1px] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent animate-fade-in-up">
+                  <h1 className="font-[family-name:var(--font-headings)] text-[40px] md:text-[55px] leading-[1.3] tracking-[1px] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent animate-fade-in-up">
                     Have a Project?<br />Let&apos;s talk!
                   </h1>
 

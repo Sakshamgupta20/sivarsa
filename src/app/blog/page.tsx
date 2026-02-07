@@ -160,8 +160,8 @@ export default function BlogPage() {
   }, []);
 
   return (
-    <div className="bg-white relative size-full overflow-x-hidden">
-      <div className="w-full flex flex-col items-center overflow-x-hidden">
+    <div className="bg-white relative size-full">
+      <div className="w-full flex flex-col items-center">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
           {/* Hero Section */}
           <div className="min-h-[500px] md:min-h-[600px] overflow-clip relative shrink-0 w-full">
@@ -177,7 +177,7 @@ export default function BlogPage() {
 
             {/* Hero Content */}
             <div className="relative z-10 flex flex-col items-center justify-center pt-[80px] md:pt-[120px] pb-[60px]">
-              <h1 className="font-['GT_Super_Ds_Trial:Bd',sans-serif] text-[36px] md:text-[48px] lg:text-[55px] leading-[1.2] text-center bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent uppercase max-w-[925px] px-4 animate-fade-in-up">
+              <h1 className="font-[family-name:var(--font-headings)] text-[36px] md:text-[48px] lg:text-[55px] leading-[1.2] text-center bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent uppercase max-w-[925px] px-4 animate-fade-in-up">
                 DISCOVER OUR LATEST ARTICLES
               </h1>
 
@@ -216,7 +216,7 @@ export default function BlogPage() {
             <div className="max-w-[1360px] w-full px-4 md:px-[40px] mx-auto">
               {/* Section Heading */}
               <div className="flex flex-col items-center mb-[40px]">
-                <h2 className="font-['GT_Super_Ds_Trial:Md',sans-serif] text-[36px] md:text-[48px] leading-[1.25] tracking-[1px] text-[#1b1b1b]">
+                <h2 className="font-[family-name:var(--font-headings)] text-[36px] md:text-[48px] leading-[1.25] tracking-[1px] text-[#1b1b1b]">
                   Articles for You
                 </h2>
               </div>
@@ -274,11 +274,11 @@ export default function BlogPage() {
                   <Link
                     key={index}
                     href={`/blog/${article.slug}`}
-                    className="group flex flex-col scroll-reveal scroll-fade-up card-3d"
+                    className="group flex flex-col scroll-reveal scroll-fade-up card-3d bg-white rounded-[16px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-shadow"
                     style={{ transitionDelay: `${(index % 4) * 0.1}s` }}
                   >
                     {/* Article Image */}
-                    <div className="w-full h-[240px] md:h-[280px] rounded-[12px] overflow-hidden mb-[20px]">
+                    <div className="w-full h-[240px] md:h-[280px] overflow-hidden">
                       <img
                         src={article.image}
                         alt={article.title}
@@ -286,30 +286,33 @@ export default function BlogPage() {
                       />
                     </div>
 
-                    {/* Article Meta */}
-                    <div className="flex items-center justify-between mb-[12px]">
-                      <span className="font-['Inter',sans-serif] font-semibold text-[12px] text-[#3f2fee] uppercase tracking-wide">
-                        {article.category}
-                      </span>
-                      <span className="font-['Inter',sans-serif] font-semibold text-[12px] text-[#7e7e81] uppercase">
-                        {article.readTime}
-                      </span>
-                    </div>
-
-                    {/* Article Title */}
-                    <h4 className="font-['Inter',sans-serif] font-bold text-[20px] md:text-[24px] leading-[1.4] text-[#1b1b1b] mb-[16px] group-hover:text-[#3f2fee] transition-colors">
-                      {article.title}
-                    </h4>
-
-                    {/* Author & Date */}
-                    <div className="flex items-center justify-between mt-auto">
-                      <div className="flex items-center gap-[6px]">
-                        <span className="font-['Inter',sans-serif] font-bold text-[14px] text-[#7e7e81]">by</span>
-                        <span className="font-['Inter',sans-serif] font-bold text-[16px] text-[#3f2fee]">{article.author}</span>
+                    {/* Card Content */}
+                    <div className="flex flex-col flex-1 p-[24px]">
+                      {/* Article Meta */}
+                      <div className="flex items-center justify-between mb-[12px]">
+                        <span className="font-['Inter',sans-serif] font-semibold text-[12px] text-[#3f2fee] uppercase tracking-wide">
+                          {article.category}
+                        </span>
+                        <span className="font-['Inter',sans-serif] font-semibold text-[12px] text-[#7e7e81] uppercase">
+                          {article.readTime}
+                        </span>
                       </div>
-                      <span className="font-['Inter',sans-serif] font-semibold text-[13px] text-[#7e7e81]">
-                        {article.date}
-                      </span>
+
+                      {/* Article Title */}
+                      <h4 className="font-['Inter',sans-serif] font-bold text-[20px] md:text-[24px] leading-[1.4] text-[#1b1b1b] mb-[16px] group-hover:text-[#3f2fee] transition-colors">
+                        {article.title}
+                      </h4>
+
+                      {/* Author & Date */}
+                      <div className="flex items-center justify-between mt-auto">
+                        <div className="flex items-center gap-[6px]">
+                          <span className="font-['Inter',sans-serif] font-bold text-[14px] text-[#7e7e81]">by</span>
+                          <span className="font-['Inter',sans-serif] font-bold text-[16px] text-[#3f2fee]">{article.author}</span>
+                        </div>
+                        <span className="font-['Inter',sans-serif] font-semibold text-[13px] text-[#7e7e81]">
+                          {article.date}
+                        </span>
+                      </div>
                     </div>
                   </Link>
                 ))}
@@ -323,7 +326,7 @@ export default function BlogPage() {
               <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-0 items-start justify-between">
                 {/* Left Content */}
                 <div className="flex flex-col items-start max-w-[434px]">
-                  <h2 className="font-['GT_Super_Ds_Trial:Su',sans-serif] text-[40px] md:text-[55px] leading-[1.4] tracking-[1px] text-[#1b1b1b]">
+                  <h2 className="font-[family-name:var(--font-headings)] text-[40px] md:text-[55px] leading-[1.4] tracking-[1px] text-[#1b1b1b]">
                     Have a Project?<br />Let&apos;s talk!
                   </h2>
 

@@ -126,7 +126,7 @@ export default function Landing() {
             </div>
             <div className="relative lg:absolute content-stretch flex flex-col gap-[40px] lg:gap-[80px] items-start px-4 md:px-8 lg:px-0 lg:left-[76px] pt-[40px] lg:pt-0 lg:top-[219px] w-full lg:w-[1060px]">
               <div className="content-stretch flex flex-col gap-[20px] md:gap-[37px] items-start relative shrink-0 w-full lg:w-[762px] hero-content">
-                <p className="bg-clip-text font-['GT_Super_Ds_Trial:Bd',sans-serif] leading-[1.1] not-italic relative shrink-0 text-[36px] md:text-[56px] lg:text-[82px] uppercase w-full lg:w-[786.107px] animate-fade-in-up" style={{ backgroundImage: "linear-gradient(-38.5682deg, rgb(255, 255, 255) 62.646%, rgb(0, 0, 0) 108.48%)", WebkitTextFillColor: "transparent" }}>
+                <p className="bg-clip-text leading-[1.1] not-italic relative shrink-0 text-[36px] md:text-[56px] lg:text-[82px] uppercase w-full lg:w-[786.107px] animate-fade-in-up" style={{ fontFamily: "var(--font-headings)", backgroundImage: "linear-gradient(-38.5682deg, rgb(255, 255, 255) 62.646%, rgb(0, 0, 0) 108.48%)", WebkitTextFillColor: "transparent" }}>
                   Your Growth Partner From Idea to Impact
                 </p>
                 <p className="font-['Inter:Medium',sans-serif] font-medium leading-[1.6] not-italic opacity-70 relative shrink-0 text-[16px] md:text-[18px] lg:text-[22px] text-white w-full max-w-[544px] animate-fade-in-up delay-200">{`We build the software, attract the customers,  and hire the talent—so you can focus on building your business.`}</p>
@@ -218,14 +218,14 @@ export default function Landing() {
               <div className="content-stretch flex flex-col items-start pb-[0.954px] relative shrink-0 w-full">
                 <div className="content-stretch flex flex-col items-start mb-[-0.954px] relative shrink-0 w-full">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center leading-[1.2] not-italic relative shrink-0 text-[28px] md:text-[40px] lg:text-[51.03px] text-white">
+                    <div className="flex flex-col font-[family-name:var(--font-headings)] justify-center leading-[1.2] not-italic relative shrink-0 text-[28px] md:text-[40px] lg:text-[51.03px] text-white">
                       <p>Why Growing Companies Choose Sivarsa</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start mb-[-0.954px] relative shrink-0 w-full">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-['GT_Super_Ds_Trial:Rg',sans-serif] justify-center leading-[1.2] not-italic opacity-60 relative shrink-0 text-[22px] md:text-[32px] lg:text-[47.222px] text-white w-full">
+                    <div className="flex flex-col font-[family-name:var(--font-headings)] justify-center leading-[1.2] not-italic opacity-60 relative shrink-0 text-[22px] md:text-[32px] lg:text-[47.222px] text-white w-full">
                       <p>{`We are more than a service provider`}</p>
                     </div>
                   </div>
@@ -321,14 +321,14 @@ export default function Landing() {
               <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0">
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[40px] lg:text-[52.372px]">
+                    <div className="flex flex-col font-[family-name:var(--font-headings)] justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[40px] lg:text-[52.372px]">
                       <p>Turn your ideas into impactful</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center leading-[1.2] not-italic relative shrink-0 text-[26px] md:text-[38px] lg:text-[50.926px] text-[rgba(41,36,36,0.41)]">
+                    <div className="flex flex-col font-[family-name:var(--font-headings)] justify-center leading-[1.2] not-italic relative shrink-0 text-[26px] md:text-[38px] lg:text-[50.926px] text-[rgba(41,36,36,0.41)]">
                       <p>solutions like them!</p>
                     </div>
                   </div>
@@ -410,10 +410,10 @@ export default function Landing() {
         <div className="bg-[#090909] content-stretch flex flex-col items-center py-[60px] md:py-[100px] lg:py-[143.556px] relative shrink-0 w-full">
           <div className="content-stretch flex flex-col gap-[30px] md:gap-[52.889px] items-start max-w-[1360px] px-4 md:px-[37.778px] relative shrink-0 w-full">
             <div className="w-full">
-              <h2 className="font-['GT_Super_Ds_Trial:Bd',sans-serif] leading-[1.2] text-[26px] md:text-[38px] lg:text-[52px] text-white">
+              <h2 className="font-[family-name:var(--font-headings)] leading-[1.2] text-[26px] md:text-[38px] lg:text-[52px] text-white">
                 We deliver on time, in days and weeks
               </h2>
-              <p className="font-['GT_Super_Ds_Trial:Bd',sans-serif] leading-[1.2] text-[24px] md:text-[36px] lg:text-[50px] text-white/50">
+              <p className="font-[family-name:var(--font-headings)] leading-[1.2] text-[24px] md:text-[36px] lg:text-[50px] text-white/50">
                 —not months.
               </p>
             </div>
@@ -440,14 +440,14 @@ export default function Landing() {
               <div className="flex flex-col items-start pb-[0.944px] relative w-full">
                 <div className="flex flex-col items-start mb-[-0.944px] relative w-full">
                   <div className="flex flex-col items-start pb-[0.756px] relative w-full">
-                    <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center leading-[1.2] not-italic relative text-[26px] md:text-[38px] lg:text-[51.959px] text-white">
+                    <div className="flex flex-col font-[family-name:var(--font-headings)] justify-center leading-[1.2] not-italic relative text-[26px] md:text-[38px] lg:text-[51.959px] text-white">
                       <p>From startup to enterprise, grow your business</p>
                     </div>
                   </div>
                 </div>
                 <div className="flex flex-col items-start mb-[-0.944px] relative w-full">
                   <div className="flex flex-col items-start pb-[0.756px] relative w-full">
-                    <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center leading-[1.2] not-italic relative text-[24px] md:text-[36px] lg:text-[51.339px] text-[rgba(255,255,255,0.52)]">
+                    <div className="flex flex-col font-[family-name:var(--font-headings)] justify-center leading-[1.2] not-italic relative text-[24px] md:text-[36px] lg:text-[51.339px] text-[rgba(255,255,255,0.52)]">
                       <p>with Sivarsa</p>
                     </div>
                   </div>
@@ -459,7 +459,7 @@ export default function Landing() {
               <div className="bg-[#3f2fee] flex flex-col items-center sticky top-0 z-10 w-full">
                 <div className="min-h-[350px] md:min-h-[400px] lg:h-[438.222px] max-w-[1360px] relative shrink-0 w-full px-4 md:px-8 lg:px-0">
                   <div className="relative md:absolute content-stretch flex flex-col gap-[20px] md:gap-[30.779px] items-start md:left-[52.89px] top-0 md:top-[51.94px] py-6 md:py-0 animate-fade-in-up">
-                    <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[1.2] not-italic relative shrink-0 text-[28px] md:text-[36px] lg:text-[44.979px] text-white">
+                    <div className="flex flex-col justify-center leading-[1.2] not-italic relative shrink-0 text-[28px] md:text-[36px] lg:text-[44.979px] text-white" style={{ fontFamily: "var(--font-headings)" }}>
                       <p>Software Development</p>
                     </div>
                     <div className="relative shrink-0 w-full lg:w-[574.43px]">
@@ -515,7 +515,7 @@ export default function Landing() {
               <div className="bg-white flex flex-col items-center sticky top-[60px] z-20 w-full">
                 <div className="min-h-[350px] md:min-h-[400px] lg:h-[438.222px] max-w-[1360px] relative shrink-0 w-full px-4 md:px-8 lg:px-0">
                   <div className="relative md:absolute content-stretch flex flex-col gap-[20px] md:gap-[30.779px] items-start md:left-[52.89px] top-0 md:top-[51.94px] py-6 md:py-0 animate-fade-in-up">
-                    <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[36px] lg:text-[45.156px]">
+                    <div className="flex flex-col justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[36px] lg:text-[45.156px]" style={{ fontFamily: "var(--font-headings)" }}>
                       <p>{`HR & Talent Management`}</p>
                     </div>
                     <div className="relative shrink-0 w-full lg:w-[597.248px]">
@@ -570,7 +570,7 @@ export default function Landing() {
               <div className="bg-[#ffd500] flex flex-col items-center sticky top-[120px] z-30 w-full">
                 <div className="min-h-[350px] md:min-h-[400px] lg:h-[438.222px] max-w-[1360px] relative shrink-0 w-full px-4 md:px-8 lg:px-0">
                   <div className="relative md:absolute content-stretch flex flex-col gap-[20px] md:gap-[30.779px] items-start md:left-[52.89px] top-0 md:top-[51.94px] py-6 md:py-0 animate-fade-in-up">
-                    <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[36px] lg:text-[44.979px]">
+                    <div className="flex flex-col justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[36px] lg:text-[44.979px]" style={{ fontFamily: "var(--font-headings)" }}>
                       <p>Growth Marketing</p>
                     </div>
                     <div className="relative shrink-0 w-full lg:w-[599.958px]">
@@ -634,7 +634,7 @@ export default function Landing() {
             <div className="min-h-[150px] md:h-[265.389px] relative shrink-0 w-full flex items-center justify-center">
               <div className="content-stretch flex items-center justify-center w-full">
                 <div className="content-stretch flex flex-col items-center relative shrink-0">
-                  <div className="flex flex-col font-['GT_Super_Ds_Trial:Su',sans-serif] justify-center leading-[1] not-italic relative shrink-0 text-[48px] md:text-[100px] lg:text-[170px] text-white tracking-[0.9444px] text-center">
+                  <div className="flex flex-col font-[family-name:var(--font-headings)] justify-center leading-[1] not-italic relative shrink-0 text-[48px] md:text-[100px] lg:text-[170px] text-white tracking-[0.9444px] text-center">
                     <p>achievements</p>
                   </div>
                 </div>
@@ -731,14 +731,14 @@ export default function Landing() {
               <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0 w-full">
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0 w-full">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[40px] lg:text-[51.856px]">
+                    <div className="flex flex-col font-[family-name:var(--font-headings)] justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[40px] lg:text-[51.856px]">
                       <p>What Our Clients Say</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0 w-full">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center leading-[1.2] not-italic relative shrink-0 text-[24px] md:text-[36px] lg:text-[51.546px] text-[rgba(41,36,36,0.41)]">
+                    <div className="flex flex-col font-[family-name:var(--font-headings)] justify-center leading-[1.2] not-italic relative shrink-0 text-[24px] md:text-[36px] lg:text-[51.546px] text-[rgba(41,36,36,0.41)]">
                       <p>We guarantee next success is yours!</p>
                     </div>
                   </div>
@@ -786,7 +786,7 @@ export default function Landing() {
           <div className="content-stretch flex flex-col gap-[40px] md:gap-[68px] items-start max-w-[1360px] px-4 md:px-[37.778px] relative shrink-0 w-full">
             <div className="content-stretch flex items-end relative shrink-0 w-full">
               <div className="content-stretch flex flex-col items-start pb-[0.652px] relative shrink-0 w-full">
-                <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[32px] md:text-[42px] lg:text-[51.339px]">
+                <div className="flex flex-col font-[family-name:var(--font-headings)] justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[32px] md:text-[42px] lg:text-[51.339px]">
                   <p className="mb-0">Frequently asked</p>
                   <p>questions</p>
                 </div>
