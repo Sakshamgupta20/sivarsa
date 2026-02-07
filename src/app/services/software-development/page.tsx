@@ -279,7 +279,7 @@ export default function SoftwareDevelopment() {
                   <p className="leading-[23.557px] whitespace-pre-wrap">Our approach integrates SEO and ROI-focused paid search to boost visibility, leverages display and programmatic ads for timely retargeting, and uses segmented, automated email campaigns to drive repeat purchases.</p>
                 </div>
                 <div className="-translate-y-1/2 absolute flex flex-col justify-center left-[2px] text-[50px] top-[8px] whitespace-nowrap">
-                  <p className="leading-[23.557px]">"</p>
+                  <p className="leading-[23.557px]">&ldquo;</p>
                 </div>
               </div>
               <div className="-translate-y-1/2 absolute content-stretch flex flex-col gap-[24px] items-start left-[732px] top-[calc(50%+0.5px)] w-[486px]">
@@ -867,7 +867,7 @@ export default function SoftwareDevelopment() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[14px] md:text-[16px] lg:text-[17.946px] top-[41.55px]">
-                            <p className="leading-[25.378px]">How do you ensure that the mobile design aligns with my app's development process?</p>
+                            <p className="leading-[25.378px]">How do you ensure that the mobile design aligns with my app&apos;s development process?</p>
                           </div>
                         </div>
                       </div>

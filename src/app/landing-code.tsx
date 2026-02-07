@@ -323,7 +323,7 @@ export default function Landing() {
                   <p className="font-['Schibsted_Grotesk:Bold',sans-serif] font-bold text-[16px] md:text-[20px] text-black">SANTOSH JEWELLERS</p>
                   <h3 className="font-['Schibsted_Grotesk:Bold',sans-serif] font-bold text-[20px] md:text-[26px] lg:text-[30px] text-black leading-[1.3]">High cost per acquisition (CPA), minimal repeat purchases due to lack of robust email strategy.</h3>
                   <div className="flex flex-col gap-2">
-                    <span className="font-['Schibsted_Grotesk:Bold',sans-serif] font-bold text-[40px] text-black">"</span>
+                    <span className="font-['Schibsted_Grotesk:Bold',sans-serif] font-bold text-[40px] text-black">&ldquo;</span>
                     <p className="font-['Schibsted_Grotesk:Bold',sans-serif] font-bold text-[14px] md:text-[18px] lg:text-[20px] text-black leading-[1.4] pl-4">Our approach integrates SEO and ROI-focused paid search to boost visibility, leverages display and programmatic ads for timely retargeting, and uses segmented, automated email campaigns to drive repeat purchases.</p>
                   </div>
                 </div>
@@ -351,7 +351,7 @@ export default function Landing() {
                   <p className="font-['Schibsted_Grotesk:Bold',sans-serif] font-bold text-[16px] md:text-[20px] text-black">SANTOSH JEWELLERS</p>
                   <h3 className="font-['Schibsted_Grotesk:Bold',sans-serif] font-bold text-[20px] md:text-[26px] lg:text-[30px] text-black leading-[1.3]">High cost per acquisition (CPA), minimal repeat purchases due to lack of robust email strategy.</h3>
                   <div className="flex flex-col gap-2">
-                    <span className="font-['Schibsted_Grotesk:Bold',sans-serif] font-bold text-[40px] text-black">"</span>
+                    <span className="font-['Schibsted_Grotesk:Bold',sans-serif] font-bold text-[40px] text-black">&ldquo;</span>
                     <p className="font-['Schibsted_Grotesk:Bold',sans-serif] font-bold text-[14px] md:text-[18px] lg:text-[20px] text-black leading-[1.4] pl-4">Our approach integrates SEO and ROI-focused paid search to boost visibility, leverages display and programmatic ads for timely retargeting, and uses segmented, automated email campaigns to drive repeat purchases.</p>
                   </div>
                 </div>
@@ -717,7 +717,7 @@ export default function Landing() {
               <div className="bg-white rounded-lg p-6 md:p-8 flex flex-col testimonial-card">
                 <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[18px]">Digil</p>
                 <div className="flex-1 py-8">
-                  <p className="font-['Inter:Extra_Bold',sans-serif] font-extrabold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">"Working with Sivarsa completely changed how we approach hiring. They helped us bring in the right talent quickly, which was exactly what we needed during a crucial phase"</p>
+                  <p className="font-['Inter:Extra_Bold',sans-serif] font-extrabold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;Working with Sivarsa completely changed how we approach hiring. They helped us bring in the right talent quickly, which was exactly what we needed during a crucial phase&rdquo;</p>
                 </div>
                 <div className="mt-auto">
                   <p className="font-['Inter:Black',sans-serif] font-black text-[18px] md:text-[22px] text-[#1b1b1b]">Saksham Gupta</p>
@@ -728,7 +728,7 @@ export default function Landing() {
               <div className="bg-white rounded-lg p-6 md:p-8 flex flex-col testimonial-card">
                 <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[18px]">Santosh</p>
                 <div className="flex-1 py-8">
-                  <p className="font-['Inter:Extra_Bold',sans-serif] font-extrabold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">"Sivarsa's SEO gave us a real boost when we needed it."</p>
+                  <p className="font-['Inter:Extra_Bold',sans-serif] font-extrabold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;Sivarsa&apos;s SEO gave us a real boost when we needed it.&rdquo;</p>
                 </div>
                 <div className="mt-auto">
                   <p className="font-['Inter:Black',sans-serif] font-black text-[18px] md:text-[22px] text-[#1b1b1b]">Suresh</p>
@@ -739,7 +739,7 @@ export default function Landing() {
               <div className="bg-white rounded-lg p-6 md:p-8 flex flex-col testimonial-card">
                 <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[18px]">GNT</p>
                 <div className="flex-1 py-8">
-                  <p className="font-['Inter:Extra_Bold',sans-serif] font-extrabold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">"With Sivarsa, Our campaigns gained momentum. Real, measurable momentum."</p>
+                  <p className="font-['Inter:Extra_Bold',sans-serif] font-extrabold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;With Sivarsa, Our campaigns gained momentum. Real, measurable momentum.&rdquo;</p>
                 </div>
                 <div className="mt-auto">
                   <p className="font-['Inter:Black',sans-serif] font-black text-[18px] md:text-[22px] text-[#1b1b1b]">Ritika</p>

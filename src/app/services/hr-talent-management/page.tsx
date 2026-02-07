@@ -279,7 +279,7 @@ export default function HRTalentManagement() {
                   <p className="leading-[23.557px] whitespace-pre-wrap">Our approach integrates SEO and ROI-focused paid search to boost visibility, leverages display and programmatic ads for timely retargeting, and uses segmented, automated email campaigns to drive repeat purchases.</p>
                 </div>
                 <div className="-translate-y-1/2 absolute flex flex-col justify-center left-[2px] text-[50px] top-[8px] whitespace-nowrap">
-                  <p className="leading-[23.557px]">"</p>
+                  <p className="leading-[23.557px]">&ldquo;</p>
                 </div>
               </div>
               <div className="-translate-y-1/2 absolute content-stretch flex flex-col gap-[24px] items-start left-[732px] top-[calc(50%+0.5px)] w-[486px]">
@@ -469,7 +469,7 @@ export default function HRTalentManagement() {
                       <div className="absolute content-stretch flex flex-col items-start left-0 top-[-0.68px]">
                         <div className="content-stretch flex flex-col items-start max-w-[358.8888854980469px] pr-[7.82px] relative shrink-0">
                           <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[16.867px] w-[358.889px]">
-                            <p className="leading-[26.35px] whitespace-pre-wrap">Develop your team's skills and capabilities with customized training programs. We create learning paths that align with your business goals and help employees reach their full potential.</p>
+                            <p className="leading-[26.35px] whitespace-pre-wrap">Develop your team&apos;s skills and capabilities with customized training programs. We create learning paths that align with your business goals and help employees reach their full potential.</p>
                           </div>
                         </div>
                       </div>
@@ -858,7 +858,7 @@ export default function HRTalentManagement() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">How do you ensure that the mobile design aligns with my app's development process?</p>
+                            <p className="leading-[25.378px]">How do you ensure that the mobile design aligns with my app&apos;s development process?</p>
                           </div>
                         </div>
                       </div>

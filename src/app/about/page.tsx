@@ -73,7 +73,7 @@ export default function AboutPage() {
                   Team behind future unicorns
                 </h1>
                 <p className="font-['Inter',sans-serif] font-medium text-[18px] md:text-[22px] lg:text-[25px] text-white/70 max-w-[600px] animate-fade-in-up delay-200">
-                  We're not just a Service agency. We're the product-thinking team behind 100M+ users, $10B+ funding, & 250+ Hiring Stories.
+                  We&apos;re not just a Service agency. We&apos;re the product-thinking team behind 100M+ users, $10B+ funding, &amp; 250+ Hiring Stories.
                 </p>
               </div>
             </div>
@@ -200,7 +200,7 @@ export default function AboutPage() {
                 <div className="flex flex-col items-start flex-1">
                   <div className="flex flex-col gap-[24px] max-w-[640px]">
                     <p className="font-['Inter',sans-serif] text-[18px] md:text-[22px] text-[#1b1b1b] leading-[1.6]">
-                      Sivarsa didn't start in a fancy corporate office with unlimited resources. It started with a vision to bridge the gap between ambitious ideas and exceptional execution, powered by India's finest talent.
+                      Sivarsa didn&apos;t start in a fancy corporate office with unlimited resources. It started with a vision to bridge the gap between ambitious ideas and exceptional execution, powered by India&apos;s finest talent.
                     </p>
                     <p className="font-['Inter',sans-serif] text-[18px] md:text-[22px] text-[#1b1b1b] leading-[1.6]">
                       So we helped early startups find the right people, build robust software solutions, and scale their brands through strategic growth marketing. One client at a time.
@@ -209,7 +209,7 @@ export default function AboutPage() {
                       But now? Sivarsa works with companies across the globe, helping them access world-class talent, develop cutting-edge software, and accelerate growth through data-driven marketing.
                     </p>
                     <p className="font-['Inter',sans-serif] text-[18px] md:text-[22px] text-[#1b1b1b] leading-[1.6]">
-                      But honestly? We still build like it's day one—fast, honest, human. Behind every project is a team betting it all on making your vision succeed.
+                      But honestly? We still build like it&apos;s day one—fast, honest, human. Behind every project is a team betting it all on making your vision succeed.
                     </p>
                   </div>
 
@@ -235,7 +235,7 @@ export default function AboutPage() {
                 Why Sivarsa? We care like<br />co-founders.
               </h3>
               <p className="font-['Inter',sans-serif] text-[16px] md:text-[18px] text-[#1b1b1b] leading-[1.6] py-[18px]">
-                Not another agency. We are your team that gives a damn. Because we treat your product like it's ours.
+                Not another agency. We are your team that gives a damn. Because we treat your product like it&apos;s ours.
               </p>
 
               {/* Features List */}
@@ -400,10 +400,10 @@ export default function AboutPage() {
 
                 <div className="flex flex-col gap-[56px] max-w-[582px]">
                   {[
-                    { num: "01", title: "Empathy", desc: "Before we create a design, put pen to paper, or build, we listen. Because the goods always come from understanding. We put ourselves in your users' shoes so your product enters their lives smoothly." },
-                    { num: "02", title: "Clarity", desc: "We don't design to sound smart. We design so your users feel smart. Every word, flow, and screen is crafted to remove friction, not add flash." },
-                    { num: "03", title: "Momentum", desc: "Start small. Learn fast. Move with focus. We don't believe in perfection. We believe in progress. That is why we ship, test, and are constantly North Star aligned." },
-                    { num: "04", title: "Outcomes", desc: "A good-looking app that doesn't convert is just decoration. We obsess over real results, conversions, activations, and retention." },
+                    { num: "01", title: "Empathy", desc: "Before we create a design, put pen to paper, or build, we listen. Because the goods always come from understanding. We put ourselves in your users&apos; shoes so your product enters their lives smoothly." },
+                    { num: "02", title: "Clarity", desc: "We don\u0027t design to sound smart. We design so your users feel smart. Every word, flow, and screen is crafted to remove friction, not add flash." },
+                    { num: "03", title: "Momentum", desc: "Start small. Learn fast. Move with focus. We don\u0027t believe in perfection. We believe in progress. That is why we ship, test, and are constantly North Star aligned." },
+                    { num: "04", title: "Outcomes", desc: "A good-looking app that doesn\u0027t convert is just decoration. We obsess over real results, conversions, activations, and retention." },
                   ].map((belief, index) => (
                     <div key={index} className="relative">
                       <div className="flex gap-[50px]">
@@ -436,7 +436,7 @@ export default function AboutPage() {
                 {[
                   "What are your focus areas as a UI/UX design agency?",
                   "Why is UI/UX design important for your business growth?",
-                  "My website isn't generating enough leads. How can your design help?",
+                  "My website isn\u0027t generating enough leads. How can your design help?",
                   "What separates Sivarsa from other top UI/UX design agencies?",
                   "How could you help us redesign our app, website, or enterprise/B2B software?",
                   "Do you work with startups or only with B2B/enterprise companies?",
@@ -463,7 +463,7 @@ export default function AboutPage() {
                 {/* Left Content */}
                 <div className="flex flex-col items-start max-w-[434px]">
                   <h2 className="font-['GT_Super_Ds_Trial:Su',sans-serif] text-[40px] md:text-[55px] leading-[1.4] tracking-[1px] text-[#1b1b1b]">
-                    Have a Project?<br />Let's talk!
+                    Have a Project?<br />Let&apos;s talk!
                   </h2>
 
                   <div className="flex flex-col gap-[11px] mt-[31px]">

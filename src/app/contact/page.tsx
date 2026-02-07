@@ -57,7 +57,7 @@ export default function ContactPage() {
                 {/* Left Content */}
                 <div className="flex flex-col items-start max-w-[434px]">
                   <h1 className="font-['GT_Super_Ds_Trial:Bd',sans-serif] text-[40px] md:text-[55px] leading-[1.3] tracking-[1px] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent animate-fade-in-up">
-                    Have a Project?<br />Let's talk!
+                    Have a Project?<br />Let&apos;s talk!
                   </h1>
 
                   <div className="flex flex-col gap-[11px] mt-[31px]">
@@ -211,7 +211,7 @@ export default function ContactPage() {
                 {/* Top Row - Heading and CTA */}
                 <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-[40px]">
                   <h2 className="font-['Inter',sans-serif] font-semibold text-[40px] md:text-[56px] lg:text-[70px] leading-[1.2] tracking-[1px] text-[#1b1b1b]">
-                    Got a project in mind?<br />Let's talk.
+                    Got a project in mind?<br />Let&apos;s talk.
                   </h2>
                   <Link href="#" className="bg-[#3f2fee] flex gap-[8px] items-center justify-center px-[28px] py-[16px] rounded-[100px] btn-magnetic hover-glow glow-pulse shrink-0">
                     <span className="font-['Inter',sans-serif] font-semibold text-[16px] text-white">Book a call</span>

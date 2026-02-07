@@ -40,7 +40,7 @@ export default function CaseStudyCard({
           <p className={`leading-[23.557px] whitespace-pre-wrap ${textColor}`}>{approach}</p>
         </div>
         <div className={`-translate-y-1/2 absolute flex flex-col justify-center left-[2px] text-[50px] top-[8px] whitespace-nowrap ${textColor}`}>
-          <p className="leading-[23.557px]">"</p>
+          <p className="leading-[23.557px]">&ldquo;</p>
         </div>
       </div>
 
