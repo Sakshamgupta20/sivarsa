@@ -107,9 +107,9 @@ const img1 = "/assets/social-instagram.svg";
 
 export default function SoftwareDevelopment() {
   return (
-    <div className="bg-[#090909] relative min-h-screen overflow-x-hidden">
-      <div className="flex flex-col items-center mx-auto">
-        <div className="flex flex-col items-center relative w-full">
+    <div className="bg-black relative size-full">
+      <div className="-translate-x-1/2 absolute content-stretch flex flex-col items-start left-1/2 top-0 w-full">
+        <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
           <div className="h-[841px] overflow-hidden relative w-full max-w-[1440px]">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <img alt="" className="absolute h-full left-[-5.86%] max-w-none top-0 w-[111.73%]" src={imgHero} />
