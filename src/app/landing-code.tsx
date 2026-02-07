@@ -16,10 +16,15 @@ const imgStars1 = `${BASE_PATH}/assets/stars-bg.png`;
 const imgPurpleComposition21 = `${BASE_PATH}/assets/hero-illustration.png`;
 
 
-// Service Preview Images
-const imgWavespaceNoSoundVideoMp41 = `${BASE_PATH}/assets/service-preview-1.png`;
-const imgOneee1 = `${BASE_PATH}/assets/service-preview-2.png`;
-const imgPhone14011 = `${BASE_PATH}/assets/service-preview-3.png`;
+// Service Cards Images (exact from Figma)
+const imgServiceBg = `${BASE_PATH}/assets/dc3140d62f005c65ceea0d4f7a9e21036b94120f.png`;
+const imgSoftwarePhone = `${BASE_PATH}/assets/9a7efa8acfadd87d5d9e7947171a84884750e643.png`;
+const imgTalentGradient = `${BASE_PATH}/assets/f657c8ff034766324c5abae459823eddf4e19097.png`;
+const imgTalentScreen = `${BASE_PATH}/assets/56991259c51079145aeec6fa065d56ab81cea98a.png`;
+const imgTalentPhoneFrame = `${BASE_PATH}/assets/3d9a04b34d3338b47f17681f8aa0bb08ae8a1bd3.png`;
+const imgGrowthHandPhone = `${BASE_PATH}/assets/da34926d43ac1a86f9b6b48d08df15acf02952fd.png`;
+const imgTalentMask = `${BASE_PATH}/assets/a357f30dca7ba5b0ef31535a2e6d9c7b2f8b4894.svg`;
+const imgPhoneMask = `${BASE_PATH}/assets/4832a9c48047adb56c0896854f712d6646d58fb9.svg`;
 
 // Case Study Images
 const imgSandroievaCoverGradientDesignWithDynamicMeshAbstractCol0903F70EB4E149FbB05006820E01262E3 = `${BASE_PATH}/assets/case-study-1.png`;
@@ -146,34 +151,60 @@ export default function Landing() {
             </div>
           </div>
         </div>
+        {/* Service Cards Section - Exact Figma Design */}
         <div className="py-[40px] md:py-[68px] w-full px-4 md:px-8">
-          <div className="w-full max-w-[1284px] mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-0 min-h-[400px] md:min-h-[600px] lg:min-h-[723px] scroll-reveal scroll-scale-up overflow-hidden rounded-lg">
+          <div className="w-full max-w-[1285px] mx-auto">
+            <div className="relative w-full h-[400px] md:h-[550px] lg:h-[723px] scroll-reveal scroll-scale-up overflow-hidden">
+              {/* Background */}
+              <div className="absolute inset-0">
+                <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgServiceBg} />
+              </div>
+
               {/* Software Development Card */}
-              <Link href="/services/software-development" className="relative bg-[#a0a9ae] min-h-[300px] md:min-h-full overflow-hidden group">
-                <div className="absolute top-[72px] md:top-[107.5px] left-[19px] z-10">
-                  <p className="font-['Inter',sans-serif] font-bold text-[20px] md:text-[26px] lg:text-[30px] text-black tracking-[-2px] leading-[70.4px]">SOFTWARE<br />DEVELOPMENT</p>
+              <Link href="/services/software-development" className="absolute bg-[#a0a9ae] h-full left-0 overflow-hidden w-1/3 group cursor-pointer">
+                {/* Text label */}
+                <div className="absolute flex flex-col font-['Inter',sans-serif] font-bold justify-center left-[4.4%] not-italic text-[12px] md:text-[20px] lg:text-[30px] text-black top-[14.9%] tracking-[-1px] md:tracking-[-2px] whitespace-nowrap z-10">
+                  <p className="leading-[70.4px]">SOFTWARE DEVELOPMENT</p>
                 </div>
-                <div className="absolute top-[80px] md:top-[113px] left-[-36%] md:left-[-36%] w-[172%] md:w-[172%] lg:w-[172%]">
-                  <img alt="Software Development" className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105" src={`${BASE_PATH}/assets/software-dev-card.png`} />
+                {/* Phone image with shadow */}
+                <div className="absolute w-[172%] h-[102%] left-[-36%] top-[15.6%] transition-transform duration-500 group-hover:scale-105" style={{ filter: 'drop-shadow(8px -7px 17px rgba(0,0,0,0.35))' }}>
+                  <img alt="" className="absolute left-0 max-w-none size-full top-0 object-contain" src={imgSoftwarePhone} />
                 </div>
               </Link>
+
               {/* Talent Card */}
-              <Link href="/services/hr-talent-management" className="relative bg-[#17614a] min-h-[300px] md:min-h-full overflow-hidden group">
-                <div className="absolute top-[72px] md:top-[107.5px] left-1/2 -translate-x-1/2 z-10">
-                  <p className="font-['Inter',sans-serif] font-bold text-[20px] md:text-[26px] lg:text-[30px] text-white tracking-[-2px] text-center leading-[70.4px]">TALENT</p>
+              <Link href="/services/hr-talent-management" className="absolute bg-[#17614a] h-full left-[33.33%] overflow-hidden w-1/3 group cursor-pointer">
+                <div className="absolute -translate-y-1/2 flex flex-col font-['Inter',sans-serif] font-bold justify-center leading-[0] left-1/2 -translate-x-1/2 not-italic text-[16px] md:text-[22px] lg:text-[30px] text-white top-[14.9%] tracking-[-1px] md:tracking-[-2px] whitespace-nowrap z-10">
+                  <p className="leading-[1.2] md:leading-[70.4px]">TALENT</p>
                 </div>
-                <div className="absolute top-[140px] md:top-[205px] left-[14%] w-[72%] h-auto">
-                  <img alt="Talent Management" className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105" src={`${BASE_PATH}/assets/talent-card.png`} />
+                {/* Phone with content */}
+                <div className="absolute h-[86.4%] left-[14.3%] top-[28.4%] w-[71.5%] transition-transform duration-500 group-hover:scale-105">
+                  {/* Gradient background with mask */}
+                  <div className="absolute flex h-[103.6%] items-center justify-center left-[-27%] top-[2.2%] w-[163%]">
+                    <div className="-rotate-90 flex-none">
+                      <div className="h-full w-full relative" style={{ maskImage: `url('${imgTalentMask}')`, maskSize: 'contain', maskRepeat: 'no-repeat', WebkitMaskImage: `url('${imgTalentMask}')`, WebkitMaskSize: 'contain', WebkitMaskRepeat: 'no-repeat' }}>
+                        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgTalentGradient} />
+                      </div>
+                    </div>
+                  </div>
+                  {/* Screen content with mask */}
+                  <div className="absolute h-[95.6%] left-[5.5%] top-[2.2%] w-[90.8%] rounded-[15px] overflow-hidden" style={{ maskImage: `url('${imgTalentMask}')`, maskSize: 'contain', maskRepeat: 'no-repeat', WebkitMaskImage: `url('${imgTalentMask}')`, WebkitMaskSize: 'contain', WebkitMaskRepeat: 'no-repeat' }}>
+                    <img alt="" className="absolute h-[132%] left-[-139%] max-w-none top-[-16%] w-[377%] object-cover" src={imgTalentScreen} />
+                  </div>
+                  {/* Phone frame */}
+                  <div className="absolute inset-0" style={{ maskImage: `url('${imgPhoneMask}')`, maskSize: 'contain', maskRepeat: 'no-repeat', WebkitMaskImage: `url('${imgPhoneMask}')`, WebkitMaskSize: 'contain', WebkitMaskRepeat: 'no-repeat' }}>
+                    <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgTalentPhoneFrame} />
+                  </div>
                 </div>
               </Link>
+
               {/* Growth Card */}
-              <Link href="/services/growth-marketing" className="relative bg-[#6f2fb8] min-h-[300px] md:min-h-full overflow-hidden group">
-                <div className="absolute top-[72px] md:top-[107.5px] left-1/2 -translate-x-1/2 z-10">
-                  <p className="font-['Inter',sans-serif] font-bold text-[20px] md:text-[26px] lg:text-[30px] text-white tracking-[-2px] text-center leading-[70.4px]">GROWTH</p>
+              <Link href="/services/growth-marketing" className="absolute bg-[#6f2fb8] h-full left-[66.66%] overflow-hidden w-1/3 group cursor-pointer">
+                <div className="absolute -translate-y-1/2 flex flex-col font-['Inter',sans-serif] font-bold justify-center leading-[0] left-1/2 -translate-x-1/2 not-italic text-[16px] md:text-[22px] lg:text-[30px] text-white top-[14.9%] tracking-[-1px] md:tracking-[-2px] whitespace-nowrap z-10">
+                  <p className="leading-[1.2] md:leading-[70.4px]">GROWTH</p>
                 </div>
-                <div className="absolute top-[100px] md:top-[143px] left-[-4%] w-[120%]">
-                  <img alt="Growth Marketing" className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105" src={`${BASE_PATH}/assets/growth-card.png`} />
+                <div className="absolute h-[100.4%] left-[-4.4%] top-[19.8%] w-[120%] transition-transform duration-500 group-hover:scale-105">
+                  <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgGrowthHandPhone} />
                 </div>
               </Link>
             </div>
