@@ -162,9 +162,9 @@ export default function Landing() {
 
               {/* Software Development Card */}
               <Link href="/services/software-development" className="absolute bg-[#a0a9ae] h-full left-0 overflow-hidden w-1/3 group cursor-pointer">
-                {/* Text label */}
-                <div className="absolute flex flex-col font-['Inter',sans-serif] font-bold justify-center left-[4.4%] not-italic text-[12px] md:text-[20px] lg:text-[30px] text-black top-[14.9%] tracking-[-1px] md:tracking-[-2px] whitespace-nowrap z-10">
-                  <p className="leading-[70.4px]">SOFTWARE DEVELOPMENT</p>
+                {/* Text label - fixed position matching Figma */}
+                <div className="absolute font-['Inter',sans-serif] font-bold left-[19px] text-[12px] md:text-[20px] lg:text-[30px] text-black top-[70px] md:top-[90px] lg:top-[107px] tracking-[-1px] md:tracking-[-2px] whitespace-nowrap z-10">
+                  <p className="leading-[1.2]">SOFTWARE DEVELOPMENT</p>
                 </div>
                 {/* Phone image with shadow */}
                 <div className="absolute w-[172%] h-[102%] left-[-36%] top-[15.6%] transition-transform duration-500 group-hover:scale-105" style={{ filter: 'drop-shadow(8px -7px 17px rgba(0,0,0,0.35))' }}>
@@ -174,8 +174,9 @@ export default function Landing() {
 
               {/* Talent Card */}
               <Link href="/services/hr-talent-management" className="absolute bg-[#17614a] h-full left-[33.33%] overflow-hidden w-1/3 group cursor-pointer">
-                <div className="absolute -translate-y-1/2 flex flex-col font-['Inter',sans-serif] font-bold justify-center leading-[0] left-1/2 -translate-x-1/2 not-italic text-[16px] md:text-[22px] lg:text-[30px] text-white top-[14.9%] tracking-[-1px] md:tracking-[-2px] whitespace-nowrap z-10">
-                  <p className="leading-[1.2] md:leading-[70.4px]">TALENT</p>
+                {/* Text label - centered, fixed position matching Figma */}
+                <div className="absolute font-['Inter',sans-serif] font-bold left-1/2 -translate-x-1/2 text-[12px] md:text-[20px] lg:text-[30px] text-white top-[70px] md:top-[90px] lg:top-[107px] tracking-[-1px] md:tracking-[-2px] whitespace-nowrap z-10">
+                  <p className="leading-[1.2]">TALENT</p>
                 </div>
                 {/* Phone with content */}
                 <div className="absolute h-[86.4%] left-[14.3%] top-[28.4%] w-[71.5%] transition-transform duration-500 group-hover:scale-105">
@@ -200,8 +201,9 @@ export default function Landing() {
 
               {/* Growth Card */}
               <Link href="/services/growth-marketing" className="absolute bg-[#6f2fb8] h-full left-[66.66%] overflow-hidden w-1/3 group cursor-pointer">
-                <div className="absolute -translate-y-1/2 flex flex-col font-['Inter',sans-serif] font-bold justify-center leading-[0] left-1/2 -translate-x-1/2 not-italic text-[16px] md:text-[22px] lg:text-[30px] text-white top-[14.9%] tracking-[-1px] md:tracking-[-2px] whitespace-nowrap z-10">
-                  <p className="leading-[1.2] md:leading-[70.4px]">GROWTH</p>
+                {/* Text label - centered, fixed position matching Figma */}
+                <div className="absolute font-['Inter',sans-serif] font-bold left-1/2 -translate-x-1/2 text-[12px] md:text-[20px] lg:text-[30px] text-white top-[70px] md:top-[90px] lg:top-[107px] tracking-[-1px] md:tracking-[-2px] whitespace-nowrap z-10">
+                  <p className="leading-[1.2]">GROWTH</p>
                 </div>
                 <div className="absolute h-[100.4%] left-[-4.4%] top-[19.8%] w-[120%] transition-transform duration-500 group-hover:scale-105">
                   <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgGrowthHandPhone} />
