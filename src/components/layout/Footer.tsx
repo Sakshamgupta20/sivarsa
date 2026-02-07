@@ -43,11 +43,11 @@ export default function Footer() {
                 <Image
                   src={`${BASE_PATH}/assets/logo-icon.svg`}
                   alt="Sivarsa Logo"
-                  width={40}
-                  height={40}
+                  width={32}
+                  height={32}
                   className="shrink-0"
                 />
-                <span className="text-[24px] md:text-[28px] text-white font-bold" style={{ fontFamily: "var(--font-logo)" }}>
+                <span className="text-[24px] md:text-[26px] text-white font-bold leading-none" style={{ fontFamily: "var(--font-logo)" }}>
                   SIVARSA
                 </span>
               </Link>

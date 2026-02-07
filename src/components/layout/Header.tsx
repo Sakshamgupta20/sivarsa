@@ -27,17 +27,17 @@ export default function Header({ variant = "dark" }: HeaderProps) {
 
   return (
     <div className="content-stretch flex items-center justify-between pb-[10px] pt-5 relative shrink-0 w-full max-w-[1360px] mx-auto px-4 lg:px-0 z-50">
-      <Link href="/" className="flex gap-1.5 items-center relative shrink-0 animate-fade-in-down z-50">
+      <Link href="/" className="flex items-center gap-2 relative shrink-0 animate-fade-in-down z-50">
         <Image
           src={logoSrc}
           alt="Sivarsa Logo"
-          width={52}
-          height={52}
+          width={36}
+          height={36}
           className="shrink-0"
         />
-        <div className={`flex flex-col justify-center leading-[0] relative shrink-0 text-[32px] ${textColor} whitespace-nowrap`} style={{ fontFamily: "var(--font-logo)" }}>
-          <p className="leading-[normal] font-bold">SIVARSA</p>
-        </div>
+        <span className={`text-[28px] ${textColor} font-bold leading-none`} style={{ fontFamily: "var(--font-logo)" }}>
+          SIVARSA
+        </span>
       </Link>
 
       {/* Desktop Navigation */}
