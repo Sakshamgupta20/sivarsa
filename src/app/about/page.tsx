@@ -50,11 +50,11 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <div className="bg-black relative size-full">
-      <div className="-translate-x-1/2 absolute content-stretch flex flex-col items-start left-1/2 top-0 w-full">
+    <div className="bg-black relative size-full overflow-x-hidden">
+      <div className="w-full flex flex-col items-center overflow-x-hidden">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
           {/* Hero Section */}
-          <div className="h-[841px] overflow-clip relative shrink-0 w-full">
+          <div className="min-h-[600px] lg:h-[841px] overflow-clip relative shrink-0 w-full">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgHero} />
             </div>

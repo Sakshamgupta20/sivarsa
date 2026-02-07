@@ -159,8 +159,8 @@ export default function BlogPage() {
   }, []);
 
   return (
-    <div className="bg-white relative size-full">
-      <div className="-translate-x-1/2 absolute content-stretch flex flex-col items-start left-1/2 top-0 w-full">
+    <div className="bg-white relative size-full overflow-x-hidden">
+      <div className="w-full flex flex-col items-center overflow-x-hidden">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
           {/* Hero Section */}
           <div className="min-h-[500px] md:min-h-[600px] overflow-clip relative shrink-0 w-full">

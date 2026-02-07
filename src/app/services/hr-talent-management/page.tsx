@@ -5,6 +5,7 @@ import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import TrustedByMarquee from "@/components/layout/TrustedByMarquee";
+import ContactForm from "@/components/ContactForm";
 
 const imgHero = "/assets/cdecb895a2e1e301e31eadfffa170feab26b3bf1.png";
 const imgPattern2 = "/assets/e943fd303c0291fd9475f87f73eb8662aae4ab65.png";
@@ -67,10 +68,10 @@ export default function HRTalentManagement() {
   }, []);
 
   return (
-    <div className="bg-black relative size-full">
-      <div className="-translate-x-1/2 absolute content-stretch flex flex-col items-start left-1/2 top-0 w-full">
+    <div className="bg-black relative size-full overflow-x-hidden">
+      <div className="w-full flex flex-col items-center overflow-x-hidden">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
-          <div className="h-[841px] overflow-hidden relative w-full max-w-[1440px]">
+          <div className="min-h-[600px] lg:min-h-[841px] overflow-hidden relative w-full max-w-[1440px] mx-auto">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <img alt="" className="absolute h-full left-[-5.86%] max-w-none top-0 w-[111.73%]" src={imgHero} />
             </div>
@@ -94,35 +95,35 @@ export default function HRTalentManagement() {
                     <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgStars1} />
                   </div>
                 </div>
-                <div className="absolute h-[800.63px] left-[752.39px] top-[98px] w-[632.5px] hero-image animate-float">
+                <div className="absolute h-[400px] md:h-[600px] lg:h-[800.63px] right-0 lg:left-[752.39px] top-[98px] w-[300px] md:w-[450px] lg:w-[632.5px] hero-image animate-float hidden md:block">
                   <img alt="HR & Talent Management Services" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageServicesHeroImg} />
                 </div>
               </div>
             </div>
-            <div className="absolute content-stretch flex flex-col items-start left-[76px] top-[219px] w-[1060px] hero-content">
-              <div className="content-stretch flex flex-col gap-[37px] items-start relative shrink-0 w-[626px]">
-                <div className="bg-clip-text font-['GT_Super_Ds_Trial:Bd',sans-serif] leading-[84px] min-w-full not-italic relative shrink-0 text-[82px] tracking-[-4.1492px] w-[min-content] whitespace-pre-wrap animate-fade-in-up" style={{ backgroundImage: "linear-gradient(-33.725deg, rgb(255, 255, 255) 62.646%, rgb(0, 0, 0) 108.48%)", WebkitTextFillColor: "transparent" }}>
+            <div className="relative lg:absolute content-stretch flex flex-col items-start px-4 md:px-8 lg:px-0 lg:left-[76px] pt-[40px] lg:pt-0 lg:top-[219px] w-full lg:w-[1060px] hero-content">
+              <div className="content-stretch flex flex-col gap-[20px] md:gap-[37px] items-start relative shrink-0 w-full lg:w-[626px]">
+                <div className="bg-clip-text font-['GT_Super_Ds_Trial:Bd',sans-serif] leading-[1.1] not-italic relative shrink-0 text-[40px] md:text-[60px] lg:text-[82px] tracking-[-2px] lg:tracking-[-4.1492px] animate-fade-in-up" style={{ backgroundImage: "linear-gradient(-33.725deg, rgb(255, 255, 255) 62.646%, rgb(0, 0, 0) 108.48%)", WebkitTextFillColor: "transparent" }}>
                   <p className="mb-0">{`HR & `}</p>
                   <p>TALENT</p>
                 </div>
-                <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic opacity-70 relative shrink-0 text-[22px] text-white w-[544px] whitespace-pre-wrap animate-fade-in-up delay-200">
+                <p className="font-['Inter:Bold',sans-serif] font-bold leading-[1.5] not-italic opacity-70 relative shrink-0 text-[16px] md:text-[18px] lg:text-[22px] text-white w-full max-w-[544px] animate-fade-in-up delay-200">
                   Sivarsa helps you attract, develop, and retain top talent. Our strategic HR solutions help you build high-performing teams that drive business results and accelerate growth.
                 </p>
-                <div className="content-stretch flex flex-col gap-[23.484px] h-[96.121px] items-start justify-center relative shrink-0 w-[511px] animate-fade-in-up delay-300">
-                  <div className="content-stretch flex gap-[31.6px] items-center justify-center relative shrink-0 w-[511px]">
-                    <Link href="/contact" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[270.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
-                      <span className="font-['Inter',sans-serif] font-medium text-[20px] text-black">
+                <div className="content-stretch flex flex-col gap-[16px] md:gap-[23.484px] items-start justify-center relative shrink-0 w-full md:w-auto animate-fade-in-up delay-300">
+                  <div className="content-stretch flex flex-col sm:flex-row gap-[16px] md:gap-[31.6px] items-center justify-center relative shrink-0 w-full sm:w-auto">
+                    <Link href="/contact" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-full sm:w-[270.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
+                      <span className="font-['Inter',sans-serif] font-medium text-[16px] md:text-[20px] text-black">
                         Start Hiring Smarter
                       </span>
                     </Link>
-                    <a href="#services" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[210.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
-                      <span className="font-['Inter',sans-serif] font-medium text-[20px] text-black">
+                    <a href="#services" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-full sm:w-[210.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
+                      <span className="font-['Inter',sans-serif] font-medium text-[16px] md:text-[20px] text-black">
                         Explore services
                       </span>
                     </a>
                   </div>
-                  <div className="flex flex-col font-['Schibsted_Grotesk:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[20px] text-center text-white w-[485px]">
-                    <p className="leading-[normal] whitespace-pre-wrap">Build teams that drive results and accelerate growth.</p>
+                  <div className="flex flex-col font-['Schibsted_Grotesk:Medium',sans-serif] font-medium justify-center leading-[normal] relative shrink-0 text-[14px] md:text-[16px] lg:text-[20px] text-center md:text-left text-white w-full lg:w-[485px]">
+                    <p>Build teams that drive results and accelerate growth.</p>
                   </div>
                 </div>
               </div>
@@ -130,12 +131,12 @@ export default function HRTalentManagement() {
           </div>
         </div>
         <TrustedByMarquee />
-        <div id="services" className="flex flex-col gap-[60px] items-center py-[30px] relative w-full max-w-[1440px] mx-auto px-4 scroll-mt-20">
-          <div className="content-stretch flex flex-col lg:flex-row gap-[60px] lg:gap-[136px] items-start relative shrink-0 py-16 w-full">
-            <div className="relative shrink-0 w-[549.726px]">
+        <div id="services" className="flex flex-col gap-[40px] md:gap-[60px] items-center py-[30px] relative w-full max-w-[1440px] mx-auto px-4 md:px-8 scroll-mt-20">
+          <div className="content-stretch flex flex-col lg:flex-row gap-[40px] lg:gap-[136px] items-center lg:items-start relative shrink-0 py-8 md:py-16 w-full">
+            <div className="relative shrink-0 w-full max-w-[549.726px]">
               <img alt="" className="max-w-none object-contain pointer-events-none w-full" src={imgImageLbImg} />
             </div>
-            <div className="relative shrink-0 w-[597.923px]">
+            <div className="relative shrink-0 w-full lg:w-[597.923px]">
               <div className="content-stretch flex flex-col gap-[17.178px] items-start relative">
                 <div className="relative shrink-0 w-[597.923px]">
                   <div className="content-stretch flex flex-col font-['Inter:Bold',sans-serif] font-bold items-start leading-[0] not-italic relative text-[53.159px] tracking-[0.9544px] whitespace-nowrap">
@@ -319,14 +320,14 @@ export default function HRTalentManagement() {
               <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0">
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[52.166px] text-white whitespace-nowrap">
+                    <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[24px] md:text-[36px] lg:text-[52.166px] text-white">
                       <p className="leading-[68.756px]">We deliver on time, in days and weeks</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[50.72px] text-[rgba(255,255,255,0.52)] whitespace-nowrap">
+                    <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[22px] md:text-[32px] lg:text-[50.72px] text-[rgba(255,255,255,0.52)]">
                       <p className="leading-[68.756px]">—not months.</p>
                     </div>
                   </div>
@@ -343,7 +344,7 @@ export default function HRTalentManagement() {
                       </div>
                     </div>
                     <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] max-h-[30.146665573120117px] not-italic relative shrink-0 text-[22.667px] text-white tracking-[0.9444px] whitespace-nowrap">
+                      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] max-h-[30.146665573120117px] not-italic relative shrink-0 text-[14px] md:text-[18px] lg:text-[22.667px] text-white tracking-[0.9444px]">
                         <p className="leading-[30.147px]">{`Talent needs assessment & strategy`}</p>
                       </div>
                     </div>
@@ -362,7 +363,7 @@ export default function HRTalentManagement() {
                       </div>
                     </div>
                     <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] max-h-[30.146665573120117px] not-italic relative shrink-0 text-[22.135px] text-white tracking-[0.9444px] whitespace-nowrap">
+                      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] max-h-[30.146665573120117px] not-italic relative shrink-0 text-[14px] md:text-[18px] lg:text-[22.135px] text-white tracking-[0.9444px]">
                         <p className="leading-[30.147px]">{`Sourcing, screening & candidate selection`}</p>
                       </div>
                     </div>
@@ -381,7 +382,7 @@ export default function HRTalentManagement() {
                       </div>
                     </div>
                     <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] max-h-[30.146665573120117px] not-italic relative shrink-0 text-[21.427px] text-white tracking-[0.9444px] whitespace-nowrap">
+                      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] max-h-[30.146665573120117px] not-italic relative shrink-0 text-[14px] md:text-[18px] lg:text-[21.427px] text-white tracking-[0.9444px]">
                         <p className="leading-[30.147px]">Onboarding & ongoing HR support</p>
                       </div>
                     </div>
@@ -402,14 +403,14 @@ export default function HRTalentManagement() {
               <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0">
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[51.959px] text-white whitespace-nowrap">
+                    <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[24px] md:text-[36px] lg:text-[51.959px] text-white">
                       <p className="leading-[68.756px]">{`What we deliver on `}</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[51.339px] text-[rgba(255,255,255,0.52)] whitespace-nowrap">
+                    <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[22px] md:text-[32px] lg:text-[51.339px] text-[rgba(255,255,255,0.52)]">
                       <p className="leading-[68.756px]">HR & Talent Management</p>
                     </div>
                   </div>
@@ -904,140 +905,30 @@ export default function HRTalentManagement() {
             </div>
           </div>
         </div>
-        <div className="bg-[#f0f0f0] content-stretch flex flex-col items-center py-[117.111px] relative shrink-0 w-full">
-          <div className="h-[585.678px] max-w-[1360px] relative shrink-0 w-[1360px]">
-            <div className="absolute content-stretch flex flex-col items-start left-[37.78px] max-w-[409.8888854980469px] top-[-0.66px]">
-              <div className="content-stretch flex flex-col items-start pr-[0.888px] relative shrink-0">
-                <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[71.4px] not-italic relative shrink-0 text-[#1b1b1b] text-[0px] text-[51.856px] tracking-[0.9444px] whitespace-nowrap">
-                  <p className="mb-0">Have a Project?</p>
-                  <p className="text-[#7e7e81]">Let's talk!</p>
+        {/* Contact Section */}
+        <div className="bg-[#f0f0f0] content-stretch flex flex-col items-start py-[80px] md:py-[120px] relative shrink-0 w-full">
+          <div className="max-w-[1440px] w-full mx-auto px-4 md:px-[40px]">
+            <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-0 items-start justify-between">
+              {/* Left Content */}
+              <div className="flex flex-col items-start max-w-[434px]">
+                <h2 className="font-['Inter',sans-serif] font-extrabold text-[40px] md:text-[55px] leading-[1.3] tracking-[1px] text-[#1b1b1b]">
+                  Have a Project?<br /><span className="text-[#7e7e81]">Let&apos;s talk!</span>
+                </h2>
+                <div className="flex flex-col gap-[11px] mt-[31px]">
+                  {[
+                    "NDA? Absolutely just ask.",
+                    "We'll respond in 24 hours — fast & focused.",
+                    "Work with senior experts, not juniors.",
+                  ].map((item, index) => (
+                    <div key={index} className="flex gap-[10px] items-center">
+                      <img alt="" className="w-[16px] h-[16px]" src={imgContactTick} />
+                      <span className="font-['Inter',sans-serif] font-semibold text-[14px] md:text-[15px] text-[#1b1b1b]">{item}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
-              <div className="content-stretch flex flex-col items-start pt-[29.278px] relative shrink-0">
-                <div className="content-stretch flex flex-col gap-[10.389px] items-start relative shrink-0">
-                  <div className="content-stretch flex gap-[9.444px] items-center relative shrink-0">
-                    <div className="max-w-[186.89610290527344px] relative shrink-0 size-[15.111px]">
-                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                        <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgContactTick} />
-                      </div>
-                    </div>
-                    <div className="content-stretch flex flex-col items-start pb-[0.841px] relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[13.171px] whitespace-nowrap">
-                        <p className="leading-[20.683px]">NDA? Absolutely just ask.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="content-stretch flex gap-[9.444px] items-center relative shrink-0">
-                    <div className="max-w-[302.25054931640625px] relative shrink-0 size-[15.111px]">
-                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                        <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgContactTick} />
-                      </div>
-                    </div>
-                    <div className="content-stretch flex flex-col items-start pb-[0.841px] relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[13.945px] whitespace-nowrap">
-                        <p className="leading-[20.683px]">We'll respond in 24 hours — fast & focused.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="content-stretch flex gap-[9.444px] items-center relative shrink-0">
-                    <div className="max-w-[292.95721435546875px] relative shrink-0 size-[15.111px]">
-                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                        <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgContactTick} />
-                      </div>
-                    </div>
-                    <div className="content-stretch flex flex-col items-start pb-[0.841px] relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[13.613px] w-[300.677px]">
-                        <p className="whitespace-pre-wrap">
-                          <span className="leading-[20.683px]">{` `}</span>
-                          <span className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[20.683px] not-italic">Book a call or share your idea — our engineering team will review and create a development plan for you.</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="content-stretch flex flex-col items-start pt-[89.722px] relative shrink-0">
-                <div className="content-stretch flex flex-col items-start relative shrink-0">
-                  <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[16.734px] whitespace-nowrap">
-                    <p className="leading-[23.8px]">Schedule a call:</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="absolute bg-white content-stretch flex flex-col items-start left-[687.56px] max-w-[634.6666259765625px] p-[39.667px] top-0 w-[634.667px]">
-              <div className="content-stretch flex flex-col gap-[18.889px] items-start relative shrink-0 w-full">
-                <div className="content-stretch flex gap-[18.889px] items-center relative shrink-0 w-full">
-                  <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px pt-[14.733px] relative">
-                    <div className="bg-white border-[#f0f0f0] border-[1.889px] border-solid content-stretch flex flex-col h-[50.613px] items-start max-w-[555.3333740234375px] overflow-clip pb-[15.196px] pt-[13.694px] px-[20.778px] relative rounded-[1.889px] shrink-0 w-full">
-                      <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full">
-                        <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[15.111px] w-full">
-                          <p className="leading-[normal] whitespace-pre-wrap">Email</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px pt-[14.733px] relative">
-                    <div className="bg-white border-[#f0f0f0] border-[1.889px] border-solid content-stretch flex flex-col h-[50.613px] items-start max-w-[555.3333740234375px] overflow-clip pb-[15.196px] pt-[13.694px] px-[20.778px] relative rounded-[1.889px] shrink-0 w-full">
-                      <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full">
-                        <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[15.111px] w-full">
-                          <p className="leading-[normal] whitespace-pre-wrap">Full name</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="content-stretch flex gap-[18.889px] items-center pb-[14.724px] relative shrink-0 w-full">
-                  <div className="border-[#f0f0f0] border-[1.889px] border-solid content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px pl-[1.889px] pr-[17px] py-[1.889px] relative rounded-[1.889px]">
-                    <div className="content-stretch flex flex-col h-[51px] items-start justify-center min-h-[51px] pb-[12.278px] pl-[18.889px] pr-[15.111px] pt-[15.111px] relative shrink-0 w-full">
-                      <div className="content-stretch flex flex-col items-start overflow-clip py-[0.944px] relative shrink-0 w-full">
-                        <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[14.993px] w-full">
-                          <p className="leading-[21.722px] whitespace-pre-wrap">Project budget</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="border-[#f0f0f0] border-[1.889px] border-solid content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px pl-[1.889px] pr-[17px] py-[1.889px] relative rounded-[1.889px]">
-                    <div className="content-stretch flex flex-col h-[51px] items-start justify-center min-h-[51px] pb-[12.278px] pl-[18.889px] pr-[15.111px] pt-[15.111px] relative shrink-0 w-full">
-                      <div className="content-stretch flex flex-col items-start overflow-clip py-[0.944px] relative shrink-0 w-full">
-                        <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[14.875px] w-full">
-                          <p className="leading-[21.722px] whitespace-pre-wrap">How did you hear about us?</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="bg-white border-[#f0f0f0] border-[1.889px] border-solid content-stretch flex flex-col items-start max-w-[555.3333740234375px] overflow-auto pb-[44.946px] pt-[24.556px] px-[20.778px] relative rounded-[1.889px] shrink-0 w-full">
-                  <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-                    <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[14.757px] w-full">
-                      <p className="leading-[18.889px] whitespace-pre-wrap">Tell us about your product and goals.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-                  <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[16.602px] whitespace-nowrap">
-                    <p className="leading-[25.5px]">How can we help you?</p>
-                  </div>
-                </div>
-                <div className="content-stretch flex isolate items-center justify-between pt-[18.889px] relative shrink-0 w-full">
-                  <div className="bg-[#3f2fee] content-stretch flex flex-col items-center overflow-clip px-[26.444px] py-[15.111px] relative rounded-[100px] shrink-0 z-[2]">
-                    <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[16.87px] text-center text-white whitespace-nowrap">
-                      <p className="leading-[25.5px]">Send message</p>
-                    </div>
-                  </div>
-                  <div className="content-stretch flex flex-col items-end pb-[0.944px] relative shrink-0 z-[1]">
-                    <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[13.945px] whitespace-nowrap">
-                        <p className="leading-[18.417px]">Prefer email?</p>
-                      </div>
-                    </div>
-                    <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[13.392px] whitespace-nowrap">
-                        <p className="decoration-solid leading-[18.417px] underline">hello@sivarsa.agency</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {/* Right Form */}
+              <ContactForm className="w-full lg:max-w-[672px]" />
             </div>
           </div>
         </div>
