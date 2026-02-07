@@ -1,7 +1,7 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ContactForm from "@/components/ContactForm";
@@ -32,6 +32,23 @@ const imgZeroEssay = "/assets/48e063866d9ff1ad2f69b61817c1b431143a76c2.png";
 const imgAndreessenHorowitz = "/assets/918216ec83d7eb3b64f66d81f4d65b04a6dd2679.png";
 
 export default function AboutPage() {
+  // Initialize scroll animations
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+    );
+
+    document.querySelectorAll(".scroll-reveal").forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="bg-black relative size-full">
       <div className="-translate-x-1/2 absolute content-stretch flex flex-col items-start left-1/2 top-0 w-full">
@@ -64,7 +81,7 @@ export default function AboutPage() {
 
           {/* About Hero Image Section */}
           <div className="content-stretch flex flex-col items-center justify-center px-4 md:px-[40px] py-[60px] md:py-[81px] relative shrink-0 w-full bg-white">
-            <div className="h-[400px] md:h-[550px] lg:h-[675px] overflow-clip relative rounded-[20px] md:rounded-[30px] shrink-0 w-full max-w-[1109px]">
+            <div className="h-[400px] md:h-[550px] lg:h-[675px] overflow-clip relative rounded-[20px] md:rounded-[30px] shrink-0 w-full max-w-[1109px] scroll-reveal scroll-scale-up img-scale-container">
               <img alt="Team working together" className="absolute inset-0 max-w-none object-cover size-full" src={imgAboutHeroImage} />
             </div>
           </div>
@@ -93,7 +110,7 @@ export default function AboutPage() {
           <div className="bg-[#f1f1f1] content-stretch flex flex-col items-start pt-[80px] md:pt-[104px] pb-[60px] relative shrink-0 w-full">
             <div className="content-stretch flex flex-col gap-[48px] md:gap-[64px] items-start max-w-[1440px] mx-auto px-4 md:px-[40px] relative shrink-0 w-full">
               {/* Heading */}
-              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full scroll-reveal scroll-fade-up">
                 <h2 className="font-['GT_Super_Ds_Trial:Su',sans-serif] text-[36px] md:text-[48px] lg:text-[54px] leading-[1.3] tracking-[1px] text-[#1b1b1b]">
                   We measure<br />
                   <span className="text-[#1b1b1b]">impact, </span>
@@ -104,7 +121,7 @@ export default function AboutPage() {
               {/* Stats Grid */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-[6px] w-full">
                 {/* Stat 1 */}
-                <div className="bg-white content-stretch flex flex-col items-start p-[32px] rounded-[20px]">
+                <div className="bg-white content-stretch flex flex-col items-start p-[32px] rounded-[20px] scroll-reveal scroll-fade-up stagger-1 card-3d">
                   <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/01</p>
                   <div className="mt-4">
                     <p className="font-['Inter',sans-serif] font-extrabold text-[42px] md:text-[54px] text-[#1b1b1b] leading-[1.3]">$10B+</p>
@@ -115,7 +132,7 @@ export default function AboutPage() {
                 </div>
 
                 {/* Stat 2 */}
-                <div className="bg-white content-stretch flex flex-col items-start p-[32px] rounded-[20px]">
+                <div className="bg-white content-stretch flex flex-col items-start p-[32px] rounded-[20px] scroll-reveal scroll-fade-up stagger-2 card-3d">
                   <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/02</p>
                   <div className="mt-4">
                     <p className="font-['Inter',sans-serif] font-extrabold text-[42px] md:text-[54px] text-[#1b1b1b] leading-[1.3]">400%</p>
@@ -126,7 +143,7 @@ export default function AboutPage() {
                 </div>
 
                 {/* Stat 3 */}
-                <div className="bg-white content-stretch flex flex-col items-start p-[32px] rounded-[20px]">
+                <div className="bg-white content-stretch flex flex-col items-start p-[32px] rounded-[20px] scroll-reveal scroll-fade-up stagger-3 card-3d">
                   <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/03</p>
                   <div className="mt-4">
                     <p className="font-['Inter',sans-serif] font-extrabold text-[42px] md:text-[54px] text-[#1b1b1b] leading-[1.3]">100M+</p>
@@ -196,7 +213,7 @@ export default function AboutPage() {
                     </p>
                   </div>
 
-                  <Link href="#contact" className="bg-[#3f2fee] flex gap-[8px] items-center justify-center px-[28px] py-[16px] rounded-[100px] mt-[40px] btn-animated hover-glow">
+                  <Link href="#contact" className="bg-[#3f2fee] flex gap-[8px] items-center justify-center px-[28px] py-[16px] rounded-[100px] mt-[40px] btn-magnetic hover-glow glow-pulse">
                     <span className="font-['Inter',sans-serif] font-semibold text-[16px] text-white">Shape your vision</span>
                     <img alt="" className="w-[12px] h-[12px]" src={imgBtnIconWhite} />
                   </Link>
@@ -250,7 +267,7 @@ export default function AboutPage() {
                 From vision to velocity, we are<br />
                 <span className="text-[#29242466]">all in one place.</span>
               </h2>
-              <Link href="/services/software-development" className="bg-[#3f2fee] flex gap-[8px] items-center justify-center px-[28px] py-[16px] rounded-[100px] btn-animated hover-glow">
+              <Link href="/services/software-development" className="bg-[#3f2fee] flex gap-[8px] items-center justify-center px-[28px] py-[16px] rounded-[100px] btn-magnetic hover-glow glow-pulse">
                 <span className="font-['Inter',sans-serif] font-semibold text-[16px] text-white">View services</span>
                 <img alt="" className="w-[12px] h-[12px]" src={imgBtnIconWhite} />
               </Link>
@@ -267,7 +284,7 @@ export default function AboutPage() {
                       <p className="font-['Inter',sans-serif] font-medium text-[15px] md:text-[17px] text-white/90 max-w-[360px] leading-[1.6]">
                         Build scalable, user-friendly software that solves real problems and drives business growth.
                       </p>
-                      <Link href="/services/software-development" className="bg-white flex gap-[8px] items-center justify-center px-[26px] py-[15px] rounded-[100px] btn-animated">
+                      <Link href="/services/software-development" className="bg-white flex gap-[8px] items-center justify-center px-[26px] py-[15px] rounded-[100px] btn-magnetic shine-effect">
                         <span className="font-['Inter',sans-serif] font-semibold text-[15px] text-[#1b1b1b]">Start Your Project</span>
                         <img alt="" className="w-[11px] h-[11px]" src={imgBtnArrowIconDark} />
                       </Link>
@@ -288,7 +305,7 @@ export default function AboutPage() {
                       <p className="font-['Inter',sans-serif] font-medium text-[15px] md:text-[17px] text-[#1b1b1b]/80 max-w-[360px] leading-[1.6]">
                         Attract, develop, and retain top talent. Our strategic HR solutions help you build high-performing teams.
                       </p>
-                      <Link href="/services/hr-talent-management" className="bg-[#1b1b1b] flex gap-[8px] items-center justify-center px-[26px] py-[15px] rounded-[100px] btn-animated">
+                      <Link href="/services/hr-talent-management" className="bg-[#1b1b1b] flex gap-[8px] items-center justify-center px-[26px] py-[15px] rounded-[100px] btn-magnetic shine-effect">
                         <span className="font-['Inter',sans-serif] font-semibold text-[15px] text-white">Hire Smarter</span>
                         <img alt="" className="w-[11px] h-[11px]" src={imgBtnIconWhite} />
                       </Link>
@@ -309,7 +326,7 @@ export default function AboutPage() {
                       <p className="font-['Inter',sans-serif] font-medium text-[15px] md:text-[17px] text-[#1b1b1b]/80 max-w-[360px] leading-[1.6]">
                         Acquire more customers and scale faster. Our data-driven marketing strategies turn traffic into revenue.
                       </p>
-                      <Link href="/services/growth-marketing" className="bg-[#1b1b1b] flex gap-[8px] items-center justify-center px-[26px] py-[15px] rounded-[100px] btn-animated">
+                      <Link href="/services/growth-marketing" className="bg-[#1b1b1b] flex gap-[8px] items-center justify-center px-[26px] py-[15px] rounded-[100px] btn-magnetic shine-effect">
                         <span className="font-['Inter',sans-serif] font-semibold text-[15px] text-white">Start Growing</span>
                         <img alt="" className="w-[11px] h-[11px]" src={imgBtnIconWhite} />
                       </Link>
@@ -339,7 +356,7 @@ export default function AboutPage() {
               {/* Info Cards */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-[6px] w-full mb-[100px]">
                 {/* Card 1 - India */}
-                <div className="border border-[#eeedec] content-stretch flex flex-col justify-between items-start p-[33px] rounded-[20px] min-h-[280px]">
+                <div className="border border-[#eeedec] content-stretch flex flex-col justify-between items-start p-[33px] rounded-[20px] min-h-[280px] scroll-reveal scroll-fade-up stagger-1 card-3d">
                   <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/01</p>
                   <div>
                     <p className="font-['GT_Super_Ds_Trial:Su',sans-serif] text-[48px] md:text-[55px] text-[#1b1b1b] leading-[1.3]">India</p>
@@ -350,7 +367,7 @@ export default function AboutPage() {
                 </div>
 
                 {/* Card 2 - 15+ */}
-                <div className="border border-[#eeedec] content-stretch flex flex-col justify-between items-start p-[33px] rounded-[20px] min-h-[280px]">
+                <div className="border border-[#eeedec] content-stretch flex flex-col justify-between items-start p-[33px] rounded-[20px] min-h-[280px] scroll-reveal scroll-fade-up stagger-2 card-3d">
                   <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/02</p>
                   <div>
                     <p className="font-['GT_Super_Ds_Trial:Su',sans-serif] text-[48px] md:text-[54px] text-[#1b1b1b] leading-[1.3] tracking-[1px]">15+</p>
@@ -361,7 +378,7 @@ export default function AboutPage() {
                 </div>
 
                 {/* Card 3 - 10M+ users */}
-                <div className="border border-[#eeedec] content-stretch flex flex-col justify-between items-start p-[33px] rounded-[20px] min-h-[280px]">
+                <div className="border border-[#eeedec] content-stretch flex flex-col justify-between items-start p-[33px] rounded-[20px] min-h-[280px] scroll-reveal scroll-fade-up stagger-3 card-3d">
                   <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/03</p>
                   <div>
                     <p className="font-['GT_Super_Ds_Trial:Su',sans-serif] text-[48px] md:text-[55px] text-[#1b1b1b] leading-[1.3]">10M+ users</p>

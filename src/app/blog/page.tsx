@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -140,6 +141,23 @@ const articles = [
 export { articles, featuredArticle };
 
 export default function BlogPage() {
+  // Initialize scroll animations
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+    );
+
+    document.querySelectorAll(".scroll-reveal").forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="bg-white relative size-full">
       <div className="-translate-x-1/2 absolute content-stretch flex flex-col items-start left-1/2 top-0 w-full">
@@ -203,7 +221,7 @@ export default function BlogPage() {
               </div>
 
               {/* Featured Article */}
-              <Link href={`/blog/${featuredArticle.slug}`} className="block border-b border-[#e8e7e7] pb-[33px] mb-[40px] group">
+              <Link href={`/blog/${featuredArticle.slug}`} className="block border-b border-[#e8e7e7] pb-[33px] mb-[40px] group scroll-reveal scroll-fade-up">
                 <div className="flex flex-col lg:flex-row gap-[40px] items-start">
                   {/* Image */}
                   <div className="w-full lg:w-[608px] h-[300px] lg:h-[430px] rounded-[12px] overflow-hidden shrink-0">
@@ -255,7 +273,8 @@ export default function BlogPage() {
                   <Link
                     key={index}
                     href={`/blog/${article.slug}`}
-                    className="group flex flex-col"
+                    className="group flex flex-col scroll-reveal scroll-fade-up card-3d"
+                    style={{ transitionDelay: `${(index % 4) * 0.1}s` }}
                   >
                     {/* Article Image */}
                     <div className="w-full h-[240px] md:h-[280px] rounded-[12px] overflow-hidden mb-[20px]">

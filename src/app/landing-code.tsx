@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -56,7 +57,6 @@ const imgWhatsappIcon1 = "/assets/whatsapp-icon-alt.png";
 const imgContactTick = "/assets/contact-tick.png";
 
 // SVG Assets
-const imgGroup = "/assets/logo-icon.svg";
 const imgPattern1 = "/assets/pattern-mask.svg";
 const imgEllipse1 = "/assets/ellipse-decoration.svg";
 const imgSandroievaCoverGradientDesignWithDynamicMeshAbstractCol0903F70EB4E149FbB05006820E01262E2 = "/assets/gradient-mesh.svg";
@@ -67,6 +67,30 @@ const imgGroup3 = "/assets/check-icon-3.svg";
 const imgGroup4 = "/assets/check-icon-4.svg";
 
 export default function Landing() {
+  // Initialize scroll animations on mount
+  useEffect(() => {
+    const observerCallback: IntersectionObserverCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
+    });
+
+    // Observe all elements with scroll animation classes
+    const elements = document.querySelectorAll(".scroll-reveal");
+    elements.forEach((el) => observer.observe(el));
+
+    return () => {
+      elements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
+
   return (
     <div className="bg-black relative size-full">
       <div className="-translate-x-1/2 absolute content-stretch flex flex-col items-start left-1/2 top-0">
@@ -107,12 +131,12 @@ export default function Landing() {
                 <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic opacity-70 relative shrink-0 text-[22px] text-white w-[544px] whitespace-pre-wrap animate-fade-in-up delay-200">{`We build the software, attract the customers,  and hire the talent—so you can focus on building your business.`}</p>
                 <div className="content-stretch flex flex-col h-[96.121px] items-start justify-center relative shrink-0 w-[511px] animate-fade-in-up delay-300">
                   <div className="content-stretch flex gap-[31.6px] items-center justify-center relative shrink-0 w-[511px]">
-                    <Link href="/contact" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[270.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
+                    <Link href="/contact" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[270.089px] btn-magnetic shine-effect cursor-pointer hover:shadow-xl flex items-center justify-center">
                       <span className="font-['Inter',sans-serif] font-medium text-[20px] text-black">
                         Book a Strategy Call
                       </span>
                     </Link>
-                    <Link href="/services/software-development" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[210.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
+                    <Link href="/services/software-development" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[210.089px] btn-magnetic shine-effect cursor-pointer hover:shadow-xl flex items-center justify-center">
                       <span className="font-['Inter',sans-serif] font-medium text-[20px] text-black">
                         Explore services
                       </span>
@@ -149,11 +173,11 @@ export default function Landing() {
         <div className="content-stretch flex flex-col items-center overflow-clip py-[68px] relative shrink-0 w-full">
           <div className="content-stretch flex flex-col items-start relative shrink-0 w-[1284.444px]">
             <div className="content-stretch flex items-center justify-center overflow-clip relative shrink-0 w-full">
-              <div className="h-[723px] relative shrink-0 w-[1285px] animate-fade-in-up">
-                <div className="absolute h-[723px] left-0 top-0 w-[1285px] service-card">
+              <div className="h-[723px] relative shrink-0 w-[1285px] scroll-reveal scroll-scale-up">
+                <div className="absolute h-[723px] left-0 top-0 w-[1285px] service-card img-scale-container">
                   <img alt="Software Development" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full transition-transform duration-500" src={imgWavespaceNoSoundVideoMp41} />
                 </div>
-                <div className="absolute bg-[#a0a9ae] h-[723px] left-0 overflow-clip top-0 w-[428.333px] service-card">
+                <div className="absolute bg-[#a0a9ae] h-[723px] left-0 overflow-clip top-0 w-[428.333px] service-card img-scale-container">
                   <div className="absolute left-[-154px] shadow-[8px_-7px_17px_0px_rgba(0,0,0,0.35)] size-[736px] top-[113px]">
                     <div className="absolute inset-0 overflow-hidden pointer-events-none">
                       <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgOneee1} />
@@ -206,7 +230,7 @@ export default function Landing() {
         </div>
         <div className="bg-black content-stretch flex flex-col items-center overflow-clip pb-[132px] pt-[101px] relative shrink-0 w-full">
           <div className="content-stretch flex flex-col gap-[66px] items-start max-w-[1360px] px-[37.778px] relative shrink-0 w-[1348.667px]">
-            <div className="content-stretch flex items-end relative shrink-0 w-full animate-fade-in-up">
+            <div className="content-stretch flex items-end relative shrink-0 w-full scroll-reveal scroll-fade-up">
               <div className="content-stretch flex flex-col items-start pb-[0.954px] relative shrink-0">
                 <div className="content-stretch flex flex-col items-start mb-[-0.954px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
@@ -224,7 +248,7 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-            <div className="h-[320px] relative shrink-0 w-[1280px] card-animated animate-fade-in-up delay-100">
+            <div className="h-[320px] relative shrink-0 w-[1280px] card-3d scroll-reveal scroll-fade-up stagger-1">
               <div className="-translate-y-1/2 absolute content-stretch flex flex-col gap-[35px] items-start left-0 top-[calc(50%-0.01px)] w-[288px]">
                 <div className="content-stretch flex items-start pr-[21.469px] relative shrink-0 w-full">
                   <div className="capitalize flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[70.4px] not-italic relative shrink-0 text-[59px] text-white tracking-[-2px] w-[337.424px] whitespace-pre-wrap">
@@ -244,7 +268,7 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-            <div className="h-[320px] relative shrink-0 w-[1280px] card-animated animate-fade-in-up delay-200">
+            <div className="h-[320px] relative shrink-0 w-[1280px] card-3d scroll-reveal scroll-fade-up stagger-2">
               <div className="-translate-y-1/2 absolute content-stretch flex flex-col gap-[22px] items-start left-0 top-[calc(50%-0.01px)] w-[288px]">
                 <div className="content-stretch flex items-start relative shrink-0 w-full">
                   <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[70.4px] not-italic relative shrink-0 text-[60px] text-white tracking-[-2px] whitespace-nowrap">
@@ -264,7 +288,7 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-            <div className="h-[320px] relative shrink-0 w-[1280px] card-animated animate-fade-in-up delay-300">
+            <div className="h-[320px] relative shrink-0 w-[1280px] card-3d scroll-reveal scroll-fade-up stagger-3">
               <div className="-translate-y-1/2 absolute content-stretch flex flex-col gap-[35px] items-start left-0 top-[calc(50%-0.01px)] w-[270.919px]">
                 <div className="content-stretch flex items-start relative shrink-0">
                   <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[70.4px] not-italic relative shrink-0 text-[60px] text-white tracking-[-2px] whitespace-nowrap">
@@ -285,7 +309,7 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-            <div className="h-[320px] relative shrink-0 w-[1280px] card-animated animate-fade-in-up delay-400">
+            <div className="h-[320px] relative shrink-0 w-[1280px] card-3d scroll-reveal scroll-fade-up stagger-4">
               <div className="-translate-y-1/2 absolute content-stretch flex flex-col gap-[35px] items-start left-0 top-[calc(50%-0.01px)] w-[288px]">
                 <div className="content-stretch flex items-start pr-[21.469px] relative shrink-0 w-full">
                   <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[70.4px] not-italic relative shrink-0 text-[52px] text-white tracking-[-2px] whitespace-nowrap">
@@ -328,7 +352,7 @@ export default function Landing() {
                 </div>
               </div>
               <div className="content-stretch flex flex-col items-start relative shrink-0">
-                <Link className="bg-[#3f2fee] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[198.2294464111328px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full btn-animated hover-glow" href="/contact">
+                <Link className="bg-[#3f2fee] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[198.2294464111328px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full btn-magnetic hover-glow glow-pulse" href="/contact">
                   <div className="content-stretch flex flex-col items-start relative shrink-0">
                     <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[14.875px] text-left text-white whitespace-nowrap">
                       <p className="leading-[18.889px]">Start your project</p>
@@ -342,7 +366,7 @@ export default function Landing() {
                 </Link>
               </div>
             </div>
-            <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] h-[588.923px] leading-[0] relative rounded-[25px] shrink-0 text-black to-[rgba(116,39,255,0.5)] w-[1276px] hover-lift card-animated">
+            <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] h-[588.923px] leading-[0] relative rounded-[25px] shrink-0 text-black to-[rgba(116,39,255,0.5)] w-[1276px] card-3d scroll-reveal scroll-fade-up shine-effect">
               <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:Bold',sans-serif] font-bold justify-center left-[47px] text-[30px] top-[241.46px] w-[547.728px]">
                 <p className="leading-[35.335px] whitespace-pre-wrap">High cost per acquisition (CPA), minimal repeat purchases due to lack of robust email strategy.</p>
               </div>
@@ -384,7 +408,7 @@ export default function Landing() {
                 <p className="leading-[21.594px]">SANTOSH JEWELLERS</p>
               </div>
             </div>
-            <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] h-[588.923px] relative rounded-[25px] shrink-0 to-[rgba(116,39,255,0.5)] w-[1276px] hover-lift card-animated">
+            <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] h-[588.923px] relative rounded-[25px] shrink-0 to-[rgba(116,39,255,0.5)] w-[1276px] card-3d scroll-reveal scroll-fade-up shine-effect stagger-2">
               <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:Bold',sans-serif] font-bold justify-center leading-[0] left-[47px] text-[30px] text-black top-[241.46px] w-[547.728px]">
                 <p className="leading-[35.335px] whitespace-pre-wrap">High cost per acquisition (CPA), minimal repeat purchases due to lack of robust email strategy.</p>
               </div>
@@ -449,7 +473,7 @@ export default function Landing() {
               </div>
             </div>
             <div className="h-[273.624px] relative shrink-0 w-full">
-              <div className="absolute content-stretch flex flex-col items-start left-0 right-[455.22px] top-0 animate-fade-in-up">
+              <div className="absolute content-stretch flex flex-col items-start left-0 right-[455.22px] top-0 scroll-reveal scroll-fade-up">
                 <div className="bg-[#242424] border-[#3a3a3a] border-b-[0.944px] border-solid content-stretch flex items-center justify-between pb-[31.167px] pt-[30.222px] px-[30.222px] relative shrink-0 w-full faq-item cursor-pointer">
                   <div className="content-stretch flex gap-[15.111px] items-center relative shrink-0">
                     <div className="content-stretch flex flex-col items-start relative shrink-0">
@@ -548,7 +572,7 @@ export default function Landing() {
                           </div>
                         </div>
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
-                          <Link className="bg-white content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[214.15277099609375px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full btn-animated hover-scale" href="/services/software-development">
+                          <Link className="bg-white content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[214.15277099609375px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full btn-magnetic shine-effect" href="/services/software-development">
                             <div className="content-stretch flex flex-col items-start relative shrink-0">
                               <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[15.111px] text-left whitespace-nowrap">
                                 <p className="leading-[18.889px]">{` Start Your Project `}</p>
@@ -604,7 +628,7 @@ export default function Landing() {
                           </div>
                         </div>
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
-                          <Link className="bg-[#1b1b1b] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[218.21388244628906px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full btn-animated hover-scale" href="/services/hr-talent-management">
+                          <Link className="bg-[#1b1b1b] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[218.21388244628906px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full btn-magnetic shine-effect" href="/services/hr-talent-management">
                             <div className="content-stretch flex flex-col items-start relative shrink-0">
                               <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[15.111px] text-left text-white whitespace-nowrap">
                                 <p className="leading-[18.889px]">Hire Smarter</p>
@@ -659,7 +683,7 @@ export default function Landing() {
                           </div>
                         </div>
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
-                          <a className="bg-[#1b1b1b] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[225.33499145507812px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full btn-animated hover-scale" href="/services/growth-marketing">
+                          <a className="bg-[#1b1b1b] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[225.33499145507812px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full btn-magnetic shine-effect" href="/services/growth-marketing">
                             <div className="content-stretch flex flex-col items-start relative shrink-0">
                               <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[14.639px] text-left text-white whitespace-nowrap">
                                 <p className="leading-[18.889px]">Start Growing</p>
@@ -720,7 +744,7 @@ export default function Landing() {
               </div>
             </div>
             <div className="content-stretch flex items-start justify-center min-h-[337.3744201660156px] relative shrink-0 w-full">
-              <div className="bg-[var(--color\/white\/solid,white)] border-[var(--color\/grey\/91,#e8e7e7)] border-r-[0.944px] border-solid content-stretch flex flex-col gap-[149.982px] items-start overflow-clip pl-[30.222px] pr-[31.167px] py-[30.222px] relative self-stretch shrink-0 w-[321.111px] hover-lift animate-fade-in-up delay-100">
+              <div className="bg-[var(--color\/white\/solid,white)] border-[var(--color\/grey\/91,#e8e7e7)] border-r-[0.944px] border-solid content-stretch flex flex-col gap-[149.982px] items-start overflow-clip pl-[30.222px] pr-[31.167px] py-[30.222px] relative self-stretch shrink-0 w-[321.111px] card-3d scroll-reveal scroll-fade-up stagger-1">
                 <div className="h-[49.111px] relative shrink-0 w-full">
                   <div className="-translate-y-1/2 absolute bg-[var(--color\/blue\/56,#3f2fee)] content-stretch flex items-center justify-center left-[210.61px] rounded-[49.111px] size-[49.111px] top-[calc(50%-113.33px)]">
                     <div className="content-stretch flex h-[12.835px] items-center justify-center max-w-[49.11111068725586px] overflow-clip relative shrink-0 w-[12.844px]">
@@ -747,7 +771,7 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-              <div className="bg-[var(--color\/white\/solid,white)] border-[var(--color\/grey\/91,#e8e7e7)] border-r-[0.944px] border-solid content-stretch flex flex-col gap-[149.982px] items-start overflow-clip pl-[30.222px] pr-[31.167px] py-[30.222px] relative self-stretch shrink-0 w-[321.111px] hover-lift animate-fade-in-up delay-200">
+              <div className="bg-[var(--color\/white\/solid,white)] border-[var(--color\/grey\/91,#e8e7e7)] border-r-[0.944px] border-solid content-stretch flex flex-col gap-[149.982px] items-start overflow-clip pl-[30.222px] pr-[31.167px] py-[30.222px] relative self-stretch shrink-0 w-[321.111px] card-3d scroll-reveal scroll-fade-up stagger-2">
                 <div className="h-[49.111px] relative shrink-0 w-full">
                   <div className="-translate-y-1/2 absolute bg-[var(--color\/blue\/56,#3f2fee)] content-stretch flex items-center justify-center left-[210.61px] rounded-[49.111px] size-[49.111px] top-[calc(50%-113.33px)]">
                     <div className="content-stretch flex h-[12.835px] items-center justify-center max-w-[49.11111068725586px] overflow-clip relative shrink-0 w-[12.844px]">
@@ -774,7 +798,7 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-              <div className="bg-[var(--color\/white\/solid,white)] border-[var(--color\/grey\/91,#e8e7e7)] border-r-[0.944px] border-solid content-stretch flex flex-col gap-[149.982px] items-start overflow-clip pl-[30.222px] pr-[31.167px] py-[30.222px] relative self-stretch shrink-0 w-[321.111px] hover-lift animate-fade-in-up delay-300">
+              <div className="bg-[var(--color\/white\/solid,white)] border-[var(--color\/grey\/91,#e8e7e7)] border-r-[0.944px] border-solid content-stretch flex flex-col gap-[149.982px] items-start overflow-clip pl-[30.222px] pr-[31.167px] py-[30.222px] relative self-stretch shrink-0 w-[321.111px] card-3d scroll-reveal scroll-fade-up stagger-3">
                 <div className="h-[49.111px] relative shrink-0 w-full">
                   <div className="-translate-y-1/2 absolute bg-[var(--color\/blue\/56,#3f2fee)] content-stretch flex items-center justify-center left-[210.61px] rounded-[49.111px] size-[49.111px] top-[calc(50%-113.33px)]">
                     <div className="content-stretch flex h-[12.835px] items-center justify-center max-w-[49.11111068725586px] overflow-clip relative shrink-0 w-[12.844px]">
@@ -1027,7 +1051,7 @@ export default function Landing() {
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start relative shrink-0">
-                  <a className="bg-[#ebfe5b] content-stretch cursor-pointer flex gap-[9.444px] isolate items-start justify-center max-w-[197.46444702148438px] overflow-clip pb-[15.111px] pt-[14.573px] px-[26.444px] relative rounded-[94.444px] shrink-0 w-full btn-animated hover-scale" href="http://wa.me/+8801785087148">
+                  <a className="bg-[#ebfe5b] content-stretch cursor-pointer flex gap-[9.444px] isolate items-start justify-center max-w-[197.46444702148438px] overflow-clip pb-[15.111px] pt-[14.573px] px-[26.444px] relative rounded-[94.444px] shrink-0 w-full btn-magnetic shine-effect" href="http://wa.me/+8801785087148">
                     <div className="content-stretch flex flex-col items-start pb-[0.841px] relative shrink-0 z-[2]">
                       <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[15.938px] text-left whitespace-nowrap">
                         <p className="leading-[26.35px]">Ask Questions</p>
@@ -1056,7 +1080,7 @@ export default function Landing() {
                 </div>
               </div>
               <div className="content-stretch flex items-start relative shrink-0">
-                <Link className="bg-[#3f2fee] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[149.51498413085938px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] self-stretch shrink-0 btn-animated hover-glow" href="/contact">
+                <Link className="bg-[#3f2fee] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[149.51498413085938px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] self-stretch shrink-0 btn-magnetic hover-glow glow-pulse" href="/contact">
                   <div className="content-stretch flex flex-col items-start relative shrink-0">
                     <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[14.993px] text-left text-white whitespace-nowrap" role="link" tabIndex={0}>
                       <p className="cursor-pointer leading-[18.889px]">Book a call</p>
@@ -1307,7 +1331,7 @@ export default function Landing() {
                   </div>
                 </div>
                 <div className="content-stretch flex isolate items-center justify-between pt-[18.889px] relative shrink-0 w-full">
-                  <div className="bg-[#3f2fee] content-stretch flex flex-col items-center overflow-clip px-[26.444px] py-[15.111px] relative rounded-[100px] shrink-0 z-[2] btn-animated hover-glow cursor-pointer">
+                  <div className="bg-[#3f2fee] content-stretch flex flex-col items-center overflow-clip px-[26.444px] py-[15.111px] relative rounded-[100px] shrink-0 z-[2] btn-magnetic hover-glow glow-pulse cursor-pointer">
                     <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[16.87px] text-center text-white whitespace-nowrap">
                       <p className="leading-[25.5px]">Send message</p>
                     </div>

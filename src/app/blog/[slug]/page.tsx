@@ -79,7 +79,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </div>
 
               {/* Title */}
-              <h1 className="font-['GT_Super_Ds_Trial:Bd',sans-serif] text-[32px] md:text-[48px] lg:text-[56px] leading-[1.2] tracking-[1px] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent mb-[24px] max-w-[900px]">
+              <h1 className="font-['GT_Super_Ds_Trial:Bd',sans-serif] text-[32px] md:text-[48px] lg:text-[56px] leading-[1.2] tracking-[1px] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent mb-[24px] max-w-[900px] animate-fade-in-up">
                 {article.title}
               </h1>
 
@@ -95,8 +95,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </div>
 
               {/* Featured Image - Inside dark hero */}
-              <div className="w-full mt-[48px] md:mt-[60px]">
-                <div className="w-full h-[300px] md:h-[450px] lg:h-[500px] rounded-[20px] overflow-hidden shadow-2xl">
+              <div className="w-full mt-[48px] md:mt-[60px] animate-fade-in-up delay-200">
+                <div className="w-full h-[300px] md:h-[450px] lg:h-[500px] rounded-[20px] overflow-hidden shadow-2xl img-scale-container">
                   <img
                     src={article.image}
                     alt={article.title}

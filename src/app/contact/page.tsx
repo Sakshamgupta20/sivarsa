@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -18,6 +19,23 @@ const imgBtnArrowIconWhite = "/assets/cc33d9c88b41312dae650fea64034944767af781.p
 const imgCalendar = "/assets/faq-icon.png";
 
 export default function ContactPage() {
+  // Initialize scroll animations
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+    );
+
+    document.querySelectorAll(".scroll-reveal").forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="bg-white relative size-full">
       <div className="-translate-x-1/2 absolute content-stretch flex flex-col items-start left-1/2 top-0 w-full">
@@ -82,7 +100,7 @@ export default function ContactPage() {
             <div className="max-w-[1440px] mx-auto px-4 md:px-[40px] w-full">
               <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[144px] items-start justify-between">
                 {/* Left Heading */}
-                <div className="flex flex-col items-start max-w-[400px]">
+                <div className="flex flex-col items-start max-w-[400px] scroll-reveal scroll-fade-up">
                   <h2 className="font-['Inter',sans-serif] font-extrabold text-[36px] md:text-[48px] lg:text-[56px] leading-[1.3] tracking-[1px] text-[#1b1b1b]">
                     Start your project in<br />
                     <span className="text-[#3f2fee]">4 simple steps.</span>
@@ -156,7 +174,7 @@ export default function ContactPage() {
 
                   {/* CTA */}
                   <div className="flex flex-col justify-end">
-                    <Link href="#" className="bg-[#ebfe5b] flex gap-[8px] items-center justify-center px-[28px] py-[16px] rounded-[100px] btn-animated">
+                    <Link href="#" className="bg-[#ebfe5b] flex gap-[8px] items-center justify-center px-[28px] py-[16px] rounded-[100px] btn-magnetic shine-effect">
                       <span className="font-['Inter',sans-serif] font-semibold text-[16px] text-[#1b1b1b]">Book a call</span>
                       <img alt="" className="w-[12px] h-[12px]" src={imgBtnArrowIcon} />
                     </Link>
@@ -179,7 +197,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Team Image */}
-                <div className="w-full aspect-[1360/755] rounded-[20px] overflow-hidden">
+                <div className="w-full aspect-[1360/755] rounded-[20px] overflow-hidden scroll-reveal scroll-scale-up img-scale-container">
                   <img alt="Our Team" className="w-full h-full object-cover" src={imgTeamImage} />
                 </div>
               </div>
@@ -195,7 +213,7 @@ export default function ContactPage() {
                   <h2 className="font-['Inter',sans-serif] font-semibold text-[40px] md:text-[56px] lg:text-[70px] leading-[1.2] tracking-[1px] text-[#1b1b1b]">
                     Got a project in mind?<br />Let's talk.
                   </h2>
-                  <Link href="#" className="bg-[#3f2fee] flex gap-[8px] items-center justify-center px-[28px] py-[16px] rounded-[100px] btn-animated hover-glow shrink-0">
+                  <Link href="#" className="bg-[#3f2fee] flex gap-[8px] items-center justify-center px-[28px] py-[16px] rounded-[100px] btn-magnetic hover-glow glow-pulse shrink-0">
                     <span className="font-['Inter',sans-serif] font-semibold text-[16px] text-white">Book a call</span>
                     <img alt="" className="w-[12px] h-[12px]" src={imgBtnArrowIconWhite} />
                   </Link>
