@@ -151,6 +151,27 @@ body {
   }
 }
 
+@keyframes wave {
+  0% {
+    d: path("M0,100 Q180,20 360,100 T720,100 T1080,100 T1440,100");
+  }
+  50% {
+    d: path("M0,100 Q180,180 360,100 T720,100 T1080,100 T1440,100");
+  }
+  100% {
+    d: path("M0,100 Q180,20 360,100 T720,100 T1080,100 T1440,100");
+  }
+}
+
+.animate-wave {
+  animation: wave 4s ease-in-out infinite;
+}
+
+.animate-wave-delayed {
+  animation: wave 4s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
 /* Animation Classes */
 .animate-fade-in {
   animation: fadeIn 0.8s ease-out forwards;

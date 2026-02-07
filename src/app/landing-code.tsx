@@ -1,71 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
-
-const services = [
-  { label: "Software Development", href: "/services/software-development" },
-  { label: "Growth Marketing", href: "/services/growth-marketing" },
-];
-
-function Nav() {
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
-
-  return (
-    <nav className="flex font-['Schibsted_Grotesk:Regular',sans-serif] font-normal gap-[45px] items-center justify-center relative text-[20px] text-white whitespace-nowrap animate-fade-in-down">
-      <Link href="/" className="nav-item link-animated cursor-pointer py-2">
-        Home
-      </Link>
-
-      {/* Services Dropdown */}
-      <div
-        className="relative"
-        onMouseEnter={() => setIsServicesOpen(true)}
-        onMouseLeave={() => setIsServicesOpen(false)}
-      >
-        <button className="flex items-center gap-1.5 nav-item link-animated cursor-pointer py-2">
-          <span>Services</span>
-          <svg
-            className={`w-3.5 h-3.5 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`}
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-
-        <div
-          className={`absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50 transition-all duration-200 ${
-            isServicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
-          }`}
-        >
-          <div className="bg-[#1a1a1a] border border-[#333] rounded-xl shadow-2xl py-2 min-w-[220px] overflow-hidden">
-            {services.map((service) => (
-              <Link
-                key={service.href}
-                href={service.href}
-                className="block px-5 py-3 text-[16px] text-white/80 hover:text-white hover:bg-gradient-to-r hover:from-[#265df6]/20 hover:to-[#7427ff]/20 transition-all duration-200"
-              >
-                {service.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <Link href="#about" className="nav-item link-animated cursor-pointer py-2">
-        About
-      </Link>
-      <Link href="#blog" className="nav-item link-animated cursor-pointer py-2">
-        Blog
-      </Link>
-      <Link href="#contact" className="nav-item link-animated cursor-pointer py-2">
-        Contact Us
-      </Link>
-    </nav>
-  );
-}
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 // Hero & Background Images
 const imgHero = "/assets/hero-bg.png";
@@ -118,13 +55,6 @@ const imgEmailIcon = "/assets/email-icon.png";
 const imgWhatsappIcon1 = "/assets/whatsapp-icon-alt.png";
 const imgContactTick = "/assets/contact-tick.png";
 
-// Footer
-const imgFooter = "/assets/footer-bg.png";
-
-// Social Icons
-const img5 = "/assets/social-linkedin.png";
-const img6 = "/assets/social-instagram.svg";
-
 // SVG Assets
 const imgGroup = "/assets/logo-icon.svg";
 const imgPattern1 = "/assets/pattern-mask.svg";
@@ -145,16 +75,7 @@ export default function Landing() {
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <img alt="" className="absolute h-full left-[-5.86%] max-w-none top-0 w-[111.73%]" src={imgHero} />
             </div>
-            <div className="-translate-x-1/2 absolute content-stretch flex items-center justify-between left-1/2 px-[61px] py-[24px] top-0 w-[1440px] z-50">
-              <Link href="/" className="flex gap-2 items-center relative shrink-0 animate-fade-in-down">
-                <img alt="" className="w-[32px] h-[40px]" src={imgGroup} />
-                <span className="font-['GT_Super_Ds_Trial:Bd',sans-serif] text-[40px] text-white">SIVARSA</span>
-              </Link>
-              <Nav />
-              <Link href="#contact" className="bg-gradient-to-r content-stretch flex from-[#265df6] items-center justify-center p-[10px] relative rounded-[20px] shrink-0 to-[#7427ff] w-[168px] btn-animated hover-glow cursor-pointer animate-fade-in-down">
-                <span className="font-['Schibsted_Grotesk:Bold',sans-serif] font-bold text-[20px] text-white">LETS CHAT</span>
-              </Link>
-            </div>
+            <Header />
             <div className="absolute contents left-0 top-[98px]">
               <div className="absolute contents left-0 top-[98px]">
                 <div className="-translate-x-1/2 absolute h-[866px] left-1/2 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[1438.759px_865.654px] rounded-[20px] top-[90px] w-[1440px]" style={{ maskImage: `url('${imgPattern1}')` }}>
@@ -186,16 +107,16 @@ export default function Landing() {
                 <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic opacity-70 relative shrink-0 text-[22px] text-white w-[544px] whitespace-pre-wrap animate-fade-in-up delay-200">{`We build the software, attract the customers,  and hire the talent—so you can focus on building your business.`}</p>
                 <div className="content-stretch flex flex-col h-[96.121px] items-start justify-center relative shrink-0 w-[511px] animate-fade-in-up delay-300">
                   <div className="content-stretch flex gap-[31.6px] items-center justify-center relative shrink-0 w-[511px]">
-                    <Link href="#contact" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[270.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
-                      <span className="font-['Schibsted_Grotesk:Medium',sans-serif] font-medium text-[20px] text-black">
+                    <Link href="/contact" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[270.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
+                      <span className="font-['Inter',sans-serif] font-medium text-[20px] text-black">
                         Book a Strategy Call
                       </span>
                     </Link>
-                    <a href="#services" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[210.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
-                      <span className="font-['Schibsted_Grotesk:Medium',sans-serif] font-medium text-[20px] text-black">
+                    <Link href="/services/software-development" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[210.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
+                      <span className="font-['Inter',sans-serif] font-medium text-[20px] text-black">
                         Explore services
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="flex flex-col font-['Schibsted_Grotesk:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[20px] text-center text-white w-[677.504px]">
@@ -407,7 +328,7 @@ export default function Landing() {
                 </div>
               </div>
               <div className="content-stretch flex flex-col items-start relative shrink-0">
-                <a className="bg-[#3f2fee] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[198.2294464111328px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full btn-animated hover-glow" href="https://www.wavespace.agency/">
+                <Link className="bg-[#3f2fee] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[198.2294464111328px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full btn-animated hover-glow" href="/contact">
                   <div className="content-stretch flex flex-col items-start relative shrink-0">
                     <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[14.875px] text-left text-white whitespace-nowrap">
                       <p className="leading-[18.889px]">Start your project</p>
@@ -418,7 +339,7 @@ export default function Landing() {
                       <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgBtnIcon} />
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] h-[588.923px] leading-[0] relative rounded-[25px] shrink-0 text-black to-[rgba(116,39,255,0.5)] w-[1276px] hover-lift card-animated">
@@ -627,7 +548,7 @@ export default function Landing() {
                           </div>
                         </div>
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
-                          <a className="bg-white content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[214.15277099609375px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full btn-animated hover-scale" href="https://www.wavespace.agency/services/brand-identity-design">
+                          <Link className="bg-white content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[214.15277099609375px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full btn-animated hover-scale" href="/services/software-development">
                             <div className="content-stretch flex flex-col items-start relative shrink-0">
                               <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[15.111px] text-left whitespace-nowrap">
                                 <p className="leading-[18.889px]">{` Start Your Project `}</p>
@@ -638,7 +559,7 @@ export default function Landing() {
                                 <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgBtnArrowIcon} />
                               </div>
                             </div>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                       <div className="absolute content-stretch flex flex-col items-start left-[434.44px] top-0">
@@ -683,7 +604,7 @@ export default function Landing() {
                           </div>
                         </div>
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
-                          <a className="bg-[#1b1b1b] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[218.21388244628906px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full btn-animated hover-scale" href="https://www.wavespace.agency/services/ui-ux-design">
+                          <Link className="bg-[#1b1b1b] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[218.21388244628906px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full btn-animated hover-scale" href="/services/hr-talent-management">
                             <div className="content-stretch flex flex-col items-start relative shrink-0">
                               <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[15.111px] text-left text-white whitespace-nowrap">
                                 <p className="leading-[18.889px]">Hire Smarter</p>
@@ -694,7 +615,7 @@ export default function Landing() {
                                 <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgBtnIcon} />
                               </div>
                             </div>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                       <div className="absolute content-stretch flex flex-col items-start left-[434.44px] top-0">
@@ -1135,7 +1056,7 @@ export default function Landing() {
                 </div>
               </div>
               <div className="content-stretch flex items-start relative shrink-0">
-                <a className="bg-[#3f2fee] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[149.51498413085938px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] self-stretch shrink-0 btn-animated hover-glow" href="https://cal.com/wavespace/project-discussion">
+                <Link className="bg-[#3f2fee] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[149.51498413085938px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] self-stretch shrink-0 btn-animated hover-glow" href="/contact">
                   <div className="content-stretch flex flex-col items-start relative shrink-0">
                     <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[14.993px] text-left text-white whitespace-nowrap" role="link" tabIndex={0}>
                       <p className="cursor-pointer leading-[18.889px]">Book a call</p>
@@ -1146,7 +1067,7 @@ export default function Landing() {
                       <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgBtnIcon} />
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="h-[212.5px] relative shrink-0 w-[1143.722px]">
@@ -1160,7 +1081,7 @@ export default function Landing() {
                     </div>
                   </div>
                   <div className="content-stretch cursor-pointer flex flex-col gap-[2.833px] items-start relative shrink-0">
-                    <a className="content-stretch flex gap-[3.778px] items-center max-w-[196.63333129882812px] relative shrink-0 w-full" href="mailto:hello@wavespace.agency">
+                    <a className="content-stretch flex gap-[3.778px] items-center max-w-[196.63333129882812px] relative shrink-0 w-full" href="mailto:info@sivarsa.com">
                       <div className="content-stretch flex flex-col h-[17.944px] items-start max-w-[196.63333129882812px] pt-[0.944px] relative shrink-0 w-[17px]">
                         <div className="max-w-[196.63333129882812px] relative shrink-0 size-[17px]">
                           <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -1210,7 +1131,7 @@ export default function Landing() {
                           <p className="leading-[19.644px]">Email</p>
                         </div>
                       </div>
-                      <a className="content-stretch cursor-pointer flex gap-[3.778px] items-center max-w-[196.63333129882812px] mb-[-0.944px] relative shrink-0 w-full" href="mailto:hello@wavespace.agency">
+                      <a className="content-stretch cursor-pointer flex gap-[3.778px] items-center max-w-[196.63333129882812px] mb-[-0.944px] relative shrink-0 w-full" href="mailto:info@sivarsa.com">
                         <div className="content-stretch flex flex-col h-[17.944px] items-start max-w-[196.63333129882812px] pt-[0.944px] relative shrink-0 w-[17px]">
                           <div className="max-w-[196.63333129882812px] relative shrink-0 size-[17px]">
                             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -1408,96 +1329,7 @@ export default function Landing() {
             </div>
           </div>
         </div>
-        <div className="bg-[#090909] content-stretch flex flex-col items-center justify-center overflow-clip py-[46.278px] relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col gap-[113.705px] items-center justify-center overflow-clip px-[47.377px] py-[37.902px] relative rounded-[18.207px] shrink-0 w-[1373.931px]">
-            <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[18.207px]">
-              <div className="absolute bg-black inset-0 rounded-[18.207px]" />
-              <img alt="" className="absolute max-w-none object-cover rounded-[18.207px] size-full" src={imgFooter} />
-            </div>
-            <div className="content-stretch flex gap-[18.951px] items-start relative shrink-0 w-full">
-              <div className="content-stretch flex items-start relative shrink-0 w-[477.323px]">
-                <p className="font-['GT_Super_Ds_Trial:Bd',sans-serif] leading-[1.4] not-italic relative shrink-0 text-[23.69px] text-white">
-                  SIRVASA
-                </p>
-              </div>
-              <div className="content-stretch flex gap-[51.002px] items-start leading-[1.4] relative shrink-0 text-white w-[523.515px] whitespace-pre-wrap">
-                <div className="content-stretch flex flex-[1_0_0] flex-col gap-[28.426px] items-start min-h-px min-w-px relative">
-                  <p className="font-['Schibsted_Grotesk:Medium',sans-serif] font-medium opacity-60 relative shrink-0 text-[11.84px] tracking-[0.4736px] uppercase w-full">
-                    Information
-                  </p>
-                  <div className="content-stretch flex flex-col font-['Schibsted_Grotesk:Regular',sans-serif] font-normal gap-[4.738px] items-start relative shrink-0 text-[23.69px] w-full">
-                    <Link href="/services/software-development" className="relative shrink-0 w-full footer-link">
-                      Services
-                    </Link>
-                    <Link href="/services/software-development" className="relative shrink-0 w-full footer-link">
-                      Software Development
-                    </Link>
-                    <Link href="/services/growth-marketing" className="relative shrink-0 w-full footer-link">
-                      Growth Marketing
-                    </Link>
-                  </div>
-                </div>
-                <div className="content-stretch flex flex-[1_0_0] flex-col gap-[28.426px] items-start min-h-px min-w-px relative">
-                  <p className="font-['Inter:Medium',sans-serif] font-medium not-italic opacity-60 relative shrink-0 text-[11.84px] tracking-[0.4736px] uppercase w-full">
-                    Menu
-                  </p>
-                  <div className="content-stretch flex flex-col font-['Schibsted_Grotesk:Regular',sans-serif] font-normal gap-[4.738px] items-start relative shrink-0 text-[23.69px] w-full">
-                    <Link href="#blog" className="relative shrink-0 w-full footer-link cursor-pointer">
-                      Blog
-                    </Link>
-                    <Link href="#contact" className="relative shrink-0 w-full footer-link cursor-pointer">
-                      Contact Us
-                    </Link>
-                    <Link href="#about" className="relative shrink-0 w-full footer-link cursor-pointer">
-                      About Us
-                    </Link>
-                    <Link href="#career" className="relative shrink-0 w-full footer-link cursor-pointer">
-                      Career
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="content-stretch flex flex-[1_0_0] flex-col gap-[18.951px] items-end min-h-px min-w-px relative">
-                <div className="bg-gradient-to-r content-stretch flex from-[#265df6] h-[57.247px] items-center justify-center px-[18.951px] py-[9.475px] relative rounded-[20px] shrink-0 to-[#7427ff] w-[175.905px] btn-animated hover-glow cursor-pointer">
-                  <p className="font-['Schibsted_Grotesk:SemiBold',sans-serif] font-semibold leading-[1.4] relative shrink-0 text-[20.82px] text-white">
-                    Contact Us
-                  </p>
-                </div>
-                <div className="content-stretch flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold items-end leading-[1.3] not-italic relative shrink-0 text-[14.21px] text-white">
-                  <p className="relative shrink-0">
-                    +1 (999) 999-99-99
-                  </p>
-                  <p className="relative shrink-0">
-                    info@sirvassa.com
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="content-stretch flex gap-[18.951px] items-center relative shrink-0 w-full">
-              <div className="content-stretch flex flex-[1_0_0] gap-[9.475px] items-center min-h-px min-w-px relative">
-                <div className="bg-white content-stretch flex flex-col items-center justify-center relative rounded-[45.517px] shrink-0 size-[47.377px] social-icon cursor-pointer">
-                  <div className="relative shrink-0 size-[28.103px]">
-                    <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={img5} />
-                  </div>
-                </div>
-                <div className="relative shrink-0 size-[47.377px] social-icon cursor-pointer">
-                  <img alt="" className="block max-w-none size-full" src={img6} />
-                </div>
-              </div>
-              <div className="content-stretch flex items-start relative shrink-0 w-[523.515px]">
-                <div className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[1.3] not-italic relative shrink-0 text-[14.21px] text-white whitespace-nowrap">
-                  <p className="mb-0">1901 Thornridge Cir. Shiloh,</p>
-                  <p>Hawaii 81063</p>
-                </div>
-              </div>
-              <div className="content-stretch flex flex-[1_0_0] items-center justify-end min-h-px min-w-px relative">
-                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[1.3] not-italic relative shrink-0 text-[14.21px] text-white">
-                  All Rights Reserved
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Footer />
       </div>
     </div>
   );

@@ -4,16 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 const serviceLinks = [
-  { label: "Services", href: "/services/software-development" },
   { label: "Software Development", href: "/services/software-development" },
   { label: "Growth Marketing", href: "/services/growth-marketing" },
+  { label: "HR & Talent Management", href: "/services/hr-talent-management" },
 ];
 
 const menuLinks = [
-  { label: "Blog", href: "#blog" },
-  { label: "Contact Us", href: "#contact" },
-  { label: "About Us", href: "#about" },
-  { label: "Career", href: "#career" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export default function Footer() {
@@ -39,11 +39,11 @@ export default function Footer() {
                 height={43}
                 className="shrink-0"
               />
-              <div className="flex flex-col font-['Schibsted_Grotesk:Bold',sans-serif] font-bold justify-center leading-[0] relative shrink-0 text-[28.426px] text-white whitespace-nowrap">
+              <div className="flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center leading-[0] relative shrink-0 text-[28.426px] text-white whitespace-nowrap">
                 <p className="leading-[normal]">SIVARSA</p>
               </div>
             </Link>
-            <div className="font-['Schibsted_Grotesk:Regular',sans-serif] font-normal leading-[1.4] opacity-60 relative shrink-0 text-[14.21px] text-white w-[237.547px]">
+            <div className="font-['Inter',sans-serif] font-normal leading-[1.4] opacity-60 relative shrink-0 text-[14.21px] text-white w-[237.547px]">
               <p>
                 At Sivarsa, we craft innovative software solutions that empower
                 businesses to thrive in the digital era.
@@ -68,10 +68,10 @@ export default function Footer() {
           </div>
           <div className="content-stretch flex flex-row lg:flex-row gap-12 lg:gap-[51.002px] items-start leading-[1.4] relative shrink-0 text-white">
             <div className="content-stretch flex flex-col gap-[28.426px] items-start min-h-px min-w-px relative">
-              <p className="font-['Schibsted_Grotesk:Medium',sans-serif] font-medium opacity-60 relative shrink-0 text-[11.84px] tracking-[0.4736px] uppercase w-full">
+              <p className="font-['Inter',sans-serif] font-medium opacity-60 relative shrink-0 text-[11.84px] tracking-[0.4736px] uppercase w-full">
                 Information
               </p>
-              <div className="content-stretch flex flex-col font-['Schibsted_Grotesk:Regular',sans-serif] font-normal gap-[4.738px] items-start relative shrink-0 text-base lg:text-[23.69px] w-full">
+              <div className="content-stretch flex flex-col font-['Inter',sans-serif] font-normal gap-[4.738px] items-start relative shrink-0 text-base lg:text-[23.69px] w-full">
                 {serviceLinks.map((link) => (
                   <Link key={link.label} href={link.href} className="relative shrink-0 w-full footer-link">
                     {link.label}
@@ -83,7 +83,7 @@ export default function Footer() {
               <p className="font-['Inter:Medium',sans-serif] font-medium not-italic opacity-60 relative shrink-0 text-[11.84px] tracking-[0.4736px] uppercase w-full">
                 Menu
               </p>
-              <div className="content-stretch flex flex-col font-['Schibsted_Grotesk:Regular',sans-serif] font-normal gap-[4.738px] items-start relative shrink-0 text-base lg:text-[23.69px] w-full">
+              <div className="content-stretch flex flex-col font-['Inter',sans-serif] font-normal gap-[4.738px] items-start relative shrink-0 text-base lg:text-[23.69px] w-full">
                 {menuLinks.map((link) => (
                   <Link key={link.label} href={link.href} className="relative shrink-0 w-full footer-link cursor-pointer">
                     {link.label}
@@ -94,10 +94,10 @@ export default function Footer() {
           </div>
           <div className="content-stretch flex flex-col gap-[18.951px] items-start lg:items-end min-h-px min-w-px relative">
             <Link
-              href="#contact"
+              href="/contact"
               className="bg-gradient-to-r content-stretch flex from-[#265df6] h-[57.247px] items-center justify-center px-[18.951px] py-[9.475px] relative rounded-[20px] shrink-0 to-[#7427ff] w-[175.905px] btn-animated hover-glow cursor-pointer"
             >
-              <p className="font-['Schibsted_Grotesk:SemiBold',sans-serif] font-semibold leading-[1.4] relative shrink-0 text-[20.82px] text-white">
+              <p className="font-['Inter',sans-serif] font-semibold leading-[1.4] relative shrink-0 text-[20.82px] text-white">
                 Contact Us
               </p>
             </Link>
@@ -108,10 +108,10 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t-[0.474px] border-white/20 content-stretch flex flex-col sm:flex-row gap-4 items-center justify-between mt-auto pt-[18.951px] relative shrink-0 w-full z-10">
-          <p className="font-['Schibsted_Grotesk:Regular',sans-serif] font-normal leading-[1.4] opacity-60 relative shrink-0 text-[11.84px] text-white">
+          <p className="font-['Inter',sans-serif] font-normal leading-[1.4] opacity-60 relative shrink-0 text-[11.84px] text-white">
             Copyright 2025 Sivarsa All Rights Reserved
           </p>
-          <div className="content-stretch flex font-['Schibsted_Grotesk:Regular',sans-serif] font-normal gap-[28.426px] items-start leading-[1.4] opacity-60 relative shrink-0 text-[11.84px] text-white">
+          <div className="content-stretch flex font-['Inter',sans-serif] font-normal gap-[28.426px] items-start leading-[1.4] opacity-60 relative shrink-0 text-[11.84px] text-white">
             <Link href="/privacy" className="relative shrink-0 hover:opacity-100 transition-opacity">
               Privacy Policy
             </Link>

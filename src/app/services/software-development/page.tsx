@@ -1,67 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
-
-const services = [
-  { label: "Software Development", href: "/services/software-development" },
-  { label: "Growth Marketing", href: "/services/growth-marketing" },
-];
-
-function NavServices() {
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
-
-  return (
-    <nav className="flex font-['Schibsted_Grotesk:Regular',sans-serif] font-normal gap-[45px] items-center justify-center relative text-[20px] text-white whitespace-nowrap animate-fade-in-down">
-      <Link href="/" className="nav-item link-animated cursor-pointer py-2">
-        Home
-      </Link>
-      <div
-        className="relative"
-        onMouseEnter={() => setIsServicesOpen(true)}
-        onMouseLeave={() => setIsServicesOpen(false)}
-      >
-        <button className="flex items-center gap-1.5 nav-item link-animated cursor-pointer py-2">
-          <span>Services</span>
-          <svg
-            className={`w-3.5 h-3.5 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`}
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        <div
-          className={`absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50 transition-all duration-200 ${
-            isServicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
-          }`}
-        >
-          <div className="bg-[#1a1a1a] border border-[#333] rounded-xl shadow-2xl py-2 min-w-[220px] overflow-hidden">
-            {services.map((service) => (
-              <Link
-                key={service.href}
-                href={service.href}
-                className="block px-5 py-3 text-[16px] text-white/80 hover:text-white hover:bg-gradient-to-r hover:from-[#265df6]/20 hover:to-[#7427ff]/20 transition-all duration-200"
-              >
-                {service.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
-      <Link href="#about" className="nav-item link-animated cursor-pointer py-2">
-        About
-      </Link>
-      <Link href="#blog" className="nav-item link-animated cursor-pointer py-2">
-        Blog
-      </Link>
-      <Link href="#contact" className="nav-item link-animated cursor-pointer py-2">
-        Contact Us
-      </Link>
-    </nav>
-  );
-}
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import TrustedByMarquee from "@/components/layout/TrustedByMarquee";
 
 const imgHero = "/assets/hero-bg.png";
 const imgPattern2 = "/assets/pattern-dots.png";
@@ -114,16 +56,7 @@ export default function SoftwareDevelopment() {
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <img alt="" className="absolute h-full left-[-5.86%] max-w-none top-0 w-[111.73%]" src={imgHero} />
             </div>
-            <div className="-translate-x-1/2 absolute content-stretch flex items-center justify-between left-1/2 px-[61px] py-[24px] top-0 w-[1440px] z-50">
-              <Link href="/" className="flex gap-2 items-center relative shrink-0 animate-fade-in-down">
-                <img alt="" className="w-[32px] h-[40px]" src={imgGroup} />
-                <span className="font-['GT_Super_Ds_Trial:Bd',sans-serif] text-[40px] text-white">SIVARSA</span>
-              </Link>
-              <NavServices />
-              <Link href="#contact" className="bg-gradient-to-r content-stretch flex from-[#265df6] items-center justify-center p-[10px] relative rounded-[20px] shrink-0 to-[#7427ff] w-[168px] btn-animated hover-glow cursor-pointer animate-fade-in-down">
-                <span className="font-['Schibsted_Grotesk:Bold',sans-serif] font-bold text-[20px] text-white">LETS CHAT</span>
-              </Link>
-            </div>
+            <Header />
             <div className="absolute contents left-0 top-[98px]">
               <div className="absolute contents left-0 top-[98px]">
                 <div className="absolute h-[722px] left-[104px] top-[98px] w-[1200px]" />
@@ -159,13 +92,13 @@ export default function SoftwareDevelopment() {
                 </p>
                 <div className="content-stretch flex flex-col gap-[23.484px] h-[96.121px] items-start justify-center relative shrink-0 w-[511px] animate-fade-in-up delay-300">
                   <div className="content-stretch flex gap-[31.6px] items-center justify-center relative shrink-0 w-[511px]">
-                    <Link href="#contact" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[270.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
-                      <span className="font-['Schibsted_Grotesk:Medium',sans-serif] font-medium text-[20px] text-black">
+                    <Link href="/contact" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[270.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
+                      <span className="font-['Inter',sans-serif] font-medium text-[20px] text-black">
                         Book a Strategy Call
                       </span>
                     </Link>
                     <a href="#services" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[210.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
-                      <span className="font-['Schibsted_Grotesk:Medium',sans-serif] font-medium text-[20px] text-black">
+                      <span className="font-['Inter',sans-serif] font-medium text-[20px] text-black">
                         Explore services
                       </span>
                     </a>
@@ -178,153 +111,9 @@ export default function SoftwareDevelopment() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-[91.621px] items-center py-[30px] relative w-full max-w-[1440px] mx-auto">
-          <div className="h-[103.646px] relative shrink-0 w-full">
-            <div className="absolute h-[30.54px] left-[38.18px] overflow-clip top-[73.1px] w-[1283.649px]">
-              <div className="absolute content-stretch flex gap-[68.716px] h-[30.54px] items-start left-[2470.14px] pr-[2569.207px] top-0 w-[1623.411px]">
-                <div className="h-[30.54px] relative shrink-0 w-[106.891px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[150.793px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg1} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[106.891px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg2} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[61.081px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg3} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[121.207px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg4} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[58.218px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg5} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[95.439px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg6} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[104.028px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg7} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[111.663px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg8} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[113.572px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg9} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[105.937px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg10} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[117.389px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg11} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[114.526px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg12} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[132.66px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg13} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[123.116px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg14} />
-                </div>
-              </div>
-              <div className="absolute content-stretch flex gap-[68.716px] h-[30.54px] items-start left-[5123.41px] pr-[5223.354px] top-0 w-[1623.411px]">
-                <div className="h-[30.54px] relative shrink-0 w-[106.891px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[150.793px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg1} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[106.891px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg2} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[61.081px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg3} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[121.207px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg4} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[58.218px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg5} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[95.439px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg6} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[104.028px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg7} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[111.663px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg8} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[113.572px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg9} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[105.937px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg10} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[117.389px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg11} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[114.526px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg12} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[132.66px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg13} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[123.116px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg14} />
-                </div>
-              </div>
-              <div className="absolute content-stretch flex gap-[68.716px] h-[30.54px] items-start left-[-358.28px] pl-[175.607px] top-0 w-[1516.519px]">
-                <div className="h-[30.54px] relative shrink-0 w-[150.793px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg1} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[106.891px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg2} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[61.081px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg3} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[121.207px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg4} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[58.218px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg5} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[95.439px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg6} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[104.028px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg7} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[111.663px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg8} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[113.572px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg9} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[105.937px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg10} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[117.389px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg11} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[114.526px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg12} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[132.66px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg13} />
-                </div>
-                <div className="h-[30.54px] relative shrink-0 w-[123.116px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageMarqueeImg14} />
-                </div>
-              </div>
-            </div>
-            <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[508.6px] not-italic text-[#1b1b1b] text-[20.519px] top-[13.71px] whitespace-nowrap">
-              <p className="leading-[27.295px]">Trusted by 500+ global companies</p>
-            </div>
-          </div>
-          <div className="content-stretch flex gap-[136px] items-start pl-[38.175px] relative shrink-0 py-16">
+        <TrustedByMarquee />
+        <div id="services" className="flex flex-col gap-[60px] items-center py-[30px] relative w-full max-w-[1440px] mx-auto px-4 scroll-mt-20">
+          <div className="content-stretch flex flex-col lg:flex-row gap-[60px] lg:gap-[136px] items-start relative shrink-0 py-16 w-full">
             <div className="relative shrink-0 w-[549.726px]">
               <img alt="" className="max-w-none object-contain pointer-events-none w-full" src={imgImageLbImg} />
             </div>
@@ -448,7 +237,7 @@ export default function SoftwareDevelopment() {
                 </div>
               </div>
               <div className="content-stretch flex flex-col items-start relative shrink-0">
-                <a className="bg-[#3f2fee] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[198.2294464111328px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full" href="#contact">
+                <Link className="bg-[#3f2fee] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[198.2294464111328px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full" href="/contact">
                   <div className="content-stretch flex flex-col items-start relative shrink-0">
                     <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[14.875px] text-left text-white whitespace-nowrap">
                       <p className="leading-[18.889px]">Start your project</p>
@@ -459,7 +248,7 @@ export default function SoftwareDevelopment() {
                       <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgBtnIcon} />
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] h-[588.923px] leading-[0] relative rounded-[25px] shrink-0 text-black to-[rgba(116,39,255,0.5)] w-[1276px] hover-lift card-animated">
@@ -859,7 +648,7 @@ export default function SoftwareDevelopment() {
               <div className="content-stretch flex flex-col items-start mb-[-79.957px] relative shrink-0 w-full">
                 <div className="h-[506.222px] max-w-[389.111083984375px] relative shrink-0 w-[389.111px]">
                   <div className="absolute content-stretch flex items-start left-0 right-[-778.22px] top-[-25.82px]">
-                    <div className="bg-[var(--color\/white\/solid,white)] content-stretch flex flex-[1_0_0] flex-col gap-[0.661px] h-[506.222px] items-start max-w-[389.111083984375px] min-h-px min-w-px pb-[30.222px] pt-[29.594px] px-[30.222px] relative">
+                    <div className="bg-[var(--color\/white\/solid,white)] content-stretch flex flex-[1_0_0] flex-col gap-[0.661px] h-[506.222px] items-start max-w-[389.111083984375px] min-h-px min-w-px pb-[30.222px] pt-[29.594px] px-[30.222px] relative testimonial-card">
                       <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
                         <p className="leading-[30.222px]">Digil</p>
                       </div>
@@ -885,7 +674,7 @@ export default function SoftwareDevelopment() {
                         </div>
                       </div>
                     </div>
-                    <div className="bg-[var(--color\/white\/solid,white)] content-stretch flex flex-[1_0_0] flex-col gap-[0.661px] h-[506.222px] items-start max-w-[389.111083984375px] min-h-px min-w-px pb-[30.222px] pt-[29.594px] px-[30.222px] relative">
+                    <div className="bg-[var(--color\/white\/solid,white)] content-stretch flex flex-[1_0_0] flex-col gap-[0.661px] h-[506.222px] items-start max-w-[389.111083984375px] min-h-px min-w-px pb-[30.222px] pt-[29.594px] px-[30.222px] relative testimonial-card">
                       <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
                         <p className="leading-[30.222px]">Santosh</p>
                       </div>
@@ -911,7 +700,7 @@ export default function SoftwareDevelopment() {
                         </div>
                       </div>
                     </div>
-                    <div className="bg-[var(--color\/white\/solid,white)] content-stretch flex flex-[1_0_0] flex-col gap-[0.661px] h-[506.222px] items-start max-w-[389.111083984375px] min-h-px min-w-px pb-[30.222px] pt-[29.594px] px-[30.222px] relative">
+                    <div className="bg-[var(--color\/white\/solid,white)] content-stretch flex flex-[1_0_0] flex-col gap-[0.661px] h-[506.222px] items-start max-w-[389.111083984375px] min-h-px min-w-px pb-[30.222px] pt-[29.594px] px-[30.222px] relative testimonial-card">
                       <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
                         <p className="leading-[30.222px]">GNT</p>
                       </div>
@@ -1243,96 +1032,7 @@ export default function SoftwareDevelopment() {
             </div>
           </div>
         </div>
-        <div className="bg-[#090909] content-stretch flex flex-col items-center justify-center py-5 relative shrink-0 w-full max-w-[1440px] mx-auto px-4">
-          <div className="content-stretch flex flex-col gap-8 items-center justify-center px-8 py-8 relative rounded-[18.207px] shrink-0 w-full max-w-[1373px]">
-            <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[18.207px]">
-              <div className="absolute bg-black inset-0 rounded-[18.207px]" />
-              <img alt="" className="absolute max-w-none object-cover rounded-[18.207px] size-full" src={imgFooter} />
-            </div>
-            <div className="content-stretch flex gap-[18.951px] items-start relative shrink-0 w-full">
-              <div className="content-stretch flex items-start relative shrink-0 w-[477.323px]">
-                <Link href="/" className="font-['GT_Super_Ds_Trial:Bd',sans-serif] leading-[1.4] not-italic relative shrink-0 text-[23.69px] text-white hover:opacity-80 transition-opacity">
-                  SIVARSA
-                </Link>
-              </div>
-              <div className="content-stretch flex gap-[51.002px] items-start leading-[1.4] relative shrink-0 text-white w-[523.515px] whitespace-pre-wrap">
-                <div className="content-stretch flex flex-[1_0_0] flex-col gap-[28.426px] items-start min-h-px min-w-px relative">
-                  <p className="font-['Schibsted_Grotesk:Medium',sans-serif] font-medium opacity-60 relative shrink-0 text-[11.84px] tracking-[0.4736px] uppercase w-full">
-                    Information
-                  </p>
-                  <div className="content-stretch flex flex-col font-['Schibsted_Grotesk:Regular',sans-serif] font-normal gap-[4.738px] items-start relative shrink-0 text-[23.69px] w-full">
-                    <Link href="/services/software-development" className="relative shrink-0 w-full footer-link">
-                      Services
-                    </Link>
-                    <Link href="/services/software-development" className="relative shrink-0 w-full footer-link">
-                      Software Development
-                    </Link>
-                    <Link href="/services/growth-marketing" className="relative shrink-0 w-full footer-link">
-                      Growth Marketing
-                    </Link>
-                  </div>
-                </div>
-                <div className="content-stretch flex flex-[1_0_0] flex-col gap-[28.426px] items-start min-h-px min-w-px relative">
-                  <p className="font-['Inter:Medium',sans-serif] font-medium not-italic opacity-60 relative shrink-0 text-[11.84px] tracking-[0.4736px] uppercase w-full">
-                    Menu
-                  </p>
-                  <div className="content-stretch flex flex-col font-['Schibsted_Grotesk:Regular',sans-serif] font-normal gap-[4.738px] items-start relative shrink-0 text-[23.69px] w-full">
-                    <Link href="#blog" className="relative shrink-0 w-full footer-link">
-                      Blog
-                    </Link>
-                    <Link href="#contact" className="relative shrink-0 w-full footer-link">
-                      Contact Us
-                    </Link>
-                    <Link href="#about" className="relative shrink-0 w-full footer-link">
-                      About Us
-                    </Link>
-                    <Link href="#career" className="relative shrink-0 w-full footer-link">
-                      Career
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="content-stretch flex flex-[1_0_0] flex-col gap-[18.951px] items-end min-h-px min-w-px relative">
-                <Link href="#contact" className="bg-gradient-to-r content-stretch flex from-[#265df6] h-[57.247px] items-center justify-center px-[18.951px] py-[9.475px] relative rounded-[20px] shrink-0 to-[#7427ff] w-[175.905px] btn-animated hover-glow cursor-pointer">
-                  <p className="font-['Schibsted_Grotesk:SemiBold',sans-serif] font-semibold leading-[1.4] relative shrink-0 text-[20.82px] text-white">
-                    Contact Us
-                  </p>
-                </Link>
-                <div className="content-stretch flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold items-end leading-[1.3] not-italic relative shrink-0 text-[14.21px] text-white">
-                  <p className="relative shrink-0">
-                    +1 (999) 999-99-99
-                  </p>
-                  <p className="relative shrink-0">
-                    info@sivarsa.com
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="content-stretch flex gap-[18.951px] items-center relative shrink-0 w-full">
-              <div className="content-stretch flex flex-[1_0_0] gap-[9.475px] items-center min-h-px min-w-px relative">
-                <div className="bg-white content-stretch flex flex-col items-center justify-center relative rounded-[45.517px] shrink-0 size-[47.377px]">
-                  <div className="relative shrink-0 size-[28.103px]">
-                    <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={img} />
-                  </div>
-                </div>
-                <div className="relative shrink-0 size-[47.377px]">
-                  <img alt="" className="block max-w-none size-full" src={img1} />
-                </div>
-              </div>
-              <div className="content-stretch flex items-start relative shrink-0 w-[523.515px]">
-                <div className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[1.3] not-italic relative shrink-0 text-[14.21px] text-white whitespace-nowrap">
-                  <p className="mb-0">1901 Thornridge Cir. Shiloh,</p>
-                  <p>Hawaii 81063</p>
-                </div>
-              </div>
-              <div className="content-stretch flex flex-[1_0_0] items-center justify-end min-h-px min-w-px relative">
-                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[1.3] not-italic relative shrink-0 text-[14.21px] text-white">
-                  All Rights Reserved
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Footer />
       </div>
     </div>
   );
