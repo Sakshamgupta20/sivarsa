@@ -12,9 +12,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // Uncomment and set if deploying to a subpath (e.g., username.github.io/repo-name)
-  // basePath: "/sivarsa",
-  // assetPrefix: "/sivarsa/",
+  // Set basePath for GitHub Pages deployment (username.github.io/repo-name)
+  basePath: "/sivarsa",
+  assetPrefix: "/sivarsa/",
 };
 
 export default nextConfig;

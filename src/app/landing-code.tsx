@@ -147,33 +147,30 @@ export default function Landing() {
           <div className="w-full max-w-[1284px] mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-0 min-h-[400px] md:min-h-[600px] lg:min-h-[723px] scroll-reveal scroll-scale-up overflow-hidden rounded-lg">
               {/* Software Development Card */}
-              <Link href="/services/software-development" className="relative bg-[#9aa3a8] min-h-[300px] md:min-h-full overflow-visible group">
-                <div className="absolute top-6 md:top-[80px] lg:top-[107px] left-4 md:left-[30px] z-10">
-                  <p className="font-['Inter',sans-serif] font-bold text-[20px] md:text-[26px] lg:text-[30px] text-white tracking-[-1px] leading-[1.2]">SOFTWARE<br />DEVELOPMENT</p>
+              <Link href="/services/software-development" className="relative bg-[#a0a9ae] min-h-[300px] md:min-h-full overflow-hidden group">
+                <div className="absolute top-[72px] md:top-[107.5px] left-[19px] z-10">
+                  <p className="font-['Inter',sans-serif] font-bold text-[20px] md:text-[26px] lg:text-[30px] text-black tracking-[-2px] leading-[70.4px]">SOFTWARE<br />DEVELOPMENT</p>
                 </div>
-                <div className="absolute bottom-[-10px] left-[-10px] w-[110%] md:w-[100%] lg:w-[95%]">
-                  <img alt="Software Development" className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105" src="/assets/service-preview-1.png" />
+                <div className="absolute top-[80px] md:top-[113px] left-[-36%] md:left-[-36%] w-[172%] md:w-[172%] lg:w-[172%]">
+                  <img alt="Software Development" className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105" src="/assets/software-dev-card.png" />
                 </div>
               </Link>
               {/* Talent Card */}
-              <Link href="/services/hr-talent-management" className="relative bg-[#17614a] min-h-[300px] md:min-h-full overflow-visible group">
-                <div className="absolute top-6 md:top-[80px] lg:top-[107px] left-1/2 -translate-x-1/2 z-10">
-                  <p className="font-['Inter',sans-serif] font-bold text-[20px] md:text-[26px] lg:text-[30px] text-white tracking-[-1px] text-center">TALENT</p>
+              <Link href="/services/hr-talent-management" className="relative bg-[#17614a] min-h-[300px] md:min-h-full overflow-hidden group">
+                <div className="absolute top-[72px] md:top-[107.5px] left-1/2 -translate-x-1/2 z-10">
+                  <p className="font-['Inter',sans-serif] font-bold text-[20px] md:text-[26px] lg:text-[30px] text-white tracking-[-2px] text-center leading-[70.4px]">TALENT</p>
                 </div>
-                <div className="absolute bottom-[-40px] left-1/2 -translate-x-1/2 w-[55%] md:w-[50%] lg:w-[45%]">
-                  <img alt="Talent Management" className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105" src="/assets/service-preview-2.png" />
+                <div className="absolute top-[140px] md:top-[205px] left-[14%] w-[72%] h-auto">
+                  <img alt="Talent Management" className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105" src="/assets/talent-card.png" />
                 </div>
               </Link>
               {/* Growth Card */}
-              <Link href="/services/growth-marketing" className="relative bg-[#7c3aed] min-h-[300px] md:min-h-full overflow-visible group">
-                <div className="absolute top-6 md:top-[80px] lg:top-[107px] left-1/2 -translate-x-1/2 z-10">
-                  <p className="font-['Inter',sans-serif] font-bold text-[20px] md:text-[26px] lg:text-[30px] text-white tracking-[-1px] text-center">GROWTH</p>
+              <Link href="/services/growth-marketing" className="relative bg-[#6f2fb8] min-h-[300px] md:min-h-full overflow-hidden group">
+                <div className="absolute top-[72px] md:top-[107.5px] left-1/2 -translate-x-1/2 z-10">
+                  <p className="font-['Inter',sans-serif] font-bold text-[20px] md:text-[26px] lg:text-[30px] text-white tracking-[-2px] text-center leading-[70.4px]">GROWTH</p>
                 </div>
-                {/* White/gray bottom section */}
-                <div className="absolute bottom-0 left-0 right-0 h-[50%] bg-[#e8e8e8]"></div>
-                {/* Phone mockup */}
-                <div className="absolute bottom-0 right-[-20px] w-[90%] md:w-[85%] lg:w-[80%] z-10">
-                  <img alt="Growth Marketing" className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105" src="/assets/growth-phone-with-dashboard.png" />
+                <div className="absolute top-[100px] md:top-[143px] left-[-4%] w-[120%]">
+                  <img alt="Growth Marketing" className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105" src="/assets/growth-card.png" />
                 </div>
               </Link>
             </div>
@@ -842,7 +839,7 @@ export default function Landing() {
               </div>
               <div className="hidden lg:flex bg-[#1b1b1b] content-stretch flex-[1_0_0] flex-col items-start max-w-[316.3888854980469px] min-h-px min-w-px p-[30.222px] sticky top-0">
                 <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 size-[58.556px]">
-                  <div className="bg-white flex-[1_0_0] max-w-[58.55555725097656px] min-h-px min-w-px w-full" />
+                  <div className="bg-gradient-to-br from-purple-500 to-blue-500 rounded-full size-[58.556px]" />
                 </div>
                 <div className="content-stretch flex flex-col items-start pb-[26.444px] pt-[14.436px] relative shrink-0 w-full">
                   <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
