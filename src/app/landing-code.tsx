@@ -93,8 +93,8 @@ export default function Landing() {
   }, []);
 
   return (
-    <div className="bg-black relative size-full overflow-x-hidden">
-      <div className="w-full flex flex-col items-center overflow-x-hidden">
+    <div className="bg-black relative size-full">
+      <div className="w-full flex flex-col items-center">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
           <div className="min-h-[600px] lg:min-h-[841px] relative shrink-0 w-full max-w-[1440px] mx-auto overflow-hidden">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -456,8 +456,8 @@ export default function Landing() {
             </div>
           </div>
           <div className="bg-[#090909] flex flex-col items-center relative w-full">
-              <div className="bg-[#3f2fee] flex flex-col items-center lg:sticky top-0 z-10 w-full rounded-t-[20px] lg:rounded-t-[30px]">
-                <div className="min-h-[280px] md:min-h-[350px] lg:h-[438.222px] max-w-[1360px] relative shrink-0 w-full px-4 md:px-8 lg:px-0">
+              <div className="bg-[#3f2fee] flex flex-col items-center sticky top-0 z-10 w-full">
+                <div className="min-h-[350px] md:min-h-[400px] lg:h-[438.222px] max-w-[1360px] relative shrink-0 w-full px-4 md:px-8 lg:px-0">
                   <div className="relative md:absolute content-stretch flex flex-col gap-[20px] md:gap-[30.779px] items-start md:left-[52.89px] top-0 md:top-[51.94px] py-6 md:py-0 animate-fade-in-up">
                     <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[1.2] not-italic relative shrink-0 text-[28px] md:text-[36px] lg:text-[44.979px] text-white">
                       <p>Software Development</p>
@@ -512,8 +512,8 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-              <div className="bg-white flex flex-col items-center lg:sticky top-[20px] z-20 w-full rounded-t-[20px] lg:rounded-t-[30px]">
-                <div className="min-h-[280px] md:min-h-[350px] lg:h-[438.222px] max-w-[1360px] relative shrink-0 w-full px-4 md:px-8 lg:px-0">
+              <div className="bg-white flex flex-col items-center sticky top-[60px] z-20 w-full">
+                <div className="min-h-[350px] md:min-h-[400px] lg:h-[438.222px] max-w-[1360px] relative shrink-0 w-full px-4 md:px-8 lg:px-0">
                   <div className="relative md:absolute content-stretch flex flex-col gap-[20px] md:gap-[30.779px] items-start md:left-[52.89px] top-0 md:top-[51.94px] py-6 md:py-0 animate-fade-in-up">
                     <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[36px] lg:text-[45.156px]">
                       <p>{`HR & Talent Management`}</p>
@@ -567,8 +567,8 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-              <div className="bg-[#ffd500] flex flex-col items-center lg:sticky top-[40px] z-30 w-full rounded-t-[20px] lg:rounded-t-[30px]">
-                <div className="min-h-[280px] md:min-h-[350px] lg:h-[438.222px] max-w-[1360px] relative shrink-0 w-full px-4 md:px-8 lg:px-0">
+              <div className="bg-[#ffd500] flex flex-col items-center sticky top-[120px] z-30 w-full">
+                <div className="min-h-[350px] md:min-h-[400px] lg:h-[438.222px] max-w-[1360px] relative shrink-0 w-full px-4 md:px-8 lg:px-0">
                   <div className="relative md:absolute content-stretch flex flex-col gap-[20px] md:gap-[30.779px] items-start md:left-[52.89px] top-0 md:top-[51.94px] py-6 md:py-0 animate-fade-in-up">
                     <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[36px] lg:text-[44.979px]">
                       <p>Growth Marketing</p>

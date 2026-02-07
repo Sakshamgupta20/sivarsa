@@ -69,8 +69,8 @@ export default function HRTalentManagement() {
   }, []);
 
   return (
-    <div className="bg-black relative size-full overflow-x-hidden">
-      <div className="w-full flex flex-col items-center overflow-x-hidden">
+    <div className="bg-black relative size-full">
+      <div className="w-full flex flex-col items-center">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
           <div className="min-h-[600px] lg:min-h-[841px] overflow-hidden relative w-full max-w-[1440px] mx-auto">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
