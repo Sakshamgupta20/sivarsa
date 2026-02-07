@@ -47,7 +47,7 @@ export default function Footer() {
                   height={40}
                   className="shrink-0"
                 />
-                <span className="font-['GT_Super_Ds_Trial:Bd',sans-serif] text-[24px] md:text-[28px] text-white">
+                <span className="text-[24px] md:text-[28px] text-white font-bold" style={{ fontFamily: "var(--font-logo)" }}>
                   SIVARSA
                 </span>
               </Link>

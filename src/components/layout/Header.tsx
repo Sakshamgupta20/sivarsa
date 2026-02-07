@@ -35,8 +35,8 @@ export default function Header({ variant = "dark" }: HeaderProps) {
           height={52}
           className="shrink-0"
         />
-        <div className={`flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center leading-[0] relative shrink-0 text-[32px] ${textColor} whitespace-nowrap`}>
-          <p className="leading-[normal]">SIVARSA</p>
+        <div className={`flex flex-col justify-center leading-[0] relative shrink-0 text-[32px] ${textColor} whitespace-nowrap`} style={{ fontFamily: "var(--font-logo)" }}>
+          <p className="leading-[normal] font-bold">SIVARSA</p>
         </div>
       </Link>
 
