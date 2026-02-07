@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { BASE_PATH } from "@/lib/constants";
 
-const imgBtnArrowIconWhite = "/assets/cc33d9c88b41312dae650fea64034944767af781.png";
+const imgBtnArrowIconWhite = `${BASE_PATH}/assets/cc33d9c88b41312dae650fea64034944767af781.png`;
 
 const serviceTags = [
   "UI/UX Design",

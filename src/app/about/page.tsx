@@ -5,31 +5,32 @@ import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ContactForm from "@/components/ContactForm";
+import { BASE_PATH } from "@/lib/constants";
 
 // Image constants
-const imgHero = "/assets/cdecb895a2e1e301e31eadfffa170feab26b3bf1.png";
-const imgPattern2 = "/assets/e943fd303c0291fd9475f87f73eb8662aae4ab65.png";
-const imgStars1 = "/assets/96e45ae1ba60f13f2644063a88546318f60a3bfb.png";
-const imgAboutHeroImage = "/assets/4726923c2eb3bd4fff6bae2d50976175dd47b09d.png";
-const imgAboutBioImage = "/assets/7a4237b3b1d8f87a5a0c2ad976fa4d8e3cff45fc.png";
-const imgSaudiaImage2 = "/assets/2ced7a5d01fae3bfaa90a8f6f203eb5716888f89.png";
-const imgBtnIcon = "/assets/9d79a623aa1c32e3afa51b1834def194b0ff1b99.png";
-const imgBtnArrowIcon = "/assets/71c347c65e2b2290577991e185e5573a083f297b.png";
-const imgSoftwareDev = "/assets/e66ef56f0b767b50b8860584a5fa19bd69be614e.png";
-const imgHrTalent = "/assets/34d961d0ab311afc7564d03f49aed88b4a54a35f.png";
-const imgGrowthMarketing = "/assets/818a5b0370e47250af5f3233218b98f9533f97ef.png";
-const imgBtnIconWhite = "/assets/cc33d9c88b41312dae650fea64034944767af781.png";
-const imgBtnArrowIconDark = "/assets/0b857160e5018cd27df9fbbc68815715d0510936.png";
-const imgArrowIcon = "/assets/arrow-icon.png";
-const imgContactTick = "/assets/contact-tick.png";
-const imgCalendar = "/assets/faq-icon.png";
+const imgHero = `${BASE_PATH}/assets/cdecb895a2e1e301e31eadfffa170feab26b3bf1.png`;
+const imgPattern2 = `${BASE_PATH}/assets/e943fd303c0291fd9475f87f73eb8662aae4ab65.png`;
+const imgStars1 = `${BASE_PATH}/assets/96e45ae1ba60f13f2644063a88546318f60a3bfb.png`;
+const imgAboutHeroImage = `${BASE_PATH}/assets/4726923c2eb3bd4fff6bae2d50976175dd47b09d.png`;
+const imgAboutBioImage = `${BASE_PATH}/assets/7a4237b3b1d8f87a5a0c2ad976fa4d8e3cff45fc.png`;
+const imgSaudiaImage2 = `${BASE_PATH}/assets/2ced7a5d01fae3bfaa90a8f6f203eb5716888f89.png`;
+const imgBtnIcon = `${BASE_PATH}/assets/9d79a623aa1c32e3afa51b1834def194b0ff1b99.png`;
+const imgBtnArrowIcon = `${BASE_PATH}/assets/71c347c65e2b2290577991e185e5573a083f297b.png`;
+const imgSoftwareDev = `${BASE_PATH}/assets/e66ef56f0b767b50b8860584a5fa19bd69be614e.png`;
+const imgHrTalent = `${BASE_PATH}/assets/34d961d0ab311afc7564d03f49aed88b4a54a35f.png`;
+const imgGrowthMarketing = `${BASE_PATH}/assets/818a5b0370e47250af5f3233218b98f9533f97ef.png`;
+const imgBtnIconWhite = `${BASE_PATH}/assets/cc33d9c88b41312dae650fea64034944767af781.png`;
+const imgBtnArrowIconDark = `${BASE_PATH}/assets/0b857160e5018cd27df9fbbc68815715d0510936.png`;
+const imgArrowIcon = `${BASE_PATH}/assets/arrow-icon.png`;
+const imgContactTick = `${BASE_PATH}/assets/contact-tick.png`;
+const imgCalendar = `${BASE_PATH}/assets/faq-icon.png`;
 
 // Company logos for marquee
-const imgRecruitly = "/assets/e1d1913cf107ec0d4752db980157af01db52ac15.png";
-const img500 = "/assets/81a4fcc743420daf8c782b4858bb2f815efbc5ec.png";
-const imgOppaTravel = "/assets/1a08a43fb60438b1fdfdb67500f7bc2bf0b52e6b.png";
-const imgZeroEssay = "/assets/48e063866d9ff1ad2f69b61817c1b431143a76c2.png";
-const imgAndreessenHorowitz = "/assets/918216ec83d7eb3b64f66d81f4d65b04a6dd2679.png";
+const imgRecruitly = `${BASE_PATH}/assets/e1d1913cf107ec0d4752db980157af01db52ac15.png`;
+const img500 = `${BASE_PATH}/assets/81a4fcc743420daf8c782b4858bb2f815efbc5ec.png`;
+const imgOppaTravel = `${BASE_PATH}/assets/1a08a43fb60438b1fdfdb67500f7bc2bf0b52e6b.png`;
+const imgZeroEssay = `${BASE_PATH}/assets/48e063866d9ff1ad2f69b61817c1b431143a76c2.png`;
+const imgAndreessenHorowitz = `${BASE_PATH}/assets/918216ec83d7eb3b64f66d81f4d65b04a6dd2679.png`;
 
 export default function AboutPage() {
   // Initialize scroll animations

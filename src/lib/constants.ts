@@ -1,3 +1,6 @@
+// Base path for GitHub Pages deployment (must match next.config.ts basePath)
+export const BASE_PATH = "/sivarsa";
+
 export const navLinks = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services/software-development" },
@@ -20,8 +23,8 @@ export const menuLinks = [
 ];
 
 export const socialLinks = [
-  { label: "LinkedIn", href: "https://linkedin.com", icon: "/assets/social-linkedin.png" },
-  { label: "Instagram", href: "https://instagram.com", icon: "/assets/social-instagram.svg" },
+  { label: "LinkedIn", href: "https://linkedin.com", icon: `${BASE_PATH}/assets/social-linkedin.png` },
+  { label: "Instagram", href: "https://instagram.com", icon: `${BASE_PATH}/assets/social-instagram.svg` },
 ];
 
 export const contactInfo = {

@@ -4,13 +4,14 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ContactForm from "@/components/ContactForm";
 import { getArticleBySlug, getRelatedArticles, getAllArticles } from "@/data/blog-articles";
+import { BASE_PATH } from "@/lib/constants";
 
 // Images
-const imgHero = "/assets/cdecb895a2e1e301e31eadfffa170feab26b3bf1.png";
-const imgStars1 = "/assets/96e45ae1ba60f13f2644063a88546318f60a3bfb.png";
-const imgContactTick = "/assets/contact-tick.png";
-const imgCalendar = "/assets/faq-icon.png";
-const imgBtnArrowIconWhite = "/assets/cc33d9c88b41312dae650fea64034944767af781.png";
+const imgHero = `${BASE_PATH}/assets/cdecb895a2e1e301e31eadfffa170feab26b3bf1.png`;
+const imgStars1 = `${BASE_PATH}/assets/96e45ae1ba60f13f2644063a88546318f60a3bfb.png`;
+const imgContactTick = `${BASE_PATH}/assets/contact-tick.png`;
+const imgCalendar = `${BASE_PATH}/assets/faq-icon.png`;
+const imgBtnArrowIconWhite = `${BASE_PATH}/assets/cc33d9c88b41312dae650fea64034944767af781.png`;
 
 // Generate static params for all blog posts
 export async function generateStaticParams() {

@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+const BASE_PATH = "/sivarsa";
+
 const services = [
   { label: "Software Development", href: "/services/software-development" },
   { label: "Growth Marketing", href: "/services/growth-marketing" },
@@ -20,7 +22,7 @@ export default function Header({ variant = "dark" }: HeaderProps) {
 
   const isDark = variant === "dark";
   const textColor = isDark ? "text-white" : "text-[#1b1b1b]";
-  const logoSrc = isDark ? "/assets/logo-icon.svg" : "/assets/logo-icon-dark.svg";
+  const logoSrc = isDark ? `${BASE_PATH}/assets/logo-icon.svg` : `${BASE_PATH}/assets/logo-icon-dark.svg`;
   const hamburgerBg = isDark ? "bg-white" : "bg-[#1b1b1b]";
 
   return (

@@ -6,58 +6,61 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ContactForm from "@/components/ContactForm";
 
+// Base path for GitHub Pages deployment (must match next.config.ts basePath)
+const BASE_PATH = "/sivarsa";
+
 // Hero & Background Images
-const imgHero = "/assets/hero-bg.png";
-const imgPattern2 = "/assets/pattern-dots.png";
-const imgStars1 = "/assets/stars-bg.png";
-const imgPurpleComposition21 = "/assets/hero-illustration.png";
+const imgHero = `${BASE_PATH}/assets/hero-bg.png`;
+const imgPattern2 = `${BASE_PATH}/assets/pattern-dots.png`;
+const imgStars1 = `${BASE_PATH}/assets/stars-bg.png`;
+const imgPurpleComposition21 = `${BASE_PATH}/assets/hero-illustration.png`;
 
 
 // Service Preview Images
-const imgWavespaceNoSoundVideoMp41 = "/assets/service-preview-1.png";
-const imgOneee1 = "/assets/service-preview-2.png";
-const imgPhone14011 = "/assets/service-preview-3.png";
+const imgWavespaceNoSoundVideoMp41 = `${BASE_PATH}/assets/service-preview-1.png`;
+const imgOneee1 = `${BASE_PATH}/assets/service-preview-2.png`;
+const imgPhone14011 = `${BASE_PATH}/assets/service-preview-3.png`;
 
 // Case Study Images
-const imgSandroievaCoverGradientDesignWithDynamicMeshAbstractCol0903F70EB4E149FbB05006820E01262E3 = "/assets/case-study-1.png";
-const imgImage25 = "/assets/case-study-2.png";
+const imgSandroievaCoverGradientDesignWithDynamicMeshAbstractCol0903F70EB4E149FbB05006820E01262E3 = `${BASE_PATH}/assets/case-study-1.png`;
+const imgImage25 = `${BASE_PATH}/assets/case-study-2.png`;
 
 // Testimonial Images
-const imgSilver1 = "/assets/testimonial-bg.png";
-const img547911Af409Cc82D8Ecb150Dddafe6Cf1 = "/assets/testimonial-avatar.png";
+const imgSilver1 = `${BASE_PATH}/assets/testimonial-bg.png`;
+const img547911Af409Cc82D8Ecb150Dddafe6Cf1 = `${BASE_PATH}/assets/testimonial-avatar.png`;
 
 // Contact Section Images
-const imgDiv = "/assets/contact-card-1.png";
-const imgDiv1 = "/assets/contact-illustration-1.png";
-const imgDiv2 = "/assets/contact-illustration-2.png";
+const imgDiv = `${BASE_PATH}/assets/contact-card-1.png`;
+const imgDiv1 = `${BASE_PATH}/assets/contact-illustration-1.png`;
+const imgDiv2 = `${BASE_PATH}/assets/contact-illustration-2.png`;
 
 // Button & Arrow Icons
-const imgBtnIcon = "/assets/btn-icon.png";
-const imgArrowUpIcon = "/assets/arrow-up.png";
-const imgBtnArrowIcon = "/assets/arrow-btn.png";
+const imgBtnIcon = `${BASE_PATH}/assets/btn-icon.png`;
+const imgArrowUpIcon = `${BASE_PATH}/assets/arrow-up.png`;
+const imgBtnArrowIcon = `${BASE_PATH}/assets/arrow-btn.png`;
 
 // Feature Images
-const imgWebDesign = "/assets/feature-software.png";
-const imgUiUxDesign = "/assets/feature-hr.png";
-const imgWebDesign1 = "/assets/feature-marketing.png";
+const imgWebDesign = `${BASE_PATH}/assets/feature-software.png`;
+const imgUiUxDesign = `${BASE_PATH}/assets/feature-hr.png`;
+const imgWebDesign1 = `${BASE_PATH}/assets/feature-marketing.png`;
 
 // Achievements Section
-const imgSection = "/assets/achievements-bg.png";
+const imgSection = `${BASE_PATH}/assets/achievements-bg.png`;
 
 // Contact Icons
-const imgArrowIcon = "/assets/arrow-icon.png";
-const imgWhatsappIcon = "/assets/whatsapp-icon.png";
-const imgContactTick = "/assets/contact-tick.png";
+const imgArrowIcon = `${BASE_PATH}/assets/arrow-icon.png`;
+const imgWhatsappIcon = `${BASE_PATH}/assets/whatsapp-icon.png`;
+const imgContactTick = `${BASE_PATH}/assets/contact-tick.png`;
 
 // SVG Assets
-const imgPattern1 = "/assets/pattern-mask.svg";
-const imgEllipse1 = "/assets/ellipse-decoration.svg";
-const imgSandroievaCoverGradientDesignWithDynamicMeshAbstractCol0903F70EB4E149FbB05006820E01262E2 = "/assets/gradient-mesh.svg";
-const imgSilver = "/assets/silver-gradient.svg";
-const imgGroup1 = "/assets/check-icon-1.svg";
-const imgGroup2 = "/assets/check-icon-2.svg";
-const imgGroup3 = "/assets/check-icon-3.svg";
-const imgGroup4 = "/assets/check-icon-4.svg";
+const imgPattern1 = `${BASE_PATH}/assets/pattern-mask.svg`;
+const imgEllipse1 = `${BASE_PATH}/assets/ellipse-decoration.svg`;
+const imgSandroievaCoverGradientDesignWithDynamicMeshAbstractCol0903F70EB4E149FbB05006820E01262E2 = `${BASE_PATH}/assets/gradient-mesh.svg`;
+const imgSilver = `${BASE_PATH}/assets/silver-gradient.svg`;
+const imgGroup1 = `${BASE_PATH}/assets/check-icon-1.svg`;
+const imgGroup2 = `${BASE_PATH}/assets/check-icon-2.svg`;
+const imgGroup3 = `${BASE_PATH}/assets/check-icon-3.svg`;
+const imgGroup4 = `${BASE_PATH}/assets/check-icon-4.svg`;
 
 export default function Landing() {
   // Initialize scroll animations on mount
@@ -152,7 +155,7 @@ export default function Landing() {
                   <p className="font-['Inter',sans-serif] font-bold text-[20px] md:text-[26px] lg:text-[30px] text-black tracking-[-2px] leading-[70.4px]">SOFTWARE<br />DEVELOPMENT</p>
                 </div>
                 <div className="absolute top-[80px] md:top-[113px] left-[-36%] md:left-[-36%] w-[172%] md:w-[172%] lg:w-[172%]">
-                  <img alt="Software Development" className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105" src="/assets/software-dev-card.png" />
+                  <img alt="Software Development" className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105" src={`${BASE_PATH}/assets/software-dev-card.png`} />
                 </div>
               </Link>
               {/* Talent Card */}
@@ -161,7 +164,7 @@ export default function Landing() {
                   <p className="font-['Inter',sans-serif] font-bold text-[20px] md:text-[26px] lg:text-[30px] text-white tracking-[-2px] text-center leading-[70.4px]">TALENT</p>
                 </div>
                 <div className="absolute top-[140px] md:top-[205px] left-[14%] w-[72%] h-auto">
-                  <img alt="Talent Management" className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105" src="/assets/talent-card.png" />
+                  <img alt="Talent Management" className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105" src={`${BASE_PATH}/assets/talent-card.png`} />
                 </div>
               </Link>
               {/* Growth Card */}
@@ -170,7 +173,7 @@ export default function Landing() {
                   <p className="font-['Inter',sans-serif] font-bold text-[20px] md:text-[26px] lg:text-[30px] text-white tracking-[-2px] text-center leading-[70.4px]">GROWTH</p>
                 </div>
                 <div className="absolute top-[100px] md:top-[143px] left-[-4%] w-[120%]">
-                  <img alt="Growth Marketing" className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105" src="/assets/growth-card.png" />
+                  <img alt="Growth Marketing" className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105" src={`${BASE_PATH}/assets/growth-card.png`} />
                 </div>
               </Link>
             </div>

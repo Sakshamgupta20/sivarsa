@@ -6,17 +6,18 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import TrustedByMarquee from "@/components/layout/TrustedByMarquee";
 import ContactForm from "@/components/ContactForm";
+import { BASE_PATH } from "@/lib/constants";
 
 // Images
-const imgHero = "/assets/cdecb895a2e1e301e31eadfffa170feab26b3bf1.png";
-const imgStars1 = "/assets/96e45ae1ba60f13f2644063a88546318f60a3bfb.png";
-const imgContactTick = "/assets/contact-tick.png";
-const imgTeamImage = "/assets/4726923c2eb3bd4fff6bae2d50976175dd47b09d.png";
-const imgEmailIcon = "/assets/email-icon.png";
-const imgWhatsappIcon = "/assets/whatsapp-icon.png";
-const imgBtnArrowIcon = "/assets/0b857160e5018cd27df9fbbc68815715d0510936.png";
-const imgBtnArrowIconWhite = "/assets/cc33d9c88b41312dae650fea64034944767af781.png";
-const imgCalendar = "/assets/faq-icon.png";
+const imgHero = `${BASE_PATH}/assets/cdecb895a2e1e301e31eadfffa170feab26b3bf1.png`;
+const imgStars1 = `${BASE_PATH}/assets/96e45ae1ba60f13f2644063a88546318f60a3bfb.png`;
+const imgContactTick = `${BASE_PATH}/assets/contact-tick.png`;
+const imgTeamImage = `${BASE_PATH}/assets/4726923c2eb3bd4fff6bae2d50976175dd47b09d.png`;
+const imgEmailIcon = `${BASE_PATH}/assets/email-icon.png`;
+const imgWhatsappIcon = `${BASE_PATH}/assets/whatsapp-icon.png`;
+const imgBtnArrowIcon = `${BASE_PATH}/assets/0b857160e5018cd27df9fbbc68815715d0510936.png`;
+const imgBtnArrowIconWhite = `${BASE_PATH}/assets/cc33d9c88b41312dae650fea64034944767af781.png`;
+const imgCalendar = `${BASE_PATH}/assets/faq-icon.png`;
 
 export default function ContactPage() {
   // Initialize scroll animations

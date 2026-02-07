@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const BASE_PATH = "/sivarsa";
+
 const serviceLinks = [
   { label: "Software Development", href: "/services/software-development" },
   { label: "Growth Marketing", href: "/services/growth-marketing" },
@@ -24,7 +26,7 @@ export default function Footer() {
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0 bg-black" />
           <Image
-            src="/assets/footer-bg.png"
+            src={`${BASE_PATH}/assets/footer-bg.png`}
             alt=""
             fill
             className="object-cover opacity-80"
@@ -39,7 +41,7 @@ export default function Footer() {
             <div className="flex flex-col gap-4">
               <Link href="/" className="flex items-center gap-2">
                 <Image
-                  src="/assets/logo-icon.svg"
+                  src={`${BASE_PATH}/assets/logo-icon.svg`}
                   alt="Sivarsa Logo"
                   width={40}
                   height={40}
@@ -59,14 +61,14 @@ export default function Footer() {
                   target="_blank"
                   className="w-9 h-9 relative social-icon rounded-full bg-white/10 hover:bg-white/20 transition-colors flex items-center justify-center"
                 >
-                  <Image src="/assets/social-linkedin.png" alt="LinkedIn" width={20} height={20} className="object-contain" />
+                  <Image src={`${BASE_PATH}/assets/social-linkedin.png`} alt="LinkedIn" width={20} height={20} className="object-contain" />
                 </Link>
                 <Link
                   href="https://instagram.com"
                   target="_blank"
                   className="w-9 h-9 relative social-icon rounded-full bg-white/10 hover:bg-white/20 transition-colors flex items-center justify-center"
                 >
-                  <Image src="/assets/social-instagram.svg" alt="Instagram" width={20} height={20} className="object-contain" />
+                  <Image src={`${BASE_PATH}/assets/social-instagram.svg`} alt="Instagram" width={20} height={20} className="object-contain" />
                 </Link>
               </div>
             </div>

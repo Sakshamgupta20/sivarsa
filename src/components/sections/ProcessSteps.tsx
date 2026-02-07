@@ -1,5 +1,7 @@
 "use client";
 
+import { BASE_PATH } from "@/lib/constants";
+
 interface Step {
   number: string;
   title: string;
@@ -16,7 +18,7 @@ export default function ProcessSteps({
   title,
   subtitle,
   steps,
-  arrowIcon = "/assets/arrow-up.png",
+  arrowIcon = `${BASE_PATH}/assets/arrow-up.png`,
 }: ProcessStepsProps) {
   return (
     <div className="bg-[#090909] content-stretch flex flex-col items-center overflow-clip py-[143.556px] relative shrink-0 w-full">
