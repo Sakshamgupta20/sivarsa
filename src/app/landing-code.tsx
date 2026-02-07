@@ -1,4 +1,71 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
+
+const services = [
+  { label: "Software Development", href: "/services/software-development" },
+  { label: "Growth Marketing", href: "/services/growth-marketing" },
+];
+
+function Nav() {
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+
+  return (
+    <nav className="flex font-['Schibsted_Grotesk:Regular',sans-serif] font-normal gap-[45px] items-center justify-center relative text-[20px] text-white whitespace-nowrap animate-fade-in-down">
+      <Link href="/" className="nav-item link-animated cursor-pointer py-2">
+        Home
+      </Link>
+
+      {/* Services Dropdown */}
+      <div
+        className="relative"
+        onMouseEnter={() => setIsServicesOpen(true)}
+        onMouseLeave={() => setIsServicesOpen(false)}
+      >
+        <button className="flex items-center gap-1.5 nav-item link-animated cursor-pointer py-2">
+          <span>Services</span>
+          <svg
+            className={`w-3.5 h-3.5 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <div
+          className={`absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50 transition-all duration-200 ${
+            isServicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
+          }`}
+        >
+          <div className="bg-[#1a1a1a] border border-[#333] rounded-xl shadow-2xl py-2 min-w-[220px] overflow-hidden">
+            {services.map((service) => (
+              <Link
+                key={service.href}
+                href={service.href}
+                className="block px-5 py-3 text-[16px] text-white/80 hover:text-white hover:bg-gradient-to-r hover:from-[#265df6]/20 hover:to-[#7427ff]/20 transition-all duration-200"
+              >
+                {service.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <Link href="#about" className="nav-item link-animated cursor-pointer py-2">
+        About
+      </Link>
+      <Link href="#blog" className="nav-item link-animated cursor-pointer py-2">
+        Blog
+      </Link>
+      <Link href="#contact" className="nav-item link-animated cursor-pointer py-2">
+        Contact Us
+      </Link>
+    </nav>
+  );
+}
 
 // Hero & Background Images
 const imgHero = "/assets/hero-bg.png";
@@ -78,47 +145,25 @@ export default function Landing() {
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <img alt="" className="absolute h-full left-[-5.86%] max-w-none top-0 w-[111.73%]" src={imgHero} />
             </div>
-            <div className="-translate-x-1/2 absolute border-[rgba(255,255,255,0)] border-b-2 border-solid content-stretch flex items-center justify-between left-1/2 px-[61px] py-[24px] top-0 w-[1440px] z-50">
-              <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0">
-                <div className="col-1 h-[37.617px] ml-0 mt-[11.7%] relative row-1 w-[26.111px]">
-                  <img alt="" className="block max-w-none size-full" src={imgGroup} />
-                </div>
-                <div className="-translate-y-1/2 col-1 flex flex-col font-['GT_Super_Ds_Trial:Bd',sans-serif] justify-center ml-[44.08px] mt-[23px] not-italic relative row-1 text-[40px] text-white whitespace-nowrap">
-                  <p className="leading-[normal]">SIVARSA</p>
-                </div>
-              </div>
-              <nav className="flex font-['Schibsted_Grotesk:Regular',sans-serif] font-normal gap-[84px] items-center justify-center relative shrink-0 text-[20px] text-white whitespace-nowrap animate-fade-in-down">
-                <Link href="/" className="nav-item link-animated cursor-pointer py-2 px-1">
-                  Home
-                </Link>
-                <Link href="/services/software-development" className="nav-item link-animated cursor-pointer py-2 px-1">
-                  Services
-                </Link>
-                <Link href="#about" className="nav-item link-animated cursor-pointer py-2 px-1">
-                  About
-                </Link>
-                <Link href="#blog" className="nav-item link-animated cursor-pointer py-2 px-1">
-                  Blog
-                </Link>
-                <Link href="#contact" className="nav-item link-animated cursor-pointer py-2 px-1">
-                  Contact Us
-                </Link>
-              </nav>
-              <div className="bg-gradient-to-r content-stretch flex from-[#265df6] items-center justify-center p-[10px] relative rounded-[20px] shrink-0 to-[#7427ff] w-[168px] btn-animated hover-glow cursor-pointer animate-fade-in-down">
-                <div className="flex flex-col font-['Schibsted_Grotesk:Bold',sans-serif] font-bold justify-center leading-[0] relative shrink-0 text-[20px] text-white whitespace-nowrap">
-                  <p className="leading-[normal]">LETS CHAT</p>
-                </div>
-              </div>
+            <div className="-translate-x-1/2 absolute content-stretch flex items-center justify-between left-1/2 px-[61px] py-[24px] top-0 w-[1440px] z-50">
+              <Link href="/" className="flex gap-2 items-center relative shrink-0 animate-fade-in-down">
+                <img alt="" className="w-[32px] h-[40px]" src={imgGroup} />
+                <span className="font-['GT_Super_Ds_Trial:Bd',sans-serif] text-[40px] text-white">SIVARSA</span>
+              </Link>
+              <Nav />
+              <Link href="#contact" className="bg-gradient-to-r content-stretch flex from-[#265df6] items-center justify-center p-[10px] relative rounded-[20px] shrink-0 to-[#7427ff] w-[168px] btn-animated hover-glow cursor-pointer animate-fade-in-down">
+                <span className="font-['Schibsted_Grotesk:Bold',sans-serif] font-bold text-[20px] text-white">LETS CHAT</span>
+              </Link>
             </div>
             <div className="absolute contents left-0 top-[98px]">
               <div className="absolute contents left-0 top-[98px]">
-                <div className="-translate-x-1/2 absolute h-[866px] left-1/2 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[1438.759px_865.654px] rounded-[20px] top-[98px] w-[1440px]" style={{ maskImage: `url('${imgPattern1}')` }}>
+                <div className="-translate-x-1/2 absolute h-[866px] left-1/2 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[1438.759px_865.654px] rounded-[20px] top-[90px] w-[1440px]" style={{ maskImage: `url('${imgPattern1}')` }}>
                   <div className="absolute inset-0 opacity-35 overflow-hidden pointer-events-none rounded-[20px]">
                     <img alt="" className="absolute h-[126.85%] left-[-2.29%] max-w-none top-[-2.12%] w-[104.77%]" src={imgPattern2} />
                   </div>
                 </div>
-                <div className="absolute h-[937.591px] left-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_71.938px] mask-size-[1438.759px_865.654px] rounded-[20px] top-[26.06px] w-[1438.759px]" style={{ backgroundImage: "linear-gradient(110.159deg, rgb(0, 0, 0) 21.698%, rgba(0, 0, 0, 0.26) 84.415%)", maskImage: `url('${imgPattern1}')` }} />
-                <div className="-translate-x-1/2 absolute h-[937.591px] left-[calc(50%-0.62px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_71.938px] mask-size-[1438.759px_865.654px] opacity-60 top-[26.06px] w-[1438.759px]" style={{ maskImage: `url('${imgPattern1}')` }}>
+                <div className="absolute h-[937.591px] left-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_71.938px] mask-size-[1438.759px_865.654px] rounded-[20px] top-[20px] w-[1438.759px]" style={{ backgroundImage: "linear-gradient(110.159deg, rgb(0, 0, 0) 21.698%, rgba(0, 0, 0, 0.26) 84.415%)", maskImage: `url('${imgPattern1}')` }} />
+                <div className="-translate-x-1/2 absolute h-[937.591px] left-[calc(50%-0.62px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_71.938px] mask-size-[1438.759px_865.654px] opacity-60 top-[20px] w-[1438.759px]" style={{ maskImage: `url('${imgPattern1}')` }}>
                   <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgStars1} />
                 </div>
               </div>
@@ -146,11 +191,11 @@ export default function Landing() {
                         Book a Strategy Call
                       </span>
                     </Link>
-                    <Link href="/services/software-development" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[210.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
+                    <a href="#services" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-[210.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
                       <span className="font-['Schibsted_Grotesk:Medium',sans-serif] font-medium text-[20px] text-black">
                         Explore services
                       </span>
-                    </Link>
+                    </a>
                   </div>
                 </div>
                 <div className="flex flex-col font-['Schibsted_Grotesk:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[20px] text-center text-white w-[677.504px]">
@@ -545,7 +590,7 @@ export default function Landing() {
             </div>
           </div>
         </div>
-        <div className="bg-[#090909] content-stretch flex flex-col gap-[0.009px] items-center relative shrink-0 w-full">
+        <div id="services" className="bg-[#090909] content-stretch flex flex-col gap-[0.009px] items-center relative shrink-0 w-full scroll-mt-20">
           <div className="content-stretch flex flex-col items-start max-w-[1360px] pb-[52.889px] px-[37.778px] relative shrink-0 w-[1360px]">
             <div className="content-stretch flex h-[137.502px] items-end relative shrink-0 w-full">
               <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0">
@@ -568,7 +613,7 @@ export default function Landing() {
           </div>
           <div className="bg-[#090909] content-stretch flex flex-col items-start relative shrink-0 w-full">
             <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-              <div className="bg-[#3f2fee] content-stretch flex flex-col items-center shrink-0 sticky top-0 z-30 w-full">
+              <div className="bg-[#3f2fee] content-stretch flex flex-col items-center shrink-0 sticky top-0 z-10 w-full">
                 <div className="h-[438.222px] max-w-[1360px] relative shrink-0 w-[1360px]">
                   <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px] animate-fade-in-up">
                     <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[0] not-italic relative shrink-0 text-[44.979px] text-white whitespace-nowrap">
@@ -679,7 +724,7 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-              <div className="bg-[#ffd500] content-stretch flex flex-col items-center shrink-0 sticky top-[120px] z-10 w-full">
+              <div className="bg-[#ffd500] content-stretch flex flex-col items-center shrink-0 sticky top-[120px] z-30 w-full">
                 <div className="h-[438.222px] max-w-[1360px] relative shrink-0 w-[1360px]">
                   <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px] animate-fade-in-up">
                     <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[44.979px] whitespace-nowrap">
@@ -693,7 +738,7 @@ export default function Landing() {
                           </div>
                         </div>
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
-                          <a className="bg-[#1b1b1b] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[225.33499145507812px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full btn-animated hover-scale" href="https://www.wavespace.agency/services/web-design">
+                          <a className="bg-[#1b1b1b] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[225.33499145507812px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full btn-animated hover-scale" href="/services/growth-marketing">
                             <div className="content-stretch flex flex-col items-start relative shrink-0">
                               <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[14.639px] text-left text-white whitespace-nowrap">
                                 <p className="leading-[18.889px]">Start Growing</p>
