@@ -70,7 +70,7 @@ export default function AboutPage() {
             {/* Hero Content */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="content-stretch flex flex-col gap-[37px] items-center justify-center text-center w-full max-w-[1060px] px-4">
-                <h1 className="font-[family-name:var(--font-headings)] text-[48px] md:text-[72px] lg:text-[82px] leading-[1.1] tracking-[-2px] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent animate-fade-in-up">
+                <h1 className="font-[family-name:var(--font-headings)] font-bold text-[48px] md:text-[72px] lg:text-[82px] leading-[1.1] tracking-[-2px] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent animate-fade-in-up">
                   Team behind future unicorns
                 </h1>
                 <p className="font-['Inter',sans-serif] font-medium text-[18px] md:text-[22px] lg:text-[25px] text-white/70 max-w-[600px] animate-fade-in-up delay-200">
@@ -112,7 +112,7 @@ export default function AboutPage() {
             <div className="content-stretch flex flex-col gap-[48px] md:gap-[64px] items-start max-w-[1440px] mx-auto px-4 md:px-[40px] relative shrink-0 w-full">
               {/* Heading */}
               <div className="content-stretch flex flex-col items-start relative shrink-0 w-full scroll-reveal scroll-fade-up">
-                <h2 className="font-[family-name:var(--font-headings)] text-[36px] md:text-[48px] lg:text-[54px] leading-[1.3] tracking-[1px] text-[#1b1b1b]">
+                <h2 className="font-[family-name:var(--font-headings)] font-bold text-[36px] md:text-[48px] lg:text-[54px] leading-[1.3] tracking-[1px] text-[#1b1b1b]">
                   We measure<br />
                   <span className="text-[#1b1b1b]">impact, </span>
                   <span className="text-[#29242466]">not just ship pixels.</span>
@@ -185,7 +185,7 @@ export default function AboutPage() {
           {/* From India Section */}
           <div className="bg-[#f1f1f1] content-stretch flex flex-col gap-[72px] items-center py-[100px] md:py-[156px] relative shrink-0 w-full">
             <div className="content-stretch flex flex-col items-start relative shrink-0 w-full max-w-[1360px] mx-auto px-4 md:px-[40px]">
-              <h2 className="font-[family-name:var(--font-headings)] text-[36px] md:text-[48px] lg:text-[54px] leading-[1.4] text-[#1b1b1b] max-w-[1200px]">
+              <h2 className="font-[family-name:var(--font-headings)] font-bold text-[36px] md:text-[48px] lg:text-[54px] leading-[1.4] text-[#1b1b1b] max-w-[1200px]">
                 From India, we help bold visions become reality.
               </h2>
             </div>
@@ -232,7 +232,7 @@ export default function AboutPage() {
 
             {/* Content */}
             <div className="flex flex-col items-start flex-1 max-w-[640px]">
-              <h3 className="font-[family-name:var(--font-headings)] text-[32px] md:text-[41px] leading-[1.4] text-[#1b1b1b]">
+              <h3 className="font-[family-name:var(--font-headings)] font-bold text-[32px] md:text-[41px] leading-[1.4] text-[#1b1b1b]">
                 Why Sivarsa? We care like<br />co-founders.
               </h3>
               <p className="font-['Inter',sans-serif] text-[16px] md:text-[18px] text-[#1b1b1b] leading-[1.6] py-[18px]">
@@ -264,7 +264,7 @@ export default function AboutPage() {
           <div className="bg-white content-stretch flex flex-col gap-[56px] items-center relative shrink-0 w-full py-[80px]">
             {/* Header */}
             <div className="flex flex-col md:flex-row gap-[24px] md:gap-0 items-start md:items-end justify-between w-full max-w-[1360px] px-4 md:px-[40px] mx-auto">
-              <h2 className="font-[family-name:var(--font-headings)] text-[36px] md:text-[48px] lg:text-[54px] leading-[1.3] tracking-[1px] text-[#1b1b1b] max-w-[850px]">
+              <h2 className="font-[family-name:var(--font-headings)] font-bold text-[36px] md:text-[48px] lg:text-[54px] leading-[1.3] tracking-[1px] text-[#1b1b1b] max-w-[850px]">
                 From vision to velocity, we are<br />
                 <span className="text-[#29242466]">all in one place.</span>
               </h2>
@@ -346,7 +346,7 @@ export default function AboutPage() {
             <div className="max-w-[1440px] mx-auto w-full">
               {/* Heading */}
               <div className="content-stretch flex flex-col items-start relative shrink-0 w-full mb-[96px]">
-                <h2 className="font-[family-name:var(--font-headings)] text-[36px] md:text-[48px] lg:text-[53px] leading-[1.4] tracking-[0.4px] text-[#1b1b1b]">
+                <h2 className="font-[family-name:var(--font-headings)] font-bold text-[36px] md:text-[48px] lg:text-[53px] leading-[1.4] tracking-[0.4px] text-[#1b1b1b]">
                   We are your product geek, UX<br />
                   mind, UI lovers, & Webflow builders.<br />
                   <span className="text-[#1b1b1b]">Your creative team, </span>
@@ -360,7 +360,7 @@ export default function AboutPage() {
                 <div className="border border-[#eeedec] content-stretch flex flex-col justify-between items-start p-[33px] rounded-[20px] min-h-[280px] scroll-reveal scroll-fade-up stagger-1 card-3d">
                   <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/01</p>
                   <div>
-                    <p className="font-[family-name:var(--font-headings)] text-[48px] md:text-[55px] text-[#1b1b1b] leading-[1.3]">India</p>
+                    <p className="font-[family-name:var(--font-headings)] font-bold text-[48px] md:text-[55px] text-[#1b1b1b] leading-[1.3]">India</p>
                     <p className="font-['Inter',sans-serif] text-[16px] md:text-[18px] text-[#3a3a3a] leading-[1.6]">
                       Global team working from SF, Berlin,<br />KL, Jakarta, Sydney
                     </p>
@@ -371,7 +371,7 @@ export default function AboutPage() {
                 <div className="border border-[#eeedec] content-stretch flex flex-col justify-between items-start p-[33px] rounded-[20px] min-h-[280px] scroll-reveal scroll-fade-up stagger-2 card-3d">
                   <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/02</p>
                   <div>
-                    <p className="font-[family-name:var(--font-headings)] text-[48px] md:text-[54px] text-[#1b1b1b] leading-[1.3] tracking-[1px]">15+</p>
+                    <p className="font-[family-name:var(--font-headings)] font-bold text-[48px] md:text-[54px] text-[#1b1b1b] leading-[1.3] tracking-[1px]">15+</p>
                     <p className="font-['Inter',sans-serif] text-[16px] md:text-[18px] text-[#3a3a3a] leading-[1.6]">
                       Industries served<br />(AI, SaaS, Fintech, Health, B2B, more)
                     </p>
@@ -382,7 +382,7 @@ export default function AboutPage() {
                 <div className="border border-[#eeedec] content-stretch flex flex-col justify-between items-start p-[33px] rounded-[20px] min-h-[280px] scroll-reveal scroll-fade-up stagger-3 card-3d">
                   <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/03</p>
                   <div>
-                    <p className="font-[family-name:var(--font-headings)] text-[48px] md:text-[55px] text-[#1b1b1b] leading-[1.3]">10M+ users</p>
+                    <p className="font-[family-name:var(--font-headings)] font-bold text-[48px] md:text-[55px] text-[#1b1b1b] leading-[1.3]">10M+ users</p>
                     <p className="font-['Inter',sans-serif] text-[16px] md:text-[18px] text-[#3a3a3a] leading-[1.6]">
                       Marketplace users served<br />across 10+ time zones
                     </p>
@@ -393,7 +393,7 @@ export default function AboutPage() {
               {/* Beliefs Section */}
               <div className="flex flex-col lg:flex-row items-start justify-between w-full gap-[60px]">
                 <div className="content-stretch flex flex-col items-start relative shrink-0">
-                  <h2 className="font-[family-name:var(--font-headings)] text-[40px] md:text-[56px] leading-[1.3] tracking-[1px] text-[#1b1b1b]">
+                  <h2 className="font-[family-name:var(--font-headings)] font-bold text-[40px] md:text-[56px] leading-[1.3] tracking-[1px] text-[#1b1b1b]">
                     <span className="text-[#1b1b1b]">The beliefs </span>
                     <span className="text-[#29242466]">behind<br />the builds</span>
                   </h2>
@@ -426,7 +426,7 @@ export default function AboutPage() {
             <div className="content-stretch flex flex-col gap-[72px] items-start max-w-[1440px] mx-auto px-4 md:px-[40px] relative shrink-0 w-full">
               {/* Heading */}
               <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-                <h2 className="font-[family-name:var(--font-headings)] text-[40px] md:text-[56px] leading-[1.3] tracking-[1px] text-[#1b1b1b]">
+                <h2 className="font-[family-name:var(--font-headings)] font-bold text-[40px] md:text-[56px] leading-[1.3] tracking-[1px] text-[#1b1b1b]">
                   Frequently asked<br />
                   <span className="text-[#29242466]">questions</span>
                 </h2>
@@ -463,7 +463,7 @@ export default function AboutPage() {
               <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-0 items-start justify-between">
                 {/* Left Content */}
                 <div className="flex flex-col items-start max-w-[434px]">
-                  <h2 className="font-[family-name:var(--font-headings)] text-[40px] md:text-[55px] leading-[1.4] tracking-[1px] text-[#1b1b1b]">
+                  <h2 className="font-[family-name:var(--font-headings)] font-bold text-[40px] md:text-[55px] leading-[1.4] tracking-[1px] text-[#1b1b1b]">
                     Have a Project?<br />Let&apos;s talk!
                   </h2>
 

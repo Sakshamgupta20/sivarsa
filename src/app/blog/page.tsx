@@ -177,7 +177,7 @@ export default function BlogPage() {
 
             {/* Hero Content */}
             <div className="relative z-10 flex flex-col items-center justify-center pt-[100px] md:pt-[144px]">
-              <h1 className="font-[family-name:var(--font-headings)] text-[36px] md:text-[48px] lg:text-[55px] leading-[1.15] text-center text-black uppercase max-w-[925px] px-4 animate-fade-in-up">
+              <h1 className="font-[family-name:var(--font-headings)] font-bold text-[36px] md:text-[48px] lg:text-[55px] leading-[1.15] text-center text-black uppercase max-w-[925px] px-4 animate-fade-in-up">
                 DISCOVER OUR LATEST ARTICLES
               </h1>
             </div>
@@ -301,7 +301,7 @@ export default function BlogPage() {
               <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[80px] items-start justify-between">
                 {/* Left Content */}
                 <div className="flex flex-col items-start max-w-[434px]">
-                  <h2 className="font-[family-name:var(--font-headings)] text-[40px] md:text-[55px] leading-[1.2] tracking-[1px] text-[#1b1b1b]">
+                  <h2 className="font-[family-name:var(--font-headings)] font-bold text-[40px] md:text-[55px] leading-[1.2] tracking-[1px] text-[#1b1b1b]">
                     Have a Project?<br />Let&apos;s talk!
                   </h2>
 

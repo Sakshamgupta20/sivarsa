@@ -57,7 +57,7 @@ export default function ContactPage() {
               <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[80px] items-start justify-between">
                 {/* Left Content */}
                 <div className="flex flex-col items-start max-w-[434px]">
-                  <h1 className="font-[family-name:var(--font-headings)] text-[40px] md:text-[55px] leading-[1.3] tracking-[1px] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent animate-fade-in-up">
+                  <h1 className="font-[family-name:var(--font-headings)] font-bold text-[40px] md:text-[55px] leading-[1.3] tracking-[1px] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent animate-fade-in-up">
                     Have a Project?<br />Let&apos;s talk!
                   </h1>
 

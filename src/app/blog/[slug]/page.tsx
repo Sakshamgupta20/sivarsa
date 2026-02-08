@@ -80,7 +80,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </div>
 
               {/* Title */}
-              <h1 className="font-[family-name:var(--font-headings)] text-[32px] md:text-[48px] lg:text-[56px] leading-[1.2] tracking-[1px] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent mb-[24px] max-w-[900px] animate-fade-in-up">
+              <h1 className="font-[family-name:var(--font-headings)] font-bold text-[32px] md:text-[48px] lg:text-[56px] leading-[1.2] tracking-[1px] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent mb-[24px] max-w-[900px] animate-fade-in-up">
                 {article.title}
               </h1>
 
@@ -236,7 +236,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           {relatedArticles.length > 0 && (
             <div className="w-full bg-[#f8f8f8] py-[80px] md:py-[100px]">
               <div className="max-w-[1360px] mx-auto px-4 md:px-[40px]">
-                <h2 className="font-[family-name:var(--font-headings)] text-[32px] md:text-[42px] leading-[1.25] tracking-[1px] text-[#1b1b1b] mb-[48px]">
+                <h2 className="font-[family-name:var(--font-headings)] font-bold text-[32px] md:text-[42px] leading-[1.25] tracking-[1px] text-[#1b1b1b] mb-[48px]">
                   Related Articles
                 </h2>
 
@@ -279,7 +279,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <div className="max-w-[1360px] mx-auto px-4 md:px-[40px]">
               <div className="flex flex-col md:flex-row items-center justify-between gap-[40px]">
                 <div className="flex flex-col items-start max-w-[600px]">
-                  <h2 className="font-[family-name:var(--font-headings)] text-[36px] md:text-[48px] leading-[1.2] text-white mb-[16px]">
+                  <h2 className="font-[family-name:var(--font-headings)] font-bold text-[36px] md:text-[48px] leading-[1.2] text-white mb-[16px]">
                     Ready to build something amazing?
                   </h2>
                   <p className="font-['Inter',sans-serif] text-[18px] text-white/70 leading-[1.6]">
@@ -309,7 +309,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-0 items-start justify-between">
                 {/* Left Content */}
                 <div className="flex flex-col items-start max-w-[434px]">
-                  <h2 className="font-[family-name:var(--font-headings)] text-[40px] md:text-[55px] leading-[1.4] tracking-[1px] text-[#1b1b1b]">
+                  <h2 className="font-[family-name:var(--font-headings)] font-bold text-[40px] md:text-[55px] leading-[1.4] tracking-[1px] text-[#1b1b1b]">
                     Have a Project?<br />Let&apos;s talk!
                   </h2>
 
