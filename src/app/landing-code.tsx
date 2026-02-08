@@ -244,12 +244,8 @@ export default function Landing() {
                   <p>No need to juggle multiple vendors. Get software, marketing, and talent under one roof with seamless coordination.</p>
                 </div>
               </div>
-              <div className="lg:-translate-y-1/2 relative lg:absolute bg-[#f3ffab] h-[180px] md:h-[240px] lg:left-[336px] overflow-clip rounded-[25px] lg:right-0 lg:top-1/2 w-full">
-                <div className="absolute inset-[-12px_-47.2px]">
-                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    <img alt="" className="absolute h-[166.16%] left-0 max-w-none top-[-33.08%] w-full" src={imgDiv} />
-                  </div>
-                </div>
+              <div className="lg:-translate-y-1/2 relative lg:absolute h-[180px] md:h-[240px] lg:left-[336px] overflow-hidden lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
+                <img alt="All-in-one Solution" className="w-full h-full object-cover" src={imgDiv} />
               </div>
             </div>
             <div className="min-h-[250px] md:h-[320px] relative shrink-0 w-full max-w-[1280px] card-3d scroll-reveal scroll-fade-up stagger-2">
@@ -264,12 +260,8 @@ export default function Landing() {
                   <p>47+ companies scaled, 200+ projects delivered, and a 95% client retention rate. We deliver what we promise.</p>
                 </div>
               </div>
-              <div className="lg:-translate-y-1/2 relative lg:absolute bg-[#f3ffab] h-[180px] md:h-[240px] lg:left-[336px] overflow-clip rounded-[25px] lg:right-0 lg:top-1/2 w-full">
-                <div className="absolute inset-[-12px_-47.2px]">
-                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    <img alt="" className="absolute h-[166.16%] left-0 max-w-none top-[-33.08%] w-full" src={imgDiv1} />
-                  </div>
-                </div>
+              <div className="lg:-translate-y-1/2 relative lg:absolute h-[180px] md:h-[240px] lg:left-[336px] overflow-hidden lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
+                <img alt="Proven Expertise" className="w-full h-full object-cover" src={imgDiv1} />
               </div>
             </div>
             <div className="min-h-[250px] md:h-[320px] relative shrink-0 w-full max-w-[1280px] card-3d scroll-reveal scroll-fade-up stagger-3">
@@ -285,12 +277,8 @@ export default function Landing() {
                   <p>{`Every Business is unique. We Offer Customizations perfectly with your Goals`}</p>
                 </div>
               </div>
-              <div className="lg:-translate-y-1/2 relative lg:absolute bg-[#f3ffab] h-[180px] md:h-[240px] lg:left-[336px] overflow-clip rounded-[25px] lg:right-0 lg:top-1/2 w-full">
-                <div className="absolute inset-[-12px_-47.2px]">
-                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    <img alt="" className="absolute h-[166.16%] left-0 max-w-none top-[-33.08%] w-full" src={imgDiv2} />
-                  </div>
-                </div>
+              <div className="lg:-translate-y-1/2 relative lg:absolute h-[180px] md:h-[240px] lg:left-[336px] overflow-hidden lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
+                <img alt="Client Centric Approach" className="w-full h-full object-cover" src={imgDiv2} />
               </div>
             </div>
             <div className="min-h-[250px] md:h-[320px] relative shrink-0 w-full max-w-[1280px] card-3d scroll-reveal scroll-fade-up stagger-4">
@@ -305,12 +293,8 @@ export default function Landing() {
                   <p className="mb-0">{`Every Business is unique. We Offer Customizations perfectly with your Goals`}</p>
                 </div>
               </div>
-              <div className="lg:-translate-y-1/2 relative lg:absolute bg-[#f3ffab] h-[180px] md:h-[240px] lg:left-[336px] overflow-clip rounded-[25px] lg:right-0 lg:top-1/2 w-full">
-                <div className="absolute inset-[-12px_-47.2px]">
-                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    <img alt="" className="absolute h-[166.16%] left-0 max-w-none top-[-33.08%] w-full" src={imgDiv} />
-                  </div>
-                </div>
+              <div className="lg:-translate-y-1/2 relative lg:absolute h-[180px] md:h-[240px] lg:left-[336px] overflow-hidden lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
+                <img alt="Transparent & Collaborative" className="w-full h-full object-cover" src={imgDiv} />
               </div>
             </div>
           </div>
@@ -958,10 +942,26 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-              <div className="content-stretch flex flex-col items-start pt-[89.722px] relative shrink-0">
-                <div className="content-stretch flex flex-col items-start relative shrink-0">
-                  <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[16.734px] whitespace-nowrap">
-                    <p className="leading-[23.8px]">Schedule a call:</p>
+              <div className="content-stretch flex flex-col items-start pt-[60px] md:pt-[89.722px] relative shrink-0">
+                <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0">
+                  <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center not-italic relative shrink-0 text-[#1b1b1b] text-[18px] whitespace-nowrap">
+                    <p>Schedule a call:</p>
+                  </div>
+                  {/* Schedule Card */}
+                  <div className="bg-white flex items-center p-[12px] pr-[32px] rounded-lg shadow-sm">
+                    <div className="bg-gradient-to-r from-[#265df6] to-[#7427ff] w-[72px] h-[72px] rounded-full flex items-center justify-center text-white font-bold text-[24px] shrink-0">
+                      S
+                    </div>
+                    <div className="flex flex-col pl-[20px]">
+                      <span className="font-['Inter',sans-serif] font-semibold text-[24px] text-[#1b1b1b]">Sivarsa</span>
+                      <span className="font-['Inter',sans-serif] text-[18px] text-[#7e7e81]">Founder & CEO</span>
+                    </div>
+                    {/* Arrow Icon */}
+                    <div className="ml-[40px]">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#1b1b1b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -380,6 +380,15 @@ a, button {
   transform: translateY(-2px);
 }
 
+.nav-item-light {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item-light:hover {
+  color: #7427ff;
+  transform: translateY(-2px);
+}
+
 /* Service Card Hover */
 .service-card {
   transition: all 0.4s ease;

@@ -7,11 +7,9 @@ import Footer from "@/components/layout/Footer";
 import ContactForm from "@/components/ContactForm";
 import { BASE_PATH } from "@/lib/constants";
 
-// Images
-const imgHero = `${BASE_PATH}/assets/cdecb895a2e1e301e31eadfffa170feab26b3bf1.png`;
-const imgStars1 = `${BASE_PATH}/assets/96e45ae1ba60f13f2644063a88546318f60a3bfb.png`;
 const imgContactTick = `${BASE_PATH}/assets/contact-tick.png`;
 const imgCalendar = `${BASE_PATH}/assets/faq-icon.png`;
+const imgBlogHeroCurves = `${BASE_PATH}/assets/blog-hero-curves.svg`;
 
 // Blog article data with placeholder images
 const featuredArticle = {
@@ -160,72 +158,46 @@ export default function BlogPage() {
   }, []);
 
   return (
-    <div className="bg-white relative size-full">
+    <div className="bg-white relative size-full min-h-screen">
       <div className="w-full flex flex-col items-center">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
-          {/* Hero Section */}
-          <div className="min-h-[500px] md:min-h-[600px] overflow-clip relative shrink-0 w-full">
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgHero} />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/30" />
-            <div className="absolute inset-0 opacity-60">
-              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgStars1} />
+          {/* Hero Section - Light theme with purple gradient curves from Figma */}
+          <div className="h-[600px] md:h-[883px] overflow-hidden relative shrink-0 w-full bg-white">
+            {/* Purple Gradient Curves Background - exact Figma SVG */}
+            <div className="absolute left-[-109px] top-[94px] md:top-[172px] w-[1606px] h-[710px] pointer-events-none">
+              <img
+                src={imgBlogHeroCurves}
+                alt=""
+                className="w-full h-full object-contain"
+                style={{ transform: 'scale(1.15)' }}
+              />
             </div>
 
-            <Header />
+            <Header variant="light" />
 
             {/* Hero Content */}
-            <div className="relative z-10 flex flex-col items-center justify-center pt-[80px] md:pt-[120px] pb-[60px]">
-              <h1 className="font-[family-name:var(--font-headings)] text-[36px] md:text-[48px] lg:text-[55px] leading-[1.2] text-center bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent uppercase max-w-[925px] px-4 animate-fade-in-up">
+            <div className="relative z-10 flex flex-col items-center justify-center pt-[100px] md:pt-[144px]">
+              <h1 className="font-[family-name:var(--font-headings)] text-[36px] md:text-[48px] lg:text-[55px] leading-[1.15] text-center text-black uppercase max-w-[925px] px-4 animate-fade-in-up">
                 DISCOVER OUR LATEST ARTICLES
               </h1>
-
-              {/* Wavy Line SVG */}
-              <div className="w-full max-w-[1600px] mt-[40px] overflow-hidden">
-                <svg viewBox="0 0 1440 200" className="w-full h-auto" preserveAspectRatio="none">
-                  <defs>
-                    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stopColor="#265df6" />
-                      <stop offset="50%" stopColor="#7427ff" />
-                      <stop offset="100%" stopColor="#265df6" />
-                    </linearGradient>
-                  </defs>
-                  <path
-                    d="M0,100 Q180,20 360,100 T720,100 T1080,100 T1440,100"
-                    fill="none"
-                    stroke="url(#waveGradient)"
-                    strokeWidth="3"
-                    className="animate-wave"
-                  />
-                  <path
-                    d="M0,120 Q180,40 360,120 T720,120 T1080,120 T1440,120"
-                    fill="none"
-                    stroke="url(#waveGradient)"
-                    strokeWidth="2"
-                    opacity="0.5"
-                    className="animate-wave-delayed"
-                  />
-                </svg>
-              </div>
             </div>
           </div>
 
-          {/* Articles Section */}
+          {/* Articles Section - Light Theme */}
           <div className="bg-white content-stretch flex flex-col items-center py-[60px] md:py-[85px] relative shrink-0 w-full">
             <div className="max-w-[1360px] w-full px-4 md:px-[40px] mx-auto">
               {/* Section Heading */}
-              <div className="flex flex-col items-center mb-[40px]">
-                <h2 className="font-[family-name:var(--font-headings)] text-[36px] md:text-[48px] leading-[1.25] tracking-[1px] text-[#1b1b1b]">
-                  Articles for You
+              <div className="flex flex-col items-center mb-[60px]">
+                <h2 className="font-['Schibsted_Grotesk',sans-serif] text-[36px] md:text-[50px] leading-[1.25] capitalize text-black">
+                  Articles for You.
                 </h2>
               </div>
 
               {/* Featured Article */}
-              <Link href={`/blog/${featuredArticle.slug}`} className="block border-b border-[#e8e7e7] pb-[33px] mb-[40px] group scroll-reveal scroll-fade-up">
+              <Link href={`/blog/${featuredArticle.slug}`} className="block border-b border-black/10 pb-[33px] mb-[50px] group scroll-reveal scroll-fade-up">
                 <div className="flex flex-col lg:flex-row gap-[40px] items-start">
                   {/* Image */}
-                  <div className="w-full lg:w-[608px] h-[300px] lg:h-[430px] rounded-[12px] overflow-hidden shrink-0">
+                  <div className="w-full lg:w-[608px] h-[300px] lg:h-[430px] rounded-[16px] overflow-hidden shrink-0 shadow-lg">
                     <img
                       src={featuredArticle.image}
                       alt={featuredArticle.title}
@@ -236,31 +208,31 @@ export default function BlogPage() {
                   {/* Content */}
                   <div className="flex flex-col items-start pt-[19px] flex-1">
                     <div className="flex items-center justify-between w-full mb-[18px]">
-                      <span className="font-['Inter',sans-serif] font-semibold text-[13px] text-[#3f2fee] uppercase tracking-wide">
+                      <span className="font-['Inter',sans-serif] font-semibold text-[13px] text-[#7427ff] uppercase tracking-wide">
                         {featuredArticle.category}
                       </span>
-                      <span className="font-['Inter',sans-serif] font-semibold text-[14px] text-[#7e7e81] uppercase">
+                      <span className="font-['Inter',sans-serif] font-semibold text-[14px] text-black/50 uppercase">
                         {featuredArticle.readTime} to read
                       </span>
                     </div>
 
-                    <h3 className="font-['Inter',sans-serif] font-bold text-[32px] md:text-[40px] lg:text-[48px] leading-[1.33] tracking-[1px] text-[#1b1b1b] mb-[20px] group-hover:text-[#3f2fee] transition-colors">
+                    <h3 className="font-['Inter',sans-serif] font-bold text-[32px] md:text-[40px] lg:text-[48px] leading-[1.33] tracking-[1px] text-black mb-[20px] group-hover:text-[#7427ff] transition-colors">
                       {featuredArticle.title}
                     </h3>
 
-                    <p className="font-['Inter',sans-serif] text-[18px] text-[#7e7e81] leading-[1.6] mb-[30px]">
+                    <p className="font-['Inter',sans-serif] text-[18px] text-black/60 leading-[1.6] mb-[30px]">
                       {featuredArticle.excerpt}
                     </p>
 
                     <div className="flex items-center gap-[16px] mt-auto">
-                      <div className="w-[40px] h-[40px] rounded-full bg-[#3f2fee] flex items-center justify-center text-white font-bold">
+                      <div className="w-[40px] h-[40px] rounded-full bg-gradient-to-r from-[#265df6] to-[#7427ff] flex items-center justify-center text-white font-bold">
                         S
                       </div>
                       <div className="flex items-center gap-[6px]">
-                        <span className="font-['Inter',sans-serif] font-bold text-[18px] text-[#7e7e81]">by</span>
-                        <span className="font-['Inter',sans-serif] font-bold text-[20px] text-[#3f2fee]">{featuredArticle.author}</span>
+                        <span className="font-['Inter',sans-serif] font-bold text-[18px] text-black/50">by</span>
+                        <span className="font-['Inter',sans-serif] font-bold text-[20px] text-[#7427ff]">{featuredArticle.author}</span>
                       </div>
-                      <span className="font-['Inter',sans-serif] font-semibold text-[14px] text-[#7e7e81] ml-auto">
+                      <span className="font-['Inter',sans-serif] font-semibold text-[14px] text-black/50 ml-auto">
                         {featuredArticle.date}
                       </span>
                     </div>
@@ -268,17 +240,17 @@ export default function BlogPage() {
                 </div>
               </Link>
 
-              {/* Article Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[40px] gap-y-[48px]">
+              {/* Article Grid - 2 columns with vertical cards matching Figma */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[60px] gap-y-[72px]">
                 {articles.map((article, index) => (
                   <Link
                     key={index}
                     href={`/blog/${article.slug}`}
-                    className="group flex flex-col scroll-reveal scroll-fade-up card-3d bg-white rounded-[16px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-shadow"
+                    className="group flex flex-col scroll-reveal scroll-fade-up bg-white overflow-hidden transition-all duration-300"
                     style={{ transitionDelay: `${(index % 4) * 0.1}s` }}
                   >
-                    {/* Article Image */}
-                    <div className="w-full h-[240px] md:h-[280px] overflow-hidden">
+                    {/* Article Image - Large on top */}
+                    <div className="w-full aspect-[638/455] overflow-hidden rounded-[12px] mb-[36px]">
                       <img
                         src={article.image}
                         alt={article.title}
@@ -286,33 +258,36 @@ export default function BlogPage() {
                       />
                     </div>
 
-                    {/* Card Content */}
-                    <div className="flex flex-col flex-1 p-[24px]">
-                      {/* Article Meta */}
-                      <div className="flex items-center justify-between mb-[12px]">
-                        <span className="font-['Inter',sans-serif] font-semibold text-[12px] text-[#3f2fee] uppercase tracking-wide">
-                          {article.category}
-                        </span>
-                        <span className="font-['Inter',sans-serif] font-semibold text-[12px] text-[#7e7e81] uppercase">
-                          {article.readTime}
-                        </span>
-                      </div>
+                    {/* Article Meta - Category + dot + Read time */}
+                    <div className="flex items-center gap-[14px] mb-[23px]">
+                      <span className="font-['Inter',sans-serif] font-semibold text-[20px] text-black">
+                        {article.category}
+                      </span>
+                      <span className="w-[9px] h-[9px] rounded-full bg-black/30"></span>
+                      <span className="font-['Inter',sans-serif] font-medium text-[20px] text-black/50">
+                        {article.readTime}
+                      </span>
+                    </div>
 
-                      {/* Article Title */}
-                      <h4 className="font-['Inter',sans-serif] font-bold text-[20px] md:text-[24px] leading-[1.4] text-[#1b1b1b] mb-[16px] group-hover:text-[#3f2fee] transition-colors">
-                        {article.title}
-                      </h4>
+                    {/* Article Title - Large */}
+                    <h4 className="font-['Schibsted_Grotesk',sans-serif] font-bold text-[28px] md:text-[32px] leading-[1.25] text-black mb-[24px] group-hover:text-[#7427ff] transition-colors min-h-[80px]">
+                      {article.title}
+                    </h4>
 
-                      {/* Author & Date */}
-                      <div className="flex items-center justify-between mt-auto">
-                        <div className="flex items-center gap-[6px]">
-                          <span className="font-['Inter',sans-serif] font-bold text-[14px] text-[#7e7e81]">by</span>
-                          <span className="font-['Inter',sans-serif] font-bold text-[16px] text-[#3f2fee]">{article.author}</span>
+                    {/* Author & Date */}
+                    <div className="flex items-center justify-between mt-auto">
+                      <div className="flex items-center gap-[24px]">
+                        <div className="w-[60px] h-[60px] rounded-full bg-gradient-to-r from-[#265df6] to-[#7427ff] flex items-center justify-center text-white font-bold text-[20px]">
+                          S
                         </div>
-                        <span className="font-['Inter',sans-serif] font-semibold text-[13px] text-[#7e7e81]">
-                          {article.date}
-                        </span>
+                        <div className="flex items-center gap-[8px]">
+                          <span className="font-['Inter',sans-serif] font-medium text-[24px] text-black/50">by</span>
+                          <span className="font-['Inter',sans-serif] font-semibold text-[26px] text-[#7427ff]">{article.author}</span>
+                        </div>
                       </div>
+                      <span className="font-['Inter',sans-serif] font-medium text-[18px] text-black/50">
+                        {article.date}
+                      </span>
                     </div>
                   </Link>
                 ))}
@@ -321,12 +296,12 @@ export default function BlogPage() {
           </div>
 
           {/* Contact Section */}
-          <div className="bg-[#f0f0f0] content-stretch flex flex-col items-start py-[80px] md:py-[124px] relative shrink-0 w-full">
+          <div className="bg-[#f5f5f5] content-stretch flex flex-col items-start py-[80px] md:py-[124px] relative shrink-0 w-full">
             <div className="max-w-[1440px] w-full mx-auto px-4 md:px-[40px]">
-              <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-0 items-start justify-between">
+              <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[80px] items-start justify-between">
                 {/* Left Content */}
                 <div className="flex flex-col items-start max-w-[434px]">
-                  <h2 className="font-[family-name:var(--font-headings)] text-[40px] md:text-[55px] leading-[1.4] tracking-[1px] text-[#1b1b1b]">
+                  <h2 className="font-[family-name:var(--font-headings)] text-[40px] md:text-[55px] leading-[1.2] tracking-[1px] text-[#1b1b1b]">
                     Have a Project?<br />Let&apos;s talk!
                   </h2>
 
@@ -335,23 +310,23 @@ export default function BlogPage() {
                       "NDA? Absolutely just ask.",
                       "We'll respond in 24 hours — fast & focused.",
                       "Work with senior experts, not juniors.",
-                    ].map((item, index) => (
-                      <div key={index} className="flex gap-[10px] items-center">
+                    ].map((item, i) => (
+                      <div key={i} className="flex gap-[10px] items-center">
                         <img alt="" className="w-[16px] h-[16px]" src={imgContactTick} />
                         <span className="font-['Inter',sans-serif] font-semibold text-[14px] md:text-[15px] text-[#1b1b1b]">{item}</span>
                       </div>
                     ))}
                   </div>
 
-                  <div className="flex flex-col gap-[12px] mt-[95px]">
+                  <div className="flex flex-col gap-[12px] mt-[60px] md:mt-[95px]">
                     <span className="font-['Inter',sans-serif] font-semibold text-[18px] text-[#1b1b1b]">Schedule a call:</span>
-                    <div className="bg-white flex items-center p-[10px] pr-[24px] rounded-lg">
-                      <div className="bg-[#3f2fee] w-[72px] h-[72px] rounded-full flex items-center justify-center text-white font-bold text-[24px]">S</div>
+                    <div className="bg-white flex items-center p-[10px] pr-[24px] rounded-lg shadow-sm">
+                      <div className="bg-gradient-to-r from-[#265df6] to-[#7427ff] w-[72px] h-[72px] rounded-full flex items-center justify-center text-white font-bold text-[24px]">S</div>
                       <div className="flex flex-col pl-[20px]">
                         <span className="font-['Inter',sans-serif] font-semibold text-[24px] text-[#1b1b1b]">Sivarsa</span>
                         <span className="font-['Inter',sans-serif] text-[18px] text-[#7e7e81]">Founder & CEO</span>
                       </div>
-                      <img alt="" className="w-[48px] h-[48px] ml-[52px]" src={imgCalendar} />
+                      <img alt="" className="w-[48px] h-[48px] ml-[40px]" src={imgCalendar} />
                     </div>
                   </div>
                 </div>

@@ -22,7 +22,8 @@ export default function Header({ variant = "dark" }: HeaderProps) {
 
   const isDark = variant === "dark";
   const textColor = isDark ? "text-white" : "text-[#1b1b1b]";
-  const logoSrc = isDark ? `${BASE_PATH}/assets/logo-icon.svg` : `${BASE_PATH}/assets/logo-icon-dark.svg`;
+  const hoverClass = isDark ? "nav-item" : "nav-item-light";
+  const logoSrc = isDark ? `${BASE_PATH}/assets/logo.svg` : `${BASE_PATH}/assets/logo-dark.svg`;
   const hamburgerBg = isDark ? "bg-white" : "bg-[#1b1b1b]";
 
   return (
@@ -31,8 +32,8 @@ export default function Header({ variant = "dark" }: HeaderProps) {
         <Image
           src={logoSrc}
           alt="Sivarsa Logo"
-          width={36}
-          height={36}
+          width={24}
+          height={28}
           className="shrink-0"
         />
         <span className={`text-[28px] ${textColor} font-bold leading-none`} style={{ fontFamily: "var(--font-logo)" }}>
@@ -44,7 +45,7 @@ export default function Header({ variant = "dark" }: HeaderProps) {
       <nav className={`content-stretch hidden md:flex font-['Inter',sans-serif] font-normal gap-8 lg:gap-[45px] items-center justify-center relative text-lg lg:text-[20px] ${textColor} whitespace-nowrap animate-fade-in-down z-50`}>
         <Link
           href="/"
-          className="nav-item link-animated cursor-pointer py-2"
+          className={`${hoverClass} link-animated cursor-pointer py-2`}
         >
           Home
         </Link>
@@ -56,7 +57,7 @@ export default function Header({ variant = "dark" }: HeaderProps) {
           onMouseLeave={() => setIsServicesOpen(false)}
         >
           <button
-            className="flex items-center gap-1.5 nav-item link-animated cursor-pointer py-2"
+            className={`flex items-center gap-1.5 ${hoverClass} link-animated cursor-pointer py-2`}
           >
             <span>Services</span>
             <svg
@@ -75,12 +76,12 @@ export default function Header({ variant = "dark" }: HeaderProps) {
               isServicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
             }`}
           >
-            <div className="bg-[#1a1a1a] border border-[#333] rounded-xl shadow-2xl py-2 min-w-[220px] overflow-hidden">
+            <div className={`${isDark ? 'bg-[#1a1a1a] border-[#333]' : 'bg-white border-gray-200'} border rounded-xl shadow-2xl py-2 min-w-[220px] overflow-hidden`}>
               {services.map((service) => (
                 <Link
                   key={service.href}
                   href={service.href}
-                  className="block px-5 py-3 text-[16px] text-white/80 hover:text-white hover:bg-gradient-to-r hover:from-[#265df6]/20 hover:to-[#7427ff]/20 transition-all duration-200"
+                  className={`block px-5 py-3 text-[16px] ${isDark ? 'text-white/80 hover:text-white' : 'text-[#1b1b1b]/80 hover:text-[#1b1b1b]'} hover:bg-gradient-to-r hover:from-[#265df6]/10 hover:to-[#7427ff]/10 transition-all duration-200`}
                 >
                   {service.label}
                 </Link>
@@ -91,19 +92,19 @@ export default function Header({ variant = "dark" }: HeaderProps) {
 
         <Link
           href="/about"
-          className="nav-item link-animated cursor-pointer py-2"
+          className={`${hoverClass} link-animated cursor-pointer py-2`}
         >
           About
         </Link>
         <Link
           href="/blog"
-          className="nav-item link-animated cursor-pointer py-2"
+          className={`${hoverClass} link-animated cursor-pointer py-2`}
         >
           Blog
         </Link>
         <Link
           href="/contact"
-          className="nav-item link-animated cursor-pointer py-2"
+          className={`${hoverClass} link-animated cursor-pointer py-2`}
         >
           Contact Us
         </Link>
