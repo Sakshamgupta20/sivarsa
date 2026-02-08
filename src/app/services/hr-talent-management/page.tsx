@@ -11,7 +11,7 @@ import { BASE_PATH } from "@/lib/constants";
 const imgHero = `${BASE_PATH}/assets/cdecb895a2e1e301e31eadfffa170feab26b3bf1.png`;
 const imgPattern2 = `${BASE_PATH}/assets/e943fd303c0291fd9475f87f73eb8662aae4ab65.png`;
 const imgStars1 = `${BASE_PATH}/assets/96e45ae1ba60f13f2644063a88546318f60a3bfb.png`;
-const imgImageServicesHeroImg = `${BASE_PATH}/assets/5c1ec57b92383875c8876008260bf8e232dba88b.png`;
+const imgImageServicesHeroImg = `${BASE_PATH}/assets/hr-hero.png`;
 const imgImageMarqueeImg = `${BASE_PATH}/assets/73935e485288eec9c0677abc0d0600a9f833a972.png`;
 const imgImageMarqueeImg1 = `${BASE_PATH}/assets/ab8fdb5ba619113577bf244db1327915b657d0f1.png`;
 const imgImageMarqueeImg2 = `${BASE_PATH}/assets/f87deaecd42daf62cc4a7f5a7a2b9c4095cbeab3.png`;
@@ -31,9 +31,9 @@ const imgImageLbImg = `${BASE_PATH}/assets/2688fbb99a5633a93cc970944bd72db4a112d
 const imgImageLbFaqIcon = `${BASE_PATH}/assets/0b857160e5018cd27df9fbbc68815715d0510936.png`;
 const imgBtnIcon = `${BASE_PATH}/assets/cc33d9c88b41312dae650fea64034944767af781.png`;
 const imgArrowUpIcon = `${BASE_PATH}/assets/051b6fc1a6a387d92f001032259153a18870ab92.png`;
-const imgTalentAcquisition = `${BASE_PATH}/assets/e66ef56f0b767b50b8860584a5fa19bd69be614e.png`;
-const imgEmployeeDev = `${BASE_PATH}/assets/34d961d0ab311afc7564d03f49aed88b4a54a35f.png`;
-const imgRetention = `${BASE_PATH}/assets/818a5b0370e47250af5f3233218b98f9533f97ef.png`;
+const imgTalentAcquisition = `${BASE_PATH}/assets/f143137c556d3059aaa91bb5659442e9d70a3bd3.png`;
+const imgEmployeeDev = `${BASE_PATH}/assets/dbbb3d741b560f8b0587a7c381fb2d1b5037c737.png`;
+const imgRetention = `${BASE_PATH}/assets/f5a776d9b40c965fa1820e8e6c7ae8d1c3b5f28a.png`;
 const imgSection = `${BASE_PATH}/assets/5695bc256bc8e98f1d5540277b232264bba9ee20.png`;
 const imgDivLocaCtaContent = `${BASE_PATH}/assets/105629aff6ad2aa1df97f788b54d5e2b39aafe1a.png`;
 const imgImageCtaSeatImg = `${BASE_PATH}/assets/0c7d1f9d7a98652099233689ceb28285808f961d.png`;
@@ -139,19 +139,19 @@ export default function HRTalentManagement() {
             </div>
             <div className="relative shrink-0 w-full lg:w-[597.923px]">
               <div className="content-stretch flex flex-col gap-[17.178px] items-start relative">
-                <div className="relative shrink-0 w-[597.923px]">
-                  <div className="content-stretch flex flex-col font-['Inter:Bold',sans-serif] font-bold items-start leading-[0] not-italic relative text-[53.159px] tracking-[0.9544px] whitespace-nowrap">
-                    <div className="flex flex-col justify-center relative shrink-0 text-white">
-                      <p className="leading-[72.152px]">Multi-Channel</p>
+                <div className="relative shrink-0 w-full lg:w-[597.923px]">
+                  <div className="content-stretch flex flex-col font-['Inter:Bold',sans-serif] font-bold items-start leading-[0] not-italic relative tracking-[0.9544px]">
+                    <div className="flex flex-col justify-center relative shrink-0 text-white text-[32px] md:text-[42px] lg:text-[53.159px]">
+                      <p className="leading-[72.152px]">Strategic Talent</p>
                     </div>
-                    <div className="flex flex-col justify-center relative shrink-0 text-white/70">
-                      <p className="leading-[72.152px]">Acquisition Mastery</p>
+                    <div className="flex flex-col justify-center relative shrink-0 text-white/70 text-[18px] md:text-[24px] lg:text-[30px]">
+                      <p className="leading-[72.152px]">Find and hire the right people, faster</p>
                     </div>
                   </div>
                 </div>
                 <div className="relative shrink-0 w-[597.923px] mt-4">
                   <div className="content-stretch flex flex-col font-['Inter:Medium',sans-serif] font-medium items-start leading-[1.6] not-italic relative text-white/80 text-[16.511px]">
-                    <p>We design and execute acquisition strategies across every channel that matters for your business. From paid campaigns to organic growth loops, we find the most efficient path to your next 10,000 customers.</p>
+                    <p>We don&apos;t just fill positions—we build talent pipelines that fuel your business growth. Our data-driven recruitment strategies help you attract A-players and reduce time-to-hire by half.</p>
                   </div>
                 </div>
                 <div className="relative shrink-0 w-[597.923px] mt-4">
@@ -163,7 +163,7 @@ export default function HRTalentManagement() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageLbFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
-                            <p className="leading-[32.067px]">Paid advert optimization (Google, Meta, LinkedIn)</p>
+                            <p className="leading-[32.067px]">Employer branding and EVP development</p>
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
                             <p className="leading-[21.378px]">01</p>
@@ -178,7 +178,7 @@ export default function HRTalentManagement() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageLbFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
-                            <p className="leading-[32.067px]">SEO and content-driven growth</p>
+                            <p className="leading-[32.067px]">Multi-channel recruitment strategies</p>
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
                             <p className="leading-[21.378px]">02</p>
@@ -193,7 +193,7 @@ export default function HRTalentManagement() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageLbFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
-                            <p className="leading-[32.067px]">Referral program design</p>
+                            <p className="leading-[32.067px]">Candidate experience optimization</p>
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
                             <p className="leading-[21.378px]">03</p>
@@ -208,7 +208,7 @@ export default function HRTalentManagement() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageLbFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
-                            <p className="leading-[32.067px]">Partnership and affiliate strategies</p>
+                            <p className="leading-[32.067px]">Skills-based hiring frameworks</p>
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
                             <p className="leading-[21.378px]">04</p>
@@ -223,7 +223,7 @@ export default function HRTalentManagement() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageLbFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
-                            <p className="leading-[32.067px]">Viral loop engineering</p>
+                            <p className="leading-[32.067px]">Recruitment analytics and metrics</p>
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
                             <p className="leading-[21.378px]">05</p>
@@ -244,14 +244,14 @@ export default function HRTalentManagement() {
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
                     <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[52.372px] whitespace-nowrap">
-                      <p className="leading-[68.756px]">Turn your ideas into impactful</p>
+                      <p className="leading-[68.756px]">Turn Your Workforce Into Your</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
                     <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[50.926px] text-[rgba(41,36,36,0.41)] whitespace-nowrap">
-                      <p className="leading-[68.756px]">solutions like them!</p>
+                      <p className="leading-[68.756px]">Competitive Edge!</p>
                     </div>
                   </div>
                 </div>
@@ -322,14 +322,15 @@ export default function HRTalentManagement() {
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
                     <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[24px] md:text-[36px] lg:text-[52.166px] text-white">
-                      <p className="leading-[68.756px]">We deliver on time, in days and weeks</p>
+                      <p className="leading-[68.756px]">We deliver results, in weeks not months</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[22px] md:text-[32px] lg:text-[50.72px] text-[rgba(255,255,255,0.52)]">
-                      <p className="leading-[68.756px]">—not months.</p>
+                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[68.756px] not-italic relative shrink-0 text-[22px] md:text-[32px] lg:text-[50.72px] text-[rgba(255,255,255,0.52)]">
+                      <p className="mb-0">—Rapid implementation. Continuous improvement.</p>
+                      <p>{` Measurable impact.`}</p>
                     </div>
                   </div>
                 </div>
@@ -424,14 +425,15 @@ export default function HRTalentManagement() {
               <div className="bg-[#3f2fee] content-stretch flex flex-col items-center shrink-0 sticky top-0 z-10 w-full">
                 <div className="h-[438.222px] max-w-[1360px] relative shrink-0 w-[1360px]">
                   <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px] animate-fade-in-up">
-                    <div className="flex flex-col font-bold justify-center leading-[0] not-italic relative shrink-0 text-[44.979px] text-white whitespace-nowrap" style={{ fontFamily: "var(--font-headings)" }}>
-                      <p className="leading-[54.4px]">Talent Acquisition & Recruitment</p>
+                    <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[54.4px] not-italic relative shrink-0 text-[44.979px] text-white whitespace-nowrap">
+                      <p className="mb-0">{`Talent Acquisition & `}</p>
+                      <p>Employer Branding</p>
                     </div>
                     <div className="h-[211.036px] relative shrink-0 w-[574.43px]">
                       <div className="absolute content-stretch flex flex-col items-start left-0 top-[-0.68px]">
                         <div className="content-stretch flex flex-col items-start max-w-[358.8888854980469px] pr-[11.806px] relative shrink-0">
                           <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[17px] text-white w-[331.988px]">
-                            <p className="leading-[26.35px] whitespace-pre-wrap">Find and attract the right talent for your organization. Our strategic recruitment process ensures you hire candidates who align with your culture and drive business success.</p>
+                            <p className="leading-[26.35px] whitespace-pre-wrap">Comprehensive recruitment strategies that position your company as an employer of choice. We build talent pipelines, optimize hiring processes, and create employer brands that attract top talent.</p>
                           </div>
                         </div>
                       </div>
@@ -439,15 +441,15 @@ export default function HRTalentManagement() {
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
                           <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
                             <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-[14.167px] text-white whitespace-nowrap">
-                              <p className="mb-0">Talent sourcing strategy</p>
+                              <p className="mb-0">Recruitment strategy development</p>
+                              <p className="mb-0">Employer brand positioning</p>
+                              <p className="mb-0">Job description optimization</p>
                               <p className="mb-0">Interview process design</p>
-                              <p className="mb-0">Employer branding</p>
-                              <p className="mb-0">Candidate assessment</p>
-                              <p>Offer negotiation support</p>
+                              <p className="mb-0">Candidate experience mapping</p>
+                              <p>Hiring metrics dashboard</p>
                             </div>
                           </div>
                         </div>
-                        <div className="h-[77px] shrink-0 w-[141px]" />
                       </div>
                     </div>
                   </div>
@@ -463,25 +465,26 @@ export default function HRTalentManagement() {
               <div className="bg-white content-stretch flex flex-col items-center shrink-0 sticky top-[60px] z-20 w-full">
                 <div className="h-[438.222px] max-w-[1360px] relative shrink-0 w-[1360px]">
                   <div className="absolute content-stretch flex flex-col gap-[26px] items-start left-[52.89px] top-[51.94px] w-[597.248px] animate-fade-in-up">
-                    <div className="flex flex-col font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[45.156px] whitespace-nowrap" style={{ fontFamily: "var(--font-headings)" }}>
-                      <p className="leading-[54.4px]">Employee Development & Training</p>
+                    <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[45.156px] w-[597.445px]">
+                      <p className="leading-[54.4px] whitespace-pre-wrap">{`Learning & Development Programs`}</p>
                     </div>
                     <div className="h-[211.036px] relative shrink-0 w-[597.248px]">
                       <div className="absolute content-stretch flex flex-col items-start left-0 top-[-0.68px]">
                         <div className="content-stretch flex flex-col items-start max-w-[358.8888854980469px] pr-[7.82px] relative shrink-0">
                           <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[16.867px] w-[358.889px]">
-                            <p className="leading-[26.35px] whitespace-pre-wrap">Develop your team&apos;s skills and capabilities with customized training programs. We create learning paths that align with your business goals and help employees reach their full potential.</p>
+                            <p className="leading-[26.35px] whitespace-pre-wrap">Custom learning programs that develop your workforce and prepare future leaders. We design training initiatives that align with business goals and accelerate employee growth.</p>
                           </div>
                         </div>
                       </div>
                       <div className="absolute content-stretch flex flex-col items-start left-[434.44px] top-0">
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
                           <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-[#1b1b1b] text-[14.056px] whitespace-nowrap">
-                            <p className="mb-0">Leadership development</p>
                             <p className="mb-0">Skills gap analysis</p>
-                            <p className="mb-0">Custom training programs</p>
-                            <p className="mb-0">Career path planning</p>
-                            <p>Mentorship programs</p>
+                            <p className="mb-0">Leadership development programs</p>
+                            <p className="mb-0">Onboarding experience design</p>
+                            <p className="mb-0">Training content creation</p>
+                            <p className="mb-0">Learning pathways</p>
+                            <p>Development ROI tracking</p>
                           </div>
                         </div>
                       </div>
@@ -499,25 +502,26 @@ export default function HRTalentManagement() {
               <div className="bg-[#ffd500] content-stretch flex flex-col items-center shrink-0 sticky top-[120px] z-30 w-full">
                 <div className="h-[438.222px] max-w-[1360px] relative shrink-0 w-[1360px]">
                   <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px] animate-fade-in-up">
-                    <div className="flex flex-col font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[44.979px] whitespace-nowrap" style={{ fontFamily: "var(--font-headings)" }}>
-                      <p className="leading-[54.4px]">Retention & Performance Management</p>
+                    <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[44.979px] whitespace-nowrap">
+                      <p className="leading-[54.4px]">{`Performance & Retention Management`}</p>
                     </div>
                     <div className="h-[211.036px] relative shrink-0 w-[599.958px]">
                       <div className="absolute content-stretch flex flex-col items-start left-0 top-[-0.68px]">
                         <div className="content-stretch flex flex-col items-start max-w-[358.8888854980469px] pr-[2.909px] relative shrink-0">
                           <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[16.203px] w-[358.889px]">
-                            <p className="leading-[26.35px] whitespace-pre-wrap">Keep your best talent engaged and performing at their peak. We design retention strategies and performance systems that drive results and reduce turnover.</p>
+                            <p className="leading-[26.35px] whitespace-pre-wrap">Turn good employees into great ones and keep them engaged long-term. We build performance systems, engagement strategies, and retention programs that reduce turnover and boost productivity.</p>
                           </div>
                         </div>
                       </div>
                       <div className="absolute content-stretch flex flex-col items-start left-[434.44px] top-0">
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
                           <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-[#1b1b1b] text-[13.613px] whitespace-nowrap">
-                            <p className="mb-0">Performance review systems</p>
-                            <p className="mb-0">Employee engagement surveys</p>
-                            <p className="mb-0">Compensation strategy</p>
-                            <p className="mb-0">Retention programs</p>
-                            <p>HR analytics & reporting</p>
+                            <p className="mb-0">Performance review frameworks</p>
+                            <p className="mb-0">Engagement survey programs</p>
+                            <p className="mb-0">Career progression pathways</p>
+                            <p className="mb-0">Retention strategy design</p>
+                            <p className="mb-0">Recognition programs</p>
+                            <p>Exit interview analysis</p>
                           </div>
                         </div>
                       </div>

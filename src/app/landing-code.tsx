@@ -244,7 +244,7 @@ export default function Landing() {
                   <p>No need to juggle multiple vendors. Get software, marketing, and talent under one roof with seamless coordination.</p>
                 </div>
               </div>
-              <div className="lg:-translate-y-1/2 relative lg:absolute h-[180px] md:h-[240px] lg:left-[336px] overflow-hidden lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
+              <div className="lg:-translate-y-1/2 relative lg:absolute h-[180px] md:h-[240px] lg:left-[336px] overflow-hidden rounded-[20px] lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
                 <img alt="All-in-one Solution" className="w-full h-full object-cover" src={imgDiv} />
               </div>
             </div>
@@ -260,7 +260,7 @@ export default function Landing() {
                   <p>47+ companies scaled, 200+ projects delivered, and a 95% client retention rate. We deliver what we promise.</p>
                 </div>
               </div>
-              <div className="lg:-translate-y-1/2 relative lg:absolute h-[180px] md:h-[240px] lg:left-[336px] overflow-hidden lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
+              <div className="lg:-translate-y-1/2 relative lg:absolute h-[180px] md:h-[240px] lg:left-[336px] overflow-hidden rounded-[20px] lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
                 <img alt="Proven Expertise" className="w-full h-full object-cover" src={imgDiv1} />
               </div>
             </div>
@@ -277,7 +277,7 @@ export default function Landing() {
                   <p>{`Every Business is unique. We Offer Customizations perfectly with your Goals`}</p>
                 </div>
               </div>
-              <div className="lg:-translate-y-1/2 relative lg:absolute h-[180px] md:h-[240px] lg:left-[336px] overflow-hidden lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
+              <div className="lg:-translate-y-1/2 relative lg:absolute h-[180px] md:h-[240px] lg:left-[336px] overflow-hidden rounded-[20px] lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
                 <img alt="Client Centric Approach" className="w-full h-full object-cover" src={imgDiv2} />
               </div>
             </div>
@@ -293,7 +293,7 @@ export default function Landing() {
                   <p className="mb-0">{`Every Business is unique. We Offer Customizations perfectly with your Goals`}</p>
                 </div>
               </div>
-              <div className="lg:-translate-y-1/2 relative lg:absolute h-[180px] md:h-[240px] lg:left-[336px] overflow-hidden lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
+              <div className="lg:-translate-y-1/2 relative lg:absolute h-[180px] md:h-[240px] lg:left-[336px] overflow-hidden rounded-[20px] lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
                 <img alt="Transparent & Collaborative" className="w-full h-full object-cover" src={imgDiv} />
               </div>
             </div>
