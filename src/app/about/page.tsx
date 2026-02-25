@@ -297,22 +297,22 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* HR & Talent Card */}
+              {/* Staffing Solutions Card */}
               <div className="bg-white content-stretch flex flex-col items-center shrink-0 sticky top-[60px] z-20 w-full">
                 <div className="h-auto md:h-[438px] max-w-[1360px] relative shrink-0 w-full py-[50px] px-4 md:px-[52px]">
                   <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between h-full gap-8">
                     <div className="flex flex-col gap-[30px] items-start max-w-[600px]">
-                      <h3 className="font-['Inter',sans-serif] font-extrabold text-[32px] md:text-[45px] text-[#1b1b1b] leading-[1.2]">HR & Talent Management</h3>
+                      <h3 className="font-['Inter',sans-serif] font-extrabold text-[32px] md:text-[45px] text-[#1b1b1b] leading-[1.2]">Staffing Solutions</h3>
                       <p className="font-['Inter',sans-serif] font-medium text-[15px] md:text-[17px] text-[#1b1b1b]/80 max-w-[360px] leading-[1.6]">
-                        Attract, develop, and retain top talent. Our strategic HR solutions help you build high-performing teams.
+                        End-to-end workforce solutions — from IT recruitment to gig workforce deployment. We deliver the right people, right when you need them.
                       </p>
-                      <Link href="/services/hr-talent-management" className="bg-[#1b1b1b] flex gap-[8px] items-center justify-center px-[26px] py-[15px] rounded-[100px] btn-magnetic shine-effect">
+                      <Link href="/services/staffing-solutions" className="bg-[#1b1b1b] flex gap-[8px] items-center justify-center px-[26px] py-[15px] rounded-[100px] btn-magnetic shine-effect">
                         <span className="font-['Inter',sans-serif] font-semibold text-[15px] text-white">Hire Smarter</span>
                         <img alt="" className="w-[11px] h-[11px]" src={imgBtnIconWhite} />
                       </Link>
                     </div>
                     <div className="w-full lg:w-[366px] h-[250px] lg:h-[332px] rounded-[16px] overflow-hidden">
-                      <img alt="HR & Talent" className="w-full h-full object-cover" src={imgHrTalent} />
+                      <img alt="Staffing Solutions" className="w-full h-full object-cover" src={imgHrTalent} />
                     </div>
                   </div>
                 </div>

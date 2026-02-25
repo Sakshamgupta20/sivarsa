@@ -8,7 +8,7 @@ const BASE_PATH = "/sivarsa";
 const serviceLinks = [
   { label: "Software Development", href: "/services/software-development" },
   { label: "Growth Marketing", href: "/services/growth-marketing" },
-  { label: "HR & Talent Management", href: "/services/hr-talent-management" },
+  { label: "Staffing Solutions", href: "/services/staffing-solutions" },
 ];
 
 const menuLinks = [

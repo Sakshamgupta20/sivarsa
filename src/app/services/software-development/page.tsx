@@ -237,21 +237,21 @@ export default function SoftwareDevelopment() {
             </div>
           </div>
         </div>
-        <div className="bg-white content-stretch flex flex-col items-center overflow-clip py-[147.333px] relative shrink-0 w-[1360px]">
-          <div className="content-stretch flex flex-col gap-[75.565px] items-start max-w-[1360px] px-[37.778px] relative shrink-0 w-[1360px]">
-            <div className="content-stretch flex h-[137.502px] items-end justify-between relative shrink-0 w-full">
+        <div className="bg-white content-stretch flex flex-col items-center overflow-clip py-[80px] md:py-[120px] lg:py-[147.333px] relative shrink-0 w-full max-w-[1360px]">
+          <div className="content-stretch flex flex-col gap-[50px] md:gap-[75.565px] items-start max-w-[1360px] px-[20px] md:px-[37.778px] relative shrink-0 w-full">
+            <div className="content-stretch flex flex-col md:flex-row md:items-end justify-between relative shrink-0 w-full gap-4">
               <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0">
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
                     <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[40px] lg:text-[52.372px]">
-                      <p className="leading-[68.756px]">Turn your ideas into impactful</p>
+                      <p className="leading-[1.3]">Our Work Speaks</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
                     <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[24px] md:text-[36px] lg:text-[50.926px] text-[rgba(41,36,36,0.41)]">
-                      <p className="leading-[68.756px]">solutions like them!</p>
+                      <p className="leading-[1.3]">for itself.</p>
                     </div>
                   </div>
                 </div>
@@ -271,47 +271,72 @@ export default function SoftwareDevelopment() {
                 </Link>
               </div>
             </div>
-            <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] h-[588.923px] leading-[0] relative rounded-[25px] shrink-0 text-black to-[rgba(116,39,255,0.5)] w-[1276px] hover-lift card-animated">
-              <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:Bold',sans-serif] font-bold justify-center left-[47px] text-[30px] top-[241.46px] w-[547.728px]">
-                <p className="leading-[35.335px] whitespace-pre-wrap">High cost per acquisition (CPA), minimal repeat purchases due to lack of robust email strategy.</p>
-              </div>
-              <div className="-translate-y-1/2 absolute font-['Schibsted_Grotesk:Bold',sans-serif] font-bold h-[133.489px] left-[47px] right-[653.82px] top-[calc(50%+133.74px)]">
-                <div className="-translate-y-1/2 absolute flex flex-col h-[41.225px] justify-center left-[15.7px] text-[20px] top-[62.61px] w-[506.395px]">
-                  <p className="leading-[23.557px] whitespace-pre-wrap">Our approach integrates SEO and ROI-focused paid search to boost visibility, leverages display and programmatic ads for timely retargeting, and uses segmented, automated email campaigns to drive repeat purchases.</p>
+            {/* Project Showcase Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+              {/* Project 1 - Emotion Buddy */}
+              <a href="https://emotionbuddy.ai/" target="_blank" rel="noopener noreferrer" className="group relative rounded-[20px] overflow-hidden h-[360px] bg-gradient-to-br from-[#6C63FF] to-[#3F2FEE] hover-lift card-animated cursor-pointer">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10" />
+                <img src={`${BASE_PATH}/assets/projects/emotionbuddy.png`} alt="Emotion Buddy" className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
+                  <div className="flex gap-2 mb-3">
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-[11px] font-semibold px-3 py-1 rounded-full">Web App</span>
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-[11px] font-semibold px-3 py-1 rounded-full">iOS App</span>
+                  </div>
+                  <h3 className="font-['Inter',sans-serif] font-extrabold text-[22px] text-white leading-[1.2] mb-1">Emotion Buddy</h3>
+                  <p className="font-['Inter',sans-serif] text-[14px] text-white/70 leading-[1.5]">AI-powered journaling & emotional wellness companion. 10M+ journal entries, 4.9-star rating.</p>
                 </div>
-                <div className="-translate-y-1/2 absolute flex flex-col justify-center left-[2px] text-[50px] top-[8px] whitespace-nowrap">
-                  <p className="leading-[23.557px]">&ldquo;</p>
+              </a>
+              {/* Project 2 - Gourmet Egypt */}
+              <a href="https://gourmetegypt.com/" target="_blank" rel="noopener noreferrer" className="group relative rounded-[20px] overflow-hidden h-[360px] bg-gradient-to-br from-[#FF6B35] to-[#D32F2F] hover-lift card-animated cursor-pointer">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10" />
+                <img src={`${BASE_PATH}/assets/projects/gourmetegypt.png`} alt="Gourmet Egypt" className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
+                  <div className="flex gap-2 mb-3">
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-[11px] font-semibold px-3 py-1 rounded-full">E-commerce</span>
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-[11px] font-semibold px-3 py-1 rounded-full">Web App</span>
+                  </div>
+                  <h3 className="font-['Inter',sans-serif] font-extrabold text-[22px] text-white leading-[1.2] mb-1">Gourmet Egypt</h3>
+                  <p className="font-['Inter',sans-serif] text-[14px] text-white/70 leading-[1.5]">Online grocery shopping & same-day delivery platform serving customers across Egypt.</p>
                 </div>
-              </div>
-              <div className="-translate-y-1/2 absolute content-stretch flex flex-col gap-[24px] items-start left-[732px] top-[calc(50%+0.5px)] w-[486px]">
-                <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] h-[129px] overflow-clip relative rounded-[15px] shrink-0 to-[#7427ff] w-full">
-                  <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:SemiBold',sans-serif] font-semibold justify-center left-[205px] text-[22px] top-[64px] w-[230px]">
-                    <p className="leading-[24px] whitespace-pre-wrap">increase in organic traffic over 6 months</p>
+              </a>
+              {/* Project 3 - Rebolt */}
+              <a href="https://www.reboltnetwork.com/" target="_blank" rel="noopener noreferrer" className="group relative rounded-[20px] overflow-hidden h-[360px] bg-gradient-to-br from-[#00C853] to-[#1B5E20] hover-lift card-animated cursor-pointer">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10" />
+                <img src={`${BASE_PATH}/assets/projects/rebolt.png`} alt="Rebolt EV Charging" className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
+                  <div className="flex gap-2 mb-3">
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-[11px] font-semibold px-3 py-1 rounded-full">Mobile App</span>
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-[11px] font-semibold px-3 py-1 rounded-full">Android</span>
                   </div>
-                  <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:ExtraBold',sans-serif] font-extrabold justify-center left-[21px] text-[60px] top-[65px] whitespace-nowrap">
-                    <p className="leading-[35.335px]">{`300% `}</p>
-                  </div>
+                  <h3 className="font-['Inter',sans-serif] font-extrabold text-[22px] text-white leading-[1.2] mb-1">Rebolt: EV Charging</h3>
+                  <p className="font-['Inter',sans-serif] text-[14px] text-white/70 leading-[1.5]">EV charging network app — find stations, book, charge, and pay with smart IoT-enabled chargers.</p>
                 </div>
-                <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] h-[129px] overflow-clip relative rounded-[15px] shrink-0 to-[#7427ff] w-full">
-                  <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:SemiBold',sans-serif] font-semibold justify-center left-[206px] text-[22px] top-[65px] w-[230px]">
-                    <p className="leading-[24px] whitespace-pre-wrap">reduction in bounce rates via optimized landing pages</p>
+              </a>
+              {/* Project 4 - Stone Craft Group */}
+              <a href="https://stonecraftgroup.com/" target="_blank" rel="noopener noreferrer" className="group relative rounded-[20px] overflow-hidden h-[360px] bg-gradient-to-br from-[#8D6E63] to-[#3E2723] hover-lift card-animated cursor-pointer md:col-span-1 lg:col-span-1">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10" />
+                <img src={`${BASE_PATH}/assets/projects/stonecraft.png`} alt="The Stone Craft Group" className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
+                  <div className="flex gap-2 mb-3">
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-[11px] font-semibold px-3 py-1 rounded-full">Website</span>
                   </div>
-                  <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:ExtraBold',sans-serif] font-extrabold justify-center left-[40px] text-[60px] top-[65px] whitespace-nowrap">
-                    <p className="leading-[35.335px]">{`40% `}</p>
-                  </div>
+                  <h3 className="font-['Inter',sans-serif] font-extrabold text-[22px] text-white leading-[1.2] mb-1">The Stone Craft Group</h3>
+                  <p className="font-['Inter',sans-serif] text-[14px] text-white/70 leading-[1.5]">Luxury sustainable real estate developer website showcasing eco-conscious residential projects.</p>
                 </div>
-                <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] h-[129px] overflow-clip relative rounded-[15px] shrink-0 to-[#7427ff] w-full">
-                  <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:SemiBold',sans-serif] font-semibold justify-center left-[206px] text-[22px] top-[64px] w-[273px]">
-                    <p className="leading-[24px] whitespace-pre-wrap">increase in monthly bookings, leading to a significant revenue boost</p>
+              </a>
+              {/* Project 5 - Rasav Jewels */}
+              <a href="http://www.rasavjewels.com/" target="_blank" rel="noopener noreferrer" className="group relative rounded-[20px] overflow-hidden h-[360px] bg-gradient-to-br from-[#FFD700] to-[#B8860B] hover-lift card-animated cursor-pointer md:col-span-1 lg:col-span-2">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10" />
+                <img src={`${BASE_PATH}/assets/projects/rasavjewels.png`} alt="Rasav Jewels" className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
+                  <div className="flex gap-2 mb-3">
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-[11px] font-semibold px-3 py-1 rounded-full">E-commerce</span>
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-[11px] font-semibold px-3 py-1 rounded-full">Website</span>
                   </div>
-                  <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:ExtraBold',sans-serif] font-extrabold justify-center left-[63px] text-[60px] top-[64px] whitespace-nowrap">
-                    <p className="leading-[35.335px]">2X</p>
-                  </div>
+                  <h3 className="font-['Inter',sans-serif] font-extrabold text-[22px] text-white leading-[1.2] mb-1">Rasav Jewels</h3>
+                  <p className="font-['Inter',sans-serif] text-[14px] text-white/70 leading-[1.5]">Online jewellery e-commerce platform with a premium shopping experience for fine jewellery.</p>
                 </div>
-              </div>
-              <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:Bold',sans-serif] font-bold justify-center left-[47px] text-[20px] top-[77.46px] whitespace-nowrap">
-                <p className="leading-[21.594px]">SANTOSH JEWELLERS</p>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -674,7 +699,7 @@ export default function SoftwareDevelopment() {
                       </div>
                       <div className="content-stretch flex flex-col items-start pb-[0.331px] pr-[26.265px] pt-[70.012px] relative shrink-0">
                         <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[22px] w-[348.5px]">
-                          <p className="leading-[37.683px] whitespace-pre-wrap">{`''Working with Sivarsa completely changed how we approach hiring. They helped us bring in the right talent quickly, which was exactly what we needed during a crucial phase''`}</p>
+                          <p className="leading-[37.683px] whitespace-pre-wrap">{`''Sivarsa built our entire platform from scratch — web app, iOS app, everything. Their team delivered fast, iterated constantly, and treated our product like their own. Couldn't have launched without them.''`}</p>
                         </div>
                       </div>
                       <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-end min-h-[62.17277908325195px] min-w-px pt-[94.149px] relative">

@@ -173,7 +173,7 @@ export default function Landing() {
               </Link>
 
               {/* Talent Card */}
-              <Link href="/services/hr-talent-management" className="absolute bg-[#17614a] h-full left-[33.33%] overflow-hidden w-1/3 group cursor-pointer">
+              <Link href="/services/staffing-solutions" className="absolute bg-[#17614a] h-full left-[33.33%] overflow-hidden w-1/3 group cursor-pointer">
                 {/* Text label - centered, fixed position matching Figma */}
                 <div className="absolute font-['Inter',sans-serif] font-bold left-1/2 -translate-x-1/2 text-[12px] md:text-[20px] lg:text-[30px] text-white top-[70px] md:top-[90px] lg:top-[107px] tracking-[-1px] md:tracking-[-2px] whitespace-nowrap z-10">
                   <p className="leading-[1.2]">TALENT</p>
@@ -500,17 +500,17 @@ export default function Landing() {
                 <div className="min-h-[350px] md:min-h-[400px] lg:h-[438.222px] max-w-[1360px] relative shrink-0 w-full px-4 md:px-8 lg:px-0">
                   <div className="relative md:absolute content-stretch flex flex-col gap-[20px] md:gap-[30.779px] items-start md:left-[52.89px] top-0 md:top-[51.94px] py-6 md:py-0 animate-fade-in-up">
                     <div className="flex flex-col font-['Inter',sans-serif] font-extrabold justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[36px] lg:text-[45px]">
-                      <p>{`HR & Talent Management`}</p>
+                      <p>{`Staffing Solutions`}</p>
                     </div>
                     <div className="relative shrink-0 w-full lg:w-[597.248px]">
                       <div className="content-stretch flex flex-col gap-[20px] md:gap-[30.222px] items-start">
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
                           <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[1.5] not-italic relative shrink-0 text-[#1b1b1b] text-[15px] md:text-[16.867px] w-full max-w-[358.889px]">
-                            <p>Attract, develop, and retain top talent. Our strategic HR solutions help you build high-performing teams that drive business results.</p>
+                            <p>End-to-end workforce solutions — from IT recruitment to gig workforce deployment. We deliver the right people, right when you need them.</p>
                           </div>
                         </div>
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
-                          <Link className="bg-[#1b1b1b] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center px-[20px] md:px-[26.444px] py-[12px] md:py-[15.111px] relative rounded-[94.444px] shrink-0 btn-magnetic shine-effect" href="/services/hr-talent-management">
+                          <Link className="bg-[#1b1b1b] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center px-[20px] md:px-[26.444px] py-[12px] md:py-[15.111px] relative rounded-[94.444px] shrink-0 btn-magnetic shine-effect" href="/services/staffing-solutions">
                             <div className="content-stretch flex flex-col items-start relative shrink-0">
                               <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[15.111px] text-left text-white whitespace-nowrap">
                                 <p className="leading-[18.889px]">Hire Smarter</p>

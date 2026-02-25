@@ -142,16 +142,16 @@ export default function GrowthMarketing() {
                 <div className="relative shrink-0 w-[597.923px]">
                   <div className="content-stretch flex flex-col font-['Inter:Bold',sans-serif] font-bold items-start leading-[0] not-italic relative text-[53.159px] tracking-[0.9544px] whitespace-nowrap">
                     <div className="flex flex-col justify-center relative shrink-0 text-white">
-                      <p className="leading-[72.152px]">Multi-Channel</p>
+                      <p className="leading-[72.152px]">Data-Driven</p>
                     </div>
                     <div className="flex flex-col justify-center relative shrink-0 text-white/70">
-                      <p className="leading-[72.152px]">Acquisition Mastery</p>
+                      <p className="leading-[72.152px]">Growth Engine</p>
                     </div>
                   </div>
                 </div>
                 <div className="relative shrink-0 w-[597.923px] mt-4">
                   <div className="content-stretch flex flex-col font-['Inter:Medium',sans-serif] font-medium items-start leading-[1.6] not-italic relative text-white/80 text-[16.511px]">
-                    <p>We design and execute acquisition strategies across every channel that matters for your business. From paid campaigns to organic growth loops, we find the most efficient path to your next 10,000 customers.</p>
+                    <p>We design and execute growth strategies across every channel that matters. From paid media to organic acquisition, we find the most efficient path to measurable business growth.</p>
                   </div>
                 </div>
                 <div className="relative shrink-0 w-[597.923px] mt-4">
@@ -163,7 +163,7 @@ export default function GrowthMarketing() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageLbFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
-                            <p className="leading-[32.067px]">Paid advert optimization (Google, Meta, LinkedIn)</p>
+                            <p className="leading-[32.067px]">Paid Search (Google, Meta, LinkedIn Ads)</p>
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
                             <p className="leading-[21.378px]">01</p>
@@ -178,7 +178,7 @@ export default function GrowthMarketing() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageLbFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
-                            <p className="leading-[32.067px]">SEO and content-driven growth</p>
+                            <p className="leading-[32.067px]">{`SEO & organic content strategy`}</p>
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
                             <p className="leading-[21.378px]">02</p>
@@ -193,7 +193,7 @@ export default function GrowthMarketing() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageLbFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
-                            <p className="leading-[32.067px]">Referral program design</p>
+                            <p className="leading-[32.067px]">Social media marketing</p>
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
                             <p className="leading-[21.378px]">03</p>
@@ -208,7 +208,7 @@ export default function GrowthMarketing() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageLbFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
-                            <p className="leading-[32.067px]">Partnership and affiliate strategies</p>
+                            <p className="leading-[32.067px]">{`Display & programmatic advertising`}</p>
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
                             <p className="leading-[21.378px]">04</p>
@@ -223,7 +223,7 @@ export default function GrowthMarketing() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageLbFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
-                            <p className="leading-[32.067px]">Viral loop engineering</p>
+                            <p className="leading-[32.067px]">{`Email marketing & retention campaigns`}</p>
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
                             <p className="leading-[21.378px]">05</p>
@@ -244,14 +244,14 @@ export default function GrowthMarketing() {
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
                     <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[52.372px] whitespace-nowrap">
-                      <p className="leading-[68.756px]">Turn your ideas into impactful</p>
+                      <p className="leading-[68.756px]">Turn Your Marketing Into Your</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
                     <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[50.926px] text-[rgba(41,36,36,0.41)] whitespace-nowrap">
-                      <p className="leading-[68.756px]">solutions like them!</p>
+                      <p className="leading-[68.756px]">Competitive Edge!</p>
                     </div>
                   </div>
                 </div>
@@ -346,7 +346,7 @@ export default function GrowthMarketing() {
                     </div>
                     <div className="content-stretch flex flex-col items-start relative shrink-0">
                       <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] max-h-[30.146665573120117px] not-italic relative shrink-0 text-[14px] md:text-[18px] lg:text-[22.667px] text-white tracking-[0.9444px]">
-                        <p className="leading-[30.147px]">{`Rapid prototyping & architecture setup`}</p>
+                        <p className="leading-[30.147px]">{`Strategy & channel audit`}</p>
                       </div>
                     </div>
                   </div>
@@ -365,7 +365,7 @@ export default function GrowthMarketing() {
                     </div>
                     <div className="content-stretch flex flex-col items-start relative shrink-0">
                       <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] max-h-[30.146665573120117px] not-italic relative shrink-0 text-[14px] md:text-[18px] lg:text-[22.135px] text-white tracking-[0.9444px]">
-                        <p className="leading-[30.147px]">{`Continuous deployment & fast iteration`}</p>
+                        <p className="leading-[30.147px]">{`Campaign launch & optimization`}</p>
                       </div>
                     </div>
                   </div>
@@ -384,7 +384,7 @@ export default function GrowthMarketing() {
                     </div>
                     <div className="content-stretch flex flex-col items-start relative shrink-0">
                       <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] max-h-[30.146665573120117px] not-italic relative shrink-0 text-[21.427px] text-white tracking-[0.9444px] whitespace-nowrap">
-                        <p className="leading-[30.147px]">Full engineering team ready on day one</p>
+                        <p className="leading-[30.147px]">{`Scale what works, cut what doesn't`}</p>
                       </div>
                     </div>
                   </div>
@@ -424,14 +424,15 @@ export default function GrowthMarketing() {
               <div className="bg-[#3f2fee] content-stretch flex flex-col items-center shrink-0 sticky top-0 z-10 w-full">
                 <div className="h-[438.222px] max-w-[1360px] relative shrink-0 w-[1360px]">
                   <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px] animate-fade-in-up">
-                    <div className="flex flex-col font-bold justify-center leading-[0] not-italic relative shrink-0 text-[44.979px] text-white whitespace-nowrap" style={{ fontFamily: "var(--font-headings)" }}>
-                      <p className="leading-[54.4px]">Growth Strategy & Analytics</p>
+                    <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[54.4px] not-italic relative shrink-0 text-[44.979px] text-white whitespace-nowrap">
+                      <p className="mb-0">Growth</p>
+                      <p>Marketing</p>
                     </div>
                     <div className="h-[211.036px] relative shrink-0 w-[574.43px]">
                       <div className="absolute content-stretch flex flex-col items-start left-0 top-[-0.68px]">
                         <div className="content-stretch flex flex-col items-start max-w-[358.8888854980469px] pr-[11.806px] relative shrink-0">
                           <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[17px] text-white w-[331.988px]">
-                            <p className="leading-[26.35px] whitespace-pre-wrap">Comprehensive growth frameworks that identify your highest-leverage opportunities. We map your customer journey, find friction points, and build data infrastructure to measure what matters.</p>
+                            <p className="leading-[26.35px] whitespace-pre-wrap">The fuel for your growth engine. Data-driven marketing strategies designed to accelerate business expansion through paid media and organic channels, focused on maximum performance and ROI.</p>
                           </div>
                         </div>
                       </div>
@@ -439,15 +440,15 @@ export default function GrowthMarketing() {
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
                           <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
                             <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-[14.167px] text-white whitespace-nowrap">
-                              <p className="mb-0">Growth model development</p>
-                              <p className="mb-0">Analytics implementation</p>
-                              <p className="mb-0">Customer funnel analysis</p>
-                              <p className="mb-0">Experiment roadmap</p>
-                              <p>KPI dashboard setup</p>
+                              <p className="mb-0">Social Media Marketing</p>
+                              <p className="mb-0">Search Engine Optimisation (SEO)</p>
+                              <p className="mb-0">Paid Search (Google Ads)</p>
+                              <p className="mb-0">Display Advertising</p>
+                              <p className="mb-0">{`Email Marketing & Retention`}</p>
+                              <p>Programmatic Display</p>
                             </div>
                           </div>
                         </div>
-                        <div className="h-[77px] shrink-0 w-[141px]" />
                       </div>
                     </div>
                   </div>
@@ -463,25 +464,27 @@ export default function GrowthMarketing() {
               <div className="bg-white content-stretch flex flex-col items-center shrink-0 sticky top-[60px] z-20 w-full">
                 <div className="h-[438.222px] max-w-[1360px] relative shrink-0 w-[1360px]">
                   <div className="absolute content-stretch flex flex-col gap-[26px] items-start left-[52.89px] top-[51.94px] w-[597.248px] animate-fade-in-up">
-                    <div className="flex flex-col font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[45.156px] whitespace-nowrap" style={{ fontFamily: "var(--font-headings)" }}>
-                      <p className="leading-[54.4px]">Acquisition & Conversion Optimization</p>
+                    <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[54.4px] not-italic relative shrink-0 text-[#1b1b1b] text-[44.979px] whitespace-nowrap">
+                      <p className="mb-0">Conversion</p>
+                      <p>Optimisation</p>
                     </div>
                     <div className="h-[211.036px] relative shrink-0 w-[597.248px]">
                       <div className="absolute content-stretch flex flex-col items-start left-0 top-[-0.68px]">
                         <div className="content-stretch flex flex-col items-start max-w-[358.8888854980469px] pr-[7.82px] relative shrink-0">
                           <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[16.867px] w-[358.889px]">
-                            <p className="leading-[26.35px] whitespace-pre-wrap">Launch and scale your product with dedicated engineering teams built around your needs. We handle everything from architecture to development, ensuring fast, efficient delivery and long-term product stability.</p>
+                            <p className="leading-[26.35px] whitespace-pre-wrap">Growth through improvement. We run experiments and A/B tests to identify and unlock additional conversions from your website visitors, turning traffic into revenue.</p>
                           </div>
                         </div>
                       </div>
                       <div className="absolute content-stretch flex flex-col items-start left-[434.44px] top-0">
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
                           <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-[#1b1b1b] text-[14.056px] whitespace-nowrap">
-                            <p className="mb-0">Channel strategy & testing</p>
-                            <p className="mb-0">Landing page optimization</p>
-                            <p className="mb-0">Conversion funnel design</p>
-                            <p className="mb-0">A/B testing framework</p>
-                            <p>Performance tracking</p>
+                            <p className="mb-0">{`A/B Testing & Experimentation`}</p>
+                            <p className="mb-0">Landing Page Optimisation</p>
+                            <p className="mb-0">{`Heatmap & User Behaviour Analysis`}</p>
+                            <p className="mb-0">Purchase Funnel Optimisation</p>
+                            <p className="mb-0">Website Performance Optimisation</p>
+                            <p>{`User Psychographics & Insights`}</p>
                           </div>
                         </div>
                       </div>
@@ -499,25 +502,27 @@ export default function GrowthMarketing() {
               <div className="bg-[#ffd500] content-stretch flex flex-col items-center shrink-0 sticky top-[120px] z-30 w-full">
                 <div className="h-[438.222px] max-w-[1360px] relative shrink-0 w-[1360px]">
                   <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px] animate-fade-in-up">
-                    <div className="flex flex-col font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[44.979px] whitespace-nowrap" style={{ fontFamily: "var(--font-headings)" }}>
-                      <p className="leading-[54.4px]">Retention & Monetization</p>
+                    <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[54.4px] not-italic relative shrink-0 text-[#1b1b1b] text-[44.979px] whitespace-nowrap">
+                      <p className="mb-0">Digital</p>
+                      <p>Strategy</p>
                     </div>
                     <div className="h-[211.036px] relative shrink-0 w-[599.958px]">
                       <div className="absolute content-stretch flex flex-col items-start left-0 top-[-0.68px]">
                         <div className="content-stretch flex flex-col items-start max-w-[358.8888854980469px] pr-[2.909px] relative shrink-0">
                           <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[16.203px] w-[358.889px]">
-                            <p className="leading-[26.35px] whitespace-pre-wrap">Turn one-time users into loyal advocates. We build retention loops, engagement triggers, and monetization strategies that maximize customer lifetime value.</p>
+                            <p className="leading-[26.35px] whitespace-pre-wrap">The blueprint for your success. We sit at the intersection of ambitious ideas and concrete data, providing the strategic roadmap that drives measurable results.</p>
                           </div>
                         </div>
                       </div>
                       <div className="absolute content-stretch flex flex-col items-start left-[434.44px] top-0">
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
                           <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-[#1b1b1b] text-[13.613px] whitespace-nowrap">
-                            <p className="mb-0">Retention program design</p>
-                            <p className="mb-0">Email & push automation</p>
-                            <p className="mb-0">Engagement loops</p>
-                            <p className="mb-0">Monetization testing</p>
-                            <p>Lifecycle optimization</p>
+                            <p className="mb-0">{`Market & Competitor Analysis`}</p>
+                            <p className="mb-0">Brand Positioning Strategy</p>
+                            <p className="mb-0">{`KPI & Goal Development`}</p>
+                            <p className="mb-0">{`Media Planning & Projections`}</p>
+                            <p className="mb-0">{`Analytics & Reporting`}</p>
+                            <p>Growth Model Development</p>
                           </div>
                         </div>
                       </div>
@@ -527,6 +532,44 @@ export default function GrowthMarketing() {
                     <div className="flex-[1_0_0] max-w-[366.4444580078125px] min-h-px min-w-px relative w-full hover-scale transition-transform duration-300">
                       <div className="absolute inset-0 overflow-hidden pointer-events-none">
                         <img alt="" className="absolute h-[100.03%] left-0 max-w-none top-[-0.02%] w-full" src={imgConversionOpt} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#00c853] content-stretch flex flex-col items-center shrink-0 sticky top-[180px] z-40 w-full">
+                <div className="h-[438.222px] max-w-[1360px] relative shrink-0 w-[1360px]">
+                  <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px] animate-fade-in-up">
+                    <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[54.4px] not-italic relative shrink-0 text-white text-[44.979px] whitespace-nowrap">
+                      <p className="mb-0">Creative</p>
+                      <p>Design</p>
+                    </div>
+                    <div className="h-[211.036px] relative shrink-0 w-[599.958px]">
+                      <div className="absolute content-stretch flex flex-col items-start left-0 top-[-0.68px]">
+                        <div className="content-stretch flex flex-col items-start max-w-[358.8888854980469px] pr-[2.909px] relative shrink-0">
+                          <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-white text-[16.203px] w-[358.889px]">
+                            <p className="leading-[26.35px] whitespace-pre-wrap">{`Make a lasting impression. Creative design rooted in data-driven principles and user-focused strategies — websites, e-commerce, performance creative, and UI/UX that converts.`}</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="absolute content-stretch flex flex-col items-start left-[434.44px] top-0">
+                        <div className="content-stretch flex flex-col items-start relative shrink-0">
+                          <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-white text-[13.613px] whitespace-nowrap">
+                            <p className="mb-0">{`Website Design & Development`}</p>
+                            <p className="mb-0">E-commerce Design</p>
+                            <p className="mb-0">{`Performance Creative & Ad Design`}</p>
+                            <p className="mb-0">UI/UX Design Systems</p>
+                            <p className="mb-0">{`Brand Identity & Visual Design`}</p>
+                            <p>{`Motion Graphics & Video`}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute content-stretch flex flex-col h-[332.444px] items-start justify-center left-[940.67px] max-w-[366.4444580078125px] top-[52.89px] w-[366.444px] animate-fade-in-right">
+                    <div className="flex-[1_0_0] max-w-[366.4444580078125px] min-h-px min-w-px relative w-full hover-scale transition-transform duration-300">
+                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                        <img alt="" className="absolute h-[100.03%] left-0 max-w-none top-[-0.02%] w-full" src={imgSeoMarketing} />
                       </div>
                     </div>
                   </div>
@@ -770,24 +813,21 @@ export default function GrowthMarketing() {
             </div>
             <div className="absolute h-[20px] left-[28px] top-[16px] w-[142.08px]">
               <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[15.6px] top-[9.5px] whitespace-nowrap">
-                <p className="leading-[20px]">Get Started</p>
+                <p className="leading-[20px]">Get Your Growth Audit</p>
               </div>
             </div>
           </div>
           <div className="absolute content-stretch flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold items-start leading-[0] left-[72px] not-italic text-[47.1px] text-white top-[122.08px] tracking-[0.4px] w-[976px]">
             <div className="flex flex-col justify-center mb-[-0.003px] relative shrink-0 whitespace-nowrap">
-              <p className="leading-[64.8px]">{`Try Our Rapid Prototyping Service `}</p>
+              <p className="leading-[64.8px]">{`Try Our Growth Marketing Audit `}</p>
             </div>
             <div className="flex flex-col justify-center mb-[-0.003px] min-w-full relative shrink-0 w-[min-content]">
               <p className="whitespace-pre-wrap">
-                <span className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[64.8px] not-italic">Only $</span>
-                <span className="leading-[64.8px]">1000</span>
-                <span className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[64.8px] not-italic">{` for One Week`}</span>
+                <span className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[64.8px] not-italic">Only </span>
+                <span className="leading-[64.8px]">2 Weeks</span>
+                <span className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[64.8px] not-italic">{` to get started`}</span>
                 <span className="leading-[64.8px]">{` `}</span>
-                <span className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[64.8px] not-italic">Get a clickable</span>
-                <span className="leading-[64.8px]">{` `}</span>
-                <span className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[64.8px] not-italic">prototype and technical blueprint for your software idea in just 7 days.</span>
-                <span className="leading-[64.8px]">{` .`}</span>
+                <span className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[64.8px] not-italic">Get a data-driven marketing strategy and channel roadmap for your business.</span>
               </p>
             </div>
           </div>
@@ -823,7 +863,7 @@ export default function GrowthMarketing() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">How long does it take to build software?</p>
+                            <p className="leading-[25.378px]">How quickly can we see marketing results?</p>
                           </div>
                         </div>
                       </div>
@@ -835,7 +875,7 @@ export default function GrowthMarketing() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">How can a great mobile design benefit startups or small businesses?</p>
+                            <p className="leading-[25.378px]">What marketing channels do you specialize in?</p>
                           </div>
                         </div>
                       </div>
@@ -847,7 +887,7 @@ export default function GrowthMarketing() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">Do you customize the design for my specific business needs and target audience?</p>
+                            <p className="leading-[25.378px]">Do you handle both paid and organic strategies?</p>
                           </div>
                         </div>
                       </div>
@@ -859,7 +899,7 @@ export default function GrowthMarketing() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">How do you ensure that the mobile design aligns with my app&apos;s development process?</p>
+                            <p className="leading-[25.378px]">{`What's different about your growth approach?`}</p>
                           </div>
                         </div>
                       </div>
@@ -871,7 +911,7 @@ export default function GrowthMarketing() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">Can you redesign my existing app for better user engagement?</p>
+                            <p className="leading-[25.378px]">How do you measure and report ROI?</p>
                           </div>
                         </div>
                       </div>
@@ -883,7 +923,7 @@ export default function GrowthMarketing() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">How do you incorporate feedback into the design process?</p>
+                            <p className="leading-[25.378px]">Can you work alongside our existing marketing team?</p>
                           </div>
                         </div>
                       </div>
@@ -895,7 +935,7 @@ export default function GrowthMarketing() {
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
                           </div>
                           <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">How much does it cost to design a mobile app?</p>
+                            <p className="leading-[25.378px]">What budget do we need to get started?</p>
                           </div>
                         </div>
                       </div>
