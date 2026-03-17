@@ -141,7 +141,7 @@ export default function Footer() {
 
             {/* Address */}
             <p className="font-['Inter',sans-serif] text-[14px] md:text-[16px] text-white text-center">
-              {contactInfo.address}
+              C1-1201, JKG Palm Court, Sector 16-C,<br />Greater Noida, Uttar Pradesh, India - 201301
             </p>
 
             {/* Rights */}

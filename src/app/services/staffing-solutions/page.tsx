@@ -5,7 +5,7 @@ import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import TrustedByMarquee from "@/components/layout/TrustedByMarquee";
-import ContactForm from "@/components/ContactForm";
+import ContactSection from "@/components/ContactSection";
 import FaqAccordion from "@/components/FaqAccordion";
 import { BASE_PATH } from "@/lib/constants";
 
@@ -39,7 +39,6 @@ const imgSection = `${BASE_PATH}/assets/5695bc256bc8e98f1d5540277b232264bba9ee20
 const imgDivLocaCtaContent = `${BASE_PATH}/assets/105629aff6ad2aa1df97f788b54d5e2b39aafe1a.png`;
 const imgImageCtaSeatImg = `${BASE_PATH}/assets/0c7d1f9d7a98652099233689ceb28285808f961d.png`;
 const imgImageFaqIcon = `${BASE_PATH}/assets/7ed6ad1031b28fa6cc2fe75656319272f0d36d09.png`;
-const imgContactTick = `${BASE_PATH}/assets/8f1c7448da5bccb734ae19709933b81cd70eb202.png`;
 const imgFooter = `${BASE_PATH}/assets/9b07f522e4d0a0e72c091dbc013a7a7ef5aa0de6.png`;
 const img = `${BASE_PATH}/assets/7e9a5f131e2ed0d2554df6ffcabe822cda5baa2f.png`;
 const imgGroup = `${BASE_PATH}/assets/1d7a141c9e6e83651cc92612eb0eecfd4be77c2b.svg`;
@@ -822,33 +821,7 @@ export default function HRTalentManagement() {
             />
           </div>
         </div>
-        {/* Contact Section */}
-        <div className="bg-[#f0f0f0] content-stretch flex flex-col items-start py-[80px] md:py-[120px] relative shrink-0 w-full">
-          <div className="max-w-[1440px] w-full mx-auto px-4 md:px-[40px]">
-            <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-0 items-start justify-between">
-              {/* Left Content */}
-              <div className="flex flex-col items-start max-w-[434px]">
-                <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-[#1b1b1b]">
-                  Have a Project?<br /><span className="text-[#7e7e81]">Let&apos;s talk!</span>
-                </h2>
-                <div className="flex flex-col gap-[11px] mt-[31px]">
-                  {[
-                    "NDA? Absolutely just ask.",
-                    "We'll respond in 24 hours — fast & focused.",
-                    "Work with senior experts, not juniors.",
-                  ].map((item, index) => (
-                    <div key={index} className="flex gap-[10px] items-center">
-                      <img alt="" className="w-[16px] h-[16px]" src={imgContactTick} />
-                      <span className="font-['Inter',sans-serif] font-semibold text-[14px] md:text-[15px] text-[#1b1b1b]">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              {/* Right Form */}
-              <ContactForm className="w-full lg:max-w-[672px]" />
-            </div>
-          </div>
-        </div>
+        <ContactSection />
         <Footer />
       </div>
     </div>

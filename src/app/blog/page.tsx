@@ -4,11 +4,9 @@ import { useEffect } from "react";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import ContactForm from "@/components/ContactForm";
+import ContactSection from "@/components/ContactSection";
 import { BASE_PATH } from "@/lib/constants";
 
-const imgContactTick = `${BASE_PATH}/assets/contact-tick.png`;
-const imgCalendar = `${BASE_PATH}/assets/faq-icon.png`;
 const imgBlogHeroCurves = `${BASE_PATH}/assets/blog-hero-curves.svg`;
 
 // Blog article data with placeholder images
@@ -177,7 +175,7 @@ export default function BlogPage() {
 
             {/* Hero Content */}
             <div className="relative z-10 flex flex-col items-center justify-center pt-[100px] md:pt-[144px]">
-              <h1 className="font-[family-name:var(--font-headings)] font-bold text-[36px] md:text-[48px] lg:text-[55px] leading-[1.15] text-center text-black uppercase max-w-[925px] px-4 animate-fade-in-up">
+              <h1 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[38px] lg:text-[45px] leading-[1.15] text-center text-black uppercase px-4 animate-fade-in-up whitespace-nowrap">
                 DISCOVER OUR LATEST ARTICLES
               </h1>
             </div>
@@ -188,8 +186,8 @@ export default function BlogPage() {
             <div className="max-w-[1360px] w-full px-4 md:px-[40px] mx-auto">
               {/* Section Heading */}
               <div className="flex flex-col items-center mb-[60px]">
-                <h2 className="font-['Schibsted_Grotesk',sans-serif] text-[36px] md:text-[50px] leading-[1.25] capitalize text-black">
-                  Articles for You.
+                <h2 className="font-[family-name:var(--font-headings)] font-medium text-[36px] md:text-[50px] leading-[1.25] text-black">
+                  Articles for You
                 </h2>
               </div>
 
@@ -197,7 +195,7 @@ export default function BlogPage() {
               <Link href={`/blog/${featuredArticle.slug}`} className="block border-b border-black/10 pb-[33px] mb-[50px] group scroll-reveal scroll-fade-up">
                 <div className="flex flex-col lg:flex-row gap-[40px] items-start">
                   {/* Image */}
-                  <div className="w-full lg:w-[608px] h-[300px] lg:h-[430px] rounded-[16px] overflow-hidden shrink-0 shadow-lg">
+                  <div className="w-full lg:w-[608px] h-[300px] lg:h-[430px] overflow-hidden shrink-0">
                     <img
                       src={featuredArticle.image}
                       alt={featuredArticle.title}
@@ -220,20 +218,14 @@ export default function BlogPage() {
                       {featuredArticle.title}
                     </h3>
 
-                    <p className="font-['Inter',sans-serif] text-[18px] text-black/60 leading-[1.6] mb-[30px]">
-                      {featuredArticle.excerpt}
-                    </p>
-
-                    <div className="flex items-center gap-[16px] mt-auto">
-                      <div className="w-[40px] h-[40px] rounded-full bg-gradient-to-r from-[#265df6] to-[#7427ff] flex items-center justify-center text-white font-bold">
-                        S
-                      </div>
+                    <div className="flex items-center gap-[16px] mt-auto w-full">
+                      <div className="w-[40px] h-[40px] rounded-full bg-[#d9d9d9] shrink-0 flex items-center justify-center font-['Inter',sans-serif] font-bold text-[16px] text-white">{featuredArticle.author.charAt(0)}</div>
                       <div className="flex items-center gap-[6px]">
-                        <span className="font-['Inter',sans-serif] font-bold text-[18px] text-black/50">by</span>
-                        <span className="font-['Inter',sans-serif] font-bold text-[20px] text-[#7427ff]">{featuredArticle.author}</span>
+                        <span className="font-['Inter',sans-serif] font-medium text-[18px] text-black/50">by</span>
+                        <span className="font-['Inter',sans-serif] font-bold text-[20px] text-black">{featuredArticle.author}</span>
                       </div>
-                      <span className="font-['Inter',sans-serif] font-semibold text-[14px] text-black/50 ml-auto">
-                        {featuredArticle.date}
+                      <span className="font-['Inter',sans-serif] font-medium text-[14px] text-black/50 ml-auto">
+                        Publish Date: <span className="font-semibold text-black">{featuredArticle.date}</span>
                       </span>
                     </div>
                   </div>
@@ -249,8 +241,8 @@ export default function BlogPage() {
                     className="group flex flex-col scroll-reveal scroll-fade-up bg-white overflow-hidden transition-all duration-300"
                     style={{ transitionDelay: `${(index % 4) * 0.1}s` }}
                   >
-                    {/* Article Image - Large on top */}
-                    <div className="w-full aspect-[638/455] overflow-hidden rounded-[12px] mb-[36px]">
+                    {/* Article Image */}
+                    <div className="w-full aspect-[638/455] overflow-hidden mb-[36px]">
                       <img
                         src={article.image}
                         alt={article.title}
@@ -260,32 +252,30 @@ export default function BlogPage() {
 
                     {/* Article Meta - Category + dot + Read time */}
                     <div className="flex items-center gap-[14px] mb-[23px]">
-                      <span className="font-['Inter',sans-serif] font-semibold text-[20px] text-black">
+                      <span className="font-['Inter',sans-serif] font-semibold text-[16px] text-black uppercase tracking-wide">
                         {article.category}
                       </span>
-                      <span className="w-[9px] h-[9px] rounded-full bg-black/30"></span>
-                      <span className="font-['Inter',sans-serif] font-medium text-[20px] text-black/50">
+                      <span className="w-[7px] h-[7px] rounded-full bg-black/30"></span>
+                      <span className="font-['Inter',sans-serif] font-medium text-[16px] text-black/50 uppercase tracking-wide">
                         {article.readTime}
                       </span>
                     </div>
 
-                    {/* Article Title - Large */}
-                    <h4 className="font-['Schibsted_Grotesk',sans-serif] font-bold text-[28px] md:text-[32px] leading-[1.25] text-black mb-[24px] group-hover:text-[#7427ff] transition-colors min-h-[80px]">
+                    {/* Article Title */}
+                    <h4 className="font-['Inter',sans-serif] font-bold text-[28px] md:text-[32px] leading-[1.25] text-black mb-[24px] group-hover:text-[#7427ff] transition-colors min-h-[80px]">
                       {article.title}
                     </h4>
 
                     {/* Author & Date */}
-                    <div className="flex items-center justify-between mt-auto">
-                      <div className="flex items-center gap-[24px]">
-                        <div className="w-[60px] h-[60px] rounded-full bg-gradient-to-r from-[#265df6] to-[#7427ff] flex items-center justify-center text-white font-bold text-[20px]">
-                          S
-                        </div>
+                    <div className="flex items-center justify-between mt-auto w-full">
+                      <div className="flex items-center gap-[16px]">
+                        <div className="w-[48px] h-[48px] rounded-full bg-[#d9d9d9] shrink-0 flex items-center justify-center font-['Inter',sans-serif] font-bold text-[18px] text-white">{article.author.charAt(0)}</div>
                         <div className="flex items-center gap-[8px]">
-                          <span className="font-['Inter',sans-serif] font-medium text-[24px] text-black/50">by</span>
-                          <span className="font-['Inter',sans-serif] font-semibold text-[26px] text-[#7427ff]">{article.author}</span>
+                          <span className="font-['Inter',sans-serif] font-medium text-[18px] text-black/50">by</span>
+                          <span className="font-['Inter',sans-serif] font-bold text-[20px] text-black">{article.author}</span>
                         </div>
                       </div>
-                      <span className="font-['Inter',sans-serif] font-medium text-[18px] text-black/50">
+                      <span className="font-['Inter',sans-serif] font-semibold text-[16px] text-black">
                         {article.date}
                       </span>
                     </div>
@@ -295,47 +285,7 @@ export default function BlogPage() {
             </div>
           </div>
 
-          {/* Contact Section */}
-          <div className="bg-[#f5f5f5] content-stretch flex flex-col items-start py-[80px] md:py-[124px] relative shrink-0 w-full">
-            <div className="max-w-[1440px] w-full mx-auto px-4 md:px-[40px]">
-              <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[80px] items-start justify-between">
-                {/* Left Content */}
-                <div className="flex flex-col items-start max-w-[434px]">
-                  <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-[#1b1b1b]">
-                    Have a Project?<br />Let&apos;s talk!
-                  </h2>
-
-                  <div className="flex flex-col gap-[11px] mt-[31px]">
-                    {[
-                      "NDA? Absolutely just ask.",
-                      "We'll respond in 24 hours — fast & focused.",
-                      "Work with senior experts, not juniors.",
-                    ].map((item, i) => (
-                      <div key={i} className="flex gap-[10px] items-center">
-                        <img alt="" className="w-[16px] h-[16px]" src={imgContactTick} />
-                        <span className="font-['Inter',sans-serif] font-semibold text-[14px] md:text-[15px] text-[#1b1b1b]">{item}</span>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="flex flex-col gap-[12px] mt-[60px] md:mt-[95px]">
-                    <span className="font-['Inter',sans-serif] font-semibold text-[18px] text-[#1b1b1b]">Schedule a call:</span>
-                    <div className="bg-white flex items-center p-[10px] pr-[24px] rounded-lg shadow-sm">
-                      <div className="bg-gradient-to-r from-[#265df6] to-[#7427ff] w-[72px] h-[72px] rounded-full flex items-center justify-center text-white font-bold text-[24px]">S</div>
-                      <div className="flex flex-col pl-[20px]">
-                        <span className="font-['Inter',sans-serif] font-semibold text-[24px] text-[#1b1b1b]">Sivarsa</span>
-                        <span className="font-['Inter',sans-serif] text-[18px] text-[#7e7e81]">Founder & CEO</span>
-                      </div>
-                      <img alt="" className="w-[48px] h-[48px] ml-[40px]" src={imgCalendar} />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Right Form */}
-                <ContactForm className="w-full lg:max-w-[672px]" />
-              </div>
-            </div>
-          </div>
+          <ContactSection />
 
           {/* Footer */}
           <Footer />

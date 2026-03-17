@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import ContactForm from "@/components/ContactForm";
+import ContactSection from "@/components/ContactSection";
 import FaqAccordion from "@/components/FaqAccordion";
 import { contactInfo } from "@/lib/constants";
 
@@ -56,7 +56,6 @@ const imgSection = `${BASE_PATH}/assets/achievements-bg.png`;
 
 // Contact Icons
 const imgWhatsappIcon = `${BASE_PATH}/assets/whatsapp-icon.png`;
-const imgContactTick = `${BASE_PATH}/assets/contact-tick.png`;
 
 // SVG Assets
 const imgPattern1 = `${BASE_PATH}/assets/pattern-mask.svg`;
@@ -816,63 +815,7 @@ export default function Landing() {
             </div>
           </div>
         </div>
-        {/* Contact Section */}
-        <div className="bg-[#f0f0f0] content-stretch flex flex-col items-start py-[80px] md:py-[120px] relative shrink-0 w-full">
-          <div className="max-w-[1440px] w-full mx-auto px-4 md:px-[40px]">
-            <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-0 items-start justify-between">
-              {/* Left Content */}
-              <div className="flex flex-col items-start max-w-[550px]">
-              <div className="content-stretch flex flex-col items-start relative shrink-0">
-                <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51.856px] leading-[1.2] text-[#1b1b1b]">
-                  Have a Project?<br /><span className="text-[#7e7e81]">Let&apos;s talk!</span>
-                </h2>
-              </div>
-              <div className="content-stretch flex flex-col items-start pt-[29.278px] relative shrink-0">
-                <div className="content-stretch flex flex-col gap-[10.389px] items-start relative shrink-0">
-                  <div className="content-stretch flex gap-[9.444px] items-center relative shrink-0">
-                    <div className="max-w-[186.89610290527344px] relative shrink-0 size-[15.111px]">
-                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                        <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgContactTick} />
-                      </div>
-                    </div>
-                    <div className="content-stretch flex flex-col items-start pb-[0.841px] relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[13.171px] whitespace-nowrap">
-                        <p className="leading-[20.683px]">NDA? Absolutely just ask.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="content-stretch flex gap-[9.444px] items-center relative shrink-0">
-                    <div className="max-w-[302.25054931640625px] relative shrink-0 size-[15.111px]">
-                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                        <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgContactTick} />
-                      </div>
-                    </div>
-                    <div className="content-stretch flex flex-col items-start pb-[0.841px] relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[13.945px] whitespace-nowrap">
-                        <p className="leading-[20.683px]">{`We’ll respond in 24 hours  fast & focused.`}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="content-stretch flex gap-[9.444px] items-center relative shrink-0">
-                    <div className="max-w-[292.95721435546875px] relative shrink-0 size-[15.111px]">
-                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                        <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgContactTick} />
-                      </div>
-                    </div>
-                    <div className="content-stretch flex flex-col items-start pb-[0.841px] relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[13.613px] whitespace-nowrap">
-                        <p className="leading-[20.683px]">Work with senior experts, not juniors.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              </div>
-              {/* Right Form */}
-              <ContactForm className="w-full lg:max-w-[672px]" />
-            </div>
-          </div>
-        </div>
+        <ContactSection />
         <Footer />
       </div>
     </div>

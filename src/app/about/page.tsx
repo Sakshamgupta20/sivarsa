@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import ContactForm from "@/components/ContactForm";
+import ContactSection from "@/components/ContactSection";
 import FaqAccordion from "@/components/FaqAccordion";
 import { BASE_PATH } from "@/lib/constants";
 
@@ -453,47 +453,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Contact Section */}
-          <div className="bg-[#f0f0f0] content-stretch flex flex-col items-start py-[80px] md:py-[124px] relative shrink-0 w-full" id="contact">
-            <div className="max-w-[1440px] w-full mx-auto px-4 md:px-[40px]">
-              <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-0 items-start justify-between">
-                {/* Left Content */}
-                <div className="flex flex-col items-start max-w-[434px]">
-                  <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-[#1b1b1b]">
-                    Have a Project?<br />Let&apos;s talk!
-                  </h2>
-
-                  <div className="flex flex-col gap-[11px] mt-[31px]">
-                    {[
-                      "NDA? Absolutely just ask.",
-                      "We'll respond in 24 hours — fast & focused.",
-                      "Work with senior experts, not juniors.",
-                    ].map((item, index) => (
-                      <div key={index} className="flex gap-[10px] items-center">
-                        <img alt="" className="w-[16px] h-[16px]" src={imgContactTick} />
-                        <span className="font-['Inter',sans-serif] font-semibold text-[14px] md:text-[15px] text-[#1b1b1b]">{item}</span>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="flex flex-col gap-[12px] mt-[95px]">
-                    <span className="font-['Inter',sans-serif] font-semibold text-[18px] text-[#1b1b1b]">Schedule a call:</span>
-                    <div className="bg-white flex items-center p-[10px] pr-[24px]">
-                      <div className="bg-[#3f2fee] w-[72px] h-[72px] rounded-full flex items-center justify-center text-white font-bold text-[24px]">S</div>
-                      <div className="flex flex-col pl-[20px]">
-                        <span className="font-['Inter',sans-serif] font-semibold text-[24px] text-[#1b1b1b]">Sivarsa</span>
-                        <span className="font-['Inter',sans-serif] text-[18px] text-[#7e7e81]">Founder & CEO</span>
-                      </div>
-                      <img alt="" className="w-[48px] h-[48px] ml-[52px]" src={imgCalendar} />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Right Form */}
-                <ContactForm className="w-full lg:max-w-[672px]" />
-              </div>
-            </div>
-          </div>
+          <ContactSection id="contact" />
 
           {/* Footer */}
           <Footer />
