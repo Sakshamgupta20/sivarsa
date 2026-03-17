@@ -96,7 +96,7 @@ export default function Landing() {
     <div className="bg-black relative size-full">
       <div className="w-full flex flex-col items-center">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
-          <div className="min-h-[600px] lg:min-h-[841px] relative shrink-0 w-full overflow-hidden">
+          <div className="relative shrink-0 w-full overflow-hidden">
             {/* Full-width background image */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgHero} />
@@ -150,10 +150,8 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        {/* Service Cards Section - Exact Figma Design */}
-        <div className="py-[40px] md:py-[68px] w-full px-4 md:px-8">
+            {/* Service Cards Section - Exact Figma Design */}
+            <div className="relative z-10 py-[40px] md:py-[68px] w-full px-4 md:px-8">
           <div className="w-full max-w-[1285px] mx-auto">
             <div className="relative w-full h-[400px] md:h-[550px] lg:h-[723px] scroll-reveal scroll-scale-up overflow-hidden">
               {/* Background */}
@@ -212,6 +210,8 @@ export default function Landing() {
               </Link>
             </div>
           </div>
+        </div>
+        </div>
         </div>
         <div className="bg-black content-stretch flex flex-col items-center overflow-clip pb-[60px] md:pb-[132px] pt-[60px] md:pt-[101px] relative shrink-0 w-full">
           <div className="content-stretch flex flex-col gap-[40px] md:gap-[66px] items-start max-w-[1360px] px-4 md:px-[37.778px] relative shrink-0 w-full">
