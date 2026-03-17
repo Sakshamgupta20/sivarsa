@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { BASE_PATH } from "@/lib/constants";
+import { BASE_PATH, contactInfo } from "@/lib/constants";
 
 const imgBtnArrowIconWhite = `${BASE_PATH}/assets/cc33d9c88b41312dae650fea64034944767af781.png`;
 
@@ -40,12 +40,12 @@ export default function ContactForm({ className = "", style }: ContactFormProps)
           <input
             type="email"
             placeholder="Email"
-            className="flex-1 border border-[#e5e5e5] rounded-lg px-[21px] py-[16px] font-['Inter',sans-serif] font-medium text-[16px] text-[#1b1b1b] placeholder:text-[#7e7e81] focus:outline-none focus:border-[#3f2fee] focus:ring-2 focus:ring-[#3f2fee]/10 transition-all"
+            className="flex-1 border border-[#e5e5e5] px-[21px] py-[16px] font-['Inter',sans-serif] font-medium text-[16px] text-[#1b1b1b] placeholder:text-[#7e7e81] focus:outline-none focus:border-[#3f2fee] focus:ring-2 focus:ring-[#3f2fee]/10 transition-all"
           />
           <input
             type="text"
             placeholder="Full name"
-            className="flex-1 border border-[#e5e5e5] rounded-lg px-[21px] py-[16px] font-['Inter',sans-serif] font-medium text-[16px] text-[#1b1b1b] placeholder:text-[#7e7e81] focus:outline-none focus:border-[#3f2fee] focus:ring-2 focus:ring-[#3f2fee]/10 transition-all"
+            className="flex-1 border border-[#e5e5e5] px-[21px] py-[16px] font-['Inter',sans-serif] font-medium text-[16px] text-[#1b1b1b] placeholder:text-[#7e7e81] focus:outline-none focus:border-[#3f2fee] focus:ring-2 focus:ring-[#3f2fee]/10 transition-all"
           />
         </div>
 
@@ -54,12 +54,12 @@ export default function ContactForm({ className = "", style }: ContactFormProps)
           <input
             type="text"
             placeholder="Project budget"
-            className="flex-1 border border-[#e5e5e5] rounded-lg px-[21px] py-[16px] font-['Inter',sans-serif] font-medium text-[16px] text-[#1b1b1b] placeholder:text-[#7e7e81] focus:outline-none focus:border-[#3f2fee] focus:ring-2 focus:ring-[#3f2fee]/10 transition-all"
+            className="flex-1 border border-[#e5e5e5] px-[21px] py-[16px] font-['Inter',sans-serif] font-medium text-[16px] text-[#1b1b1b] placeholder:text-[#7e7e81] focus:outline-none focus:border-[#3f2fee] focus:ring-2 focus:ring-[#3f2fee]/10 transition-all"
           />
           <input
             type="text"
             placeholder="How did you hear about us?"
-            className="flex-1 border border-[#e5e5e5] rounded-lg px-[21px] py-[16px] font-['Inter',sans-serif] font-medium text-[16px] text-[#1b1b1b] placeholder:text-[#7e7e81] focus:outline-none focus:border-[#3f2fee] focus:ring-2 focus:ring-[#3f2fee]/10 transition-all"
+            className="flex-1 border border-[#e5e5e5] px-[21px] py-[16px] font-['Inter',sans-serif] font-medium text-[16px] text-[#1b1b1b] placeholder:text-[#7e7e81] focus:outline-none focus:border-[#3f2fee] focus:ring-2 focus:ring-[#3f2fee]/10 transition-all"
           />
         </div>
 
@@ -67,7 +67,7 @@ export default function ContactForm({ className = "", style }: ContactFormProps)
         <textarea
           placeholder="Tell us about your product and goals."
           rows={4}
-          className="w-full border border-[#e5e5e5] rounded-lg px-[21px] py-[20px] font-['Inter',sans-serif] font-medium text-[16px] text-[#1b1b1b] placeholder:text-[#7e7e81] focus:outline-none focus:border-[#3f2fee] focus:ring-2 focus:ring-[#3f2fee]/10 resize-none transition-all"
+          className="w-full border border-[#e5e5e5] px-[21px] py-[20px] font-['Inter',sans-serif] font-medium text-[16px] text-[#1b1b1b] placeholder:text-[#7e7e81] focus:outline-none focus:border-[#3f2fee] focus:ring-2 focus:ring-[#3f2fee]/10 resize-none transition-all"
         />
 
         {/* Service Tags */}
@@ -81,7 +81,7 @@ export default function ContactForm({ className = "", style }: ContactFormProps)
                 key={tag}
                 type="button"
                 onClick={() => toggleService(tag)}
-                className={`px-[20px] py-[12px] rounded-lg font-['Inter',sans-serif] font-semibold text-[14px] transition-all duration-200 ${
+                className={`px-[20px] py-[12px] font-['Inter',sans-serif] font-semibold text-[14px] transition-all duration-200 ${
                   selectedServices.includes(tag)
                     ? 'bg-[#3f2fee] text-white border-2 border-[#3f2fee]'
                     : 'bg-white text-[#1b1b1b] border-2 border-[#e5e5e5] hover:border-[#3f2fee] hover:text-[#3f2fee]'
@@ -108,10 +108,10 @@ export default function ContactForm({ className = "", style }: ContactFormProps)
               Prefer email?
             </span>
             <a
-              href="mailto:contact@sivarsa.com"
+              href={`mailto:${contactInfo.email}`}
               className="font-['Inter',sans-serif] font-bold text-[15px] text-[#1b1b1b] hover:text-[#3f2fee] transition-colors underline underline-offset-2"
             >
-              contact@sivarsa.com
+              {contactInfo.email}
             </a>
           </div>
         </div>

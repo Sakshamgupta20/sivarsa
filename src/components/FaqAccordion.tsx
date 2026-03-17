@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const faqs = [
+const defaultFaqs = [
   {
     question: "What are your focus areas as a UI/UX design agency?",
     answer:
@@ -30,12 +30,18 @@ const faqs = [
   },
 ];
 
-export default function FaqAccordion() {
+interface FaqAccordionProps {
+  faqs?: { question: string; answer: string }[];
+  className?: string;
+}
+
+export default function FaqAccordion({ faqs, className }: FaqAccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const items = faqs || defaultFaqs;
 
   return (
-    <div className="flex flex-col items-start relative shrink-0 w-full lg:w-[639px]">
-      {faqs.map((faq, index) => (
+    <div className={className || "flex flex-col items-start relative shrink-0 w-full lg:w-[639px]"}>
+      {items.map((faq, index) => (
         <div
           key={index}
           className="border-[#f0f0f0] border-b-[0.944px] border-solid w-full cursor-pointer"

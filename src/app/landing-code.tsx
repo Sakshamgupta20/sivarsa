@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ContactForm from "@/components/ContactForm";
 import FaqAccordion from "@/components/FaqAccordion";
+import { contactInfo } from "@/lib/constants";
 
 // Base path for GitHub Pages deployment (must match next.config.ts basePath)
 const BASE_PATH = "/sivarsa";
@@ -796,7 +797,7 @@ export default function Landing() {
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start relative shrink-0">
-                  <a className="bg-[#ebfe5b] content-stretch cursor-pointer flex gap-[9.444px] isolate items-start justify-center max-w-[197.46444702148438px] overflow-clip pb-[15.111px] pt-[14.573px] px-[26.444px] relative rounded-[94.444px] shrink-0 w-full btn-magnetic shine-effect" href="https://wa.me/919259108248">
+                  <a className="bg-[#ebfe5b] content-stretch cursor-pointer flex gap-[9.444px] isolate items-start justify-center max-w-[197.46444702148438px] overflow-clip pb-[15.111px] pt-[14.573px] px-[26.444px] relative rounded-[94.444px] shrink-0 w-full btn-magnetic shine-effect" href={`https://wa.me/${contactInfo.whatsapp}`}>
                     <div className="content-stretch flex flex-col items-start pb-[0.841px] relative shrink-0 z-[2]">
                       <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[15.938px] text-left whitespace-nowrap">
                         <p className="leading-[26.35px]">Ask Questions</p>
@@ -862,29 +863,6 @@ export default function Landing() {
                       <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[13.613px] whitespace-nowrap">
                         <p className="leading-[20.683px]">Work with senior experts, not juniors.</p>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="content-stretch flex flex-col items-start pt-[60px] md:pt-[89.722px] relative shrink-0">
-                <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0">
-                  <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center not-italic relative shrink-0 text-[#1b1b1b] text-[18px] whitespace-nowrap">
-                    <p>Schedule a call:</p>
-                  </div>
-                  {/* Schedule Card */}
-                  <div className="bg-white flex items-center p-[12px] pr-[32px] rounded-lg shadow-sm">
-                    <div className="bg-gradient-to-r from-[#265df6] to-[#7427ff] w-[72px] h-[72px] rounded-full flex items-center justify-center text-white font-bold text-[24px] shrink-0">
-                      S
-                    </div>
-                    <div className="flex flex-col pl-[20px]">
-                      <span className="font-['Inter',sans-serif] font-semibold text-[24px] text-[#1b1b1b]">Sivarsa</span>
-                      <span className="font-['Inter',sans-serif] text-[18px] text-[#7e7e81]">Founder & CEO</span>
-                    </div>
-                    {/* Arrow Icon */}
-                    <div className="ml-[40px]">
-                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#1b1b1b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
                     </div>
                   </div>
                 </div>

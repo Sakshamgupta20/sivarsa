@@ -5,6 +5,7 @@ import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ContactForm from "@/components/ContactForm";
+import FaqAccordion from "@/components/FaqAccordion";
 import { BASE_PATH } from "@/lib/constants";
 
 // Image constants
@@ -422,38 +423,33 @@ export default function AboutPage() {
           </div>
 
           {/* FAQ Section */}
-          <div className="bg-white content-stretch flex flex-col items-start pb-[100px] md:pb-[172px] pt-[80px] relative shrink-0 w-full">
-            <div className="content-stretch flex flex-col gap-[72px] items-start max-w-[1440px] mx-auto px-4 md:px-[40px] relative shrink-0 w-full">
-              {/* Heading */}
-              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-                <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-[#1b1b1b]">
-                  Frequently asked<br />
-                  <span className="text-[#29242466]">questions</span>
-                </h2>
-              </div>
-
-              {/* FAQ List */}
-              <div className="flex flex-col items-start w-full max-w-[963px]">
-                {[
-                  "What are your focus areas as a UI/UX design agency?",
-                  "Why is UI/UX design important for your business growth?",
-                  "My website isn\u0027t generating enough leads. How can your design help?",
-                  "What separates Sivarsa from other top UI/UX design agencies?",
-                  "How could you help us redesign our app, website, or enterprise/B2B software?",
-                  "Do you work with startups or only with B2B/enterprise companies?",
-                  "Can a redesign boost more traffic and enhance user experience?",
-                  "How can your UI UX design agency help my startup?",
-                  "Do you offer design services in your agency?",
-                  "What digital design tools and technologies do you use for UI UX design?",
-                  "How long does the entire design process take?",
-                  "How much do you charge for design services?",
-                ].map((question, index) => (
-                  <div key={index} className="border-b border-[#f0f0f0] flex items-center justify-between py-[32px] pr-[32px] w-full group cursor-pointer hover:bg-gray-50 transition-colors faq-item">
-                    <span className="font-['Inter',sans-serif] font-semibold text-[16px] md:text-[20px] text-[#1b1b1b] leading-[1.4]">{question}</span>
-                    <img alt="" className="w-[12px] h-[12px] shrink-0 ml-4" src={imgArrowIcon} />
+          <div className="bg-white content-stretch flex flex-col items-center pb-[60px] md:pb-[100px] lg:pb-[162.444px] pt-[60px] md:pt-[90.667px] relative shrink-0 w-full">
+            <div className="content-stretch flex flex-col gap-[40px] md:gap-[68px] items-start max-w-[1360px] px-4 md:px-[37.778px] relative shrink-0 w-full">
+              <div className="content-stretch flex items-end relative shrink-0 w-full">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
+                  <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[32px] md:text-[42px] lg:text-[51.339px]">
+                    <p className="mb-0">Frequently asked</p>
+                    <p>questions</p>
                   </div>
-                ))}
+                </div>
               </div>
+              <FaqAccordion
+                faqs={[
+                  { question: "What are your focus areas as a UI/UX design agency?", answer: "We specialize in end-to-end digital solutions including software development, growth marketing, and staffing solutions. Our focus is on building scalable products, driving measurable growth through SEO, paid ads, and content strategy, and connecting businesses with top-tier talent." },
+                  { question: "Why is UI/UX design important for your business growth?", answer: "Great design directly impacts user engagement, conversion rates, and customer retention. A well-designed product reduces friction, builds trust, and creates memorable experiences that keep users coming back — ultimately driving revenue growth." },
+                  { question: "My website isn't generating enough leads. How can your design help?", answer: "We audit your current user flows, identify drop-off points, and redesign key pages with conversion-focused layouts, clear CTAs, and optimized forms — turning more visitors into qualified leads." },
+                  { question: "What separates Sivarsa from other top UI/UX design agencies?", answer: "Unlike traditional agencies, we offer an integrated approach — combining software development, marketing, and talent under one roof. This means seamless coordination, faster delivery, and a unified strategy aligned with your business goals." },
+                  { question: "How could you help us redesign our app, website, or enterprise/B2B software?", answer: "We start with a deep UX audit, map user journeys, and identify friction points. Then we redesign with a focus on usability, visual consistency, and business goals — delivering a product your users will love." },
+                  { question: "Do you work with startups or only with B2B/enterprise companies?", answer: "We work with both. From early-stage startups building their first MVP to established enterprises looking to modernize their digital products — we tailor our approach to your stage and scale." },
+                  { question: "Can a redesign boost more traffic and enhance user experience?", answer: "Absolutely. A well-executed redesign improves page speed, accessibility, and SEO — driving more organic traffic while a better UX keeps users engaged and converting at higher rates." },
+                  { question: "How can your UI UX design agency help my startup?", answer: "We help startups validate ideas quickly with user-tested prototypes, build polished MVPs that attract investors, and design scalable products that grow with your user base." },
+                  { question: "Do you offer design services in your agency?", answer: "Yes — UI/UX design is one of our core offerings. From wireframing and prototyping to full visual design and design systems, we cover the entire design lifecycle." },
+                  { question: "What digital design tools and technologies do you use for UI UX design?", answer: "We primarily use Figma for design and collaboration, along with tools like Framer for prototyping, and follow design systems built on industry-standard component libraries." },
+                  { question: "How long does the entire design process take?", answer: "Timelines vary based on project scope, but we pride ourselves on speed. Most projects kick off within days and deliver results in weeks, not months. We'll provide a clear timeline during our initial strategy call." },
+                  { question: "How much do you charge for design services?", answer: "Our pricing is tailored to your specific needs and project scope. We offer flexible engagement models — from fixed-price projects to ongoing retainers. Book a strategy call and we'll put together a custom proposal for you." },
+                ]}
+                className="flex flex-col items-start relative shrink-0 w-full max-w-[963px]"
+              />
             </div>
           </div>
 

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { contactInfo } from "@/lib/constants";
 
 const BASE_PATH = "/sivarsa";
 
@@ -103,10 +104,10 @@ export default function Footer() {
               </Link>
               <div className="flex flex-col gap-1 mt-2 items-start lg:items-end">
                 <p className="font-['Inter',sans-serif] font-semibold text-[14px] text-white">
-                  +91-9259108248
+                  {contactInfo.phone}
                 </p>
                 <p className="font-['Inter',sans-serif] font-semibold text-[14px] text-white">
-                  contact@sivarsa.com
+                  {contactInfo.email}
                 </p>
               </div>
             </div>
@@ -127,7 +128,7 @@ export default function Footer() {
                 </svg>
               </Link>
               <Link
-                href="https://wa.me/919259108248"
+                href={`https://wa.me/${contactInfo.whatsapp}`}
                 target="_blank"
                 className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:opacity-80 transition-opacity"
                 aria-label="WhatsApp"
@@ -140,7 +141,7 @@ export default function Footer() {
 
             {/* Address */}
             <p className="font-['Inter',sans-serif] text-[14px] md:text-[16px] text-white text-center">
-              C1-1201, JKG Palm Court, Sector 16-C,<br />Greater Noida, Uttar Pradesh, India - 201301
+              {contactInfo.address}
             </p>
 
             {/* Rights */}

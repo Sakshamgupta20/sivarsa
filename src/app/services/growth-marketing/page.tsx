@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import TrustedByMarquee from "@/components/layout/TrustedByMarquee";
 import ContactForm from "@/components/ContactForm";
+import FaqAccordion from "@/components/FaqAccordion";
 import { BASE_PATH } from "@/lib/constants";
 
 const imgHero = `${BASE_PATH}/assets/cdecb895a2e1e301e31eadfffa170feab26b3bf1.png`;
@@ -835,110 +836,28 @@ export default function GrowthMarketing() {
             </div>
           </div>
         </div>
-        <div className="bg-white content-stretch flex flex-col items-center py-[38px] relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col gap-[65.257px] items-start px-[36.254px] relative shrink-0 w-full max-w-[1291px]">
-            <div className="h-[132.328px] relative shrink-0 w-[436.6px]">
-              <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col font-['Inter:Bold',sans-serif] font-bold items-start leading-[0] not-italic pb-[0.003px] relative size-full text-[#1b1b1b] text-[28px] md:text-[40px] lg:text-[50.484px] tracking-[0.9064px] whitespace-nowrap">
-                <div className="flex flex-col justify-center mb-[-0.003px] relative shrink-0">
-                  <p className="leading-[65.983px]">Frequently asked</p>
-                </div>
-                <div className="flex flex-col justify-center mb-[-0.003px] relative shrink-0">
-                  <p className="leading-[65.983px]">questions</p>
+        <div className="bg-white content-stretch flex flex-col items-center pb-[60px] md:pb-[100px] lg:pb-[162.444px] pt-[60px] md:pt-[90.667px] relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-[40px] md:gap-[68px] items-start max-w-[1360px] px-4 md:px-[37.778px] relative shrink-0 w-full">
+            <div className="content-stretch flex items-end relative shrink-0 w-full">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
+                <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[32px] md:text-[42px] lg:text-[51.339px]">
+                  <p className="mb-0">Frequently asked</p>
+                  <p>questions</p>
                 </div>
               </div>
             </div>
-            <div className="relative shrink-0 animate-fade-in-up">
-              <div className="content-stretch flex items-start relative">
-                <div className="relative shrink-0 w-[859.224px]">
-                  <div className="content-stretch flex flex-col items-start relative">
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">How quickly can we see marketing results?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">What marketing channels do you specialize in?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">Do you handle both paid and organic strategies?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">{`What's different about your growth approach?`}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">How do you measure and report ROI?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">Can you work alongside our existing marketing team?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">What budget do we need to get started?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <FaqAccordion
+              faqs={[
+                { question: "How quickly can we see marketing results?", answer: "Paid campaigns can show results within the first week. For organic strategies like SEO and content marketing, expect meaningful traction within 2–3 months, with compounding growth over time." },
+                { question: "What marketing channels do you specialize in?", answer: "We cover SEO, Google Ads, Meta Ads, content marketing, email automation, social media management, and conversion rate optimization — tailored to where your audience actually is." },
+                { question: "Do you handle both paid and organic strategies?", answer: "Yes. We believe the best results come from combining paid acquisition with organic growth. We build integrated strategies that balance both for sustainable, cost-effective scaling." },
+                { question: "What's different about your growth approach?", answer: "We're not just a marketing agency — we think like product owners. Every campaign is tied to business metrics, not vanity numbers. We optimize for revenue, not just clicks." },
+                { question: "How do you measure and report ROI?", answer: "We set up end-to-end tracking from day one and provide transparent dashboards with weekly/monthly reports. You'll see exactly how every dollar is performing against your KPIs." },
+                { question: "Can you work alongside our existing marketing team?", answer: "Absolutely. We frequently embed with in-house teams, filling skill gaps and providing strategic direction while your team handles day-to-day execution." },
+                { question: "What budget do we need to get started?", answer: "We work with businesses at various stages. Whether you have a modest startup budget or a significant growth fund, we'll design a strategy that maximizes your ROI within your means." },
+              ]}
+              className="flex flex-col items-start relative shrink-0 w-full max-w-[860px]"
+            />
           </div>
         </div>
         {/* Contact Section */}

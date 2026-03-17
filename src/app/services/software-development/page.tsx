@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import TrustedByMarquee from "@/components/layout/TrustedByMarquee";
 import ContactForm from "@/components/ContactForm";
+import FaqAccordion from "@/components/FaqAccordion";
 import { BASE_PATH } from "@/lib/constants";
 
 const imgHero = `${BASE_PATH}/assets/hero-bg.png`;
@@ -829,110 +830,28 @@ export default function SoftwareDevelopment() {
             </div>
           </div>
         </div>
-        <div className="bg-white content-stretch flex flex-col items-center py-[38px] relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col gap-[65.257px] items-start px-[36.254px] relative shrink-0 w-full max-w-[1291px]">
-            <div className="h-[132.328px] relative shrink-0 w-[436.6px]">
-              <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col font-['Inter:Bold',sans-serif] font-bold items-start leading-[0] not-italic pb-[0.003px] relative size-full text-[#1b1b1b] text-[50.484px] tracking-[0.9064px] whitespace-nowrap">
-                <div className="flex flex-col justify-center mb-[-0.003px] relative shrink-0">
-                  <p className="leading-[65.983px]">Frequently asked</p>
-                </div>
-                <div className="flex flex-col justify-center mb-[-0.003px] relative shrink-0">
-                  <p className="leading-[65.983px]">questions</p>
+        <div className="bg-white content-stretch flex flex-col items-center pb-[60px] md:pb-[100px] lg:pb-[162.444px] pt-[60px] md:pt-[90.667px] relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-[40px] md:gap-[68px] items-start max-w-[1360px] px-4 md:px-[37.778px] relative shrink-0 w-full">
+            <div className="content-stretch flex items-end relative shrink-0 w-full">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
+                <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[32px] md:text-[42px] lg:text-[51.339px]">
+                  <p className="mb-0">Frequently asked</p>
+                  <p>questions</p>
                 </div>
               </div>
             </div>
-            <div className="relative shrink-0 animate-fade-in-up">
-              <div className="content-stretch flex items-start relative">
-                <div className="relative shrink-0 w-[859.224px]">
-                  <div className="content-stretch flex flex-col items-start relative">
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[14px] md:text-[16px] lg:text-[17.946px] top-[41.55px]">
-                            <p className="leading-[25.378px]">How long does it take to build software?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[14px] md:text-[16px] lg:text-[17.946px] top-[41.55px]">
-                            <p className="leading-[25.378px]">How can a great mobile design benefit startups or small businesses?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[14px] md:text-[16px] lg:text-[17.946px] top-[41.55px]">
-                            <p className="leading-[25.378px]">Do you customize the design for my specific business needs and target audience?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[14px] md:text-[16px] lg:text-[17.946px] top-[41.55px]">
-                            <p className="leading-[25.378px]">How do you ensure that the mobile design aligns with my app&apos;s development process?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[14px] md:text-[16px] lg:text-[17.946px] top-[41.55px]">
-                            <p className="leading-[25.378px]">Can you redesign my existing app for better user engagement?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[14px] md:text-[16px] lg:text-[17.946px] top-[41.55px]">
-                            <p className="leading-[25.378px]">How do you incorporate feedback into the design process?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[14px] md:text-[16px] lg:text-[17.946px] top-[41.55px]">
-                            <p className="leading-[25.378px]">How much does it cost to design a mobile app?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <FaqAccordion
+              faqs={[
+                { question: "How long does it take to build software?", answer: "Timelines depend on scope and complexity. A simple MVP can take 4–8 weeks, while a full-featured product may take 3–6 months. We'll give you a clear timeline during our initial strategy call." },
+                { question: "How can a great mobile design benefit startups or small businesses?", answer: "A polished, intuitive mobile design builds credibility, improves user retention, and drives conversions — giving startups a competitive edge even against larger players." },
+                { question: "Do you customize the design for my specific business needs and target audience?", answer: "Absolutely. Every project starts with deep discovery into your business goals, user personas, and market context. We tailor every design decision to your specific needs." },
+                { question: "How do you ensure that the mobile design aligns with my app's development process?", answer: "Our designers work hand-in-hand with developers from day one. We use design systems and component libraries that translate seamlessly into code, ensuring pixel-perfect implementation." },
+                { question: "Can you redesign my existing app for better user engagement?", answer: "Yes. We audit your current app's UX, identify friction points through analytics and user feedback, and deliver a redesign that measurably improves engagement and retention." },
+                { question: "How do you incorporate feedback into the design process?", answer: "We follow an iterative process with regular review cycles. You'll see progress at every stage and your feedback is incorporated before moving to the next phase." },
+                { question: "How much does it cost to design a mobile app?", answer: "Costs vary based on complexity, number of screens, and features. We offer flexible pricing models — from fixed-price projects to monthly retainers. Book a call for a custom quote." },
+              ]}
+              className="flex flex-col items-start relative shrink-0 w-full max-w-[860px]"
+            />
           </div>
         </div>
         {/* Contact Section */}

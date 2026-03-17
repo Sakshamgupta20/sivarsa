@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import TrustedByMarquee from "@/components/layout/TrustedByMarquee";
 import ContactForm from "@/components/ContactForm";
+import FaqAccordion from "@/components/FaqAccordion";
 import { BASE_PATH } from "@/lib/constants";
 
 const imgHero = `${BASE_PATH}/assets/cdecb895a2e1e301e31eadfffa170feab26b3bf1.png`;
@@ -797,110 +798,28 @@ export default function HRTalentManagement() {
             </div>
           </div>
         </div>
-        <div className="bg-white content-stretch flex flex-col items-center py-[38px] relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col gap-[65.257px] items-start px-[36.254px] relative shrink-0 w-full max-w-[1291px]">
-            <div className="h-[132.328px] relative shrink-0 w-[436.6px]">
-              <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col font-['Inter:Bold',sans-serif] font-bold items-start leading-[0] not-italic pb-[0.003px] relative size-full text-[#1b1b1b] text-[28px] md:text-[40px] lg:text-[50.484px] tracking-[0.9064px] whitespace-nowrap">
-                <div className="flex flex-col justify-center mb-[-0.003px] relative shrink-0">
-                  <p className="leading-[65.983px]">Frequently asked</p>
-                </div>
-                <div className="flex flex-col justify-center mb-[-0.003px] relative shrink-0">
-                  <p className="leading-[65.983px]">questions</p>
+        <div className="bg-white content-stretch flex flex-col items-center pb-[60px] md:pb-[100px] lg:pb-[162.444px] pt-[60px] md:pt-[90.667px] relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-[40px] md:gap-[68px] items-start max-w-[1360px] px-4 md:px-[37.778px] relative shrink-0 w-full">
+            <div className="content-stretch flex items-end relative shrink-0 w-full">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
+                <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[32px] md:text-[42px] lg:text-[51.339px]">
+                  <p className="mb-0">Frequently asked</p>
+                  <p>questions</p>
                 </div>
               </div>
             </div>
-            <div className="relative shrink-0 animate-fade-in-up">
-              <div className="content-stretch flex items-start relative">
-                <div className="relative shrink-0 w-[859.224px]">
-                  <div className="content-stretch flex flex-col items-start relative">
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">How quickly can you fill positions?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">What industries do you recruit for?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">Do you handle payroll and compliance?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">{`What's different about your staffing approach?`}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">Can you scale up hiring quickly for seasonal demand?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">Do you provide gig and blue-collar workforce?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="border-[#f0f0f0] border-b-[0.906px] border-solid h-[84.291px] relative shrink-0 w-[859.224px] faq-item cursor-pointer">
-                      <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                        <div className="absolute h-[83.385px] left-0 top-0 w-[859.224px]">
-                          <div className="absolute left-[819.34px] size-[10.876px] top-[36.25px]">
-                            <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageFaqIcon} />
-                          </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[17.946px] top-[41.55px] whitespace-nowrap">
-                            <p className="leading-[25.378px]">What are your pricing models?</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <FaqAccordion
+              faqs={[
+                { question: "How quickly can you fill positions?", answer: "For most roles, we can present qualified candidates within 5–10 business days. For urgent or high-volume needs, we have expedited processes to move even faster." },
+                { question: "What industries do you recruit for?", answer: "We recruit across tech, fintech, e-commerce, healthcare, logistics, and more. Our network spans both white-collar professionals and blue-collar workforce across India." },
+                { question: "Do you handle payroll and compliance?", answer: "Yes. We offer end-to-end staffing solutions including payroll management, statutory compliance, and HR administration — so you can focus on your core business." },
+                { question: "What's different about your staffing approach?", answer: "We don't just match resumes to job descriptions. We understand your culture, growth stage, and long-term goals to find talent that truly fits and stays." },
+                { question: "Can you scale up hiring quickly for seasonal demand?", answer: "Absolutely. We maintain a ready talent pipeline and can scale your workforce up or down based on seasonal peaks, project demands, or rapid growth phases." },
+                { question: "Do you provide gig and blue-collar workforce?", answer: "Yes. From delivery executives and warehouse staff to field technicians and customer support agents — we cover the full spectrum of workforce needs." },
+                { question: "What are your pricing models?", answer: "We offer flexible pricing — per-hire fees, monthly retainers, or project-based models depending on your volume and engagement type. Let's discuss what works best for you." },
+              ]}
+              className="flex flex-col items-start relative shrink-0 w-full max-w-[860px]"
+            />
           </div>
         </div>
         {/* Contact Section */}

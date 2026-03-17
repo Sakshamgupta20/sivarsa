@@ -6,7 +6,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import TrustedByMarquee from "@/components/layout/TrustedByMarquee";
 import ContactForm from "@/components/ContactForm";
-import { BASE_PATH } from "@/lib/constants";
+import { BASE_PATH, contactInfo } from "@/lib/constants";
 
 // Images
 const imgHero = `${BASE_PATH}/assets/cdecb895a2e1e301e31eadfffa170feab26b3bf1.png`;
@@ -74,17 +74,6 @@ export default function ContactPage() {
                     ))}
                   </div>
 
-                  <div className="flex flex-col gap-[12px] mt-[95px] animate-fade-in-up" style={{ animationDelay: '400ms' }}>
-                    <span className="font-['Inter',sans-serif] font-semibold text-[18px] text-white">Schedule a call:</span>
-                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 flex items-center p-[10px] pr-[24px] rounded-lg">
-                      <div className="bg-[#3f2fee] w-[72px] h-[72px] rounded-full flex items-center justify-center text-white font-bold text-[24px]">S</div>
-                      <div className="flex flex-col pl-[20px]">
-                        <span className="font-['Inter',sans-serif] font-semibold text-[24px] text-white">Sivarsa</span>
-                        <span className="font-['Inter',sans-serif] text-[18px] text-white/70">Founder & CEO</span>
-                      </div>
-                      <img alt="" className="w-[48px] h-[48px] ml-[52px]" src={imgCalendar} />
-                    </div>
-                  </div>
                 </div>
 
                 {/* Right Form */}
@@ -175,7 +164,7 @@ export default function ContactPage() {
 
                   {/* CTA */}
                   <div className="flex flex-col justify-end">
-                    <Link href="#" className="bg-[#ebfe5b] flex gap-[8px] items-center justify-center px-[28px] py-[16px] rounded-[100px] btn-magnetic shine-effect">
+                    <Link href={`https://wa.me/${contactInfo.whatsapp}`} target="_blank" className="bg-[#ebfe5b] flex gap-[8px] items-center justify-center px-[28px] py-[16px] rounded-[100px] btn-magnetic shine-effect">
                       <span className="font-['Inter',sans-serif] font-semibold text-[16px] text-[#1b1b1b]">Book a call</span>
                       <img alt="" className="w-[12px] h-[12px]" src={imgBtnArrowIcon} />
                     </Link>
@@ -193,7 +182,7 @@ export default function ContactPage() {
                 <div className="flex flex-col items-start">
                   <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-[#1b1b1b]">
                     Our Headquarters centrally based in<br />
-                    <span className="text-[#1b1b1b]/40">india</span>
+                    <span className="text-[#1b1b1b]/40">India</span>
                   </h2>
                 </div>
 
@@ -214,55 +203,59 @@ export default function ContactPage() {
                   <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-[#1b1b1b]">
                     Got a project in mind?<br />Let&apos;s talk.
                   </h2>
-                  <Link href="#" className="bg-[#3f2fee] flex gap-[8px] items-center justify-center px-[28px] py-[16px] rounded-[100px] btn-magnetic hover-glow glow-pulse shrink-0">
+                  <Link href={`https://wa.me/${contactInfo.whatsapp}`} target="_blank" className="bg-[#3f2fee] flex gap-[8px] items-center justify-center px-[28px] py-[16px] rounded-[100px] shrink-0">
                     <span className="font-['Inter',sans-serif] font-semibold text-[16px] text-white">Book a call</span>
                     <img alt="" className="w-[12px] h-[12px]" src={imgBtnArrowIconWhite} />
                   </Link>
                 </div>
 
-                {/* Contact Info Row */}
-                <div className="flex flex-col md:flex-row gap-[60px] md:gap-[110px]">
-                  {/* Bangladesh */}
-                  <div className="flex flex-col gap-[16px]">
-                    <h3 className="font-['Inter',sans-serif] font-semibold text-[22px] text-[#1b1b1b] tracking-[1px]">Bangladesh</h3>
-                    <div className="flex flex-col gap-[3px]">
-                      <a href="mailto:contact@sivarsa.com" className="flex gap-[4px] items-center">
-                        <img alt="" className="w-[18px] h-[18px]" src={imgEmailIcon} />
-                        <span className="font-['Inter',sans-serif] font-extrabold text-[14px] text-[#1b1b1b]">contact@sivarsa.com</span>
-                      </a>
-                      <a href="tel:+919259108248" className="flex gap-[4px] items-center">
-                        <img alt="" className="w-[18px] h-[18px]" src={imgWhatsappIcon} />
-                        <span className="font-['Inter',sans-serif] font-semibold text-[14px] text-[#1b1b1b] underline">+91-9259108248</span>
-                      </a>
+                {/* Contact Info Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-[40px] md:gap-[30px]">
+                  {/* Greater Noida Office */}
+                  <div className="flex flex-col gap-[12px]">
+                    <div className="flex items-center gap-[8px]">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3f2fee" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      <h3 className="font-['Inter',sans-serif] font-bold text-[18px] text-[#1b1b1b]">Greater Noida</h3>
                     </div>
-                    <div className="mt-[24px]">
-                      <p className="font-['Inter',sans-serif] font-medium text-[16px] text-[#1b1b1b] leading-[1.6]">
-                        Oriental Gofur Tower,<br />
-                        88/KA, Mohammadpur,<br />
-                        Dhaka, Bangladesh.
-                      </p>
+                    <p className="font-['Inter',sans-serif] text-[14px] text-[#7e7e81] leading-[1.6]">
+                      Uttar Pradesh, India
+                    </p>
+                  </div>
+
+                  {/* Agra Office */}
+                  <div className="flex flex-col gap-[12px]">
+                    <div className="flex items-center gap-[8px]">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3f2fee" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      <h3 className="font-['Inter',sans-serif] font-bold text-[18px] text-[#1b1b1b]">Agra</h3>
                     </div>
+                    <p className="font-['Inter',sans-serif] text-[14px] text-[#7e7e81] leading-[1.6]">
+                      Uttar Pradesh, India
+                    </p>
                   </div>
 
                   {/* Business Inquiry */}
-                  <div className="flex flex-col gap-[16px]">
-                    <h3 className="font-['Inter',sans-serif] font-semibold text-[22px] text-[#1b1b1b] tracking-[1px]">Business Inquiry</h3>
-                    <div className="flex flex-col gap-[3px]">
-                      <a href="mailto:contact@sivarsa.com" className="font-['Inter',sans-serif] font-semibold text-[14px] text-[#1b1b1b] underline">
-                        contact@sivarsa.com
-                      </a>
+                  <div className="flex flex-col gap-[12px]">
+                    <div className="flex items-center gap-[8px]">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3f2fee" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                      </svg>
+                      <h3 className="font-['Inter',sans-serif] font-bold text-[18px] text-[#1b1b1b]">Business Inquiry</h3>
                     </div>
+                    <a href={`mailto:${contactInfo.email}`} className="font-['Inter',sans-serif] text-[14px] text-[#7e7e81] hover:text-[#3f2fee] transition-colors">
+                      {contactInfo.email}
+                    </a>
+                    <a href={`tel:${contactInfo.phone}`} className="font-['Inter',sans-serif] text-[14px] text-[#7e7e81] hover:text-[#3f2fee] transition-colors">
+                      {contactInfo.phone}
+                    </a>
                   </div>
 
-                  {/* Career */}
-                  <div className="flex flex-col gap-[16px]">
-                    <h3 className="font-['Inter',sans-serif] font-semibold text-[22px] text-[#1b1b1b] tracking-[1px]">Career</h3>
-                    <div className="flex flex-col gap-[3px]">
-                      <a href="mailto:career@sivarsa.agency" className="font-['Inter',sans-serif] font-semibold text-[14px] text-[#1b1b1b] underline">
-                        career@sivarsa.agency
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
