@@ -1,6 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { BASE_PATH } from "@/lib/constants";
+
+const imgArrowIcon = `${BASE_PATH}/assets/arrow-icon.png`;
 
 const defaultFaqs = [
   {
@@ -51,16 +54,7 @@ export default function FaqAccordion({ faqs, className }: FaqAccordionProps) {
             <div className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[1.4] text-[#1b1b1b] text-[14px] md:text-[16px] lg:text-[18px]">
               <p className="leading-[26.444px]">{faq.question}</p>
             </div>
-            <svg
-              className={`w-[14px] h-[14px] shrink-0 ml-4 transition-transform duration-300 ${openIndex === index ? "rotate-45" : ""}`}
-              viewBox="0 0 14 14"
-              fill="none"
-              stroke="#1b1b1b"
-              strokeWidth="2"
-            >
-              <line x1="0" y1="7" x2="14" y2="7" />
-              <line x1="7" y1="0" x2="7" y2="14" />
-            </svg>
+            <img alt="" className={`w-[14px] h-[14px] shrink-0 ml-4 transition-transform duration-300 ${openIndex === index ? "rotate-45" : ""}`} src={imgArrowIcon} />
           </div>
           <div
             className={`overflow-hidden transition-all duration-300 ${openIndex === index ? "max-h-[300px] pb-[24px]" : "max-h-0"}`}

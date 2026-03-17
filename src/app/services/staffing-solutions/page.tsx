@@ -31,6 +31,7 @@ const imgImageMarqueeImg14 = `${BASE_PATH}/assets/68bdc07769698f4ff113b401001960
 const imgImageLbImg = `${BASE_PATH}/assets/2688fbb99a5633a93cc970944bd72db4a112d8e1.png`;
 const imgImageLbFaqIcon = `${BASE_PATH}/assets/0b857160e5018cd27df9fbbc68815715d0510936.png`;
 const imgBtnIcon = `${BASE_PATH}/assets/cc33d9c88b41312dae650fea64034944767af781.png`;
+const imgArrowIcon = `${BASE_PATH}/assets/arrow-icon.png`;
 const imgArrowUpIcon = `${BASE_PATH}/assets/051b6fc1a6a387d92f001032259153a18870ab92.png`;
 const imgTalentAcquisition = `${BASE_PATH}/assets/f143137c556d3059aaa91bb5659442e9d70a3bd3.png`;
 const imgEmployeeDev = `${BASE_PATH}/assets/dbbb3d741b560f8b0587a7c381fb2d1b5037c737.png`;
@@ -72,30 +73,29 @@ export default function HRTalentManagement() {
     <div className="bg-black relative size-full">
       <div className="w-full flex flex-col items-center">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
-          <div className="min-h-[600px] lg:min-h-[841px] overflow-hidden relative w-full max-w-[1440px] mx-auto">
+          <div className="min-h-[600px] lg:min-h-[841px] overflow-hidden relative w-full">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <img alt="" className="absolute h-full left-[-5.86%] max-w-none top-0 w-[111.73%]" src={imgHero} />
             </div>
             <Header />
+            {/* Grid pattern overlay */}
+            <div className="absolute inset-0 opacity-35 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgPattern2} />
+            </div>
+            {/* Gradient overlay */}
+            <div className="absolute inset-0" style={{ backgroundImage: "linear-gradient(110.159deg, rgb(0, 0, 0) 21.698%, rgba(0, 0, 0, 0.26) 84.415%)" }} />
+            {/* Stars overlay */}
+            <div className="absolute inset-0 opacity-60 pointer-events-none">
+              <img alt="" className="absolute inset-0 max-w-none object-cover size-full" src={imgStars1} />
+            </div>
+            {/* Ellipse decoration (purple patch) */}
+            <div className="absolute left-[568.31px] size-[850px] top-[428.84px] pointer-events-none">
+              <div className="absolute inset-[-37.62%]">
+                <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
+              </div>
+            </div>
             <div className="absolute contents left-0 top-[98px]">
               <div className="absolute contents left-0 top-[98px]">
-                <div className="absolute h-[722px] left-[104px] top-[98px] w-[1200px]" />
-                <div className="absolute contents left-0 top-[98px]">
-                  <div className="-translate-x-1/2 absolute h-[866px] left-1/2 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[1438.759px_865.654px] rounded-[20px] top-[98px] w-[1440px]" style={{ maskImage: `url('${imgPattern1}')` }}>
-                    <div className="absolute inset-0 opacity-35 overflow-hidden pointer-events-none rounded-[20px]">
-                      <img alt="" className="absolute h-[126.85%] left-[-2.29%] max-w-none top-[-2.12%] w-[104.77%]" src={imgPattern2} />
-                    </div>
-                  </div>
-                  <div className="absolute left-[568.31px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-568.309px_-420.837px] mask-size-[1438.759px_865.654px] size-[1127.028px] top-[518.84px]" style={{ maskImage: `url('${imgPattern1}')` }}>
-                    <div className="absolute inset-[-37.62%]">
-                      <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
-                    </div>
-                  </div>
-                  <div className="absolute h-[937.591px] left-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_71.938px] mask-size-[1438.759px_865.654px] rounded-[20px] top-[26.06px] w-[1438.759px]" style={{ backgroundImage: "linear-gradient(110.159deg, rgb(0, 0, 0) 21.698%, rgba(0, 0, 0, 0.26) 84.415%)", maskImage: `url('${imgPattern1}')` }} />
-                  <div className="-translate-x-1/2 absolute h-[937.591px] left-[calc(50%-0.62px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_71.938px] mask-size-[1438.759px_865.654px] opacity-60 top-[26.06px] w-[1438.759px]" style={{ maskImage: `url('${imgPattern1}')` }}>
-                    <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgStars1} />
-                  </div>
-                </div>
                 <div className="absolute h-[400px] md:h-[600px] lg:h-[800.63px] right-0 lg:left-[752.39px] top-[98px] w-[300px] md:w-[450px] lg:w-[632.5px] hero-image animate-float hidden md:block">
                   <img alt="Staffing Solutions Services" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageServicesHeroImg} />
                 </div>
@@ -103,19 +103,20 @@ export default function HRTalentManagement() {
             </div>
             <div className="relative lg:absolute content-stretch flex flex-col items-start px-4 md:px-8 lg:px-0 lg:left-[76px] pt-[40px] lg:pt-0 lg:top-[219px] w-full lg:w-[1060px] hero-content">
               <div className="content-stretch flex flex-col gap-[20px] md:gap-[37px] items-start relative shrink-0 w-full lg:w-[626px]">
-                <div className="bg-clip-text font-[family-name:var(--font-headings)] font-bold leading-[1.1] not-italic relative shrink-0 text-[40px] md:text-[60px] lg:text-[82px] tracking-[-2px] lg:tracking-[-4.1492px] animate-fade-in-up" style={{ backgroundImage: "linear-gradient(-33.725deg, rgb(255, 255, 255) 62.646%, rgb(0, 0, 0) 108.48%)", WebkitTextFillColor: "transparent" }}>
+                <div className="bg-clip-text font-[family-name:var(--font-headings)] font-black leading-[1.1] not-italic relative shrink-0 text-[48px] md:text-[68px] lg:text-[90px] tracking-[-2px] lg:tracking-[-4.1492px] animate-fade-in-up" style={{ backgroundImage: "linear-gradient(-38.5682deg, rgb(255, 255, 255) 62.646%, rgb(0, 0, 0) 108.48%)", WebkitTextFillColor: "transparent" }}>
                   <p className="mb-0">STAFFING</p>
                   <p>SOLUTIONS</p>
                 </div>
-                <p className="font-['Inter:Bold',sans-serif] font-bold leading-[1.5] not-italic opacity-70 relative shrink-0 text-[16px] md:text-[18px] lg:text-[22px] text-white w-full max-w-[544px] animate-fade-in-up delay-200">
+                <p className="font-['Inter',sans-serif] font-medium leading-[1.5] not-italic relative shrink-0 text-[16px] md:text-[18px] lg:text-[22px] text-white/50 w-full max-w-[544px] animate-fade-in-up delay-200">
                   End-to-end workforce solutions that scale with your business. From IT talent to gig workers, we deliver the right people, right when you need them.
                 </p>
                 <div className="content-stretch flex flex-col gap-[16px] md:gap-[23.484px] items-start justify-center relative shrink-0 w-full md:w-auto animate-fade-in-up delay-300">
                   <div className="content-stretch flex flex-col sm:flex-row gap-[16px] md:gap-[31.6px] items-center justify-center relative shrink-0 w-full sm:w-auto">
-                    <Link href="/contact" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-full sm:w-[270.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
+                    <Link href="/contact" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-full sm:w-[270.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center gap-[8px]">
                       <span className="font-['Inter',sans-serif] font-medium text-[16px] md:text-[20px] text-black">
                         Build Your Workforce
                       </span>
+                      <img alt="" className="w-[14px] h-[14px]" src={imgArrowIcon} />
                     </Link>
                     <a href="#services" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-full sm:w-[210.089px] btn-animated cursor-pointer hover:shadow-lg flex items-center justify-center">
                       <span className="font-['Inter',sans-serif] font-medium text-[16px] md:text-[20px] text-black">
@@ -140,7 +141,7 @@ export default function HRTalentManagement() {
             <div className="relative shrink-0 w-full lg:w-[597.923px]">
               <div className="content-stretch flex flex-col gap-[17.178px] items-start relative">
                 <div className="relative shrink-0 w-full lg:w-[597.923px]">
-                  <div className="content-stretch flex flex-col font-['Inter:Bold',sans-serif] font-bold items-start leading-[0] not-italic relative tracking-[0.9544px]">
+                  <div className="content-stretch flex flex-col font-['Inter',sans-serif] font-bold items-start leading-[0] not-italic relative tracking-[0.9544px]">
                     <div className="flex flex-col justify-center relative shrink-0 text-white text-[32px] md:text-[42px] lg:text-[53.159px]">
                       <p className="leading-[72.152px]">Workforce Deployment</p>
                     </div>
@@ -150,7 +151,7 @@ export default function HRTalentManagement() {
                   </div>
                 </div>
                 <div className="relative shrink-0 w-[597.923px] mt-4">
-                  <div className="content-stretch flex flex-col font-['Inter:Medium',sans-serif] font-medium items-start leading-[1.6] not-italic relative text-white/80 text-[16.511px]">
+                  <div className="content-stretch flex flex-col font-['Inter',sans-serif] font-medium items-start leading-[1.6] not-italic relative text-white/80 text-[16.511px]">
                     <p>We don&apos;t just fill positions — we build workforce pipelines across industries. From tech talent to last-mile delivery teams, our recruitment engine powers businesses at every scale.</p>
                   </div>
                 </div>
@@ -162,10 +163,10 @@ export default function HRTalentManagement() {
                           <div className="absolute left-[584.19px] size-[13.743px] top-[9.16px]">
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageLbFaqIcon} />
                           </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
+                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
                             <p className="leading-[32.067px]">PAN India recruitment network</p>
                           </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
+                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
                             <p className="leading-[21.378px]">01</p>
                           </div>
                         </div>
@@ -177,10 +178,10 @@ export default function HRTalentManagement() {
                           <div className="absolute left-[584.19px] size-[13.743px] top-[9.16px]">
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageLbFaqIcon} />
                           </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
+                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
                             <p className="leading-[32.067px]">Multi-industry workforce sourcing</p>
                           </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
+                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
                             <p className="leading-[21.378px]">02</p>
                           </div>
                         </div>
@@ -192,10 +193,10 @@ export default function HRTalentManagement() {
                           <div className="absolute left-[584.19px] size-[13.743px] top-[9.16px]">
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageLbFaqIcon} />
                           </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
+                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
                             <p className="leading-[32.067px]">Rapid bulk hiring capabilities</p>
                           </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
+                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
                             <p className="leading-[21.378px]">03</p>
                           </div>
                         </div>
@@ -207,10 +208,10 @@ export default function HRTalentManagement() {
                           <div className="absolute left-[584.19px] size-[13.743px] top-[9.16px]">
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageLbFaqIcon} />
                           </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
+                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
                             <p className="leading-[32.067px]">Payroll &amp; compliance management</p>
                           </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
+                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
                             <p className="leading-[21.378px]">04</p>
                           </div>
                         </div>
@@ -222,10 +223,10 @@ export default function HRTalentManagement() {
                           <div className="absolute left-[584.19px] size-[13.743px] top-[9.16px]">
                             <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageLbFaqIcon} />
                           </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
+                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] left-[35.86px] not-italic text-white text-[22.333px] top-[16.21px] whitespace-nowrap">
                             <p className="leading-[32.067px]">Gig workforce deployment</p>
                           </div>
-                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
+                          <div className="-translate-y-1/2 absolute flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-white/60 text-[14.888px] top-[15.67px] whitespace-nowrap">
                             <p className="leading-[21.378px]">05</p>
                           </div>
                         </div>
@@ -259,7 +260,7 @@ export default function HRTalentManagement() {
               <div className="content-stretch flex flex-col items-start relative shrink-0">
                 <Link className="bg-[#3f2fee] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[198.2294464111328px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full" href="/contact">
                   <div className="content-stretch flex flex-col items-start relative shrink-0">
-                    <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[14.875px] text-left text-white whitespace-nowrap">
+                    <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[14.875px] text-left text-white whitespace-nowrap">
                       <p className="leading-[18.889px]">Start your project</p>
                     </div>
                   </div>
@@ -341,12 +342,12 @@ export default function HRTalentManagement() {
                 <div className="bg-[#242424] border-[#3a3a3a] border-b-[0.944px] border-solid content-stretch flex items-center justify-between pb-[31.167px] pt-[30.222px] px-[30.222px] relative shrink-0 w-full faq-item cursor-pointer">
                   <div className="content-stretch flex gap-[15.111px] items-center relative shrink-0">
                     <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[15.111px] tracking-[0.9444px] whitespace-nowrap">
+                      <div className="flex flex-col font-['Inter',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[15.111px] tracking-[0.9444px] whitespace-nowrap">
                         <p className="leading-[19.644px]">01</p>
                       </div>
                     </div>
                     <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] max-h-[30.146665573120117px] not-italic relative shrink-0 text-[14px] md:text-[18px] lg:text-[22.667px] text-white tracking-[0.9444px]">
+                      <div className="flex flex-col font-['Inter',sans-serif] font-bold justify-center leading-[0] max-h-[30.146665573120117px] not-italic relative shrink-0 text-[14px] md:text-[18px] lg:text-[22.667px] text-white tracking-[0.9444px]">
                         <p className="leading-[30.147px]">{`Workforce needs assessment & strategy`}</p>
                       </div>
                     </div>
@@ -360,12 +361,12 @@ export default function HRTalentManagement() {
                 <div className="bg-[#242424] border-[#3a3a3a] border-b-[0.944px] border-solid content-stretch flex items-center justify-between pb-[31.167px] pt-[30.222px] px-[30.222px] relative shrink-0 w-full faq-item cursor-pointer">
                   <div className="content-stretch flex gap-[15.111px] items-center relative shrink-0">
                     <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[15.111px] tracking-[0.9444px] whitespace-nowrap">
+                      <div className="flex flex-col font-['Inter',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[15.111px] tracking-[0.9444px] whitespace-nowrap">
                         <p className="leading-[19.644px]">02</p>
                       </div>
                     </div>
                     <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] max-h-[30.146665573120117px] not-italic relative shrink-0 text-[14px] md:text-[18px] lg:text-[22.135px] text-white tracking-[0.9444px]">
+                      <div className="flex flex-col font-['Inter',sans-serif] font-bold justify-center leading-[0] max-h-[30.146665573120117px] not-italic relative shrink-0 text-[14px] md:text-[18px] lg:text-[22.135px] text-white tracking-[0.9444px]">
                         <p className="leading-[30.147px]">{`Sourcing, screening & candidate deployment`}</p>
                       </div>
                     </div>
@@ -379,12 +380,12 @@ export default function HRTalentManagement() {
                 <div className="bg-[#242424] content-stretch flex items-center justify-between p-[30.222px] relative shrink-0 w-full faq-item cursor-pointer">
                   <div className="content-stretch flex gap-[15.111px] items-center relative shrink-0">
                     <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[14.993px] tracking-[0.9444px] whitespace-nowrap">
+                      <div className="flex flex-col font-['Inter',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[14.993px] tracking-[0.9444px] whitespace-nowrap">
                         <p className="leading-[19.644px]">03</p>
                       </div>
                     </div>
                     <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] max-h-[30.146665573120117px] not-italic relative shrink-0 text-[14px] md:text-[18px] lg:text-[21.427px] text-white tracking-[0.9444px]">
+                      <div className="flex flex-col font-['Inter',sans-serif] font-bold justify-center leading-[0] max-h-[30.146665573120117px] not-italic relative shrink-0 text-[14px] md:text-[18px] lg:text-[21.427px] text-white tracking-[0.9444px]">
                         <p className="leading-[30.147px]">{`Payroll management & ongoing support`}</p>
                       </div>
                     </div>
@@ -425,14 +426,14 @@ export default function HRTalentManagement() {
               <div className="bg-[#3f2fee] content-stretch flex flex-col items-center shrink-0 sticky top-0 z-10 w-full">
                 <div className="h-[438.222px] max-w-[1360px] relative shrink-0 w-[1360px]">
                   <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px] animate-fade-in-up">
-                    <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[54.4px] not-italic relative shrink-0 text-[44.979px] text-white whitespace-nowrap">
+                    <div className="flex flex-col font-['Inter',sans-serif] font-extrabold justify-center leading-[54.4px] not-italic relative shrink-0 text-[44.979px] text-white whitespace-nowrap">
                       <p className="mb-0">Recruitment</p>
                       <p>Services</p>
                     </div>
                     <div className="h-[211.036px] relative shrink-0 w-[574.43px]">
                       <div className="absolute content-stretch flex flex-col items-start left-0 top-[-0.68px]">
                         <div className="content-stretch flex flex-col items-start max-w-[358.8888854980469px] pr-[11.806px] relative shrink-0">
-                          <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[17px] text-white w-[331.988px]">
+                          <div className="flex flex-col font-['Inter',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[17px] text-white w-[331.988px]">
                             <p className="leading-[26.35px] whitespace-pre-wrap">Strategic talent acquisition across industries and levels. From permanent IT hires to bulk volume recruitment, we find candidates who drive business results.</p>
                           </div>
                         </div>
@@ -440,7 +441,7 @@ export default function HRTalentManagement() {
                       <div className="absolute content-stretch flex flex-col items-start left-[434.44px] top-0">
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
                           <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-                            <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-[14.167px] text-white whitespace-nowrap">
+                            <div className="flex flex-col font-['Inter',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-[14.167px] text-white whitespace-nowrap">
                               <p className="mb-0">Permanent IT Recruitment</p>
                               <p className="mb-0">Contractual Hiring</p>
                               <p className="mb-0">Contract-to-Hire</p>
@@ -465,20 +466,20 @@ export default function HRTalentManagement() {
               <div className="bg-white content-stretch flex flex-col items-center shrink-0 sticky top-[60px] z-20 w-full">
                 <div className="h-[438.222px] max-w-[1360px] relative shrink-0 w-[1360px]">
                   <div className="absolute content-stretch flex flex-col gap-[26px] items-start left-[52.89px] top-[51.94px] w-[597.248px] animate-fade-in-up">
-                    <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[45.156px] w-[597.445px]">
+                    <div className="flex flex-col font-['Inter',sans-serif] font-extrabold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[45.156px] w-[597.445px]">
                       <p className="leading-[54.4px] whitespace-pre-wrap">{`Staffing & Payroll Solutions`}</p>
                     </div>
                     <div className="h-[211.036px] relative shrink-0 w-[597.248px]">
                       <div className="absolute content-stretch flex flex-col items-start left-0 top-[-0.68px]">
                         <div className="content-stretch flex flex-col items-start max-w-[358.8888854980469px] pr-[7.82px] relative shrink-0">
-                          <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[16.867px] w-[358.889px]">
+                          <div className="flex flex-col font-['Inter',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[16.867px] w-[358.889px]">
                             <p className="leading-[26.35px] whitespace-pre-wrap">Flexible workforce models with complete payroll compliance. We handle contract staffing, payroll processing, and workforce management so you can focus on your core business.</p>
                           </div>
                         </div>
                       </div>
                       <div className="absolute content-stretch flex flex-col items-start left-[434.44px] top-0">
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
-                          <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-[#1b1b1b] text-[14.056px] whitespace-nowrap">
+                          <div className="flex flex-col font-['Inter',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-[#1b1b1b] text-[14.056px] whitespace-nowrap">
                             <p className="mb-0">Contract Staffing (IT & Non-IT)</p>
                             <p className="mb-0">Payroll & Workforce Compliance</p>
                             <p className="mb-0">Frontline Operations Workforce</p>
@@ -502,21 +503,21 @@ export default function HRTalentManagement() {
               <div className="bg-[#ffd500] content-stretch flex flex-col items-center shrink-0 sticky top-[120px] z-30 w-full">
                 <div className="h-[438.222px] max-w-[1360px] relative shrink-0 w-[1360px]">
                   <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px] animate-fade-in-up">
-                    <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[54.4px] not-italic relative shrink-0 text-[#1b1b1b] text-[44.979px] whitespace-nowrap">
+                    <div className="flex flex-col font-['Inter',sans-serif] font-extrabold justify-center leading-[54.4px] not-italic relative shrink-0 text-[#1b1b1b] text-[44.979px] whitespace-nowrap">
                       <p className="mb-0">Managed Workforce</p>
                       <p>{`& Consulting`}</p>
                     </div>
                     <div className="h-[211.036px] relative shrink-0 w-[599.958px]">
                       <div className="absolute content-stretch flex flex-col items-start left-0 top-[-0.68px]">
                         <div className="content-stretch flex flex-col items-start max-w-[358.8888854980469px] pr-[2.909px] relative shrink-0">
-                          <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[16.203px] w-[358.889px]">
+                          <div className="flex flex-col font-['Inter',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[16.203px] w-[358.889px]">
                             <p className="leading-[26.35px] whitespace-pre-wrap">Outcome-driven workforce deployment for gig economy, delivery, and field operations. Plus strategic consulting to optimize your hiring model and workforce costs.</p>
                           </div>
                         </div>
                       </div>
                       <div className="absolute content-stretch flex flex-col items-start left-[434.44px] top-0">
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
-                          <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-[#1b1b1b] text-[13.613px] whitespace-nowrap">
+                          <div className="flex flex-col font-['Inter',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-[#1b1b1b] text-[13.613px] whitespace-nowrap">
                             <p className="mb-0">Gig & Delivery Workforce Management</p>
                             <p className="mb-0">Outcome-Based Engagement Models</p>
                             <p className="mb-0">SLA-Driven Workforce Deployment</p>
@@ -571,13 +572,13 @@ export default function HRTalentManagement() {
                     </div>
                   </div>
                   <div className="-translate-y-1/2 absolute content-stretch flex flex-col items-start left-0 top-[calc(50%-0.01px)]">
-                    <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] max-h-[29.296667098999023px] not-italic overflow-hidden relative shrink-0 text-[20.778px] text-[color:var(--color\/grey\/73,#b9b9b9)] text-ellipsis tracking-[0.9444px] whitespace-nowrap">
+                    <div className="flex flex-col font-['Inter',sans-serif] font-bold justify-center leading-[0] max-h-[29.296667098999023px] not-italic overflow-hidden relative shrink-0 text-[20.778px] text-[color:var(--color\/grey\/73,#b9b9b9)] text-ellipsis tracking-[0.9444px] whitespace-nowrap">
                       <p className="leading-[29.278px]">01</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start relative shrink-0">
-                  <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[29.278px] text-[color:var(--color\/grey\/11,#1b1b1b)] whitespace-nowrap">
+                  <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[29.278px] text-[color:var(--color\/grey\/11,#1b1b1b)] whitespace-nowrap">
                     <p className="leading-[38.354px]">20+ Brands</p>
                   </div>
                 </div>
@@ -598,13 +599,13 @@ export default function HRTalentManagement() {
                     </div>
                   </div>
                   <div className="-translate-y-1/2 absolute content-stretch flex flex-col items-start left-0 top-[calc(50%-0.01px)]">
-                    <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] max-h-[29.296667098999023px] not-italic overflow-hidden relative shrink-0 text-[20.778px] text-[color:var(--color\/grey\/73,#b9b9b9)] text-ellipsis tracking-[0.9444px] whitespace-nowrap">
+                    <div className="flex flex-col font-['Inter',sans-serif] font-bold justify-center leading-[0] max-h-[29.296667098999023px] not-italic overflow-hidden relative shrink-0 text-[20.778px] text-[color:var(--color\/grey\/73,#b9b9b9)] text-ellipsis tracking-[0.9444px] whitespace-nowrap">
                       <p className="leading-[29.278px]">02</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start min-w-[259.72222900390625px] pr-[59.972px] relative shrink-0">
-                  <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[29.278px] text-[color:var(--color\/grey\/11,#1b1b1b)] whitespace-nowrap">
+                  <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[29.278px] text-[color:var(--color\/grey\/11,#1b1b1b)] whitespace-nowrap">
                     <p className="leading-[38.354px]">10+ Years</p>
                   </div>
                 </div>
@@ -625,13 +626,13 @@ export default function HRTalentManagement() {
                     </div>
                   </div>
                   <div className="-translate-y-1/2 absolute content-stretch flex flex-col items-start left-0 top-[calc(50%-0.01px)]">
-                    <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] max-h-[29.296667098999023px] not-italic overflow-hidden relative shrink-0 text-[20.778px] text-[color:var(--color\/grey\/73,#b9b9b9)] text-ellipsis tracking-[0.9444px] whitespace-nowrap">
+                    <div className="flex flex-col font-['Inter',sans-serif] font-bold justify-center leading-[0] max-h-[29.296667098999023px] not-italic overflow-hidden relative shrink-0 text-[20.778px] text-[color:var(--color\/grey\/73,#b9b9b9)] text-ellipsis tracking-[0.9444px] whitespace-nowrap">
                       <p className="leading-[29.278px]">03</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start relative shrink-0">
-                  <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[29.278px] text-[color:var(--color\/grey\/11,#1b1b1b)] whitespace-nowrap">
+                  <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[29.278px] text-[color:var(--color\/grey\/11,#1b1b1b)] whitespace-nowrap">
                     <p className="leading-[38.354px]">100+ Projects</p>
                   </div>
                 </div>
@@ -639,8 +640,8 @@ export default function HRTalentManagement() {
             </div>
           </div>
         </div>
-        <div className="bg-[#f0f0f0] content-stretch flex flex-col h-[939px] items-center overflow-clip relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col gap-[60.454px] h-[1006.778px] items-start max-w-[1360px] pt-[143.556px] px-[37.778px] relative shrink-0 w-[1360px]">
+        <div className="bg-[#f0f0f0] content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-[60.454px] items-start max-w-[1360px] py-[143.556px] px-[37.778px] relative shrink-0 w-[1360px]">
             <div className="content-stretch flex h-[137.502px] items-end relative shrink-0 w-full">
               <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0">
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
@@ -662,11 +663,11 @@ export default function HRTalentManagement() {
             <div className="bg-white w-full pb-12">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-x divide-[#f0f0f0]">
                     <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
-                      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
+                      <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
                         <p className="leading-[30.222px]">Digil</p>
                       </div>
                       <div className="content-stretch flex flex-col items-start pb-[0.331px] pr-[26.265px] pt-[70.012px] relative shrink-0">
-                        <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[22px] w-[348.5px]">
+                        <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[22px] w-[348.5px]">
                           <p className="leading-[37.683px] whitespace-pre-wrap">{`''Working with Sivarsa completely changed how we approach hiring. They helped us bring in the right talent quickly, which was exactly what we needed during a crucial phase''`}</p>
                         </div>
                       </div>
@@ -679,7 +680,7 @@ export default function HRTalentManagement() {
                               </div>
                             </div>
                             <div className="content-stretch flex flex-col items-start relative shrink-0">
-                              <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
+                              <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
                                 <p className="leading-[30.222px]">{`CEO & Founder`}</p>
                               </div>
                             </div>
@@ -688,11 +689,11 @@ export default function HRTalentManagement() {
                       </div>
                     </div>
                     <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
-                      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
+                      <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
                         <p className="leading-[30.222px]">Santosh</p>
                       </div>
                       <div className="content-stretch flex flex-col items-start pb-[0.331px] pr-[15.933px] pt-[70.012px] relative shrink-0">
-                        <div className="flex flex-col font-['Inter:Extra_Bold',sans-serif] font-extrabold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[22px] w-[312.611px]">
+                        <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[22px] w-[312.611px]">
                           <p className="leading-[37.683px] whitespace-pre-wrap">{`'Sivarsa's SEO gave us a real boost when we needed it.`}</p>
                         </div>
                       </div>
@@ -705,7 +706,7 @@ export default function HRTalentManagement() {
                               </div>
                             </div>
                             <div className="content-stretch flex flex-col items-start relative shrink-0">
-                              <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
+                              <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
                                 <p className="leading-[30.222px]">{`CEO & Founder`}</p>
                               </div>
                             </div>
@@ -714,19 +715,19 @@ export default function HRTalentManagement() {
                       </div>
                     </div>
                     <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
-                      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
+                      <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
                         <p className="leading-[30.222px]">GNT</p>
                       </div>
                       <div className="content-stretch flex flex-col items-start pb-[0.331px] pr-[14.733px] pt-[70.012px] relative shrink-0">
                         <div className="flex flex-col font-['Segoe_UI:Black',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[0px] w-[318.278px]">
-                          <p className="font-['Inter:Extra_Bold',sans-serif] font-extrabold text-[22px] whitespace-pre-wrap">
+                          <p className="font-['Inter',sans-serif] font-semibold text-[22px] whitespace-pre-wrap">
                             <span className="leading-[37.683px] text-[#7e7e81]">{`''`}</span>
                             <span className="leading-[37.683px]">
                               {`With Sivarsa, Our campaigns gained momentum. `}
                               <br aria-hidden="true" />
                               {` Real, measurable momentum.`}
                             </span>
-                            <span className="leading-[37.683px] text-[#1b1b1b]">{`''`}</span>
+                            <span className="leading-[37.683px] text-[#7e7e81]">{`''`}</span>
                           </p>
                         </div>
                       </div>
@@ -739,7 +740,7 @@ export default function HRTalentManagement() {
                               </div>
                             </div>
                             <div className="content-stretch flex flex-col items-start relative shrink-0">
-                              <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
+                              <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
                                 <p className="leading-[30.222px]">CEO</p>
                               </div>
                             </div>
@@ -769,27 +770,27 @@ export default function HRTalentManagement() {
               </div>
             </div>
             <div className="absolute h-[20px] left-[28px] top-[16px] w-[142.08px]">
-              <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[15.6px] top-[9.5px] whitespace-nowrap">
+              <div className="-translate-y-1/2 absolute flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[15.6px] top-[9.5px] whitespace-nowrap">
                 <p className="leading-[20px]">Get Your Workforce Audit</p>
               </div>
             </div>
           </div>
-          <div className="absolute content-stretch flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold items-start leading-[0] left-[72px] not-italic text-[47.1px] text-white top-[122.08px] tracking-[0.4px] w-[976px]">
+          <div className="absolute content-stretch flex flex-col font-['Inter',sans-serif] font-semibold items-start leading-[0] left-[72px] not-italic text-[47.1px] text-white top-[122.08px] tracking-[0.4px] w-[976px]">
             <div className="flex flex-col justify-center mb-[-0.003px] relative shrink-0 whitespace-nowrap">
               <p className="leading-[64.8px]">{`Try Our Workforce Consulting Service `}</p>
             </div>
             <div className="flex flex-col justify-center mb-[-0.003px] min-w-full relative shrink-0 w-[min-content]">
               <p className="whitespace-pre-wrap">
-                <span className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[64.8px] not-italic">Start with a </span>
+                <span className="font-['Inter',sans-serif] font-semibold leading-[64.8px] not-italic">Start with a </span>
                 <span className="leading-[64.8px]">Workforce Audit</span>
-                <span className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[64.8px] not-italic">{` — No commitment`}</span>
+                <span className="font-['Inter',sans-serif] font-semibold leading-[64.8px] not-italic">{` — No commitment`}</span>
                 <span className="leading-[64.8px]">{` `}</span>
-                <span className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[64.8px] not-italic">We analyze your hiring, identify savings, and deliver a custom staffing roadmap.</span>
+                <span className="font-['Inter',sans-serif] font-semibold leading-[64.8px] not-italic">We analyze your hiring, identify savings, and deliver a custom staffing roadmap.</span>
               </p>
             </div>
           </div>
           <div className="absolute border border-[rgba(255,255,255,0.15)] border-solid h-[30.08px] left-[72px] rounded-[100px] top-[72px] w-[191.83px]">
-            <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] left-[36px] not-italic text-[12.3px] text-white top-[13.64px] whitespace-nowrap">
+            <div className="-translate-y-1/2 absolute flex flex-col font-['Inter',sans-serif] font-medium justify-center leading-[0] left-[36px] not-italic text-[12.3px] text-white top-[13.64px] whitespace-nowrap">
               <p className="leading-[16.9px]">Only 4 seats per month</p>
             </div>
             <div className="absolute left-[12px] size-[16px] top-[6.03px]">

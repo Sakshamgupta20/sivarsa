@@ -44,6 +44,7 @@ const imgDiv2 = `${BASE_PATH}/assets/contact-illustration-2.png`;
 // Button & Arrow Icons
 const imgBtnIcon = `${BASE_PATH}/assets/btn-icon.png`;
 const imgArrowUpIcon = `${BASE_PATH}/assets/arrow-up.png`;
+const imgArrowIcon = `${BASE_PATH}/assets/arrow-icon.png`;
 const imgBtnArrowIcon = `${BASE_PATH}/assets/arrow-btn.png`;
 
 // Feature Images
@@ -119,7 +120,7 @@ export default function Landing() {
                   <img alt="Hero illustration" className="absolute h-full left-0 max-w-none top-0 w-[109.35%]" src={imgPurpleComposition21} />
                 </div>
               </div>
-              <div className="absolute left-[568.31px] size-[1127.028px] top-[428.84px]">
+              <div className="absolute left-[568.31px] size-[850px] top-[428.84px]">
                 <div className="absolute inset-[-37.62%]">
                   <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
                 </div>
@@ -129,13 +130,14 @@ export default function Landing() {
                   <p className="bg-clip-text font-bold leading-[1.1] not-italic relative shrink-0 text-[36px] md:text-[56px] lg:text-[82px] uppercase w-full lg:w-[786.107px] animate-fade-in-up" style={{ fontFamily: "var(--font-headings)", backgroundImage: "linear-gradient(-38.5682deg, rgb(255, 255, 255) 62.646%, rgb(0, 0, 0) 108.48%)", WebkitTextFillColor: "transparent" }}>
                     Your Growth Partner From Idea to Impact
                   </p>
-                  <p className="font-['Inter:Medium',sans-serif] font-medium leading-[1.6] not-italic opacity-70 relative shrink-0 text-[16px] md:text-[18px] lg:text-[22px] text-white w-full max-w-[544px] animate-fade-in-up delay-200">{`We build the software, attract the customers,  and hire the talent—so you can focus on building your business.`}</p>
+                  <p className="font-['Inter',sans-serif] font-medium leading-[1.6] not-italic relative shrink-0 text-[16px] md:text-[18px] lg:text-[22px] text-white/50 w-full max-w-[544px] animate-fade-in-up delay-200">{`We build the software, attract the customers,  and hire the talent—so you can focus on building your business.`}</p>
                   <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-full md:w-auto animate-fade-in-up delay-300">
                     <div className="content-stretch flex flex-col sm:flex-row gap-[16px] md:gap-[31.6px] items-center justify-center relative shrink-0 w-full sm:w-auto">
-                      <Link href="/contact" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-full sm:w-[270.089px] btn-magnetic shine-effect cursor-pointer hover:shadow-xl flex items-center justify-center">
+                      <Link href="/contact" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-full sm:w-[270.089px] btn-magnetic shine-effect cursor-pointer hover:shadow-xl flex items-center justify-center gap-[8px]">
                         <span className="font-['Inter',sans-serif] font-medium text-[16px] md:text-[20px] text-black">
                           Book a Strategy Call
                         </span>
+                        <img alt="" className="w-[14px] h-[14px]" src={imgArrowIcon} />
                       </Link>
                       <Link href="/services/software-development" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-full sm:w-[210.089px] btn-magnetic shine-effect cursor-pointer hover:shadow-xl flex items-center justify-center">
                         <span className="font-['Inter',sans-serif] font-medium text-[16px] md:text-[20px] text-black">
@@ -710,8 +712,8 @@ export default function Landing() {
             </div>
           </div>
         </div>
-        <div className="bg-[#f0f0f0] content-stretch flex flex-col min-h-[600px] md:min-h-[800px] lg:h-[939px] items-center overflow-clip relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col gap-[40px] md:gap-[60.454px] items-start max-w-[1360px] pt-[60px] md:pt-[100px] lg:pt-[143.556px] px-4 md:px-[37.778px] relative shrink-0 w-full">
+        <div className="bg-[#f0f0f0] content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-[40px] md:gap-[60.454px] items-start max-w-[1360px] py-[60px] md:py-[100px] lg:py-[143.556px] px-4 md:px-[37.778px] relative shrink-0 w-full">
             <div className="content-stretch flex items-end relative shrink-0 w-full">
               <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0 w-full">
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0 w-full">
@@ -736,7 +738,7 @@ export default function Landing() {
                 <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
                   <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[18px]">Digil</p>
                   <div className="flex-1 py-8">
-                    <p className="font-['Inter:Extra_Bold',sans-serif] font-extrabold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;Working with Sivarsa completely changed how we approach hiring. They helped us bring in the right talent quickly, which was exactly what we needed during a crucial phase&rdquo;</p>
+                    <p className="font-['Inter',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;Working with Sivarsa completely changed how we approach hiring. They helped us bring in the right talent quickly, which was exactly what we needed during a crucial phase&rdquo;</p>
                   </div>
                   <div className="mt-auto">
                     <p className="font-['Inter:Black',sans-serif] font-black text-[18px] md:text-[22px] text-[#1b1b1b]">Saksham Gupta</p>
@@ -747,7 +749,7 @@ export default function Landing() {
                 <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
                   <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[18px]">Santosh</p>
                   <div className="flex-1 py-8">
-                    <p className="font-['Inter:Extra_Bold',sans-serif] font-extrabold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;Sivarsa&apos;s SEO gave us a real boost when we needed it.&rdquo;</p>
+                    <p className="font-['Inter',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;Sivarsa&apos;s SEO gave us a real boost when we needed it.&rdquo;</p>
                   </div>
                   <div className="mt-auto">
                     <p className="font-['Inter:Black',sans-serif] font-black text-[18px] md:text-[22px] text-[#1b1b1b]">Suresh</p>
@@ -758,7 +760,7 @@ export default function Landing() {
                 <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
                   <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[18px]">GNT</p>
                   <div className="flex-1 py-8">
-                    <p className="font-['Inter:Extra_Bold',sans-serif] font-extrabold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;With Sivarsa, Our campaigns gained momentum. Real, measurable momentum.&rdquo;</p>
+                    <p className="font-['Inter',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;With Sivarsa, Our campaigns gained momentum. Real, measurable momentum.&rdquo;</p>
                   </div>
                   <div className="mt-auto">
                     <p className="font-['Inter:Black',sans-serif] font-black text-[18px] md:text-[22px] text-[#1b1b1b]">Ritika</p>

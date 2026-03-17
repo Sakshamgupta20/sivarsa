@@ -73,6 +73,12 @@ export default function AboutPage() {
             <div className="absolute inset-0 opacity-60 pointer-events-none">
               <img alt="" className="absolute inset-0 max-w-none object-cover size-full" src={imgStars1} />
             </div>
+            {/* Ellipse decoration (purple patch) */}
+            <div className="absolute left-[568.31px] size-[850px] top-[428.84px] pointer-events-none">
+              <div className="absolute inset-[-37.62%]">
+                <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
+              </div>
+            </div>
 
             {/* Header */}
             <Header />
