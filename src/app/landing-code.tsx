@@ -96,56 +96,57 @@ export default function Landing() {
     <div className="bg-black relative size-full">
       <div className="w-full flex flex-col items-center">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
-          <div className="min-h-[600px] lg:min-h-[841px] relative shrink-0 w-full max-w-[1440px] mx-auto overflow-hidden">
+          <div className="min-h-[600px] lg:min-h-[841px] relative shrink-0 w-full overflow-hidden">
+            {/* Full-width background image */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-full left-[-5.86%] max-w-none top-0 w-[111.73%]" src={imgHero} />
+              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgHero} />
+            </div>
+            {/* Full-width overlays */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <div className="absolute inset-0 opacity-35 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgPattern2} />
+              </div>
+            </div>
+            <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(110.159deg, rgb(0, 0, 0) 21.698%, rgba(0, 0, 0, 0.26) 84.415%)" }} />
+            <div className="absolute inset-0 opacity-60 pointer-events-none">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgStars1} />
             </div>
             <Header />
-            <div className="absolute contents left-0 top-[98px]">
-              <div className="absolute contents left-0 top-[98px]">
-                <div className="-translate-x-1/2 absolute h-[866px] left-1/2 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[1438.759px_865.654px] rounded-[20px] top-[90px] w-[1440px]" style={{ maskImage: `url('${imgPattern1}')` }}>
-                  <div className="absolute inset-0 opacity-35 overflow-hidden pointer-events-none rounded-[20px]">
-                    <img alt="" className="absolute h-[126.85%] left-[-2.29%] max-w-none top-[-2.12%] w-[104.77%]" src={imgPattern2} />
-                  </div>
-                </div>
-                <div className="absolute h-[937.591px] left-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_71.938px] mask-size-[1438.759px_865.654px] rounded-[20px] top-[20px] w-[1438.759px]" style={{ backgroundImage: "linear-gradient(110.159deg, rgb(0, 0, 0) 21.698%, rgba(0, 0, 0, 0.26) 84.415%)", maskImage: `url('${imgPattern1}')` }} />
-                <div className="-translate-x-1/2 absolute h-[937.591px] left-[calc(50%-0.62px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_71.938px] mask-size-[1438.759px_865.654px] opacity-60 top-[20px] w-[1438.759px]" style={{ maskImage: `url('${imgPattern1}')` }}>
-                  <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgStars1} />
-                </div>
-              </div>
-              <div className="absolute h-[300px] md:h-[450px] lg:h-[643px] right-0 lg:left-[716px] top-[80px] md:top-[106px] w-[280px] md:w-[400px] lg:w-[588px] hero-image animate-float hidden md:block">
+            {/* Content wrapper constrained to max-width */}
+            <div className="relative w-full max-w-[1440px] mx-auto min-h-[500px] lg:min-h-[750px]">
+              <div className="absolute h-[300px] md:h-[450px] lg:h-[643px] right-0 lg:left-[716px] top-[0px] md:top-[16px] w-[280px] md:w-[400px] lg:w-[588px] hero-image animate-float hidden md:block">
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                   <img alt="Hero illustration" className="absolute h-full left-0 max-w-none top-0 w-[109.35%]" src={imgPurpleComposition21} />
                 </div>
               </div>
-            </div>
-            <div className="absolute left-[568.31px] size-[1127.028px] top-[518.84px]">
-              <div className="absolute inset-[-37.62%]">
-                <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
-              </div>
-            </div>
-            <div className="relative lg:absolute content-stretch flex flex-col gap-[40px] lg:gap-[80px] items-start px-4 md:px-8 lg:px-0 lg:left-[76px] pt-[40px] lg:pt-0 lg:top-[219px] w-full lg:w-[1060px]">
-              <div className="content-stretch flex flex-col gap-[20px] md:gap-[37px] items-start relative shrink-0 w-full lg:w-[762px] hero-content">
-                <p className="bg-clip-text font-bold leading-[1.1] not-italic relative shrink-0 text-[36px] md:text-[56px] lg:text-[82px] uppercase w-full lg:w-[786.107px] animate-fade-in-up" style={{ fontFamily: "var(--font-headings)", backgroundImage: "linear-gradient(-38.5682deg, rgb(255, 255, 255) 62.646%, rgb(0, 0, 0) 108.48%)", WebkitTextFillColor: "transparent" }}>
-                  Your Growth Partner From Idea to Impact
-                </p>
-                <p className="font-['Inter:Medium',sans-serif] font-medium leading-[1.6] not-italic opacity-70 relative shrink-0 text-[16px] md:text-[18px] lg:text-[22px] text-white w-full max-w-[544px] animate-fade-in-up delay-200">{`We build the software, attract the customers,  and hire the talent—so you can focus on building your business.`}</p>
-                <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-full md:w-auto animate-fade-in-up delay-300">
-                  <div className="content-stretch flex flex-col sm:flex-row gap-[16px] md:gap-[31.6px] items-center justify-center relative shrink-0 w-full sm:w-auto">
-                    <Link href="/contact" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-full sm:w-[270.089px] btn-magnetic shine-effect cursor-pointer hover:shadow-xl flex items-center justify-center">
-                      <span className="font-['Inter',sans-serif] font-medium text-[16px] md:text-[20px] text-black">
-                        Book a Strategy Call
-                      </span>
-                    </Link>
-                    <Link href="/services/software-development" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-full sm:w-[210.089px] btn-magnetic shine-effect cursor-pointer hover:shadow-xl flex items-center justify-center">
-                      <span className="font-['Inter',sans-serif] font-medium text-[16px] md:text-[20px] text-black">
-                        Explore services
-                      </span>
-                    </Link>
-                  </div>
+              <div className="absolute left-[568.31px] size-[1127.028px] top-[428.84px]">
+                <div className="absolute inset-[-37.62%]">
+                  <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
                 </div>
-                <div className="flex flex-col font-['Schibsted_Grotesk:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[14px] md:text-[16px] lg:text-[20px] text-center md:text-left text-white w-full lg:w-[677.504px]">
-                  <p className="leading-[normal]">47+ Companies Scaled | 200+ Projects Delivered | 95% Client Retention</p>
+              </div>
+              <div className="relative lg:absolute content-stretch flex flex-col gap-[40px] lg:gap-[80px] items-start px-4 md:px-8 lg:px-0 lg:left-[76px] pt-[40px] lg:pt-0 lg:top-[129px] w-full lg:w-[1060px]">
+                <div className="content-stretch flex flex-col gap-[20px] md:gap-[37px] items-start relative shrink-0 w-full lg:w-[762px] hero-content">
+                  <p className="bg-clip-text font-bold leading-[1.1] not-italic relative shrink-0 text-[36px] md:text-[56px] lg:text-[82px] uppercase w-full lg:w-[786.107px] animate-fade-in-up" style={{ fontFamily: "var(--font-headings)", backgroundImage: "linear-gradient(-38.5682deg, rgb(255, 255, 255) 62.646%, rgb(0, 0, 0) 108.48%)", WebkitTextFillColor: "transparent" }}>
+                    Your Growth Partner From Idea to Impact
+                  </p>
+                  <p className="font-['Inter:Medium',sans-serif] font-medium leading-[1.6] not-italic opacity-70 relative shrink-0 text-[16px] md:text-[18px] lg:text-[22px] text-white w-full max-w-[544px] animate-fade-in-up delay-200">{`We build the software, attract the customers,  and hire the talent—so you can focus on building your business.`}</p>
+                  <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-full md:w-auto animate-fade-in-up delay-300">
+                    <div className="content-stretch flex flex-col sm:flex-row gap-[16px] md:gap-[31.6px] items-center justify-center relative shrink-0 w-full sm:w-auto">
+                      <Link href="/contact" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-full sm:w-[270.089px] btn-magnetic shine-effect cursor-pointer hover:shadow-xl flex items-center justify-center">
+                        <span className="font-['Inter',sans-serif] font-medium text-[16px] md:text-[20px] text-black">
+                          Book a Strategy Call
+                        </span>
+                      </Link>
+                      <Link href="/services/software-development" className="bg-white border-[0.714px] border-solid border-white h-[50.28px] relative rounded-[24.997px] shrink-0 w-full sm:w-[210.089px] btn-magnetic shine-effect cursor-pointer hover:shadow-xl flex items-center justify-center">
+                        <span className="font-['Inter',sans-serif] font-medium text-[16px] md:text-[20px] text-black">
+                          Explore services
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="flex flex-col font-['Schibsted_Grotesk:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[14px] md:text-[16px] lg:text-[20px] text-center md:text-left text-white w-full lg:w-[677.504px]">
+                    <p className="leading-[normal]">47+ Companies Scaled | 200+ Projects Delivered | 95% Client Retention</p>
+                  </div>
                 </div>
               </div>
             </div>

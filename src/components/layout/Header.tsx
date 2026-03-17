@@ -27,6 +27,7 @@ export default function Header({ variant = "dark" }: HeaderProps) {
   const hamburgerBg = isDark ? "bg-white" : "bg-[#1b1b1b]";
 
   return (
+    <div className="w-full relative z-50">
     <div className="content-stretch flex items-center justify-between pb-[10px] pt-5 relative shrink-0 w-full max-w-[1360px] mx-auto px-4 lg:px-0 z-50">
       <Link href="/" className="flex items-center gap-2 relative shrink-0 animate-fade-in-down z-50">
         <Image
@@ -194,6 +195,8 @@ export default function Header({ variant = "dark" }: HeaderProps) {
           </Link>
         </nav>
       </div>
+    </div>
+    <div className={`relative z-50 w-full h-[2px] mt-2 ${isDark ? 'bg-gradient-to-r from-transparent via-white/70 to-transparent' : 'bg-gradient-to-r from-transparent via-[#1b1b1b] to-transparent'}`} />
     </div>
   );
 }
