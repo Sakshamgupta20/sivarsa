@@ -301,7 +301,7 @@ export default function BlogPage() {
               <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[80px] items-start justify-between">
                 {/* Left Content */}
                 <div className="flex flex-col items-start max-w-[434px]">
-                  <h2 className="font-[family-name:var(--font-headings)] font-bold text-[40px] md:text-[55px] leading-[1.2] tracking-[1px] text-[#1b1b1b]">
+                  <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-[#1b1b1b]">
                     Have a Project?<br />Let&apos;s talk!
                   </h2>
 

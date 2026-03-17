@@ -569,11 +569,11 @@ export default function SoftwareDevelopment() {
             </div>
           </div>
         </div>
-        <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-[1360px]">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img alt="" className="absolute h-[113.67%] left-0 max-w-none top-[-6.83%] w-full" src={imgSection} />
+            <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgSection} />
           </div>
-          <div className="content-stretch flex flex-col gap-[75.556px] items-start justify-center max-w-[1360px] pb-[52.889px] px-[37.778px] relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-[75.556px] items-start justify-center max-w-[1360px] mx-auto pb-[52.889px] px-[37.778px] relative shrink-0 w-full">
             <div className="h-[265.389px] relative shrink-0 w-full">
               <div className="-translate-x-1/2 -translate-y-1/2 absolute content-stretch flex items-center justify-center left-[calc(50%-0.47px)] top-[calc(50%+0.37px)] w-[1317.5px]">
                 <div className="content-stretch flex flex-col items-start min-w-[1171.2149658203125px] pb-[0.756px] relative shrink-0">
@@ -688,12 +688,9 @@ export default function SoftwareDevelopment() {
                 </div>
               </div>
             </div>
-            <div className="content-stretch flex flex-col items-start max-w-[1360px] pr-[37.778px] relative shrink-0 w-[1194.411px]">
-              <div className="h-[117.857px] mb-[-79.957px] shrink-0 w-full" />
-              <div className="content-stretch flex flex-col items-start mb-[-79.957px] relative shrink-0 w-full">
-                <div className="h-[506.222px] max-w-[389.111083984375px] relative shrink-0 w-[389.111px]">
-                  <div className="absolute content-stretch flex items-start left-0 right-[-778.22px] top-[-25.82px]">
-                    <div className="bg-[var(--color\/white\/solid,white)] content-stretch flex flex-[1_0_0] flex-col gap-[0.661px] h-[506.222px] items-start max-w-[389.111083984375px] min-h-px min-w-px pb-[30.222px] pt-[29.594px] px-[30.222px] relative testimonial-card">
+            <div className="bg-white w-full pb-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-x divide-[#f0f0f0]">
+                    <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
                       <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
                         <p className="leading-[30.222px]">Digil</p>
                       </div>
@@ -719,7 +716,7 @@ export default function SoftwareDevelopment() {
                         </div>
                       </div>
                     </div>
-                    <div className="bg-[var(--color\/white\/solid,white)] content-stretch flex flex-[1_0_0] flex-col gap-[0.661px] h-[506.222px] items-start max-w-[389.111083984375px] min-h-px min-w-px pb-[30.222px] pt-[29.594px] px-[30.222px] relative testimonial-card">
+                    <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
                       <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
                         <p className="leading-[30.222px]">Santosh</p>
                       </div>
@@ -745,7 +742,7 @@ export default function SoftwareDevelopment() {
                         </div>
                       </div>
                     </div>
-                    <div className="bg-[var(--color\/white\/solid,white)] content-stretch flex flex-[1_0_0] flex-col gap-[0.661px] h-[506.222px] items-start max-w-[389.111083984375px] min-h-px min-w-px pb-[30.222px] pt-[29.594px] px-[30.222px] relative testimonial-card">
+                    <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
                       <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
                         <p className="leading-[30.222px]">GNT</p>
                       </div>
@@ -779,8 +776,6 @@ export default function SoftwareDevelopment() {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

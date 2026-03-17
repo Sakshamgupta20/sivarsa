@@ -28,7 +28,8 @@ export const socialLinks = [
 ];
 
 export const contactInfo = {
-  phone: "+1 (999) 999-99-99",
-  email: "info@sivarsa.com",
-  whatsapp: "+1 (999) 999-99-99",
+  phone: "+91-9259108248",
+  email: "contact@sivarsa.com",
+  whatsapp: "+919259108248",
+  address: "C1-1201, JKG Palm Court, Sector 16-C, Greater Noida, Uttar Pradesh, India - 201301",
 };

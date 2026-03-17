@@ -102,7 +102,7 @@ export default function ContactPage() {
               <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[144px] items-start justify-between">
                 {/* Left Heading */}
                 <div className="flex flex-col items-start max-w-[400px] scroll-reveal scroll-fade-up">
-                  <h2 className="font-['Inter',sans-serif] font-extrabold text-[36px] md:text-[48px] lg:text-[56px] leading-[1.3] tracking-[1px] text-[#1b1b1b]">
+                  <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-[#1b1b1b]">
                     Start your project in<br />
                     <span className="text-[#3f2fee]">4 simple steps.</span>
                   </h2>
@@ -151,7 +151,7 @@ export default function ContactPage() {
               <div className="flex flex-col gap-[64px]">
                 {/* Heading */}
                 <div className="flex flex-col items-start">
-                  <h2 className="font-['Inter',sans-serif] font-extrabold text-[36px] md:text-[48px] lg:text-[55px] leading-[1.3] tracking-[1px] text-white">
+                  <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-white">
                     We deliver on time, in days and weeks<br />
                     <span className="text-white/50">—not months.</span>
                   </h2>
@@ -191,7 +191,7 @@ export default function ContactPage() {
               <div className="flex flex-col gap-[64px]">
                 {/* Heading */}
                 <div className="flex flex-col items-start">
-                  <h2 className="font-['Inter',sans-serif] font-extrabold text-[36px] md:text-[48px] lg:text-[56px] leading-[1.3] tracking-[1px] text-[#1b1b1b]">
+                  <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-[#1b1b1b]">
                     Our Headquarters centrally based in<br />
                     <span className="text-[#1b1b1b]/40">india</span>
                   </h2>
@@ -211,7 +211,7 @@ export default function ContactPage() {
               <div className="flex flex-col gap-[142px]">
                 {/* Top Row - Heading and CTA */}
                 <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-[40px]">
-                  <h2 className="font-['Inter',sans-serif] font-semibold text-[40px] md:text-[56px] lg:text-[70px] leading-[1.2] tracking-[1px] text-[#1b1b1b]">
+                  <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-[#1b1b1b]">
                     Got a project in mind?<br />Let&apos;s talk.
                   </h2>
                   <Link href="#" className="bg-[#3f2fee] flex gap-[8px] items-center justify-center px-[28px] py-[16px] rounded-[100px] btn-magnetic hover-glow glow-pulse shrink-0">
@@ -226,13 +226,13 @@ export default function ContactPage() {
                   <div className="flex flex-col gap-[16px]">
                     <h3 className="font-['Inter',sans-serif] font-semibold text-[22px] text-[#1b1b1b] tracking-[1px]">Bangladesh</h3>
                     <div className="flex flex-col gap-[3px]">
-                      <a href="mailto:hello@sivarsa.agency" className="flex gap-[4px] items-center">
+                      <a href="mailto:contact@sivarsa.com" className="flex gap-[4px] items-center">
                         <img alt="" className="w-[18px] h-[18px]" src={imgEmailIcon} />
-                        <span className="font-['Inter',sans-serif] font-extrabold text-[14px] text-[#1b1b1b]">hello@sivarsa.agency</span>
+                        <span className="font-['Inter',sans-serif] font-extrabold text-[14px] text-[#1b1b1b]">contact@sivarsa.com</span>
                       </a>
-                      <a href="tel:+8801785087148" className="flex gap-[4px] items-center">
+                      <a href="tel:+919259108248" className="flex gap-[4px] items-center">
                         <img alt="" className="w-[18px] h-[18px]" src={imgWhatsappIcon} />
-                        <span className="font-['Inter',sans-serif] font-semibold text-[14px] text-[#1b1b1b] underline">+880 1785 0871 48</span>
+                        <span className="font-['Inter',sans-serif] font-semibold text-[14px] text-[#1b1b1b] underline">+91-9259108248</span>
                       </a>
                     </div>
                     <div className="mt-[24px]">
@@ -248,8 +248,8 @@ export default function ContactPage() {
                   <div className="flex flex-col gap-[16px]">
                     <h3 className="font-['Inter',sans-serif] font-semibold text-[22px] text-[#1b1b1b] tracking-[1px]">Business Inquiry</h3>
                     <div className="flex flex-col gap-[3px]">
-                      <a href="mailto:hello@sivarsa.agency" className="font-['Inter',sans-serif] font-semibold text-[14px] text-[#1b1b1b] underline">
-                        hello@sivarsa.agency
+                      <a href="mailto:contact@sivarsa.com" className="font-['Inter',sans-serif] font-semibold text-[14px] text-[#1b1b1b] underline">
+                        contact@sivarsa.com
                       </a>
                     </div>
                   </div>

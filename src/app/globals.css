@@ -1,5 +1,37 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'GTSuper';
+  src: url('/sivarsa/assets/fonts/GT-Super-Display-Regular-Trial.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GTSuper';
+  src: url('/sivarsa/assets/fonts/GT-Super-Display-Medium-Trial.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GTSuper';
+  src: url('/sivarsa/assets/fonts/GT-Super-Display-Bold-Trial.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GTSuper';
+  src: url('/sivarsa/assets/fonts/GT-Super-Display-Bold-Italic-Trial.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --background: #000000;
   --foreground: #ffffff;

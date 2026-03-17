@@ -5,6 +5,7 @@ import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ContactForm from "@/components/ContactForm";
+import FaqAccordion from "@/components/FaqAccordion";
 
 // Base path for GitHub Pages deployment (must match next.config.ts basePath)
 const BASE_PATH = "/sivarsa";
@@ -53,7 +54,6 @@ const imgWebDesign1 = `${BASE_PATH}/assets/feature-marketing.png`;
 const imgSection = `${BASE_PATH}/assets/achievements-bg.png`;
 
 // Contact Icons
-const imgArrowIcon = `${BASE_PATH}/assets/arrow-icon.png`;
 const imgWhatsappIcon = `${BASE_PATH}/assets/whatsapp-icon.png`;
 const imgContactTick = `${BASE_PATH}/assets/contact-tick.png`;
 
@@ -233,7 +233,7 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-            <div className="min-h-[250px] md:h-[320px] relative shrink-0 w-full max-w-[1280px] card-3d scroll-reveal scroll-fade-up stagger-1">
+            <div className="min-h-[250px] md:h-[320px] relative shrink-0 w-full max-w-[1280px] scroll-reveal scroll-fade-up stagger-1">
               <div className="lg:-translate-y-1/2 relative lg:absolute content-stretch flex flex-col gap-[20px] md:gap-[35px] items-start left-0 lg:top-[calc(50%-0.01px)] w-full lg:w-[288px] mb-4 lg:mb-0">
                 <div className="content-stretch flex items-start relative shrink-0 w-full">
                   <div className="capitalize flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[1.1] not-italic relative shrink-0 text-[36px] md:text-[48px] lg:text-[59px] text-white tracking-[-2px]">
@@ -249,7 +249,7 @@ export default function Landing() {
                 <img alt="All-in-one Solution" className="w-full h-full object-cover" src={imgDiv} />
               </div>
             </div>
-            <div className="min-h-[250px] md:h-[320px] relative shrink-0 w-full max-w-[1280px] card-3d scroll-reveal scroll-fade-up stagger-2">
+            <div className="min-h-[250px] md:h-[320px] relative shrink-0 w-full max-w-[1280px] scroll-reveal scroll-fade-up stagger-2">
               <div className="lg:-translate-y-1/2 relative lg:absolute content-stretch flex flex-col gap-[20px] md:gap-[22px] items-start left-0 lg:top-[calc(50%-0.01px)] w-full lg:w-[288px] mb-4 lg:mb-0">
                 <div className="content-stretch flex items-start relative shrink-0 w-full">
                   <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[1.1] not-italic relative shrink-0 text-[36px] md:text-[48px] lg:text-[60px] text-white tracking-[-2px]">
@@ -265,7 +265,7 @@ export default function Landing() {
                 <img alt="Proven Expertise" className="w-full h-full object-cover" src={imgDiv1} />
               </div>
             </div>
-            <div className="min-h-[250px] md:h-[320px] relative shrink-0 w-full max-w-[1280px] card-3d scroll-reveal scroll-fade-up stagger-3">
+            <div className="min-h-[250px] md:h-[320px] relative shrink-0 w-full max-w-[1280px] scroll-reveal scroll-fade-up stagger-3">
               <div className="lg:-translate-y-1/2 relative lg:absolute content-stretch flex flex-col gap-[20px] md:gap-[35px] items-start left-0 lg:top-[calc(50%-0.01px)] w-full lg:w-[270.919px] mb-4 lg:mb-0">
                 <div className="content-stretch flex items-start relative shrink-0">
                   <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[1.1] not-italic relative shrink-0 text-[36px] md:text-[48px] lg:text-[60px] text-white tracking-[-2px]">
@@ -282,7 +282,7 @@ export default function Landing() {
                 <img alt="Client Centric Approach" className="w-full h-full object-cover" src={imgDiv2} />
               </div>
             </div>
-            <div className="min-h-[250px] md:h-[320px] relative shrink-0 w-full max-w-[1280px] card-3d scroll-reveal scroll-fade-up stagger-4">
+            <div className="min-h-[250px] md:h-[320px] relative shrink-0 w-full max-w-[1280px] scroll-reveal scroll-fade-up stagger-4">
               <div className="lg:-translate-y-1/2 relative lg:absolute content-stretch flex flex-col gap-[20px] md:gap-[35px] items-start left-0 lg:top-[calc(50%-0.01px)] w-full lg:w-[288px] mb-4 lg:mb-0">
                 <div className="content-stretch flex items-start relative shrink-0 w-full">
                   <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[1.1] not-italic relative shrink-0 text-[32px] md:text-[42px] lg:text-[52px] text-white tracking-[-2px]">
@@ -334,7 +334,7 @@ export default function Landing() {
                 </Link>
               </div>
             </div>
-            <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] to-[rgba(116,39,255,0.5)] rounded-[25px] w-full max-w-[1276px] card-3d scroll-reveal scroll-fade-up shine-effect p-6 md:p-10 lg:p-12">
+            <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] to-[rgba(116,39,255,0.5)] rounded-[25px] w-full max-w-[1276px] scroll-reveal scroll-fade-up shine-effect p-6 md:p-10 lg:p-12">
               <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
                 {/* Left Content */}
                 <div className="flex-1 flex flex-col gap-6">
@@ -362,7 +362,7 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] to-[rgba(116,39,255,0.5)] rounded-[25px] w-full max-w-[1276px] card-3d scroll-reveal scroll-fade-up shine-effect stagger-2 p-6 md:p-10 lg:p-12">
+            <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] to-[rgba(116,39,255,0.5)] rounded-[25px] w-full max-w-[1276px] scroll-reveal scroll-fade-up shine-effect stagger-2 p-6 md:p-10 lg:p-12">
               <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
                 {/* Left Content */}
                 <div className="flex-1 flex flex-col gap-6">
@@ -611,11 +611,11 @@ export default function Landing() {
               </div>
           </div>
         </div>
-        <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full max-w-[1360px] mx-auto">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img alt="" className="absolute h-[113.67%] left-0 max-w-none top-[-6.83%] w-full" src={imgSection} />
+            <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgSection} />
           </div>
-          <div className="content-stretch flex flex-col gap-[40px] md:gap-[75.556px] items-start justify-center max-w-[1360px] pb-[30px] md:pb-[52.889px] px-4 md:px-[37.778px] relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-[40px] md:gap-[75.556px] items-start justify-center max-w-[1360px] mx-auto pb-[30px] md:pb-[52.889px] px-4 md:px-[37.778px] relative shrink-0 w-full">
             <div className="min-h-[150px] md:h-[265.389px] relative shrink-0 w-full flex items-center justify-center">
               <div className="content-stretch flex items-center justify-center w-full">
                 <div className="content-stretch flex flex-col items-center relative shrink-0">
@@ -626,7 +626,7 @@ export default function Landing() {
               </div>
             </div>
             <div className="content-stretch flex flex-col md:flex-row items-stretch justify-center min-h-[200px] md:min-h-[337.3744201660156px] relative shrink-0 w-full gap-0">
-              <div className="bg-white border-[#e8e7e7] border-b md:border-b-0 md:border-r border-solid content-stretch flex flex-col gap-[40px] md:gap-[149.982px] items-start overflow-clip p-[20px] md:pl-[30.222px] md:pr-[31.167px] md:py-[30.222px] relative self-stretch shrink-0 w-full md:w-1/3 card-3d scroll-reveal scroll-fade-up stagger-1">
+              <div className="bg-white border-[#e8e7e7] border-b md:border-b-0 md:border-r border-solid content-stretch flex flex-col gap-[40px] md:gap-[149.982px] items-start overflow-clip p-[20px] md:pl-[30.222px] md:pr-[31.167px] md:py-[30.222px] relative self-stretch shrink-0 w-full md:w-1/3 scroll-reveal scroll-fade-up stagger-1">
                 <div className="h-[49.111px] relative shrink-0 w-full">
                   <div className="-translate-y-1/2 absolute bg-[var(--color\/blue\/56,#3f2fee)] content-stretch flex items-center justify-center left-[210.61px] rounded-[49.111px] size-[49.111px] top-[calc(50%-113.33px)]">
                     <div className="content-stretch flex h-[12.835px] items-center justify-center max-w-[49.11111068725586px] overflow-clip relative shrink-0 w-[12.844px]">
@@ -653,7 +653,7 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-              <div className="bg-white border-[#e8e7e7] border-b md:border-b-0 md:border-r border-solid content-stretch flex flex-col gap-[40px] md:gap-[149.982px] items-start overflow-clip p-[20px] md:pl-[30.222px] md:pr-[31.167px] md:py-[30.222px] relative self-stretch shrink-0 w-full md:w-1/3 card-3d scroll-reveal scroll-fade-up stagger-2">
+              <div className="bg-white border-[#e8e7e7] border-b md:border-b-0 md:border-r border-solid content-stretch flex flex-col gap-[40px] md:gap-[149.982px] items-start overflow-clip p-[20px] md:pl-[30.222px] md:pr-[31.167px] md:py-[30.222px] relative self-stretch shrink-0 w-full md:w-1/3 scroll-reveal scroll-fade-up stagger-2">
                 <div className="h-[49.111px] relative shrink-0 w-full">
                   <div className="-translate-y-1/2 absolute bg-[var(--color\/blue\/56,#3f2fee)] content-stretch flex items-center justify-center left-[210.61px] rounded-[49.111px] size-[49.111px] top-[calc(50%-113.33px)]">
                     <div className="content-stretch flex h-[12.835px] items-center justify-center max-w-[49.11111068725586px] overflow-clip relative shrink-0 w-[12.844px]">
@@ -680,7 +680,7 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-              <div className="bg-white border-[#e8e7e7] md:border-r-0 border-solid content-stretch flex flex-col gap-[40px] md:gap-[149.982px] items-start overflow-clip p-[20px] md:pl-[30.222px] md:pr-[31.167px] md:py-[30.222px] relative self-stretch shrink-0 w-full md:w-1/3 card-3d scroll-reveal scroll-fade-up stagger-3">
+              <div className="bg-white border-[#e8e7e7] md:border-r-0 border-solid content-stretch flex flex-col gap-[40px] md:gap-[149.982px] items-start overflow-clip p-[20px] md:pl-[30.222px] md:pr-[31.167px] md:py-[30.222px] relative self-stretch shrink-0 w-full md:w-1/3 scroll-reveal scroll-fade-up stagger-3">
                 <div className="h-[49.111px] relative shrink-0 w-full">
                   <div className="-translate-y-1/2 absolute bg-[var(--color\/blue\/56,#3f2fee)] content-stretch flex items-center justify-center left-[210.61px] rounded-[49.111px] size-[49.111px] top-[calc(50%-113.33px)]">
                     <div className="content-stretch flex h-[12.835px] items-center justify-center max-w-[49.11111068725586px] overflow-clip relative shrink-0 w-[12.844px]">
@@ -730,38 +730,40 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full pb-12">
-              {/* Testimonial Card 1 */}
-              <div className="bg-white rounded-lg p-6 md:p-8 flex flex-col testimonial-card">
-                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[18px]">Digil</p>
-                <div className="flex-1 py-8">
-                  <p className="font-['Inter:Extra_Bold',sans-serif] font-extrabold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;Working with Sivarsa completely changed how we approach hiring. They helped us bring in the right talent quickly, which was exactly what we needed during a crucial phase&rdquo;</p>
+            <div className="bg-white w-full pb-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-x divide-[#f0f0f0]">
+                {/* Testimonial Card 1 */}
+                <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
+                  <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[18px]">Digil</p>
+                  <div className="flex-1 py-8">
+                    <p className="font-['Inter:Extra_Bold',sans-serif] font-extrabold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;Working with Sivarsa completely changed how we approach hiring. They helped us bring in the right talent quickly, which was exactly what we needed during a crucial phase&rdquo;</p>
+                  </div>
+                  <div className="mt-auto">
+                    <p className="font-['Inter:Black',sans-serif] font-black text-[18px] md:text-[22px] text-[#1b1b1b]">Saksham Gupta</p>
+                    <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[14px] md:text-[18px]">CEO & Founder</p>
+                  </div>
                 </div>
-                <div className="mt-auto">
-                  <p className="font-['Inter:Black',sans-serif] font-black text-[18px] md:text-[22px] text-[#1b1b1b]">Saksham Gupta</p>
-                  <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[14px] md:text-[18px]">CEO & Founder</p>
+                {/* Testimonial Card 2 */}
+                <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
+                  <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[18px]">Santosh</p>
+                  <div className="flex-1 py-8">
+                    <p className="font-['Inter:Extra_Bold',sans-serif] font-extrabold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;Sivarsa&apos;s SEO gave us a real boost when we needed it.&rdquo;</p>
+                  </div>
+                  <div className="mt-auto">
+                    <p className="font-['Inter:Black',sans-serif] font-black text-[18px] md:text-[22px] text-[#1b1b1b]">Suresh</p>
+                    <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[14px] md:text-[18px]">CEO & Founder</p>
+                  </div>
                 </div>
-              </div>
-              {/* Testimonial Card 2 */}
-              <div className="bg-white rounded-lg p-6 md:p-8 flex flex-col testimonial-card">
-                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[18px]">Santosh</p>
-                <div className="flex-1 py-8">
-                  <p className="font-['Inter:Extra_Bold',sans-serif] font-extrabold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;Sivarsa&apos;s SEO gave us a real boost when we needed it.&rdquo;</p>
-                </div>
-                <div className="mt-auto">
-                  <p className="font-['Inter:Black',sans-serif] font-black text-[18px] md:text-[22px] text-[#1b1b1b]">Suresh</p>
-                  <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[14px] md:text-[18px]">CEO & Founder</p>
-                </div>
-              </div>
-              {/* Testimonial Card 3 */}
-              <div className="bg-white rounded-lg p-6 md:p-8 flex flex-col testimonial-card">
-                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[18px]">GNT</p>
-                <div className="flex-1 py-8">
-                  <p className="font-['Inter:Extra_Bold',sans-serif] font-extrabold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;With Sivarsa, Our campaigns gained momentum. Real, measurable momentum.&rdquo;</p>
-                </div>
-                <div className="mt-auto">
-                  <p className="font-['Inter:Black',sans-serif] font-black text-[18px] md:text-[22px] text-[#1b1b1b]">Ritika</p>
-                  <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[14px] md:text-[18px]">CEO</p>
+                {/* Testimonial Card 3 */}
+                <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
+                  <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[18px]">GNT</p>
+                  <div className="flex-1 py-8">
+                    <p className="font-['Inter:Extra_Bold',sans-serif] font-extrabold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;With Sivarsa, Our campaigns gained momentum. Real, measurable momentum.&rdquo;</p>
+                  </div>
+                  <div className="mt-auto">
+                    <p className="font-['Inter:Black',sans-serif] font-black text-[18px] md:text-[22px] text-[#1b1b1b]">Ritika</p>
+                    <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[14px] md:text-[18px]">CEO</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -778,86 +780,7 @@ export default function Landing() {
               </div>
             </div>
             <div className="content-stretch flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-0 relative shrink-0 w-full">
-              <div className="content-stretch flex flex-col items-start relative shrink-0">
-                <div className="border-[#f0f0f0] border-b-[0.944px] border-solid content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0 w-full lg:w-[639px] faq-item cursor-pointer">
-                  <div className="content-stretch flex items-center justify-between pr-[30.222px] py-[30.222px] relative shrink-0 w-full">
-                    <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[1.4] not-italic relative shrink-0 text-[#1b1b1b] text-[14px] md:text-[16px] lg:text-[18px]">
-                        <p className="leading-[26.444px]">What are your focus areas as a UI/UX design agency?</p>
-                      </div>
-                    </div>
-                    <div className="content-stretch flex items-start relative shrink-0">
-                      <div className="max-w-[11.333333015441895px] relative shrink-0 size-[11.333px]">
-                        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgArrowIcon} />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="border-[#f0f0f0] border-b-[0.944px] border-solid content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0 w-full lg:w-[639px] faq-item cursor-pointer">
-                  <div className="content-stretch flex items-center justify-between pr-[30.222px] py-[30.222px] relative shrink-0 w-full">
-                    <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[1.4] not-italic relative shrink-0 text-[#1b1b1b] text-[14px] md:text-[16px] lg:text-[18px]">
-                        <p className="leading-[26.444px]">Why is UI/UX design important for your business growth?</p>
-                      </div>
-                    </div>
-                    <div className="content-stretch flex items-start relative shrink-0">
-                      <div className="max-w-[11.333333015441895px] relative shrink-0 size-[11.333px]">
-                        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgArrowIcon} />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="border-[#f0f0f0] border-b-[0.944px] border-solid content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0 w-full lg:w-[639px] faq-item cursor-pointer">
-                  <div className="content-stretch flex items-center justify-between pr-[30.222px] py-[30.222px] relative shrink-0 w-full">
-                    <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[1.4] not-italic relative shrink-0 text-[#1b1b1b] text-[14px] md:text-[16px] lg:text-[18px]">
-                        <p className="leading-[26.444px]">What separates sivarsa from other top UI/UX design agencies?</p>
-                      </div>
-                    </div>
-                    <div className="content-stretch flex items-start relative shrink-0">
-                      <div className="max-w-[11.333333015441895px] relative shrink-0 size-[11.333px]">
-                        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgArrowIcon} />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="border-[#f0f0f0] border-b-[0.944px] border-solid content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0 w-full lg:w-[639px] faq-item cursor-pointer">
-                  <div className="content-stretch flex items-center justify-between pr-[30.222px] py-[30.222px] relative shrink-0 w-full">
-                    <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[1.4] not-italic relative shrink-0 text-[#1b1b1b] text-[14px] md:text-[16px] lg:text-[18px]">
-                        <p className="leading-[26.444px]">How long does the entire design process take?</p>
-                      </div>
-                    </div>
-                    <div className="content-stretch flex items-start relative shrink-0">
-                      <div className="max-w-[11.333333015441895px] relative shrink-0 size-[11.333px]">
-                        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                          <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgArrowIcon} />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="content-stretch flex items-center justify-between pr-[30.222px] py-[30.222px] relative shrink-0 w-full lg:w-[639px] faq-item cursor-pointer">
-                  <div className="content-stretch flex flex-col items-start relative shrink-0">
-                    <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[1.4] not-italic relative shrink-0 text-[#1b1b1b] text-[14px] md:text-[16px] lg:text-[18px]">
-                      <p className="leading-[26.444px]">How much do you charge for design services?</p>
-                    </div>
-                  </div>
-                  <div className="content-stretch flex items-start relative shrink-0">
-                    <div className="max-w-[11.333333015441895px] relative shrink-0 size-[11.333px]">
-                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                        <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgArrowIcon} />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <FaqAccordion />
               <div className="hidden lg:flex bg-[#1b1b1b] content-stretch flex-[1_0_0] flex-col items-start max-w-[316.3888854980469px] min-h-px min-w-px p-[30.222px] sticky top-0">
                 <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 size-[58.556px]">
                   <div className="bg-gradient-to-br from-purple-500 to-blue-500 rounded-full size-[58.556px]" />
@@ -873,7 +796,7 @@ export default function Landing() {
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start relative shrink-0">
-                  <a className="bg-[#ebfe5b] content-stretch cursor-pointer flex gap-[9.444px] isolate items-start justify-center max-w-[197.46444702148438px] overflow-clip pb-[15.111px] pt-[14.573px] px-[26.444px] relative rounded-[94.444px] shrink-0 w-full btn-magnetic shine-effect" href="http://wa.me/+8801785087148">
+                  <a className="bg-[#ebfe5b] content-stretch cursor-pointer flex gap-[9.444px] isolate items-start justify-center max-w-[197.46444702148438px] overflow-clip pb-[15.111px] pt-[14.573px] px-[26.444px] relative rounded-[94.444px] shrink-0 w-full btn-magnetic shine-effect" href="https://wa.me/919259108248">
                     <div className="content-stretch flex flex-col items-start pb-[0.841px] relative shrink-0 z-[2]">
                       <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[15.938px] text-left whitespace-nowrap">
                         <p className="leading-[26.35px]">Ask Questions</p>
@@ -897,9 +820,9 @@ export default function Landing() {
           <div className="max-w-[1440px] w-full mx-auto px-4 md:px-[40px]">
             <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-0 items-start justify-between">
               {/* Left Content */}
-              <div className="flex flex-col items-start max-w-[434px]">
+              <div className="flex flex-col items-start max-w-[550px]">
               <div className="content-stretch flex flex-col items-start relative shrink-0">
-                <h2 className="font-[family-name:var(--font-headings)] font-bold text-[40px] md:text-[55px] lg:text-[66px] leading-[1.2] tracking-[1px] text-[#1b1b1b]">
+                <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51.856px] leading-[1.2] text-[#1b1b1b]">
                   Have a Project?<br /><span className="text-[#7e7e81]">Let&apos;s talk!</span>
                 </h2>
               </div>

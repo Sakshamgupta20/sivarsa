@@ -140,7 +140,7 @@ export default function GrowthMarketing() {
             <div className="relative shrink-0 w-full lg:w-[597.923px]">
               <div className="content-stretch flex flex-col gap-[17.178px] items-start relative">
                 <div className="relative shrink-0 w-[597.923px]">
-                  <div className="content-stretch flex flex-col font-['Inter:Bold',sans-serif] font-bold items-start leading-[0] not-italic relative text-[53.159px] tracking-[0.9544px] whitespace-nowrap">
+                  <div className="content-stretch flex flex-col font-['Inter:Bold',sans-serif] font-bold items-start leading-[0] not-italic relative text-[28px] md:text-[40px] lg:text-[53.159px] tracking-[0.9544px] whitespace-nowrap">
                     <div className="flex flex-col justify-center relative shrink-0 text-white">
                       <p className="leading-[72.152px]">Data-Driven</p>
                     </div>
@@ -243,14 +243,14 @@ export default function GrowthMarketing() {
               <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0">
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[52.372px] whitespace-nowrap">
+                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[40px] lg:text-[52.372px] whitespace-nowrap">
                       <p className="leading-[68.756px]">Turn Your Marketing Into Your</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[50.926px] text-[rgba(41,36,36,0.41)] whitespace-nowrap">
+                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[24px] md:text-[36px] lg:text-[50.926px] text-[rgba(41,36,36,0.41)] whitespace-nowrap">
                       <p className="leading-[68.756px]">Competitive Edge!</p>
                     </div>
                   </div>
@@ -321,14 +321,14 @@ export default function GrowthMarketing() {
               <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0">
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[52.166px] text-white whitespace-nowrap">
+                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[28px] md:text-[40px] lg:text-[52.166px] text-white whitespace-nowrap">
                       <p className="leading-[68.756px]">We deliver on time, in days and weeks</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[50.72px] text-[rgba(255,255,255,0.52)] whitespace-nowrap">
+                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[24px] md:text-[36px] lg:text-[50.72px] text-[rgba(255,255,255,0.52)] whitespace-nowrap">
                       <p className="leading-[68.756px]">—not months.</p>
                     </div>
                   </div>
@@ -404,14 +404,14 @@ export default function GrowthMarketing() {
               <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0">
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[51.959px] text-white whitespace-nowrap">
+                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[28px] md:text-[40px] lg:text-[51.959px] text-white whitespace-nowrap">
                       <p className="leading-[68.756px]">{`What we deliver on `}</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[51.339px] text-[rgba(255,255,255,0.52)] whitespace-nowrap">
+                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[24px] md:text-[36px] lg:text-[51.339px] text-[rgba(255,255,255,0.52)] whitespace-nowrap">
                       <p className="leading-[68.756px]">Growth Marketing</p>
                     </div>
                   </div>
@@ -578,15 +578,15 @@ export default function GrowthMarketing() {
             </div>
           </div>
         </div>
-        <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-[1360px]">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img alt="" className="absolute h-[113.67%] left-0 max-w-none top-[-6.83%] w-full" src={imgSection} />
+            <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgSection} />
           </div>
-          <div className="content-stretch flex flex-col gap-[75.556px] items-start justify-center max-w-[1360px] pb-[52.889px] px-[37.778px] relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-[75.556px] items-start justify-center max-w-[1360px] mx-auto pb-[52.889px] px-[37.778px] relative shrink-0 w-full">
             <div className="h-[265.389px] relative shrink-0 w-full">
               <div className="-translate-x-1/2 -translate-y-1/2 absolute content-stretch flex items-center justify-center left-[calc(50%-0.47px)] top-[calc(50%+0.37px)] w-[1317.5px]">
                 <div className="content-stretch flex flex-col items-start min-w-[1171.2149658203125px] pb-[0.756px] relative shrink-0">
-                  <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[170px] text-[color:var(--color\/white\/solid,white)] tracking-[0.9444px] whitespace-nowrap">
+                  <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[48px] md:text-[100px] lg:text-[170px] text-[color:var(--color\/white\/solid,white)] tracking-[0.9444px] whitespace-nowrap">
                     <p className="leading-[188.7px]">achievements</p>
                   </div>
                 </div>
@@ -683,26 +683,23 @@ export default function GrowthMarketing() {
               <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0">
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[51.856px] whitespace-nowrap">
+                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[28px] md:text-[40px] lg:text-[51.856px] text-[#1b1b1b] whitespace-nowrap">
                       <p className="leading-[68.756px]">What Our Clients Say</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
                   <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[51.546px] text-[rgba(41,36,36,0.41)] whitespace-nowrap">
+                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[24px] md:text-[36px] lg:text-[51.546px] text-[rgba(41,36,36,0.41)] whitespace-nowrap">
                       <p className="leading-[68.756px]">We guarantee next success is yours!</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="content-stretch flex flex-col items-start max-w-[1360px] pr-[37.778px] relative shrink-0 w-[1194.411px]">
-              <div className="h-[117.857px] mb-[-79.957px] shrink-0 w-full" />
-              <div className="content-stretch flex flex-col items-start mb-[-79.957px] relative shrink-0 w-full">
-                <div className="h-[506.222px] max-w-[389.111083984375px] relative shrink-0 w-[389.111px]">
-                  <div className="absolute content-stretch flex items-start left-0 right-[-778.22px] top-[-25.82px]">
-                    <div className="bg-[var(--color\/white\/solid,white)] content-stretch flex flex-[1_0_0] flex-col gap-[0.661px] h-[506.222px] items-start max-w-[389.111083984375px] min-h-px min-w-px pb-[30.222px] pt-[29.594px] px-[30.222px] relative testimonial-card">
+            <div className="bg-white w-full pb-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-x divide-[#f0f0f0]">
+                    <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
                       <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
                         <p className="leading-[30.222px]">Digil</p>
                       </div>
@@ -728,7 +725,7 @@ export default function GrowthMarketing() {
                         </div>
                       </div>
                     </div>
-                    <div className="bg-[var(--color\/white\/solid,white)] content-stretch flex flex-[1_0_0] flex-col gap-[0.661px] h-[506.222px] items-start max-w-[389.111083984375px] min-h-px min-w-px pb-[30.222px] pt-[29.594px] px-[30.222px] relative testimonial-card">
+                    <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
                       <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
                         <p className="leading-[30.222px]">Santosh</p>
                       </div>
@@ -754,7 +751,7 @@ export default function GrowthMarketing() {
                         </div>
                       </div>
                     </div>
-                    <div className="bg-[var(--color\/white\/solid,white)] content-stretch flex flex-[1_0_0] flex-col gap-[0.661px] h-[506.222px] items-start max-w-[389.111083984375px] min-h-px min-w-px pb-[30.222px] pt-[29.594px] px-[30.222px] relative testimonial-card">
+                    <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
                       <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
                         <p className="leading-[30.222px]">GNT</p>
                       </div>
@@ -788,8 +785,6 @@ export default function GrowthMarketing() {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -843,7 +838,7 @@ export default function GrowthMarketing() {
         <div className="bg-white content-stretch flex flex-col items-center py-[38px] relative shrink-0 w-full">
           <div className="content-stretch flex flex-col gap-[65.257px] items-start px-[36.254px] relative shrink-0 w-full max-w-[1291px]">
             <div className="h-[132.328px] relative shrink-0 w-[436.6px]">
-              <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col font-['Inter:Bold',sans-serif] font-bold items-start leading-[0] not-italic pb-[0.003px] relative size-full text-[#1b1b1b] text-[50.484px] tracking-[0.9064px] whitespace-nowrap">
+              <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col font-['Inter:Bold',sans-serif] font-bold items-start leading-[0] not-italic pb-[0.003px] relative size-full text-[#1b1b1b] text-[28px] md:text-[40px] lg:text-[50.484px] tracking-[0.9064px] whitespace-nowrap">
                 <div className="flex flex-col justify-center mb-[-0.003px] relative shrink-0">
                   <p className="leading-[65.983px]">Frequently asked</p>
                 </div>
@@ -952,7 +947,7 @@ export default function GrowthMarketing() {
             <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-0 items-start justify-between">
               {/* Left Content */}
               <div className="flex flex-col items-start max-w-[434px]">
-                <h2 className="font-['Inter',sans-serif] font-extrabold text-[40px] md:text-[55px] leading-[1.3] tracking-[1px] text-[#1b1b1b]">
+                <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-[#1b1b1b]">
                   Have a Project?<br /><span className="text-[#7e7e81]">Let&apos;s talk!</span>
                 </h2>
                 <div className="flex flex-col gap-[11px] mt-[31px]">

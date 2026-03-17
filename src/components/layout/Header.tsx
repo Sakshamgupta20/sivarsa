@@ -196,7 +196,7 @@ export default function Header({ variant = "dark" }: HeaderProps) {
         </nav>
       </div>
     </div>
-    <div className={`relative z-50 w-full h-[2px] mt-2 ${isDark ? 'bg-gradient-to-r from-transparent via-white/70 to-transparent' : 'bg-gradient-to-r from-transparent via-[#1b1b1b] to-transparent'}`} />
+    <div className={`relative z-10 w-full h-[2px] mt-2 ${isDark ? 'bg-gradient-to-r from-transparent via-white/70 to-transparent' : 'bg-gradient-to-r from-transparent via-[#1b1b1b] to-transparent'}`} />
     </div>
   );
 }

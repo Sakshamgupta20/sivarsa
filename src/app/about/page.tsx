@@ -112,7 +112,7 @@ export default function AboutPage() {
             <div className="content-stretch flex flex-col gap-[48px] md:gap-[64px] items-start max-w-[1440px] mx-auto px-4 md:px-[40px] relative shrink-0 w-full">
               {/* Heading */}
               <div className="content-stretch flex flex-col items-start relative shrink-0 w-full scroll-reveal scroll-fade-up">
-                <h2 className="font-[family-name:var(--font-headings)] font-bold text-[36px] md:text-[48px] lg:text-[54px] leading-[1.3] tracking-[1px] text-[#1b1b1b]">
+                <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-[#1b1b1b]">
                   We measure<br />
                   <span className="text-[#1b1b1b]">impact, </span>
                   <span className="text-[#29242466]">not just ship pixels.</span>
@@ -264,7 +264,7 @@ export default function AboutPage() {
           <div className="bg-white content-stretch flex flex-col gap-[56px] items-center relative shrink-0 w-full py-[80px]">
             {/* Header */}
             <div className="flex flex-col md:flex-row gap-[24px] md:gap-0 items-start md:items-end justify-between w-full max-w-[1360px] px-4 md:px-[40px] mx-auto">
-              <h2 className="font-[family-name:var(--font-headings)] font-bold text-[36px] md:text-[48px] lg:text-[54px] leading-[1.3] tracking-[1px] text-[#1b1b1b] max-w-[850px]">
+              <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-[#1b1b1b] max-w-[850px]">
                 From vision to velocity, we are<br />
                 <span className="text-[#29242466]">all in one place.</span>
               </h2>
@@ -346,7 +346,7 @@ export default function AboutPage() {
             <div className="max-w-[1440px] mx-auto w-full">
               {/* Heading */}
               <div className="content-stretch flex flex-col items-start relative shrink-0 w-full mb-[96px]">
-                <h2 className="font-[family-name:var(--font-headings)] font-bold text-[36px] md:text-[48px] lg:text-[53px] leading-[1.4] tracking-[0.4px] text-[#1b1b1b]">
+                <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-[#1b1b1b]">
                   We are your product geek, UX<br />
                   mind, UI lovers, & Webflow builders.<br />
                   <span className="text-[#1b1b1b]">Your creative team, </span>
@@ -393,7 +393,7 @@ export default function AboutPage() {
               {/* Beliefs Section */}
               <div className="flex flex-col lg:flex-row items-start justify-between w-full gap-[60px]">
                 <div className="content-stretch flex flex-col items-start relative shrink-0">
-                  <h2 className="font-[family-name:var(--font-headings)] font-bold text-[40px] md:text-[56px] leading-[1.3] tracking-[1px] text-[#1b1b1b]">
+                  <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-[#1b1b1b]">
                     <span className="text-[#1b1b1b]">The beliefs </span>
                     <span className="text-[#29242466]">behind<br />the builds</span>
                   </h2>
@@ -426,7 +426,7 @@ export default function AboutPage() {
             <div className="content-stretch flex flex-col gap-[72px] items-start max-w-[1440px] mx-auto px-4 md:px-[40px] relative shrink-0 w-full">
               {/* Heading */}
               <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-                <h2 className="font-[family-name:var(--font-headings)] font-bold text-[40px] md:text-[56px] leading-[1.3] tracking-[1px] text-[#1b1b1b]">
+                <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-[#1b1b1b]">
                   Frequently asked<br />
                   <span className="text-[#29242466]">questions</span>
                 </h2>
@@ -463,7 +463,7 @@ export default function AboutPage() {
               <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-0 items-start justify-between">
                 {/* Left Content */}
                 <div className="flex flex-col items-start max-w-[434px]">
-                  <h2 className="font-[family-name:var(--font-headings)] font-bold text-[40px] md:text-[55px] leading-[1.4] tracking-[1px] text-[#1b1b1b]">
+                  <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-[#1b1b1b]">
                     Have a Project?<br />Let&apos;s talk!
                   </h2>
 

@@ -33,7 +33,7 @@ export default function ContactForm({ className = "", style }: ContactFormProps)
   };
 
   return (
-    <div className={`bg-white p-[24px] md:p-[42px] rounded-[20px] shadow-2xl ${className}`} style={style}>
+    <div className={`bg-white p-[24px] md:p-[42px] ${className}`} style={style}>
       <form className="flex flex-col gap-[20px]">
         {/* Email and Name Row */}
         <div className="flex flex-col md:flex-row gap-[20px]">
@@ -51,20 +51,16 @@ export default function ContactForm({ className = "", style }: ContactFormProps)
 
         {/* Budget and Source Row */}
         <div className="flex flex-col md:flex-row gap-[20px]">
-          <select className="flex-1 border border-[#e5e5e5] rounded-lg px-[20px] py-[16px] font-['Inter',sans-serif] font-medium text-[16px] text-[#7e7e81] focus:outline-none focus:border-[#3f2fee] focus:ring-2 focus:ring-[#3f2fee]/10 bg-white appearance-none cursor-pointer transition-all bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%237e7e81%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:20px] bg-[right_16px_center] bg-no-repeat pr-[48px]">
-            <option value="">Project budget</option>
-            <option value="5k-10k">$5k - $10k</option>
-            <option value="10k-25k">$10k - $25k</option>
-            <option value="25k-50k">$25k - $50k</option>
-            <option value="50k+">$50k+</option>
-          </select>
-          <select className="flex-1 border border-[#e5e5e5] rounded-lg px-[20px] py-[16px] font-['Inter',sans-serif] font-medium text-[16px] text-[#7e7e81] focus:outline-none focus:border-[#3f2fee] focus:ring-2 focus:ring-[#3f2fee]/10 bg-white appearance-none cursor-pointer transition-all bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%237e7e81%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:20px] bg-[right_16px_center] bg-no-repeat pr-[48px]">
-            <option value="">How did you hear about us?</option>
-            <option value="google">Google</option>
-            <option value="linkedin">LinkedIn</option>
-            <option value="referral">Referral</option>
-            <option value="other">Other</option>
-          </select>
+          <input
+            type="text"
+            placeholder="Project budget"
+            className="flex-1 border border-[#e5e5e5] rounded-lg px-[21px] py-[16px] font-['Inter',sans-serif] font-medium text-[16px] text-[#1b1b1b] placeholder:text-[#7e7e81] focus:outline-none focus:border-[#3f2fee] focus:ring-2 focus:ring-[#3f2fee]/10 transition-all"
+          />
+          <input
+            type="text"
+            placeholder="How did you hear about us?"
+            className="flex-1 border border-[#e5e5e5] rounded-lg px-[21px] py-[16px] font-['Inter',sans-serif] font-medium text-[16px] text-[#1b1b1b] placeholder:text-[#7e7e81] focus:outline-none focus:border-[#3f2fee] focus:ring-2 focus:ring-[#3f2fee]/10 transition-all"
+          />
         </div>
 
         {/* Message Textarea */}
@@ -106,21 +102,16 @@ export default function ContactForm({ className = "", style }: ContactFormProps)
             <span className="font-['Inter',sans-serif] font-semibold text-[18px] text-white">
               Send message
             </span>
-            <img
-              alt=""
-              className="w-[12px] h-[12px] group-hover:translate-x-1 transition-transform"
-              src={imgBtnArrowIconWhite}
-            />
           </button>
           <div className="flex flex-col items-start md:items-end">
             <span className="font-['Inter',sans-serif] text-[15px] text-[#7e7e81]">
               Prefer email?
             </span>
             <a
-              href="mailto:hello@sivarsa.agency"
+              href="mailto:contact@sivarsa.com"
               className="font-['Inter',sans-serif] font-bold text-[15px] text-[#1b1b1b] hover:text-[#3f2fee] transition-colors underline underline-offset-2"
             >
-              hello@sivarsa.agency
+              contact@sivarsa.com
             </a>
           </div>
         </div>
