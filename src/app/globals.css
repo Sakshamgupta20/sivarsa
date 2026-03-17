@@ -246,6 +246,19 @@ html, body {
   animation: ticker 25s linear infinite;
 }
 
+@keyframes teamMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-team-marquee {
+  animation: teamMarquee 30s linear infinite;
+}
+
 .animate-gradient {
   background-size: 200% 200%;
   animation: gradientFlow 3s ease infinite;

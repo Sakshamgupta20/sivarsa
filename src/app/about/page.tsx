@@ -25,6 +25,9 @@ const imgBtnArrowIconDark = `${BASE_PATH}/assets/0b857160e5018cd27df9fbbc6881571
 const imgArrowIcon = `${BASE_PATH}/assets/arrow-icon.png`;
 const imgContactTick = `${BASE_PATH}/assets/contact-tick.png`;
 const imgCalendar = `${BASE_PATH}/assets/faq-icon.png`;
+const imgPattern1 = `${BASE_PATH}/assets/pattern-mask.svg`;
+const imgEllipse1 = `${BASE_PATH}/assets/ellipse-decoration.svg`;
+const imgFounder = `${BASE_PATH}/assets/founder.jpeg`;
 
 // Company logos for marquee
 const imgRecruitly = `${BASE_PATH}/assets/e1d1913cf107ec0d4752db980157af01db52ac15.png`;
@@ -60,9 +63,15 @@ export default function AboutPage() {
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgHero} />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/30" />
-            <div className="absolute inset-0 opacity-60">
-              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgStars1} />
+            {/* Grid pattern overlay */}
+            <div className="absolute inset-0 opacity-35 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgPattern2} />
+            </div>
+            {/* Gradient overlay */}
+            <div className="absolute inset-0" style={{ backgroundImage: "linear-gradient(110.159deg, rgb(0, 0, 0) 21.698%, rgba(0, 0, 0, 0.26) 84.415%)" }} />
+            {/* Stars overlay */}
+            <div className="absolute inset-0 opacity-60 pointer-events-none">
+              <img alt="" className="absolute inset-0 max-w-none object-cover size-full" src={imgStars1} />
             </div>
 
             {/* Header */}
@@ -78,13 +87,6 @@ export default function AboutPage() {
                   We&apos;re not just a Service agency. We&apos;re the product-thinking team behind 100M+ users, $10B+ funding, &amp; 250+ Hiring Stories.
                 </p>
               </div>
-            </div>
-          </div>
-
-          {/* About Hero Image Section */}
-          <div className="content-stretch flex flex-col items-center justify-center px-4 md:px-[40px] py-[60px] md:py-[81px] relative shrink-0 w-full bg-white">
-            <div className="h-[400px] md:h-[550px] lg:h-[675px] overflow-clip relative rounded-[20px] md:rounded-[30px] shrink-0 w-full max-w-[1109px] scroll-reveal scroll-scale-up img-scale-container">
-              <img alt="Team working together" className="absolute inset-0 max-w-none object-cover size-full" src={imgAboutHeroImage} />
             </div>
           </div>
 
@@ -120,63 +122,66 @@ export default function AboutPage() {
                 </h2>
               </div>
 
-              {/* Stats Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-[6px] w-full">
-                {/* Stat 1 */}
-                <div className="bg-white content-stretch flex flex-col items-start p-[32px] rounded-[20px] scroll-reveal scroll-fade-up stagger-1 card-3d">
-                  <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/01</p>
-                  <div className="mt-4">
-                    <p className="font-['Inter',sans-serif] font-extrabold text-[42px] md:text-[54px] text-[#1b1b1b] leading-[1.3]">$10B+</p>
-                    <p className="font-['Inter',sans-serif] text-[16px] md:text-[18px] text-[#3a3a3a] leading-[1.6]">
-                      raised through<br />UX-led launches
-                    </p>
+              {/* Stats Grid - 5 cards in 2 rows */}
+              <div className="flex flex-col gap-[6px] w-full">
+                {/* Row 1 - 3 cards */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-[6px] w-full">
+                  {/* Stat 1 */}
+                  <div className="bg-white flex flex-col items-start p-[32px] rounded-[20px] scroll-reveal scroll-fade-up stagger-1 card-3d">
+                    <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/01</p>
+                    <div className="mt-4">
+                      <p className="font-['Inter',sans-serif] font-extrabold text-[42px] md:text-[54px] text-[#1b1b1b] leading-[1.3]">$10B+</p>
+                      <p className="font-['Inter',sans-serif] text-[16px] md:text-[18px] text-[#3a3a3a] leading-[1.6]">
+                        raised through<br />UX-led launches
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Stat 2 */}
+                  <div className="bg-white flex flex-col items-start p-[32px] rounded-[20px] scroll-reveal scroll-fade-up stagger-2 card-3d">
+                    <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/02</p>
+                    <div className="mt-4">
+                      <p className="font-['Inter',sans-serif] font-extrabold text-[42px] md:text-[54px] text-[#1b1b1b] leading-[1.3]">400%</p>
+                      <p className="font-['Inter',sans-serif] text-[16px] md:text-[18px] text-[#3a3a3a] leading-[1.6]">
+                        uplift in conversions<br />(avg. 300%)
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Stat 3 */}
+                  <div className="bg-white flex flex-col items-start p-[32px] rounded-[20px] scroll-reveal scroll-fade-up stagger-3 card-3d">
+                    <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/03</p>
+                    <div className="mt-4">
+                      <p className="font-['Inter',sans-serif] font-extrabold text-[42px] md:text-[54px] text-[#1b1b1b] leading-[1.3]">100M+</p>
+                      <p className="font-['Inter',sans-serif] text-[16px] md:text-[18px] text-[#3a3a3a] leading-[1.6]">
+                        users reached through<br />our SaaS and AI platforms
+                      </p>
+                    </div>
                   </div>
                 </div>
 
-                {/* Stat 2 */}
-                <div className="bg-white content-stretch flex flex-col items-start p-[32px] rounded-[20px] scroll-reveal scroll-fade-up stagger-2 card-3d">
-                  <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/02</p>
-                  <div className="mt-4">
-                    <p className="font-['Inter',sans-serif] font-extrabold text-[42px] md:text-[54px] text-[#1b1b1b] leading-[1.3]">400%</p>
-                    <p className="font-['Inter',sans-serif] text-[16px] md:text-[18px] text-[#3a3a3a] leading-[1.6]">
-                      uplift in conversions<br />(avg. 300%)
-                    </p>
+                {/* Row 2 - 2 cards */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-[6px] w-full">
+                  {/* Stat 4 */}
+                  <div className="bg-white flex flex-col items-start p-[32px] rounded-[20px] scroll-reveal scroll-fade-up stagger-1 card-3d">
+                    <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/04</p>
+                    <div className="mt-4">
+                      <p className="font-['Inter',sans-serif] font-extrabold text-[42px] md:text-[54px] text-[#1b1b1b] leading-[1.3]">140+</p>
+                      <p className="font-['Inter',sans-serif] text-[16px] md:text-[18px] text-[#3a3a3a] leading-[1.6]">
+                        Awards recognised by<br />Awwwards, CSSDA, Behance
+                      </p>
+                    </div>
                   </div>
-                </div>
 
-                {/* Stat 3 */}
-                <div className="bg-white content-stretch flex flex-col items-start p-[32px] rounded-[20px] scroll-reveal scroll-fade-up stagger-3 card-3d">
-                  <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/03</p>
-                  <div className="mt-4">
-                    <p className="font-['Inter',sans-serif] font-extrabold text-[42px] md:text-[54px] text-[#1b1b1b] leading-[1.3]">100M+</p>
-                    <p className="font-['Inter',sans-serif] text-[16px] md:text-[18px] text-[#3a3a3a] leading-[1.6]">
-                      users reached through<br />our SaaS and AI platforms
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Bottom Stats Row */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-[6px] w-full">
-                {/* Stat 4 */}
-                <div className="bg-white content-stretch flex flex-col justify-between items-start p-[32px] rounded-[20px] min-h-[200px]">
-                  <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/04</p>
-                  <div>
-                    <p className="font-['Inter',sans-serif] font-black text-[42px] md:text-[54px] text-[#1b1b1b] leading-[1.3]">140+</p>
-                    <p className="font-['Inter',sans-serif] text-[16px] md:text-[18px] text-[#3a3a3a] leading-[1.6]">
-                      Awards recognised by<br />Awwwards, CSSDA, Behance
-                    </p>
-                  </div>
-                </div>
-
-                {/* Stat 5 */}
-                <div className="bg-white content-stretch flex flex-col justify-between items-start p-[32px] rounded-[20px] min-h-[200px]">
-                  <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/05</p>
-                  <div>
-                    <p className="font-['Inter',sans-serif] font-black italic text-[36px] md:text-[48px] lg:text-[53px] text-[#1b1b1b] leading-[1.3]">250+ Testimonials</p>
-                    <p className="font-['Inter',sans-serif] text-[16px] md:text-[18px] text-[#3a3a3a] leading-[1.6]">
-                      trusted by YC-backed, VC-funded, a16z, Sequoia,<br />500+ global
-                    </p>
+                  {/* Stat 5 */}
+                  <div className="bg-white flex flex-col items-start p-[32px] rounded-[20px] scroll-reveal scroll-fade-up stagger-2 card-3d">
+                    <p className="font-['Inter',sans-serif] text-[16px] text-[#7e7e81]">/05</p>
+                    <div className="mt-4">
+                      <p className="font-['Inter',sans-serif] font-extrabold text-[42px] md:text-[54px] text-[#1b1b1b] leading-[1.3]">250+</p>
+                      <p className="font-['Inter',sans-serif] text-[16px] md:text-[18px] text-[#3a3a3a] leading-[1.6]">
+                        Testimonials trusted by YC-backed,<br />VC-funded, a16z, Sequoia, 500+ global
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -225,14 +230,9 @@ export default function AboutPage() {
           </div>
 
           {/* Why Sivarsa Section */}
-          <div className="bg-white content-stretch flex flex-col lg:flex-row gap-[60px] lg:gap-[144px] items-start px-4 md:px-[40px] py-[60px] relative shrink-0 w-full max-w-[1440px] mx-auto">
-            {/* Image */}
-            <div className="w-full lg:w-[576px] h-[400px] lg:h-[660px] overflow-clip rounded-[20px] shrink-0">
-              <img alt="Why Sivarsa" className="w-full h-full object-cover" src={imgAboutHeroImage} />
-            </div>
-
+          <div className="bg-white content-stretch flex flex-col-reverse lg:flex-row gap-[40px] lg:gap-[60px] items-start px-4 md:px-[40px] py-[60px] relative shrink-0 w-full">
             {/* Content */}
-            <div className="flex flex-col items-start flex-1 max-w-[640px]">
+            <div className="flex flex-col items-start flex-1">
               <h3 className="font-[family-name:var(--font-headings)] font-bold text-[32px] md:text-[41px] leading-[1.4] text-[#1b1b1b]">
                 Why Sivarsa? We care like<br />co-founders.
               </h3>
@@ -259,10 +259,15 @@ export default function AboutPage() {
                 ))}
               </div>
             </div>
+
+            {/* Image */}
+            <div className="w-full lg:w-1/2 h-[400px] lg:h-[660px] overflow-clip rounded-[20px]">
+              <img alt="Why Sivarsa" className="w-full h-full object-cover" src={imgAboutHeroImage} />
+            </div>
           </div>
 
           {/* Services Section with Stacking Cards */}
-          <div className="bg-white content-stretch flex flex-col gap-[56px] items-center relative shrink-0 w-full py-[80px]">
+          <div className="bg-white content-stretch flex flex-col gap-[56px] items-center relative shrink-0 w-full pt-[80px] pb-0">
             {/* Header */}
             <div className="flex flex-col md:flex-row gap-[24px] md:gap-0 items-start md:items-end justify-between w-full max-w-[1360px] px-4 md:px-[40px] mx-auto">
               <h2 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[40px] lg:text-[51px] leading-[1.2] text-[#1b1b1b] max-w-[850px]">
@@ -342,8 +347,19 @@ export default function AboutPage() {
             </div>
           </div>
 
+          {/* Team Photos Marquee Section */}
+          <div className="bg-black w-full py-[60px] md:py-[80px] overflow-hidden">
+            <div className="flex items-center gap-[16px] animate-team-marquee">
+              {[imgAboutHeroImage, imgAboutBioImage, imgSaudiaImage2, imgAboutHeroImage, imgAboutBioImage, imgSaudiaImage2, imgAboutHeroImage, imgAboutBioImage, imgSaudiaImage2, imgAboutHeroImage, imgAboutBioImage, imgSaudiaImage2].map((img, index) => (
+                <div key={index} className="w-[280px] md:w-[360px] h-[300px] md:h-[400px] overflow-hidden shrink-0">
+                  <img alt="Team" className="w-full h-full object-cover" src={img} />
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Team Info Section */}
-          <div className="bg-white content-stretch flex flex-col items-start px-4 md:px-[40px] py-[35px] relative shrink-0 w-full">
+          <div className="bg-white content-stretch flex flex-col items-start px-4 md:px-[40px] pt-[35px] pb-0 relative shrink-0 w-full">
             <div className="max-w-[1440px] mx-auto w-full">
               {/* Heading */}
               <div className="content-stretch flex flex-col items-start relative shrink-0 w-full mb-[96px]">
@@ -389,6 +405,24 @@ export default function AboutPage() {
                     </p>
                   </div>
                 </div>
+              </div>
+
+              {/* Team Members Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[24px] w-full mb-[100px]">
+                {[
+                  { name: "Sivarsa", role: "Founder & CEO", image: imgFounder },
+                  { name: "Team Member", role: "Head of Design", image: "" },
+                  { name: "Team Member", role: "Senior Product Designer", image: "" },
+                  { name: "Team Member", role: "UI/UX Designer", image: "" },
+                ].map((member, index) => (
+                  <div key={index} className="flex flex-col items-start scroll-reveal scroll-fade-up" style={{ transitionDelay: `${index * 0.1}s` }}>
+                    <div className="w-full aspect-[4/5] bg-black overflow-hidden mb-[20px]">
+                      {member.image && <img alt={member.name} className="w-full h-full object-cover" src={member.image} />}
+                    </div>
+                    <p className="font-['Inter',sans-serif] font-semibold text-[18px] md:text-[20px] text-[#1b1b1b]">{member.name}</p>
+                    <p className="font-['Inter',sans-serif] text-[15px] md:text-[16px] text-[#7e7e81] mt-[4px]">{member.role}</p>
+                  </div>
+                ))}
               </div>
 
               {/* Beliefs Section */}
