@@ -201,7 +201,7 @@ export default function BlogPage() {
 
               {/* Hero Content */}
               <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4">
-                <h1 className="font-[family-name:var(--font-headings)] font-bold text-[36px] md:text-[52px] lg:text-[65px] leading-[1.1] tracking-[-2px] text-center text-black animate-fade-in-up">
+                <h1 className="font-[family-name:var(--font-headings)] font-bold text-[24px] md:text-[36px] lg:text-[46px] leading-[1.1] tracking-[-2px] text-center text-black animate-fade-in-up">
                   DISCOVER OUR LATEST ARTICLES
                 </h1>
               </div>
