@@ -5,13 +5,6 @@ import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ContactSection from "@/components/ContactSection";
-import { BASE_PATH } from "@/lib/constants";
-
-const imgBlogHeroCurves = `${BASE_PATH}/assets/blog-hero-curves.svg`;
-const imgHero = `${BASE_PATH}/assets/hero-bg.png`;
-const imgPattern2 = `${BASE_PATH}/assets/pattern-dots.png`;
-const imgStars1 = `${BASE_PATH}/assets/stars-bg.png`;
-const imgEllipse1 = `${BASE_PATH}/assets/ellipse-decoration.svg`;
 
 // Blog article data with placeholder images
 const featuredArticle = {
@@ -163,32 +156,55 @@ export default function BlogPage() {
     <div className="bg-white relative w-full min-h-screen">
       <div className="w-full flex flex-col items-center">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
-          {/* Hero Section - Dark theme matching landing page */}
-          <div className="min-h-[400px] md:min-h-[500px] overflow-hidden relative shrink-0 w-full">
-            {/* Background layers matching landing page */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgHero} />
-            </div>
-            <div className="absolute inset-0 opacity-35 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgPattern2} />
-            </div>
-            <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(110.159deg, rgb(0, 0, 0) 21.698%, rgba(0, 0, 0, 0.26) 84.415%)" }} />
-            <div className="absolute inset-0 opacity-60 pointer-events-none">
-              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgStars1} />
-            </div>
-            <div className="hidden md:block absolute left-[40%] lg:left-[568.31px] size-[850px] top-[200px] pointer-events-none">
-              <div className="absolute inset-[-37.62%]">
-                <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
+          {/* Hero Section - Light theme with purple curves */}
+          <div className="relative shrink-0 w-full bg-white">
+            <Header variant="light" />
+
+            {/* Curves + Title area */}
+            <div className="relative w-full h-[350px] md:h-[520px] lg:h-[700px] flex items-start justify-center pt-[80px] md:pt-[120px] lg:pt-[150px]">
+              {/* Inline SVG curves */}
+              <svg
+                className="absolute pointer-events-none w-[140%] h-[130%] left-[-20%] top-[5%] md:top-[0%]"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 1806.55 910.513"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                style={{ overflow: 'visible' }}
+              >
+                <g filter="url(#blog_f0)">
+                  <path d="M100 100C100 100 408.999 416.019 903.275 416.019C1397.55 416.019 1706.55 100 1706.55 100V810.512C1706.55 810.512 1376.22 507.219 903.275 507.219C430.33 507.219 100 810.512 100 810.512V100Z" fill="#7453FA"/>
+                </g>
+                <g filter="url(#blog_f1)">
+                  <path d="M100 269.675C100 269.675 408.998 416.019 903.275 416.019C1397.55 416.019 1706.55 269.675 1706.55 269.675V685.377C1706.55 685.377 1376.22 507.219 903.275 507.219C430.33 507.219 99.9995 685.377 99.9995 685.377L100 269.675Z" fill="#AF89FF"/>
+                </g>
+                <g filter="url(#blog_f2)">
+                  <path d="M99.9995 386.326C99.9995 386.326 408.998 461.267 903.274 461.267C1397.55 461.267 1706.55 386.327 1706.55 386.327V602.662C1706.55 602.662 1376.22 461.267 903.274 461.267C430.329 461.267 99.9995 602.662 99.9995 602.662V386.326Z" fill="#E8E4FF"/>
+                </g>
+                <defs>
+                  <filter id="blog_f0" x="0" y="0" width="1806.55" height="910.513" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feGaussianBlur stdDeviation="50" result="effect1"/>
+                  </filter>
+                  <filter id="blog_f1" x="64.9995" y="234.675" width="1676.55" height="485.703" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feGaussianBlur stdDeviation="17.5" result="effect1"/>
+                  </filter>
+                  <filter id="blog_f2" x="75.9995" y="362.326" width="1654.55" height="264.336" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feGaussianBlur stdDeviation="12" result="effect1"/>
+                  </filter>
+                </defs>
+              </svg>
+
+              {/* Hero Content */}
+              <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4">
+                <h1 className="font-[family-name:var(--font-headings)] font-bold text-[36px] md:text-[52px] lg:text-[65px] leading-[1.1] tracking-[-2px] text-center text-black animate-fade-in-up">
+                  DISCOVER OUR LATEST ARTICLES
+                </h1>
               </div>
-            </div>
-
-            <Header />
-
-            {/* Hero Content */}
-            <div className="relative z-10 flex flex-col items-center justify-center pt-[100px] md:pt-[140px] pb-[80px] md:pb-[120px]">
-              <h1 className="font-[family-name:var(--font-headings)] font-bold text-[36px] md:text-[52px] lg:text-[65px] leading-[1.1] tracking-[-2px] text-center bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent px-4 animate-fade-in-up">
-                DISCOVER OUR LATEST ARTICLES
-              </h1>
             </div>
           </div>
 

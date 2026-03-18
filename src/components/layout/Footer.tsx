@@ -39,9 +39,9 @@ export default function Footer() {
         {/* Footer Content */}
         <div className="relative z-10 max-w-[1360px] mx-auto px-4 md:px-8 lg:px-10 pt-10 md:pt-16 pb-6 md:pb-8">
           {/* Main Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 mb-16 md:mb-24">
-            {/* Column 1 - Logo */}
-            <div className="flex flex-col">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-6 lg:gap-6 mb-12 md:mb-24">
+            {/* Column 1 - Logo (full width on mobile) */}
+            <div className="flex flex-col col-span-2 lg:col-span-1">
               <Link href="/" className="flex items-center gap-2">
                 <Image
                   src={`${BASE_PATH}/assets/logo.svg`}
@@ -56,7 +56,7 @@ export default function Footer() {
               </Link>
             </div>
 
-            {/* Column 2 - Information */}
+            {/* Column 2 - Services */}
             <div className="flex flex-col gap-4">
               <p className="font-['Inter',sans-serif] font-medium text-[11px] md:text-[12px] text-white/50 uppercase tracking-wider">
                 Services
@@ -66,7 +66,7 @@ export default function Footer() {
                   <Link
                     key={link.label}
                     href={link.href}
-                    className="font-['Inter',sans-serif] text-[16px] md:text-[18px] text-white hover:text-white/80 transition-colors"
+                    className="font-['Inter',sans-serif] text-[15px] md:text-[18px] text-white hover:text-white/80 transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -84,7 +84,7 @@ export default function Footer() {
                   <Link
                     key={link.label}
                     href={link.href}
-                    className="font-['Inter',sans-serif] text-[16px] md:text-[18px] text-white hover:text-white/80 transition-colors"
+                    className="font-['Inter',sans-serif] text-[15px] md:text-[18px] text-white hover:text-white/80 transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -92,8 +92,8 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Column 4 - Contact */}
-            <div className="flex flex-col gap-4 items-start lg:items-end">
+            {/* Column 4 - Contact (full width on mobile) */}
+            <div className="flex flex-col gap-4 col-span-2 lg:col-span-1 items-start lg:items-end">
               <Link
                 href="/contact"
                 className="bg-gradient-to-r from-[#265df6] to-[#7427ff] flex items-center justify-center px-8 py-3 rounded-full w-fit"
@@ -103,20 +103,23 @@ export default function Footer() {
                 </span>
               </Link>
               <div className="flex flex-col gap-1 mt-2 items-start lg:items-end">
-                <p className="font-['Inter',sans-serif] font-semibold text-[14px] text-white">
+                <a href={`tel:${contactInfo.phone}`} className="font-['Inter',sans-serif] font-semibold text-[14px] text-white hover:text-white/80 transition-colors">
                   {contactInfo.phone}
-                </p>
-                <p className="font-['Inter',sans-serif] font-semibold text-[14px] text-white">
+                </a>
+                <a href={`mailto:${contactInfo.email}`} className="font-['Inter',sans-serif] font-semibold text-[14px] text-white hover:text-white/80 transition-colors">
                   {contactInfo.email}
-                </p>
+                </a>
               </div>
             </div>
           </div>
 
+          {/* Divider */}
+          <div className="w-full h-px bg-white/10 mb-6 md:mb-8" />
+
           {/* Bottom Bar */}
-          <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
+          <div className="flex flex-col gap-6 md:flex-row md:gap-4 items-center justify-between">
             {/* Social Icons */}
-            <div className="flex gap-3">
+            <div className="flex gap-3 order-1 md:order-1">
               <Link
                 href="https://linkedin.com"
                 target="_blank"
@@ -140,12 +143,12 @@ export default function Footer() {
             </div>
 
             {/* Address */}
-            <p className="font-['Inter',sans-serif] text-[14px] md:text-[16px] text-white text-center">
-              C1-1201, JKG Palm Court, Sector 16-C,<br />Greater Noida, Uttar Pradesh, India - 201301
+            <p className="font-['Inter',sans-serif] text-[13px] md:text-[15px] text-white/70 text-center order-2 md:order-2">
+              C1-1201, JKG Palm Court, Sector 16-C, Greater Noida, Uttar Pradesh, India - 201301
             </p>
 
             {/* Rights */}
-            <p className="font-['Inter',sans-serif] text-[14px] md:text-[16px] text-white">
+            <p className="font-['Inter',sans-serif] text-[13px] md:text-[15px] text-white/70 text-center order-3 md:order-3">
               Copyright © 2026 - Sivarsa. All Rights Reserved.
             </p>
           </div>

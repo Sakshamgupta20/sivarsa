@@ -20,7 +20,7 @@ const imgPurpleComposition21 = `${BASE_PATH}/assets/hero-illustration.png`;
 
 // Service Cards Images (exact from Figma)
 const imgServiceBg = `${BASE_PATH}/assets/dc3140d62f005c65ceea0d4f7a9e21036b94120f.png`;
-const imgSoftwarePhone = `${BASE_PATH}/assets/9a7efa8acfadd87d5d9e7947171a84884750e643.png`;
+const imgSoftwarePhone = `${BASE_PATH}/assets/services-hero.png`;
 const imgTalentGradient = `${BASE_PATH}/assets/f657c8ff034766324c5abae459823eddf4e19097.png`;
 const imgTalentScreen = `${BASE_PATH}/assets/56991259c51079145aeec6fa065d56ab81cea98a.png`;
 const imgTalentPhoneFrame = `${BASE_PATH}/assets/3d9a04b34d3338b47f17681f8aa0bb08ae8a1bd3.png`;
@@ -103,10 +103,8 @@ export default function Landing() {
               <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgHero} />
             </div>
             {/* Full-width overlays */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <div className="absolute inset-0 opacity-35 overflow-hidden pointer-events-none">
-                <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgPattern2} />
-              </div>
+            <div className="absolute inset-0 opacity-35 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgPattern2} />
             </div>
             <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(110.159deg, rgb(0, 0, 0) 21.698%, rgba(0, 0, 0, 0.26) 84.415%)" }} />
             <div className="absolute inset-0 opacity-60 pointer-events-none">
@@ -114,18 +112,18 @@ export default function Landing() {
             </div>
             <Header />
             {/* Content wrapper constrained to max-width */}
-            <div className="relative w-full max-w-[1440px] mx-auto min-h-[500px] lg:min-h-[750px]">
-              <div className="absolute h-[300px] md:h-[450px] lg:h-[643px] right-0 lg:left-[716px] top-[0px] md:top-[16px] w-[280px] md:w-[400px] lg:w-[588px] hero-image animate-float hidden md:block">
+            <div className="relative w-full min-h-[500px] lg:min-h-[750px]">
+              <div className="absolute h-[200px] md:h-[450px] lg:h-[643px] right-[-20px] md:right-[calc(50%-680px)] lg:right-[calc(50%-720px)] top-0 md:top-[16px] w-[200px] md:w-[400px] lg:w-[588px] hero-image animate-float opacity-40 md:opacity-100">
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                   <img alt="Hero illustration" className="absolute h-full left-0 max-w-none top-0 w-[109.35%]" src={imgPurpleComposition21} />
                 </div>
               </div>
-              <div className="hidden md:block absolute left-[40%] lg:left-[568.31px] size-[850px] top-[428.84px]">
+              <div className="absolute right-[-150px] md:right-auto md:left-[40%] lg:left-[calc(50%+200px)] size-[400px] md:size-[850px] bottom-[-100px] md:bottom-auto md:top-[428.84px] opacity-40 md:opacity-100">
                 <div className="absolute inset-[-37.62%]">
                   <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
                 </div>
               </div>
-              <div className="relative lg:absolute content-stretch flex flex-col gap-[40px] lg:gap-[80px] items-start px-4 md:px-8 lg:px-0 lg:left-[76px] pt-[40px] lg:pt-0 lg:top-[129px] w-full lg:w-[1060px]">
+              <div className="relative content-stretch flex flex-col gap-[40px] lg:gap-[80px] items-start max-w-[1360px] mx-auto px-4 lg:px-0 pt-[40px] lg:pt-[129px] w-full">
                 <div className="content-stretch flex flex-col gap-[20px] md:gap-[37px] items-start relative shrink-0 w-full lg:w-[762px] hero-content">
                   <p className="bg-clip-text font-bold leading-[1.1] not-italic relative shrink-0 text-[36px] md:text-[56px] lg:text-[82px] uppercase w-full lg:w-[786.107px] animate-fade-in-up" style={{ fontFamily: "var(--font-headings)", backgroundImage: "linear-gradient(-38.5682deg, rgb(255, 255, 255) 62.646%, rgb(0, 0, 0) 108.48%)", WebkitTextFillColor: "transparent" }}>
                     Your Growth Partner From Idea to Impact
@@ -155,33 +153,63 @@ export default function Landing() {
             {/* Service Cards Section - Exact Figma Design */}
             <div className="relative z-10 py-[40px] md:py-[68px] w-full px-4 md:px-8">
           <div className="w-full max-w-[1285px] mx-auto">
-            <div className="relative w-full h-[400px] md:h-[550px] lg:h-[723px] scroll-reveal scroll-scale-up overflow-hidden">
+            {/* Mobile: stacked cards */}
+            <div className="flex flex-col gap-[12px] md:hidden scroll-reveal scroll-scale-up">
+              {/* Software Development Card */}
+              <Link href="/services/software-development" className="relative bg-[#1a1a2e] h-[350px] overflow-hidden w-full group cursor-pointer rounded-[12px]">
+                <div className="absolute font-['Inter',sans-serif] font-bold left-[19px] text-[20px] text-white top-[30px] tracking-[-1px] z-10">
+                  <p className="leading-[1.2]">SOFTWARE DEVELOPMENT</p>
+                </div>
+                <div className="absolute w-[60%] h-[85%] left-[20%] top-[18%]" style={{ filter: 'drop-shadow(8px -7px 17px rgba(0,0,0,0.35))' }}>
+                  <img alt="" className="w-full h-full object-contain" src={imgSoftwarePhone} />
+                </div>
+              </Link>
+
+              {/* Talent Card */}
+              <Link href="/services/staffing-solutions" className="relative bg-[#0d2e23] h-[350px] overflow-hidden w-full group cursor-pointer rounded-[12px]">
+                <div className="absolute font-['Inter',sans-serif] font-bold left-1/2 -translate-x-1/2 text-[20px] text-white top-[30px] tracking-[-1px] whitespace-nowrap z-10">
+                  <p className="leading-[1.2]">TALENT</p>
+                </div>
+                {/* Simplified phone display for mobile */}
+                <div className="absolute w-[52%] h-[75%] left-[24%] top-[20%] rounded-[24px] overflow-hidden border-[3px] border-black/20 bg-white shadow-2xl">
+                  <img alt="" className="w-full h-full object-cover object-top" src={imgTalentScreen} />
+                </div>
+              </Link>
+
+              {/* Growth Card */}
+              <Link href="/services/growth-marketing" className="relative bg-[#1e0a3c] h-[350px] overflow-hidden w-full group cursor-pointer rounded-[12px]">
+                <div className="absolute font-['Inter',sans-serif] font-bold left-1/2 -translate-x-1/2 text-[20px] text-white top-[30px] tracking-[-1px] whitespace-nowrap z-10">
+                  <p className="leading-[1.2]">GROWTH</p>
+                </div>
+                <div className="absolute h-[80%] left-[10%] top-[16%] w-[80%]">
+                  <img alt="" className="w-full h-full object-contain" src={imgGrowthHandPhone} />
+                </div>
+              </Link>
+            </div>
+
+            {/* Desktop: side-by-side cards */}
+            <div className="relative w-full hidden md:block h-[550px] lg:h-[723px] scroll-reveal scroll-scale-up overflow-hidden">
               {/* Background */}
               <div className="absolute inset-0">
                 <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgServiceBg} />
               </div>
 
               {/* Software Development Card */}
-              <Link href="/services/software-development" className="absolute bg-[#a0a9ae] h-full left-0 overflow-hidden w-1/3 group cursor-pointer">
-                {/* Text label - fixed position matching Figma */}
-                <div className="absolute font-['Inter',sans-serif] font-bold left-[19px] text-[12px] md:text-[20px] lg:text-[30px] text-black top-[70px] md:top-[90px] lg:top-[107px] tracking-[-1px] md:tracking-[-2px] whitespace-nowrap z-10">
+              <Link href="/services/software-development" className="absolute bg-[#1a1a2e] h-full left-0 overflow-hidden w-1/3 group cursor-pointer">
+                <div className="absolute font-['Inter',sans-serif] font-bold left-[19px] text-[20px] lg:text-[30px] text-white top-[90px] lg:top-[107px] tracking-[-2px] whitespace-nowrap z-10">
                   <p className="leading-[1.2]">SOFTWARE DEVELOPMENT</p>
                 </div>
-                {/* Phone image with shadow */}
                 <div className="absolute w-[172%] h-[102%] left-[-36%] top-[15.6%] transition-transform duration-500 group-hover:scale-105" style={{ filter: 'drop-shadow(8px -7px 17px rgba(0,0,0,0.35))' }}>
                   <img alt="" className="absolute left-0 max-w-none size-full top-0 object-contain" src={imgSoftwarePhone} />
                 </div>
               </Link>
 
               {/* Talent Card */}
-              <Link href="/services/staffing-solutions" className="absolute bg-[#17614a] h-full left-[33.33%] overflow-hidden w-1/3 group cursor-pointer">
-                {/* Text label - centered, fixed position matching Figma */}
-                <div className="absolute font-['Inter',sans-serif] font-bold left-1/2 -translate-x-1/2 text-[12px] md:text-[20px] lg:text-[30px] text-white top-[70px] md:top-[90px] lg:top-[107px] tracking-[-1px] md:tracking-[-2px] whitespace-nowrap z-10">
+              <Link href="/services/staffing-solutions" className="absolute bg-[#0d2e23] h-full left-[33.33%] overflow-hidden w-1/3 group cursor-pointer">
+                <div className="absolute font-['Inter',sans-serif] font-bold left-1/2 -translate-x-1/2 text-[20px] lg:text-[30px] text-white top-[90px] lg:top-[107px] tracking-[-2px] whitespace-nowrap z-10">
                   <p className="leading-[1.2]">TALENT</p>
                 </div>
-                {/* Phone with content */}
                 <div className="absolute h-[86.4%] left-[14.3%] top-[28.4%] w-[71.5%] transition-transform duration-500 group-hover:scale-105">
-                  {/* Gradient background with mask */}
                   <div className="absolute flex h-[103.6%] items-center justify-center left-[-27%] top-[2.2%] w-[163%]">
                     <div className="-rotate-90 flex-none">
                       <div className="h-full w-full relative" style={{ maskImage: `url('${imgTalentMask}')`, maskSize: 'contain', maskRepeat: 'no-repeat', WebkitMaskImage: `url('${imgTalentMask}')`, WebkitMaskSize: 'contain', WebkitMaskRepeat: 'no-repeat' }}>
@@ -189,11 +217,9 @@ export default function Landing() {
                       </div>
                     </div>
                   </div>
-                  {/* Screen content with mask */}
                   <div className="absolute h-[95.6%] left-[5.5%] top-[2.2%] w-[90.8%] rounded-[15px] overflow-hidden" style={{ maskImage: `url('${imgTalentMask}')`, maskSize: 'contain', maskRepeat: 'no-repeat', WebkitMaskImage: `url('${imgTalentMask}')`, WebkitMaskSize: 'contain', WebkitMaskRepeat: 'no-repeat' }}>
                     <img alt="" className="absolute h-[132%] left-[-139%] max-w-none top-[-16%] w-[377%] object-cover" src={imgTalentScreen} />
                   </div>
-                  {/* Phone frame */}
                   <div className="absolute inset-0" style={{ maskImage: `url('${imgPhoneMask}')`, maskSize: 'contain', maskRepeat: 'no-repeat', WebkitMaskImage: `url('${imgPhoneMask}')`, WebkitMaskSize: 'contain', WebkitMaskRepeat: 'no-repeat' }}>
                     <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgTalentPhoneFrame} />
                   </div>
@@ -201,9 +227,8 @@ export default function Landing() {
               </Link>
 
               {/* Growth Card */}
-              <Link href="/services/growth-marketing" className="absolute bg-[#6f2fb8] h-full left-[66.66%] overflow-hidden w-1/3 group cursor-pointer">
-                {/* Text label - centered, fixed position matching Figma */}
-                <div className="absolute font-['Inter',sans-serif] font-bold left-1/2 -translate-x-1/2 text-[12px] md:text-[20px] lg:text-[30px] text-white top-[70px] md:top-[90px] lg:top-[107px] tracking-[-1px] md:tracking-[-2px] whitespace-nowrap z-10">
+              <Link href="/services/growth-marketing" className="absolute bg-[#1e0a3c] h-full left-[66.66%] overflow-hidden w-1/3 group cursor-pointer">
+                <div className="absolute font-['Inter',sans-serif] font-bold left-1/2 -translate-x-1/2 text-[20px] lg:text-[30px] text-white top-[90px] lg:top-[107px] tracking-[-2px] whitespace-nowrap z-10">
                   <p className="leading-[1.2]">GROWTH</p>
                 </div>
                 <div className="absolute h-[100.4%] left-[-4.4%] top-[19.8%] w-[120%] transition-transform duration-500 group-hover:scale-105">
@@ -235,10 +260,35 @@ export default function Landing() {
                 </div>
               </div>
             </div>
+            {/* Mobile: vertical stacked cards */}
+            <div className="flex flex-col md:hidden gap-[40px] w-full">
+              {[
+                { title1: "All-in-one", title2: "Solution", desc: "No need to juggle multiple vendors. Get software, marketing, and talent under one roof with seamless coordination.", img: imgDiv },
+                { title1: "Proven", title2: "Expertise", desc: "47+ companies scaled, 200+ projects delivered, and a 95% client retention rate. We deliver what we promise.", img: imgDiv1 },
+                { title1: "Client Centric", title2: "Approach", desc: "Every Business is unique. We Offer Customizations perfectly with your Goals", img: imgDiv2 },
+                { title1: "Transparent &", title2: "Collaborative", desc: "Every Business is unique. We Offer Customizations perfectly with your Goals", img: imgDiv },
+              ].map((item, index) => (
+                <div key={index} className="flex flex-col gap-[16px]">
+                  <div className="flex flex-col gap-[8px]">
+                    <div className="capitalize font-['Inter:Regular',sans-serif] font-normal leading-[1.1] text-[36px] text-white tracking-[-2px]">
+                      <p className="mb-0">{item.title1}</p>
+                      <p>{item.title2}</p>
+                    </div>
+                    <p className="font-['Inter:Regular',sans-serif] font-normal leading-[1.5] text-[14px] text-white">{item.desc}</p>
+                  </div>
+                  <div className="h-[200px] overflow-hidden rounded-[20px]">
+                    <img alt={`${item.title1} ${item.title2}`} className="w-full h-full object-cover" src={item.img} />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Desktop: stacked cards */}
+            <div className="hidden md:flex flex-col gap-[40px] md:gap-[66px] w-full">
             <div className="min-h-[250px] md:h-[320px] relative shrink-0 w-full max-w-[1280px] scroll-reveal scroll-fade-up stagger-1">
               <div className="lg:-translate-y-1/2 relative lg:absolute content-stretch flex flex-col gap-[20px] md:gap-[35px] items-start left-0 lg:top-[calc(50%-0.01px)] w-full lg:w-[288px] mb-4 lg:mb-0">
                 <div className="content-stretch flex items-start relative shrink-0 w-full">
-                  <div className="capitalize flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[1.1] not-italic relative shrink-0 text-[36px] md:text-[48px] lg:text-[59px] text-white tracking-[-2px]">
+                  <div className="capitalize flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[1.1] not-italic relative shrink-0 text-[48px] lg:text-[59px] text-white tracking-[-2px]">
                     <p className="mb-0">All-in-one</p>
                     <p>Solution</p>
                   </div>
@@ -247,14 +297,14 @@ export default function Landing() {
                   <p>No need to juggle multiple vendors. Get software, marketing, and talent under one roof with seamless coordination.</p>
                 </div>
               </div>
-              <div className="lg:-translate-y-1/2 relative lg:absolute h-[180px] md:h-[240px] lg:left-[336px] overflow-hidden rounded-[20px] lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
+              <div className="lg:-translate-y-1/2 relative lg:absolute h-[240px] lg:left-[336px] overflow-hidden rounded-[20px] lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
                 <img alt="All-in-one Solution" className="w-full h-full object-cover" src={imgDiv} />
               </div>
             </div>
             <div className="min-h-[250px] md:h-[320px] relative shrink-0 w-full max-w-[1280px] scroll-reveal scroll-fade-up stagger-2">
               <div className="lg:-translate-y-1/2 relative lg:absolute content-stretch flex flex-col gap-[20px] md:gap-[22px] items-start left-0 lg:top-[calc(50%-0.01px)] w-full lg:w-[288px] mb-4 lg:mb-0">
                 <div className="content-stretch flex items-start relative shrink-0 w-full">
-                  <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[1.1] not-italic relative shrink-0 text-[36px] md:text-[48px] lg:text-[60px] text-white tracking-[-2px]">
+                  <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[1.1] not-italic relative shrink-0 text-[48px] lg:text-[60px] text-white tracking-[-2px]">
                     <p className="mb-0">{`Proven `}</p>
                     <p>Expertise</p>
                   </div>
@@ -263,14 +313,14 @@ export default function Landing() {
                   <p>47+ companies scaled, 200+ projects delivered, and a 95% client retention rate. We deliver what we promise.</p>
                 </div>
               </div>
-              <div className="lg:-translate-y-1/2 relative lg:absolute h-[180px] md:h-[240px] lg:left-[336px] overflow-hidden rounded-[20px] lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
+              <div className="lg:-translate-y-1/2 relative lg:absolute h-[240px] lg:left-[336px] overflow-hidden rounded-[20px] lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
                 <img alt="Proven Expertise" className="w-full h-full object-cover" src={imgDiv1} />
               </div>
             </div>
             <div className="min-h-[250px] md:h-[320px] relative shrink-0 w-full max-w-[1280px] scroll-reveal scroll-fade-up stagger-3">
               <div className="lg:-translate-y-1/2 relative lg:absolute content-stretch flex flex-col gap-[20px] md:gap-[35px] items-start left-0 lg:top-[calc(50%-0.01px)] w-full lg:w-[270.919px] mb-4 lg:mb-0">
                 <div className="content-stretch flex items-start relative shrink-0">
-                  <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[1.1] not-italic relative shrink-0 text-[36px] md:text-[48px] lg:text-[60px] text-white tracking-[-2px]">
+                  <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[1.1] not-italic relative shrink-0 text-[48px] lg:text-[60px] text-white tracking-[-2px]">
                     <p className="mb-0">{`Client `}</p>
                     <p className="mb-0">Centric</p>
                     <p>Approach</p>
@@ -280,14 +330,14 @@ export default function Landing() {
                   <p>{`Every Business is unique. We Offer Customizations perfectly with your Goals`}</p>
                 </div>
               </div>
-              <div className="lg:-translate-y-1/2 relative lg:absolute h-[180px] md:h-[240px] lg:left-[336px] overflow-hidden rounded-[20px] lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
+              <div className="lg:-translate-y-1/2 relative lg:absolute h-[240px] lg:left-[336px] overflow-hidden rounded-[20px] lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
                 <img alt="Client Centric Approach" className="w-full h-full object-cover" src={imgDiv2} />
               </div>
             </div>
             <div className="min-h-[250px] md:h-[320px] relative shrink-0 w-full max-w-[1280px] scroll-reveal scroll-fade-up stagger-4">
               <div className="lg:-translate-y-1/2 relative lg:absolute content-stretch flex flex-col gap-[20px] md:gap-[35px] items-start left-0 lg:top-[calc(50%-0.01px)] w-full lg:w-[288px] mb-4 lg:mb-0">
                 <div className="content-stretch flex items-start relative shrink-0 w-full">
-                  <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[1.1] not-italic relative shrink-0 text-[32px] md:text-[42px] lg:text-[52px] text-white tracking-[-2px]">
+                  <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[1.1] not-italic relative shrink-0 text-[42px] lg:text-[52px] text-white tracking-[-2px]">
                     <p className="mb-0">{`Transparent &`}</p>
                     <p>Collaborative</p>
                   </div>
@@ -296,9 +346,10 @@ export default function Landing() {
                   <p className="mb-0">{`Every Business is unique. We Offer Customizations perfectly with your Goals`}</p>
                 </div>
               </div>
-              <div className="lg:-translate-y-1/2 relative lg:absolute h-[180px] md:h-[240px] lg:left-[336px] overflow-hidden rounded-[20px] lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
+              <div className="lg:-translate-y-1/2 relative lg:absolute h-[240px] lg:left-[336px] overflow-hidden rounded-[20px] lg:right-0 lg:top-1/2 w-full lg:w-[calc(100%-336px)]">
                 <img alt="Transparent & Collaborative" className="w-full h-full object-cover" src={imgDiv} />
               </div>
+            </div>
             </div>
           </div>
         </div>
@@ -732,10 +783,10 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-            <div className="bg-white w-full pb-12">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-x divide-[#f0f0f0]">
+            <div className="bg-white w-full pb-6 md:pb-12">
+              <div className="flex md:grid md:grid-cols-2 lg:grid-cols-3 md:divide-x md:divide-[#f0f0f0] overflow-x-auto snap-x snap-mandatory scrollbar-thin gap-0">
                 {/* Testimonial Card 1 */}
-                <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
+                <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px] min-w-[85vw] md:min-w-0 snap-start">
                   <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[18px]">Digil</p>
                   <div className="flex-1 py-8">
                     <p className="font-['Inter',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;Working with Sivarsa completely changed how we approach hiring. They helped us bring in the right talent quickly, which was exactly what we needed during a crucial phase&rdquo;</p>
@@ -746,7 +797,7 @@ export default function Landing() {
                   </div>
                 </div>
                 {/* Testimonial Card 2 */}
-                <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
+                <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px] min-w-[85vw] md:min-w-0 snap-start">
                   <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[18px]">Santosh</p>
                   <div className="flex-1 py-8">
                     <p className="font-['Inter',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;Sivarsa&apos;s SEO gave us a real boost when we needed it.&rdquo;</p>
@@ -757,7 +808,7 @@ export default function Landing() {
                   </div>
                 </div>
                 {/* Testimonial Card 3 */}
-                <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
+                <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px] min-w-[85vw] md:min-w-0 snap-start">
                   <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[18px]">GNT</p>
                   <div className="flex-1 py-8">
                     <p className="font-['Inter',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;With Sivarsa, Our campaigns gained momentum. Real, measurable momentum.&rdquo;</p>

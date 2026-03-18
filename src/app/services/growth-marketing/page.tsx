@@ -89,17 +89,17 @@ export default function GrowthMarketing() {
               <img alt="" className="absolute inset-0 max-w-none object-cover size-full" src={imgStars1} />
             </div>
             {/* Content wrapper constrained to max-width */}
-            <div className="relative w-full max-w-[1440px] mx-auto min-h-[500px] lg:min-h-[750px]">
+            <div className="relative w-full min-h-[500px] lg:min-h-[750px]">
               {/* Ellipse decoration (purple patch) */}
-              <div className="hidden md:block absolute left-[40%] lg:left-[568.31px] size-[850px] top-[428.84px] pointer-events-none">
+              <div className="absolute left-[40%] lg:left-[calc(50%+200px)] size-[500px] md:size-[850px] top-[250px] md:top-[428.84px] opacity-50 md:opacity-100 pointer-events-none">
                 <div className="absolute inset-[-37.62%]">
                   <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
                 </div>
               </div>
-              <div className="absolute h-[400px] md:h-[600px] lg:h-[800.63px] right-0 lg:left-[752.39px] top-[0px] md:top-[16px] w-[300px] md:w-[450px] lg:w-[632.5px] hero-image animate-float hidden md:block">
+              <div className="hidden md:block absolute h-[600px] lg:h-[800.63px] right-0 md:right-[calc(50%-680px)] lg:right-[calc(50%-720px)] md:top-[16px] md:w-[450px] lg:w-[632.5px] hero-image animate-float">
                 <img alt="Growth Marketing Services" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageServicesHeroImg} />
               </div>
-              <div className="relative lg:absolute content-stretch flex flex-col items-start px-4 md:px-8 lg:px-0 lg:left-[76px] pt-[40px] lg:pt-0 lg:top-[129px] w-full lg:w-[1060px] hero-content">
+              <div className="relative content-stretch flex flex-col items-start max-w-[1360px] mx-auto px-4 lg:px-0 pt-[40px] lg:pt-[129px] w-full hero-content">
               <div className="content-stretch flex flex-col gap-[20px] md:gap-[37px] items-start relative shrink-0 w-full lg:w-[626px]">
                 <div className="bg-clip-text font-[family-name:var(--font-headings)] font-black leading-[1.1] not-italic relative shrink-0 text-[48px] md:text-[68px] lg:text-[90px] tracking-[-2px] lg:tracking-[-4.1492px] animate-fade-in-up" style={{ backgroundImage: "linear-gradient(-38.5682deg, rgb(255, 255, 255) 62.646%, rgb(0, 0, 0) 108.48%)", WebkitTextFillColor: "transparent" }}>
                   <p className="mb-0">{`GROWTH `}</p>
@@ -170,340 +170,208 @@ export default function GrowthMarketing() {
             </div>
           </div>
         </div>
-        <div className="bg-white content-stretch flex flex-col items-center overflow-clip py-[147.333px] relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col gap-[75.565px] items-start max-w-[1360px] mx-auto px-4 md:px-[37.778px] relative shrink-0 w-full">
-            <div className="content-stretch flex h-[137.502px] items-end justify-between relative shrink-0 w-full">
-              <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0">
-                <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
-                  <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[40px] lg:text-[52.372px] lg:whitespace-nowrap">
-                      <p className="leading-[68.756px]">Turn Your Marketing Into Your</p>
-                    </div>
-                  </div>
+        {/* Turn Your Marketing Into Your Competitive Edge section */}
+        <div className="bg-white content-stretch flex flex-col items-center py-[60px] md:py-[100px] lg:py-[147.333px] relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-[40px] md:gap-[75.565px] items-start max-w-[1360px] mx-auto px-4 md:px-[37.778px] relative shrink-0 w-full">
+            <div className="content-stretch flex flex-col md:flex-row items-start md:items-end justify-between relative shrink-0 w-full gap-4">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full md:w-auto">
+                <div className="font-[family-name:var(--font-headings)] font-bold leading-[1.3] text-[#1b1b1b] text-[28px] md:text-[40px] lg:text-[52.372px]">
+                  <p>Turn Your Marketing Into Your</p>
                 </div>
-                <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
-                  <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[24px] md:text-[36px] lg:text-[50.926px] text-[rgba(41,36,36,0.41)] whitespace-nowrap">
-                      <p className="leading-[68.756px]">Competitive Edge!</p>
-                    </div>
-                  </div>
+                <div className="font-[family-name:var(--font-headings)] font-bold leading-[1.3] text-[24px] md:text-[36px] lg:text-[50.926px] text-[rgba(41,36,36,0.41)]">
+                  <p>Competitive Edge!</p>
                 </div>
               </div>
               <div className="content-stretch flex flex-col items-start relative shrink-0">
                 <Link className="bg-[#3f2fee] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center max-w-[198.2294464111328px] overflow-clip px-[26.444px] py-[15.111px] relative rounded-[94.444px] shrink-0 w-full" href="/contact">
-                  <div className="content-stretch flex flex-col items-start relative shrink-0">
-                    <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[14.875px] text-left text-white whitespace-nowrap">
-                      <p className="leading-[18.889px]">Start your project</p>
-                    </div>
-                  </div>
-                  <div className="max-w-[11.333333015441895px] relative shrink-0 size-[11.333px]">
-                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                      <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgBtnIcon} />
-                    </div>
+                  <span className="font-['Inter',sans-serif] font-semibold text-[14.875px] text-white whitespace-nowrap">Start your project</span>
+                  <div className="relative shrink-0 size-[11.333px]">
+                    <img alt="" className="absolute inset-0 max-w-none size-full" src={imgBtnIcon} />
                   </div>
                 </Link>
               </div>
             </div>
-            <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] min-h-[400px] lg:h-[588.923px] leading-[0] relative rounded-[25px] shrink-0 text-black to-[rgba(116,39,255,0.5)] w-full hover-lift card-animated">
-              <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:Bold',sans-serif] font-bold justify-center left-[47px] text-[30px] top-[241.46px] w-full lg:w-[547.728px]">
-                <p className="leading-[35.335px] whitespace-pre-wrap">High cost per acquisition (CPA), minimal repeat purchases due to lack of robust email strategy.</p>
-              </div>
-              <div className="-translate-y-1/2 absolute font-['Schibsted_Grotesk:Bold',sans-serif] font-bold h-[133.489px] left-[47px] right-[653.82px] top-[calc(50%+133.74px)]">
-                <div className="-translate-y-1/2 absolute flex flex-col h-[41.225px] justify-center left-[15.7px] text-[20px] top-[62.61px] w-[506.395px]">
-                  <p className="leading-[23.557px] whitespace-pre-wrap">Our approach integrates SEO and ROI-focused paid search to boost visibility, leverages display and programmatic ads for timely retargeting, and uses segmented, automated email campaigns to drive repeat purchases.</p>
-                </div>
-                <div className="-translate-y-1/2 absolute flex flex-col justify-center left-[2px] text-[50px] top-[8px] whitespace-nowrap">
-                  <p className="leading-[23.557px]">&ldquo;</p>
-                </div>
-              </div>
-              <div className="-translate-y-1/2 absolute content-stretch hidden lg:flex flex-col gap-[24px] items-start left-[732px] top-[calc(50%+0.5px)] w-full lg:w-[486px]">
-                <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] h-[129px] overflow-clip relative rounded-[15px] shrink-0 to-[#7427ff] w-full">
-                  <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:SemiBold',sans-serif] font-semibold justify-center left-[205px] text-[22px] top-[64px] w-[230px]">
-                    <p className="leading-[24px] whitespace-pre-wrap">increase in organic traffic over 6 months</p>
-                  </div>
-                  <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:ExtraBold',sans-serif] font-extrabold justify-center left-[21px] text-[60px] top-[65px] whitespace-nowrap">
-                    <p className="leading-[35.335px]">{`300% `}</p>
+            <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] min-h-[400px] lg:min-h-[588.923px] relative rounded-[25px] shrink-0 to-[rgba(116,39,255,0.5)] w-full hover-lift card-animated overflow-hidden">
+              <div className="flex flex-col lg:flex-row p-6 md:p-10 lg:p-[47px] gap-6 lg:gap-8 relative">
+                <div className="flex flex-col gap-4 w-full lg:w-[550px]">
+                  <p className="font-['Schibsted_Grotesk:Bold',sans-serif] font-bold text-[18px] md:text-[20px] text-black">SANTOSH JEWELLERS</p>
+                  <p className="font-['Schibsted_Grotesk:Bold',sans-serif] font-bold text-[22px] md:text-[26px] lg:text-[30px] leading-[1.3] text-black">High cost per acquisition (CPA), minimal repeat purchases due to lack of robust email strategy.</p>
+                  <div className="mt-4 lg:mt-8">
+                    <p className="text-[50px] font-['Schibsted_Grotesk:Bold',sans-serif] font-bold mb-2">&ldquo;</p>
+                    <p className="font-['Schibsted_Grotesk:Bold',sans-serif] font-bold text-[16px] md:text-[18px] lg:text-[20px] leading-[1.4] max-w-[506px]">Our approach integrates SEO and ROI-focused paid search to boost visibility, leverages display and programmatic ads for timely retargeting, and uses segmented, automated email campaigns to drive repeat purchases.</p>
                   </div>
                 </div>
-                <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] h-[129px] overflow-clip relative rounded-[15px] shrink-0 to-[#7427ff] w-full">
-                  <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:SemiBold',sans-serif] font-semibold justify-center left-[206px] text-[22px] top-[65px] w-[230px]">
-                    <p className="leading-[24px] whitespace-pre-wrap">reduction in bounce rates via optimized landing pages</p>
+                <div className="hidden lg:flex flex-col gap-[24px] items-start w-full lg:w-[486px]">
+                  <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] to-[#7427ff] rounded-[15px] w-full overflow-hidden p-6 flex items-center gap-4 min-h-[129px]">
+                    <span className="font-['Schibsted_Grotesk:ExtraBold',sans-serif] font-extrabold text-[40px] md:text-[50px] lg:text-[60px] leading-[1] whitespace-nowrap">{`300% `}</span>
+                    <span className="font-['Schibsted_Grotesk:SemiBold',sans-serif] font-semibold text-[18px] md:text-[22px] leading-[1.2]">increase in organic traffic over 6 months</span>
                   </div>
-                  <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:ExtraBold',sans-serif] font-extrabold justify-center left-[40px] text-[60px] top-[65px] whitespace-nowrap">
-                    <p className="leading-[35.335px]">{`40% `}</p>
+                  <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] to-[#7427ff] rounded-[15px] w-full overflow-hidden p-6 flex items-center gap-4 min-h-[129px]">
+                    <span className="font-['Schibsted_Grotesk:ExtraBold',sans-serif] font-extrabold text-[40px] md:text-[50px] lg:text-[60px] leading-[1] whitespace-nowrap">{`40% `}</span>
+                    <span className="font-['Schibsted_Grotesk:SemiBold',sans-serif] font-semibold text-[18px] md:text-[22px] leading-[1.2]">reduction in bounce rates via optimized landing pages</span>
                   </div>
-                </div>
-                <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] h-[129px] overflow-clip relative rounded-[15px] shrink-0 to-[#7427ff] w-full">
-                  <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:SemiBold',sans-serif] font-semibold justify-center left-[206px] text-[22px] top-[64px] w-[273px]">
-                    <p className="leading-[24px] whitespace-pre-wrap">increase in monthly bookings, leading to a significant revenue boost</p>
-                  </div>
-                  <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:ExtraBold',sans-serif] font-extrabold justify-center left-[63px] text-[60px] top-[64px] whitespace-nowrap">
-                    <p className="leading-[35.335px]">2X</p>
-                  </div>
-                </div>
-              </div>
-              <div className="-translate-y-1/2 absolute flex flex-col font-['Schibsted_Grotesk:Bold',sans-serif] font-bold justify-center left-[47px] text-[20px] top-[77.46px] whitespace-nowrap">
-                <p className="leading-[21.594px]">SANTOSH JEWELLERS</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="bg-[#090909] content-stretch flex flex-col items-center overflow-clip py-[143.556px] relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col gap-[52.889px] items-start max-w-[1360px] mx-auto px-4 md:px-[37.778px] relative shrink-0 w-full">
-            <div className="content-stretch flex h-[137.502px] items-end relative shrink-0 w-full animate-fade-in-up">
-              <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0">
-                <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
-                  <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[28px] md:text-[40px] lg:text-[52.166px] text-white lg:whitespace-nowrap">
-                      <p className="leading-[68.756px]">We deliver on time, in days and weeks</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
-                  <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[24px] md:text-[36px] lg:text-[50.72px] text-[rgba(255,255,255,0.52)] whitespace-nowrap">
-                      <p className="leading-[68.756px]">—not months.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="relative shrink-0 w-full">
-              <div className="content-stretch flex flex-col items-start w-full lg:w-[65%] animate-fade-in-up">
-                <div className="bg-[#242424] border-[#3a3a3a] border-b-[0.944px] border-solid content-stretch flex items-center justify-between pb-[31.167px] pt-[30.222px] px-[30.222px] relative shrink-0 w-full faq-item cursor-pointer">
-                  <div className="content-stretch flex gap-[15.111px] items-center relative shrink-0">
-                    <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[15.111px] tracking-[0.9444px] whitespace-nowrap">
-                        <p className="leading-[19.644px]">01</p>
-                      </div>
-                    </div>
-                    <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter',sans-serif] font-bold justify-center leading-[0] max-h-[30.146665573120117px] not-italic relative shrink-0 text-[14px] md:text-[18px] lg:text-[22.667px] text-white tracking-[0.9444px]">
-                        <p className="leading-[30.147px]">{`Strategy & channel audit`}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="max-w-[829.22216796875px] relative shrink-0 size-[15.111px]">
-                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                      <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgArrowUpIcon} />
-                    </div>
-                  </div>
-                </div>
-                <div className="bg-[#242424] border-[#3a3a3a] border-b-[0.944px] border-solid content-stretch flex items-center justify-between pb-[31.167px] pt-[30.222px] px-[30.222px] relative shrink-0 w-full faq-item cursor-pointer">
-                  <div className="content-stretch flex gap-[15.111px] items-center relative shrink-0">
-                    <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[15.111px] tracking-[0.9444px] whitespace-nowrap">
-                        <p className="leading-[19.644px]">02</p>
-                      </div>
-                    </div>
-                    <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter',sans-serif] font-bold justify-center leading-[0] max-h-[30.146665573120117px] not-italic relative shrink-0 text-[14px] md:text-[18px] lg:text-[22.135px] text-white tracking-[0.9444px]">
-                        <p className="leading-[30.147px]">{`Campaign launch & optimization`}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="max-w-[829.22216796875px] relative shrink-0 size-[15.111px]">
-                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                      <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgArrowUpIcon} />
-                    </div>
-                  </div>
-                </div>
-                <div className="bg-[#242424] content-stretch flex items-center justify-between p-[30.222px] relative shrink-0 w-full faq-item cursor-pointer">
-                  <div className="content-stretch flex gap-[15.111px] items-center relative shrink-0">
-                    <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[14.993px] tracking-[0.9444px] whitespace-nowrap">
-                        <p className="leading-[19.644px]">03</p>
-                      </div>
-                    </div>
-                    <div className="content-stretch flex flex-col items-start relative shrink-0">
-                      <div className="flex flex-col font-['Inter',sans-serif] font-bold justify-center leading-[0] max-h-[30.146665573120117px] not-italic relative shrink-0 text-[21.427px] text-white tracking-[0.9444px] whitespace-nowrap">
-                        <p className="leading-[30.147px]">{`Scale what works, cut what doesn't`}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="max-w-[829.22216796875px] relative shrink-0 size-[15.111px]">
-                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                      <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgArrowUpIcon} />
-                    </div>
+                  <div className="bg-gradient-to-r from-[rgba(38,93,246,0)] to-[#7427ff] rounded-[15px] w-full overflow-hidden p-6 flex items-center gap-4 min-h-[129px]">
+                    <span className="font-['Schibsted_Grotesk:ExtraBold',sans-serif] font-extrabold text-[40px] md:text-[50px] lg:text-[60px] leading-[1] whitespace-nowrap">2X</span>
+                    <span className="font-['Schibsted_Grotesk:SemiBold',sans-serif] font-semibold text-[18px] md:text-[22px] leading-[1.2]">increase in monthly bookings, leading to a significant revenue boost</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        {/* We deliver on time section */}
+        <div className="bg-[#090909] content-stretch flex flex-col items-center py-[60px] md:py-[100px] lg:py-[143.556px] relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-[30px] md:gap-[52.889px] items-start max-w-[1360px] mx-auto px-4 md:px-[37.778px] relative shrink-0 w-full">
+            <div className="content-stretch flex items-end relative shrink-0 w-full animate-fade-in-up">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
+                <div className="font-[family-name:var(--font-headings)] font-bold leading-[1.3] text-[24px] md:text-[36px] lg:text-[52.166px] text-white">
+                  <p>We deliver on time, in days and weeks</p>
+                </div>
+                <div className="font-[family-name:var(--font-headings)] font-bold leading-[1.3] text-[22px] md:text-[32px] lg:text-[50.72px] text-[rgba(255,255,255,0.52)]">
+                  <p>—not months.</p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full">
+              <div className="flex flex-col items-start w-full lg:w-[65%] animate-fade-in-up">
+                {[
+                  { num: "01", text: "Strategy & channel audit" },
+                  { num: "02", text: "Campaign launch & optimization" },
+                  { num: "03", text: "Scale what works, cut what doesn't" },
+                ].map((item, index) => (
+                  <div key={index} className={`bg-[#242424] flex items-center justify-between p-[20px] md:p-[30px] w-full faq-item cursor-pointer ${index < 2 ? 'border-b border-[#3a3a3a]' : ''}`}>
+                    <div className="flex gap-[15px] items-center">
+                      <span className="font-['Inter',sans-serif] font-medium text-[15px] text-[#7e7e81] tracking-[1px]">{item.num}</span>
+                      <span className="font-['Inter',sans-serif] font-bold text-[14px] md:text-[18px] lg:text-[22px] text-white tracking-[1px]">{item.text}</span>
+                    </div>
+                    <img alt="" className="w-[15px] h-[15px] shrink-0 ml-4" src={imgArrowUpIcon} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* What we deliver on section */}
         <div id="services" className="bg-[#090909] content-stretch flex flex-col gap-[0.009px] items-center relative shrink-0 w-full">
           <div className="content-stretch flex flex-col items-start max-w-[1360px] mx-auto pb-[52.889px] px-4 md:px-[37.778px] relative shrink-0 w-full">
-            <div className="content-stretch flex h-[137.502px] items-end relative shrink-0 w-full">
-              <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0">
-                <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
-                  <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[28px] md:text-[40px] lg:text-[51.959px] text-white whitespace-nowrap">
-                      <p className="leading-[68.756px]">{`What we deliver on `}</p>
-                    </div>
-                  </div>
+            <div className="content-stretch flex items-end relative shrink-0 w-full py-[20px] md:py-[30px]">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
+                <div className="font-[family-name:var(--font-headings)] font-bold leading-[1.3] text-[24px] md:text-[36px] lg:text-[51.959px] text-white">
+                  <p>{`What we deliver on `}</p>
                 </div>
-                <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
-                  <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[24px] md:text-[36px] lg:text-[51.339px] text-[rgba(255,255,255,0.52)] whitespace-nowrap">
-                      <p className="leading-[68.756px]">Growth Marketing</p>
-                    </div>
-                  </div>
+                <div className="font-[family-name:var(--font-headings)] font-bold leading-[1.3] text-[22px] md:text-[32px] lg:text-[51.339px] text-[rgba(255,255,255,0.52)]">
+                  <p>Growth Marketing</p>
                 </div>
               </div>
             </div>
           </div>
+          {/* Service cards */}
           <div className="bg-[#090909] content-stretch flex flex-col items-start relative shrink-0 w-full">
             <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
               <div className="bg-[#3f2fee] content-stretch flex flex-col items-center shrink-0 sticky top-0 z-10 w-full">
-                <div className="h-[438.222px] max-w-[1360px] mx-auto relative shrink-0 w-full">
-                  <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px] animate-fade-in-up">
-                    <div className="flex flex-col font-['Inter',sans-serif] font-extrabold justify-center leading-[54.4px] not-italic relative shrink-0 text-[44.979px] text-white whitespace-nowrap">
-                      <p className="mb-0">Growth</p>
-                      <p>Marketing</p>
-                    </div>
-                    <div className="h-[211.036px] relative shrink-0 w-[574.43px]">
-                      <div className="absolute content-stretch flex flex-col items-start left-0 top-[-0.68px]">
-                        <div className="content-stretch flex flex-col items-start max-w-[358.8888854980469px] pr-[11.806px] relative shrink-0">
-                          <div className="flex flex-col font-['Inter',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[17px] text-white w-[331.988px]">
-                            <p className="leading-[26.35px] whitespace-pre-wrap">The fuel for your growth engine. Data-driven marketing strategies designed to accelerate business expansion through paid media and organic channels, focused on maximum performance and ROI.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="absolute content-stretch flex flex-col items-start left-[434.44px] top-0">
-                        <div className="content-stretch flex flex-col items-start relative shrink-0">
-                          <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-                            <div className="flex flex-col font-['Inter',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-[14.167px] text-white whitespace-nowrap">
-                              <p className="mb-0">Social Media Marketing</p>
-                              <p className="mb-0">Search Engine Optimisation (SEO)</p>
-                              <p className="mb-0">Paid Search (Google Ads)</p>
-                              <p className="mb-0">Display Advertising</p>
-                              <p className="mb-0">{`Email Marketing & Retention`}</p>
-                              <p>Programmatic Display</p>
-                            </div>
-                          </div>
-                        </div>
+                <div className="max-w-[1360px] mx-auto relative shrink-0 w-full flex flex-col lg:flex-row lg:items-center lg:justify-between p-6 md:p-10 lg:p-[52.89px] gap-6 lg:gap-8">
+                  <div className="flex flex-col gap-[30px] items-start animate-fade-in-up w-full lg:w-auto lg:max-w-[600px]">
+                    <h3 className="font-bold leading-[1.3] text-[24px] md:text-[36px] lg:text-[44.979px] text-white" style={{ fontFamily: "'Inter', sans-serif" }}>
+                      Growth Marketing
+                    </h3>
+                    <div className="flex flex-col lg:flex-row gap-6 lg:gap-16">
+                      <p className="font-['Inter',sans-serif] font-medium leading-[1.55] text-[15px] md:text-[17px] text-white max-w-[340px]">
+                        The fuel for your growth engine. Data-driven marketing strategies designed to accelerate business expansion through paid media and organic channels, focused on maximum performance and ROI.
+                      </p>
+                      <div className="hidden lg:block font-['Inter',sans-serif] font-normal leading-[25.5px] text-[14px] text-white whitespace-nowrap">
+                        <p className="mb-0">Social Media Marketing</p>
+                        <p className="mb-0">Search Engine Optimisation (SEO)</p>
+                        <p className="mb-0">Paid Search (Google Ads)</p>
+                        <p className="mb-0">Display Advertising</p>
+                        <p className="mb-0">{`Email Marketing & Retention`}</p>
+                        <p>Programmatic Display</p>
                       </div>
                     </div>
                   </div>
-                  <div className="absolute content-stretch flex flex-col h-[332.444px] items-start justify-center left-[940.67px] max-w-[366.4444580078125px] top-[52.89px] w-[366.444px] animate-fade-in-right">
-                    <div className="flex-[1_0_0] max-w-[366.4444580078125px] min-h-px min-w-px relative w-full hover-scale transition-transform duration-300">
-                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                        <img alt="" className="absolute h-[100.03%] left-0 max-w-none top-[-0.02%] w-full" src={imgSeoMarketing} />
-                      </div>
+                  <div className="hidden lg:flex items-center justify-center w-[366px] h-[332px] animate-fade-in-right">
+                    <div className="relative w-full h-full hover-scale transition-transform duration-300">
+                      <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgSeoMarketing} />
                     </div>
                   </div>
                 </div>
               </div>
               <div className="bg-white content-stretch flex flex-col items-center shrink-0 sticky top-[60px] z-20 w-full">
-                <div className="h-[438.222px] max-w-[1360px] mx-auto relative shrink-0 w-full">
-                  <div className="absolute content-stretch flex flex-col gap-[26px] items-start left-[52.89px] top-[51.94px] w-[597.248px] animate-fade-in-up">
-                    <div className="flex flex-col font-['Inter',sans-serif] font-extrabold justify-center leading-[54.4px] not-italic relative shrink-0 text-[#1b1b1b] text-[44.979px] whitespace-nowrap">
-                      <p className="mb-0">Conversion</p>
-                      <p>Optimisation</p>
-                    </div>
-                    <div className="h-[211.036px] relative shrink-0 w-[597.248px]">
-                      <div className="absolute content-stretch flex flex-col items-start left-0 top-[-0.68px]">
-                        <div className="content-stretch flex flex-col items-start max-w-[358.8888854980469px] pr-[7.82px] relative shrink-0">
-                          <div className="flex flex-col font-['Inter',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[16.867px] w-[358.889px]">
-                            <p className="leading-[26.35px] whitespace-pre-wrap">Growth through improvement. We run experiments and A/B tests to identify and unlock additional conversions from your website visitors, turning traffic into revenue.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="absolute content-stretch flex flex-col items-start left-[434.44px] top-0">
-                        <div className="content-stretch flex flex-col items-start relative shrink-0">
-                          <div className="flex flex-col font-['Inter',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-[#1b1b1b] text-[14.056px] whitespace-nowrap">
-                            <p className="mb-0">{`A/B Testing & Experimentation`}</p>
-                            <p className="mb-0">Landing Page Optimisation</p>
-                            <p className="mb-0">{`Heatmap & User Behaviour Analysis`}</p>
-                            <p className="mb-0">Purchase Funnel Optimisation</p>
-                            <p className="mb-0">Website Performance Optimisation</p>
-                            <p>{`User Psychographics & Insights`}</p>
-                          </div>
-                        </div>
+                <div className="max-w-[1360px] mx-auto relative shrink-0 w-full flex flex-col lg:flex-row lg:items-center lg:justify-between p-6 md:p-10 lg:p-[52.89px] gap-6 lg:gap-8">
+                  <div className="flex flex-col gap-[26px] items-start animate-fade-in-up w-full lg:w-auto lg:max-w-[600px]">
+                    <h3 className="font-bold leading-[1.3] text-[24px] md:text-[36px] lg:text-[44.979px] text-[#1b1b1b]" style={{ fontFamily: "'Inter', sans-serif" }}>
+                      Conversion Optimisation
+                    </h3>
+                    <div className="flex flex-col lg:flex-row gap-6 lg:gap-16">
+                      <p className="font-['Inter',sans-serif] font-medium leading-[1.55] text-[15px] md:text-[17px] text-[#1b1b1b] max-w-[340px]">
+                        Growth through improvement. We run experiments and A/B tests to identify and unlock additional conversions from your website visitors, turning traffic into revenue.
+                      </p>
+                      <div className="hidden lg:block font-['Inter',sans-serif] font-normal leading-[25.5px] text-[14px] text-[#1b1b1b] whitespace-nowrap">
+                        <p className="mb-0">{`A/B Testing & Experimentation`}</p>
+                        <p className="mb-0">Landing Page Optimisation</p>
+                        <p className="mb-0">{`Heatmap & User Behaviour Analysis`}</p>
+                        <p className="mb-0">Purchase Funnel Optimisation</p>
+                        <p className="mb-0">Website Performance Optimisation</p>
+                        <p>{`User Psychographics & Insights`}</p>
                       </div>
                     </div>
                   </div>
-                  <div className="absolute content-stretch flex flex-col h-[332.444px] items-start justify-center left-[940.67px] max-w-[366.4444580078125px] top-[52.89px] w-[366.444px] animate-fade-in-right">
-                    <div className="flex-[1_0_0] max-w-[366.4444580078125px] min-h-px min-w-px relative w-full hover-scale transition-transform duration-300">
-                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                        <img alt="" className="absolute h-[100.03%] left-0 max-w-none top-[-0.02%] w-full" src={imgPaidAds} />
-                      </div>
+                  <div className="hidden lg:flex items-center justify-center w-[366px] h-[332px] animate-fade-in-right">
+                    <div className="relative w-full h-full hover-scale transition-transform duration-300">
+                      <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgPaidAds} />
                     </div>
                   </div>
                 </div>
               </div>
               <div className="bg-[#ffd500] content-stretch flex flex-col items-center shrink-0 sticky top-[120px] z-30 w-full">
-                <div className="h-[438.222px] max-w-[1360px] mx-auto relative shrink-0 w-full">
-                  <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px] animate-fade-in-up">
-                    <div className="flex flex-col font-['Inter',sans-serif] font-extrabold justify-center leading-[54.4px] not-italic relative shrink-0 text-[#1b1b1b] text-[44.979px] whitespace-nowrap">
-                      <p className="mb-0">Digital</p>
-                      <p>Strategy</p>
-                    </div>
-                    <div className="h-[211.036px] relative shrink-0 w-[599.958px]">
-                      <div className="absolute content-stretch flex flex-col items-start left-0 top-[-0.68px]">
-                        <div className="content-stretch flex flex-col items-start max-w-[358.8888854980469px] pr-[2.909px] relative shrink-0">
-                          <div className="flex flex-col font-['Inter',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[16.203px] w-[358.889px]">
-                            <p className="leading-[26.35px] whitespace-pre-wrap">The blueprint for your success. We sit at the intersection of ambitious ideas and concrete data, providing the strategic roadmap that drives measurable results.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="absolute content-stretch flex flex-col items-start left-[434.44px] top-0">
-                        <div className="content-stretch flex flex-col items-start relative shrink-0">
-                          <div className="flex flex-col font-['Inter',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-[#1b1b1b] text-[13.613px] whitespace-nowrap">
-                            <p className="mb-0">{`Market & Competitor Analysis`}</p>
-                            <p className="mb-0">Brand Positioning Strategy</p>
-                            <p className="mb-0">{`KPI & Goal Development`}</p>
-                            <p className="mb-0">{`Media Planning & Projections`}</p>
-                            <p className="mb-0">{`Analytics & Reporting`}</p>
-                            <p>Growth Model Development</p>
-                          </div>
-                        </div>
+                <div className="max-w-[1360px] mx-auto relative shrink-0 w-full flex flex-col lg:flex-row lg:items-center lg:justify-between p-6 md:p-10 lg:p-[52.89px] gap-6 lg:gap-8">
+                  <div className="flex flex-col gap-[30px] items-start animate-fade-in-up w-full lg:w-auto lg:max-w-[600px]">
+                    <h3 className="font-bold leading-[1.3] text-[24px] md:text-[36px] lg:text-[44.979px] text-[#1b1b1b]" style={{ fontFamily: "'Inter', sans-serif" }}>
+                      Digital Strategy
+                    </h3>
+                    <div className="flex flex-col lg:flex-row gap-6 lg:gap-16">
+                      <p className="font-['Inter',sans-serif] font-medium leading-[1.55] text-[15px] md:text-[16px] text-[#1b1b1b] max-w-[340px]">
+                        The blueprint for your success. We sit at the intersection of ambitious ideas and concrete data, providing the strategic roadmap that drives measurable results.
+                      </p>
+                      <div className="hidden lg:block font-['Inter',sans-serif] font-normal leading-[25.5px] text-[14px] text-[#1b1b1b] whitespace-nowrap">
+                        <p className="mb-0">{`Market & Competitor Analysis`}</p>
+                        <p className="mb-0">Brand Positioning Strategy</p>
+                        <p className="mb-0">{`KPI & Goal Development`}</p>
+                        <p className="mb-0">{`Media Planning & Projections`}</p>
+                        <p className="mb-0">{`Analytics & Reporting`}</p>
+                        <p>Growth Model Development</p>
                       </div>
                     </div>
                   </div>
-                  <div className="absolute content-stretch flex flex-col h-[332.444px] items-start justify-center left-[940.67px] max-w-[366.4444580078125px] top-[52.89px] w-[366.444px] animate-fade-in-right">
-                    <div className="flex-[1_0_0] max-w-[366.4444580078125px] min-h-px min-w-px relative w-full hover-scale transition-transform duration-300">
-                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                        <img alt="" className="absolute h-[100.03%] left-0 max-w-none top-[-0.02%] w-full" src={imgConversionOpt} />
-                      </div>
+                  <div className="hidden lg:flex items-center justify-center w-[366px] h-[332px] animate-fade-in-right">
+                    <div className="relative w-full h-full hover-scale transition-transform duration-300">
+                      <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgConversionOpt} />
                     </div>
                   </div>
                 </div>
               </div>
               <div className="bg-[#00c853] content-stretch flex flex-col items-center shrink-0 sticky top-[180px] z-40 w-full">
-                <div className="h-[438.222px] max-w-[1360px] mx-auto relative shrink-0 w-full">
-                  <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px] animate-fade-in-up">
-                    <div className="flex flex-col font-['Inter',sans-serif] font-extrabold justify-center leading-[54.4px] not-italic relative shrink-0 text-white text-[44.979px] whitespace-nowrap">
-                      <p className="mb-0">Creative</p>
-                      <p>Design</p>
-                    </div>
-                    <div className="h-[211.036px] relative shrink-0 w-[599.958px]">
-                      <div className="absolute content-stretch flex flex-col items-start left-0 top-[-0.68px]">
-                        <div className="content-stretch flex flex-col items-start max-w-[358.8888854980469px] pr-[2.909px] relative shrink-0">
-                          <div className="flex flex-col font-['Inter',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-white text-[16.203px] w-[358.889px]">
-                            <p className="leading-[26.35px] whitespace-pre-wrap">{`Make a lasting impression. Creative design rooted in data-driven principles and user-focused strategies — websites, e-commerce, performance creative, and UI/UX that converts.`}</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="absolute content-stretch flex flex-col items-start left-[434.44px] top-0">
-                        <div className="content-stretch flex flex-col items-start relative shrink-0">
-                          <div className="flex flex-col font-['Inter',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-white text-[13.613px] whitespace-nowrap">
-                            <p className="mb-0">{`Website Design & Development`}</p>
-                            <p className="mb-0">E-commerce Design</p>
-                            <p className="mb-0">{`Performance Creative & Ad Design`}</p>
-                            <p className="mb-0">UI/UX Design Systems</p>
-                            <p className="mb-0">{`Brand Identity & Visual Design`}</p>
-                            <p>{`Motion Graphics & Video`}</p>
-                          </div>
-                        </div>
+                <div className="max-w-[1360px] mx-auto relative shrink-0 w-full flex flex-col lg:flex-row lg:items-center lg:justify-between p-6 md:p-10 lg:p-[52.89px] gap-6 lg:gap-8">
+                  <div className="flex flex-col gap-[30px] items-start animate-fade-in-up w-full lg:w-auto lg:max-w-[600px]">
+                    <h3 className="font-bold leading-[1.3] text-[24px] md:text-[36px] lg:text-[44.979px] text-white" style={{ fontFamily: "'Inter', sans-serif" }}>
+                      Creative Design
+                    </h3>
+                    <div className="flex flex-col lg:flex-row gap-6 lg:gap-16">
+                      <p className="font-['Inter',sans-serif] font-medium leading-[1.55] text-[15px] md:text-[16px] text-white max-w-[340px]">
+                        {`Make a lasting impression. Creative design rooted in data-driven principles and user-focused strategies — websites, e-commerce, performance creative, and UI/UX that converts.`}
+                      </p>
+                      <div className="hidden lg:block font-['Inter',sans-serif] font-normal leading-[25.5px] text-[14px] text-white whitespace-nowrap">
+                        <p className="mb-0">{`Website Design & Development`}</p>
+                        <p className="mb-0">E-commerce Design</p>
+                        <p className="mb-0">{`Performance Creative & Ad Design`}</p>
+                        <p className="mb-0">UI/UX Design Systems</p>
+                        <p className="mb-0">{`Brand Identity & Visual Design`}</p>
+                        <p>{`Motion Graphics & Video`}</p>
                       </div>
                     </div>
                   </div>
-                  <div className="absolute content-stretch flex flex-col h-[332.444px] items-start justify-center left-[940.67px] max-w-[366.4444580078125px] top-[52.89px] w-[366.444px] animate-fade-in-right">
-                    <div className="flex-[1_0_0] max-w-[366.4444580078125px] min-h-px min-w-px relative w-full hover-scale transition-transform duration-300">
-                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                        <img alt="" className="absolute h-[100.03%] left-0 max-w-none top-[-0.02%] w-full" src={imgSeoMarketing} />
-                      </div>
+                  <div className="hidden lg:flex items-center justify-center w-[366px] h-[332px] animate-fade-in-right">
+                    <div className="relative w-full h-full hover-scale transition-transform duration-300">
+                      <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgSeoMarketing} />
                     </div>
                   </div>
                 </div>
@@ -511,254 +379,108 @@ export default function GrowthMarketing() {
             </div>
           </div>
         </div>
+        {/* Achievements section */}
         <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgSection} />
           </div>
-          <div className="content-stretch flex flex-col gap-[75.556px] items-start justify-center max-w-[1360px] mx-auto pb-[52.889px] px-4 md:px-[37.778px] relative shrink-0 w-full">
-            <div className="h-[265.389px] relative shrink-0 w-full">
-              <div className="-translate-x-1/2 -translate-y-1/2 absolute content-stretch flex items-center justify-center left-[calc(50%-0.47px)] top-[calc(50%+0.37px)] w-full">
-                <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0">
-                  <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[48px] md:text-[100px] lg:text-[170px] text-[color:var(--color\/white\/solid,white)] tracking-[0.9444px] whitespace-nowrap">
-                    <p className="leading-[188.7px]">achievements</p>
-                  </div>
-                </div>
-              </div>
+          <div className="content-stretch flex flex-col gap-[40px] md:gap-[75.556px] items-start justify-center max-w-[1360px] mx-auto pb-[52.889px] px-4 md:px-[37.778px] relative shrink-0 w-full">
+            <div className="flex items-center justify-center py-[40px] md:py-[80px] lg:py-[100px] w-full">
+              <p className="font-[family-name:var(--font-headings)] font-bold leading-[1.1] text-center text-[48px] md:text-[100px] lg:text-[170px] text-white tracking-[0.9444px]">achievements</p>
             </div>
-            <div className="content-stretch flex flex-wrap items-start justify-center min-h-[337.3744201660156px] relative shrink-0 w-full">
-              <div className="bg-[var(--color\/white\/solid,white)] border-[var(--color\/grey\/91,#e8e7e7)] border-r-[0.944px] border-solid content-stretch flex flex-col gap-[149.982px] items-start overflow-clip pl-[30.222px] pr-[31.167px] py-[30.222px] relative self-stretch shrink-0 w-full md:w-[321.111px]">
-                <div className="h-[49.111px] relative shrink-0 w-full">
-                  <div className="-translate-y-1/2 absolute bg-[var(--color\/blue\/56,#3f2fee)] content-stretch flex items-center justify-center left-[210.61px] rounded-[49.111px] size-[49.111px] top-[calc(50%-113.33px)]">
-                    <div className="content-stretch flex h-[12.835px] items-center justify-center max-w-[49.11111068725586px] overflow-clip relative shrink-0 w-[12.844px]">
-                      <div className="content-stretch flex flex-col h-[12.835px] items-center justify-center overflow-clip pr-[0.009px] relative shrink-0 w-[12.844px]">
-                        <div className="opacity-[var(--opacity\/100,1)] overflow-clip relative shrink-0 size-[12.835px]">
-                          <div className="absolute contents inset-0">
-                            <div className="absolute inset-[4.16%_4.17%_4.17%_4.17%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.535px_-0.534px] mask-size-[12.835px_12.835px] opacity-[var(--opacity\/100,1)]" style={{ maskImage: `url('${imgGroup1}')` }}>
-                              <img alt="" className="block max-w-none size-full" src={imgGroup2} />
-                            </div>
-                          </div>
-                        </div>
+            <div className="flex flex-col md:flex-row flex-wrap items-stretch justify-center w-full">
+              {[
+                { num: "01", label: "20+ Brands", icon: imgGroup2 },
+                { num: "02", label: "10+ Years", icon: imgGroup3 },
+                { num: "03", label: "100+ Projects", icon: imgGroup4 },
+              ].map((item, index) => (
+                <div key={index} className="bg-white border-[#e8e7e7] border-r md:border-r-[0.944px] border-b md:border-b-0 flex flex-col justify-between gap-[80px] md:gap-[150px] p-[30px] w-full md:w-[321px]">
+                  <div className="flex items-center justify-between">
+                    <span className="font-['Inter',sans-serif] font-bold text-[21px] text-[#b9b9b9] tracking-[1px]">{item.num}</span>
+                    <div className="bg-[#3f2fee] rounded-full size-[49px] flex items-center justify-center">
+                      <div className="size-[13px] relative" style={{ maskImage: `url('${imgGroup1}')`, maskSize: 'contain', maskRepeat: 'no-repeat', WebkitMaskImage: `url('${imgGroup1}')`, WebkitMaskSize: 'contain', WebkitMaskRepeat: 'no-repeat' }}>
+                        <img alt="" className="w-full h-full" src={item.icon} />
                       </div>
                     </div>
                   </div>
-                  <div className="-translate-y-1/2 absolute content-stretch flex flex-col items-start left-0 top-[calc(50%-0.01px)]">
-                    <div className="flex flex-col font-['Inter',sans-serif] font-bold justify-center leading-[0] max-h-[29.296667098999023px] not-italic overflow-hidden relative shrink-0 text-[20.778px] text-[color:var(--color\/grey\/73,#b9b9b9)] text-ellipsis tracking-[0.9444px] whitespace-nowrap">
-                      <p className="leading-[29.278px]">01</p>
-                    </div>
-                  </div>
+                  <span className="font-['Inter',sans-serif] font-semibold text-[24px] md:text-[29px] text-[#1b1b1b]">{item.label}</span>
                 </div>
-                <div className="content-stretch flex flex-col items-start relative shrink-0">
-                  <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[29.278px] text-[color:var(--color\/grey\/11,#1b1b1b)] whitespace-nowrap">
-                    <p className="leading-[38.354px]">20+ Brands</p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-[var(--color\/white\/solid,white)] border-[var(--color\/grey\/91,#e8e7e7)] border-r-[0.944px] border-solid content-stretch flex flex-col gap-[149.982px] items-start overflow-clip pl-[30.222px] pr-[31.167px] py-[30.222px] relative self-stretch shrink-0 w-full md:w-[321.111px]">
-                <div className="h-[49.111px] relative shrink-0 w-full">
-                  <div className="-translate-y-1/2 absolute bg-[var(--color\/blue\/56,#3f2fee)] content-stretch flex items-center justify-center left-[210.61px] rounded-[49.111px] size-[49.111px] top-[calc(50%-113.33px)]">
-                    <div className="content-stretch flex h-[12.835px] items-center justify-center max-w-[49.11111068725586px] overflow-clip relative shrink-0 w-[12.844px]">
-                      <div className="content-stretch flex flex-col h-[12.835px] items-center justify-center overflow-clip pr-[0.009px] relative shrink-0 w-[12.844px]">
-                        <div className="opacity-[var(--opacity\/100,1)] overflow-clip relative shrink-0 size-[12.835px]">
-                          <div className="absolute contents inset-0">
-                            <div className="absolute inset-[4.16%_4.17%_4.17%_4.17%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.535px_-0.534px] mask-size-[12.835px_12.835px] opacity-[var(--opacity\/100,1)]" style={{ maskImage: `url('${imgGroup1}')` }}>
-                              <img alt="" className="block max-w-none size-full" src={imgGroup3} />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="-translate-y-1/2 absolute content-stretch flex flex-col items-start left-0 top-[calc(50%-0.01px)]">
-                    <div className="flex flex-col font-['Inter',sans-serif] font-bold justify-center leading-[0] max-h-[29.296667098999023px] not-italic overflow-hidden relative shrink-0 text-[20.778px] text-[color:var(--color\/grey\/73,#b9b9b9)] text-ellipsis tracking-[0.9444px] whitespace-nowrap">
-                      <p className="leading-[29.278px]">02</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="content-stretch flex flex-col items-start min-w-[259.72222900390625px] pr-[59.972px] relative shrink-0">
-                  <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[29.278px] text-[color:var(--color\/grey\/11,#1b1b1b)] whitespace-nowrap">
-                    <p className="leading-[38.354px]">10+ Years</p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-[var(--color\/white\/solid,white)] border-[var(--color\/grey\/91,#e8e7e7)] border-r-[0.944px] border-solid content-stretch flex flex-col gap-[149.982px] items-start overflow-clip pl-[30.222px] pr-[31.167px] py-[30.222px] relative self-stretch shrink-0 w-full md:w-[321.111px]">
-                <div className="h-[49.111px] relative shrink-0 w-full">
-                  <div className="-translate-y-1/2 absolute bg-[var(--color\/blue\/56,#3f2fee)] content-stretch flex items-center justify-center left-[210.61px] rounded-[49.111px] size-[49.111px] top-[calc(50%-113.33px)]">
-                    <div className="content-stretch flex h-[12.835px] items-center justify-center max-w-[49.11111068725586px] overflow-clip relative shrink-0 w-[12.844px]">
-                      <div className="content-stretch flex flex-col h-[12.835px] items-center justify-center overflow-clip pr-[0.009px] relative shrink-0 w-[12.844px]">
-                        <div className="opacity-[var(--opacity\/100,1)] overflow-clip relative shrink-0 size-[12.835px]">
-                          <div className="absolute contents inset-0">
-                            <div className="absolute inset-[4.16%_4.17%_4.17%_4.16%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.535px_-0.534px] mask-size-[12.835px_12.835px] opacity-[var(--opacity\/100,1)]" style={{ maskImage: `url('${imgGroup1}')` }}>
-                              <img alt="" className="block max-w-none size-full" src={imgGroup4} />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="-translate-y-1/2 absolute content-stretch flex flex-col items-start left-0 top-[calc(50%-0.01px)]">
-                    <div className="flex flex-col font-['Inter',sans-serif] font-bold justify-center leading-[0] max-h-[29.296667098999023px] not-italic overflow-hidden relative shrink-0 text-[20.778px] text-[color:var(--color\/grey\/73,#b9b9b9)] text-ellipsis tracking-[0.9444px] whitespace-nowrap">
-                      <p className="leading-[29.278px]">03</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="content-stretch flex flex-col items-start relative shrink-0">
-                  <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[29.278px] text-[color:var(--color\/grey\/11,#1b1b1b)] whitespace-nowrap">
-                    <p className="leading-[38.354px]">100+ Projects</p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
-        <div className="bg-[#f0f0f0] content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col gap-[60.454px] items-start max-w-[1360px] mx-auto py-[143.556px] px-4 md:px-[37.778px] relative shrink-0 w-full">
-            <div className="content-stretch flex h-[137.502px] items-end relative shrink-0 w-full">
-              <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0">
-                <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
-                  <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[28px] md:text-[40px] lg:text-[51.856px] text-[#1b1b1b] lg:whitespace-nowrap">
-                      <p className="leading-[68.756px]">What Our Clients Say</p>
-                    </div>
-                  </div>
+        {/* What Our Clients Say section */}
+        <div className="bg-[#f0f0f0] content-stretch flex flex-col items-center relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-[30px] md:gap-[60.454px] items-start max-w-[1360px] mx-auto py-[60px] md:py-[100px] lg:py-[143.556px] px-4 md:px-[37.778px] relative shrink-0 w-full">
+            <div className="content-stretch flex items-end relative shrink-0 w-full">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
+                <div className="font-[family-name:var(--font-headings)] font-bold leading-[1.3] text-[#1b1b1b] text-[28px] md:text-[40px] lg:text-[51.856px]">
+                  <p>What Our Clients Say</p>
                 </div>
-                <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
-                  <div className="content-stretch flex flex-col items-start pb-[0.756px] relative shrink-0 w-full">
-                    <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[24px] md:text-[36px] lg:text-[51.546px] text-[rgba(41,36,36,0.41)] lg:whitespace-nowrap">
-                      <p className="leading-[68.756px]">We guarantee next success is yours!</p>
-                    </div>
-                  </div>
+                <div className="font-[family-name:var(--font-headings)] font-bold leading-[1.3] text-[24px] md:text-[36px] lg:text-[51.546px] text-[rgba(41,36,36,0.41)]">
+                  <p>We guarantee next success is yours!</p>
                 </div>
               </div>
             </div>
             <div className="bg-white w-full pb-12">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-x divide-[#f0f0f0]">
-                    <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
-                      <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
-                        <p className="leading-[30.222px]">Digil</p>
-                      </div>
-                      <div className="content-stretch flex flex-col items-start pb-[0.331px] pr-[26.265px] pt-[70.012px] relative shrink-0">
-                        <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[22px] w-[348.5px]">
-                          <p className="leading-[37.683px] whitespace-pre-wrap">{`''Working with Sivarsa completely changed how we approach hiring. They helped us bring in the right talent quickly, which was exactly what we needed during a crucial phase''`}</p>
-                        </div>
-                      </div>
-                      <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-end min-h-[62.17277908325195px] min-w-px pt-[94.149px] relative">
-                        <div className="content-stretch flex items-center relative shrink-0">
-                          <div className="content-stretch flex flex-col items-start justify-center relative shrink-0">
-                            <div className="content-stretch flex flex-col items-start relative shrink-0">
-                              <div className="flex flex-col font-['Inter:Black',sans-serif] font-black justify-center leading-[0] not-italic relative shrink-0 text-[22.667px] text-[color:var(--color\/grey\/11,#1b1b1b)] tracking-[0.9444px] whitespace-nowrap">
-                                <p className="leading-[31.96px]">Saksham Gupta</p>
-                              </div>
-                            </div>
-                            <div className="content-stretch flex flex-col items-start relative shrink-0">
-                              <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
-                                <p className="leading-[30.222px]">{`CEO & Founder`}</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
-                      <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
-                        <p className="leading-[30.222px]">Santosh</p>
-                      </div>
-                      <div className="content-stretch flex flex-col items-start pb-[0.331px] pr-[15.933px] pt-[70.012px] relative shrink-0">
-                        <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[22px] w-[312.611px]">
-                          <p className="leading-[37.683px] whitespace-pre-wrap">{`'Sivarsa's SEO gave us a real boost when we needed it.`}</p>
-                        </div>
-                      </div>
-                      <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-end min-h-[62.17277908325195px] min-w-px pt-[94.149px] relative">
-                        <div className="content-stretch flex items-center relative shrink-0">
-                          <div className="content-stretch flex flex-col items-start justify-center relative shrink-0">
-                            <div className="content-stretch flex flex-col items-start relative shrink-0">
-                              <div className="flex flex-col font-['Inter:Black',sans-serif] font-black justify-center leading-[0] not-italic relative shrink-0 text-[22.006px] text-[color:var(--color\/grey\/11,#1b1b1b)] tracking-[0.9444px] whitespace-nowrap">
-                                <p className="leading-[31.96px]">Suresh</p>
-                              </div>
-                            </div>
-                            <div className="content-stretch flex flex-col items-start relative shrink-0">
-                              <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
-                                <p className="leading-[30.222px]">{`CEO & Founder`}</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px]">
-                      <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
-                        <p className="leading-[30.222px]">GNT</p>
-                      </div>
-                      <div className="content-stretch flex flex-col items-start pb-[0.331px] pr-[14.733px] pt-[70.012px] relative shrink-0">
-                        <div className="flex flex-col font-['Segoe_UI:Black',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[0px] w-[318.278px]">
-                          <p className="font-['Inter',sans-serif] font-semibold text-[22px] whitespace-pre-wrap">
-                            <span className="leading-[37.683px] text-[#7e7e81]">{`''`}</span>
-                            <span className="leading-[37.683px]">
-                              {`With Sivarsa, Our campaigns gained momentum. `}
-                              <br aria-hidden="true" />
-                              {` Real, measurable momentum.`}
-                            </span>
-                            <span className="leading-[37.683px] text-[#7e7e81]">{`''`}</span>
-                          </p>
-                        </div>
-                      </div>
-                      <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-end min-h-[62.17277908325195px] min-w-px pt-[94.149px] relative">
-                        <div className="content-stretch flex items-center relative shrink-0">
-                          <div className="content-stretch flex flex-col items-start justify-center relative shrink-0">
-                            <div className="content-stretch flex flex-col items-start relative shrink-0">
-                              <div className="flex flex-col font-['Inter:Black',sans-serif] font-black justify-center leading-[0] not-italic relative shrink-0 text-[22.006px] text-[color:var(--color\/grey\/11,#1b1b1b)] tracking-[0.9444px] whitespace-nowrap">
-                                <p className="leading-[31.96px]">Ritika</p>
-                              </div>
-                            </div>
-                            <div className="content-stretch flex flex-col items-start relative shrink-0">
-                              <div className="flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#7e7e81] text-[18.889px] whitespace-nowrap">
-                                <p className="leading-[30.222px]">CEO</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="bg-white w-full flex justify-center py-[60px] md:py-[80px] px-4 md:px-[40px]">
-        <div className="h-[591.18px] relative rounded-[32px] shrink-0 w-full max-w-[1345px]">
-          <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[32px]">
-            <div className="absolute bg-[#101010] inset-0 rounded-[32px]" />
-            <img alt="" className="absolute max-w-none object-cover rounded-[32px] size-full" src={imgDivLocaCtaContent} />
-          </div>
-          <div className="absolute bg-[#ebfe5b] h-[52px] left-[72px] overflow-clip rounded-[100px] top-[467.17px] w-[218.08px]">
-            <div className="absolute bg-white h-[116px] left-[-32px] rounded-[282.078px] top-[78px] w-[282.08px]" />
-            <div className="absolute left-[178.08px] overflow-clip size-[12px] top-[20px]">
-              <div className="absolute content-stretch flex h-[12px] items-start left-0 pr-[278.078px] top-0 w-[24px]">
-                <div className="relative shrink-0 size-[12px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageLbFaqIcon} />
+              <div className="flex md:grid md:grid-cols-2 lg:grid-cols-3 md:divide-x md:divide-[#f0f0f0] overflow-x-auto snap-x snap-mandatory scrollbar-thin gap-0">
+                <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px] min-w-[85vw] md:min-w-0 snap-start">
+                  <p className="font-['Inter',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[18px]">Digil</p>
+                  <div className="flex-1 py-8">
+                    <p className="font-['Inter',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;Working with Sivarsa completely changed how we approach hiring. They helped us bring in the right talent quickly, which was exactly what we needed during a crucial phase.&rdquo;</p>
+                  </div>
+                  <div className="mt-auto">
+                    <p className="font-['Inter:Black',sans-serif] font-black text-[18px] md:text-[22px] text-[#1b1b1b]">Saksham Gupta</p>
+                    <p className="font-['Inter',sans-serif] font-semibold text-[#7e7e81] text-[14px] md:text-[18px]">{`CEO & Founder`}</p>
+                  </div>
                 </div>
-                <div className="relative shrink-0 size-[12px]">
-                  <img alt="" className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageLbFaqIcon} />
+                <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px] min-w-[85vw] md:min-w-0 snap-start">
+                  <p className="font-['Inter',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[18px]">Santosh</p>
+                  <div className="flex-1 py-8">
+                    <p className="font-['Inter',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;Sivarsa&apos;s SEO gave us a real boost when we needed it.&rdquo;</p>
+                  </div>
+                  <div className="mt-auto">
+                    <p className="font-['Inter:Black',sans-serif] font-black text-[18px] md:text-[22px] text-[#1b1b1b]">Suresh</p>
+                    <p className="font-['Inter',sans-serif] font-semibold text-[#7e7e81] text-[14px] md:text-[18px]">{`CEO & Founder`}</p>
+                  </div>
+                </div>
+                <div className="p-6 md:p-8 flex flex-col min-h-[300px] md:min-h-[350px] min-w-[85vw] md:min-w-0 snap-start">
+                  <p className="font-['Inter',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[18px]">GNT</p>
+                  <div className="flex-1 py-8">
+                    <p className="font-['Inter',sans-serif] font-semibold text-[#7e7e81] text-[16px] md:text-[20px] lg:text-[22px] leading-[1.6]">&ldquo;With Sivarsa, Our campaigns gained momentum. Real, measurable momentum.&rdquo;</p>
+                  </div>
+                  <div className="mt-auto">
+                    <p className="font-['Inter:Black',sans-serif] font-black text-[18px] md:text-[22px] text-[#1b1b1b]">Ritika</p>
+                    <p className="font-['Inter',sans-serif] font-semibold text-[#7e7e81] text-[14px] md:text-[18px]">CEO</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="absolute h-[20px] left-[28px] top-[16px] w-[142.08px]">
-              <div className="-translate-y-1/2 absolute flex flex-col font-['Inter',sans-serif] font-semibold justify-center leading-[0] left-0 not-italic text-[#1b1b1b] text-[15.6px] top-[9.5px] whitespace-nowrap">
-                <p className="leading-[20px]">Get Started</p>
+          </div>
+        </div>
+        {/* CTA section */}
+        <div className="bg-white w-full flex justify-center py-[40px] md:py-[60px] lg:py-[80px] px-4 md:px-[40px]">
+          <div className="relative rounded-[20px] md:rounded-[32px] shrink-0 w-full max-w-[1345px] overflow-hidden">
+            <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
+              <div className="absolute bg-[#101010] inset-0" />
+              <img alt="" className="absolute max-w-none object-cover size-full" src={imgDivLocaCtaContent} />
+            </div>
+            <div className="relative flex flex-col gap-6 md:gap-8 p-6 md:p-12 lg:p-[72px]">
+              <div className="flex items-center gap-2 border border-[rgba(255,255,255,0.15)] rounded-[100px] px-4 py-1.5 w-fit">
+                <img alt="" className="size-[16px] object-contain" src={imgImageCtaSeatImg} />
+                <span className="font-['Inter',sans-serif] font-medium text-[12px] md:text-[12.3px] text-white whitespace-nowrap">Only 4 seats per month</span>
               </div>
-            </div>
-          </div>
-          <div className="absolute font-['Inter',sans-serif] font-semibold left-[72px] not-italic text-[28px] md:text-[35px] text-white top-[122.08px] tracking-[0.4px] w-[700px] leading-[1.35]">
-            <p>Try Our Growth Marketing Audit — Only 2 Weeks to get started. Get a data-driven marketing strategy and channel roadmap for your business.</p>
-          </div>
-          <div className="absolute border border-[rgba(255,255,255,0.15)] border-solid h-[30.08px] left-[72px] rounded-[100px] top-[72px] w-[191.83px]">
-            <div className="-translate-y-1/2 absolute flex flex-col font-['Inter',sans-serif] font-medium justify-center leading-[0] left-[36px] not-italic text-[12.3px] text-white top-[13.64px] whitespace-nowrap">
-              <p className="leading-[16.9px]">Only 4 seats per month</p>
-            </div>
-            <div className="absolute left-[12px] size-[16px] top-[6.03px]">
-              <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageCtaSeatImg} />
+              <p className="font-['Inter',sans-serif] font-semibold text-[22px] md:text-[28px] lg:text-[35px] text-white tracking-[0.4px] max-w-[700px] leading-[1.35]">
+                Try Our Growth Marketing Audit — Only 2 Weeks to get started. Get a data-driven marketing strategy and channel roadmap for your business.
+              </p>
+              <Link href="/contact" className="bg-[#ebfe5b] rounded-[100px] px-6 py-3 md:py-3.5 w-fit flex items-center gap-2 hover:opacity-90 transition-opacity">
+                <span className="font-['Inter',sans-serif] font-semibold text-[14px] md:text-[15.6px] text-[#1b1b1b]">Get Started</span>
+                <img alt="" className="size-[12px] object-contain" src={imgImageLbFaqIcon} />
+              </Link>
             </div>
           </div>
         </div>
-        </div>
+        {/* FAQ section */}
         <div className="bg-white content-stretch flex flex-col items-center pb-[60px] md:pb-[100px] lg:pb-[162.444px] pt-[60px] md:pt-[90.667px] relative shrink-0 w-full">
           <div className="content-stretch flex flex-col gap-[40px] md:gap-[68px] items-start max-w-[1360px] mx-auto px-4 md:px-[37.778px] relative shrink-0 w-full">
             <div className="content-stretch flex items-end relative shrink-0 w-full">

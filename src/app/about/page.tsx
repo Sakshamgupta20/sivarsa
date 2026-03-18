@@ -76,9 +76,9 @@ export default function AboutPage() {
             </div>
 
             {/* Content wrapper constrained to max-width */}
-            <div className="relative w-full max-w-[1440px] mx-auto min-h-[500px] lg:min-h-[750px]">
+            <div className="relative w-full max-w-[1360px] mx-auto min-h-[500px] lg:min-h-[750px]">
               {/* Ellipse decoration (purple patch) */}
-              <div className="hidden md:block absolute left-[40%] lg:left-[568.31px] size-[850px] top-[200px] pointer-events-none">
+              <div className="absolute left-[40%] lg:left-[568.31px] size-[500px] md:size-[850px] top-[200px] opacity-50 md:opacity-100 pointer-events-none">
                 <div className="absolute inset-[-37.62%]">
                   <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
                 </div>

@@ -10,6 +10,7 @@ import { BASE_PATH, contactInfo } from "@/lib/constants";
 
 // Images
 const imgHero = `${BASE_PATH}/assets/cdecb895a2e1e301e31eadfffa170feab26b3bf1.png`;
+const imgPattern2 = `${BASE_PATH}/assets/e943fd303c0291fd9475f87f73eb8662aae4ab65.png`;
 const imgStars1 = `${BASE_PATH}/assets/96e45ae1ba60f13f2644063a88546318f60a3bfb.png`;
 const imgContactTick = `${BASE_PATH}/assets/contact-tick.png`;
 const imgTeamImage = `${BASE_PATH}/assets/4726923c2eb3bd4fff6bae2d50976175dd47b09d.png`;
@@ -17,6 +18,7 @@ const imgEmailIcon = `${BASE_PATH}/assets/email-icon.png`;
 const imgWhatsappIcon = `${BASE_PATH}/assets/whatsapp-icon.png`;
 const imgBtnArrowIcon = `${BASE_PATH}/assets/0b857160e5018cd27df9fbbc68815715d0510936.png`;
 const imgBtnArrowIconWhite = `${BASE_PATH}/assets/cc33d9c88b41312dae650fea64034944767af781.png`;
+const imgEllipse1 = `${BASE_PATH}/assets/ellipse-decoration.svg`;
 const imgCalendar = `${BASE_PATH}/assets/faq-icon.png`;
 
 export default function ContactPage() {
@@ -42,22 +44,36 @@ export default function ContactPage() {
       <div className="w-full flex flex-col items-center">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
           {/* Hero Section with Form */}
-          <div className="min-h-[900px] overflow-clip relative shrink-0 w-full">
+          <div className="min-h-[600px] lg:min-h-[841px] overflow-hidden relative shrink-0 w-full">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgHero} />
+              <img alt="" className="absolute h-full left-[-5.86%] max-w-none top-0 w-[111.73%]" src={imgHero} />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/30" />
-            <div className="absolute inset-0 opacity-60">
+            <Header />
+            {/* Grid pattern overlay */}
+            <div className="absolute inset-0 opacity-35 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgPattern2} />
+            </div>
+            {/* Gradient overlay */}
+            <div className="absolute inset-0" style={{ backgroundImage: "linear-gradient(110.159deg, rgb(0, 0, 0) 21.698%, rgba(0, 0, 0, 0.26) 84.415%)" }} />
+            {/* Stars overlay */}
+            <div className="absolute inset-0 opacity-60 pointer-events-none">
               <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgStars1} />
             </div>
 
-            <Header />
+            {/* Content wrapper constrained to max-width */}
+            <div className="relative w-full max-w-[1360px] mx-auto min-h-[500px] lg:min-h-[750px]">
+              {/* Ellipse decoration (purple patch) */}
+              <div className="absolute left-[40%] lg:left-[568.31px] size-[500px] md:size-[850px] top-[200px] opacity-50 md:opacity-100 pointer-events-none">
+                <div className="absolute inset-[-37.62%]">
+                  <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
+                </div>
+              </div>
 
-            <div className="relative z-10 max-w-[1440px] mx-auto px-4 md:px-[40px] pt-[60px] pb-[72px]">
-              <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[80px] items-start justify-between">
+              <div className="relative z-10 px-4 lg:px-0 pt-[60px] md:pt-[80px] lg:pt-[100px] pb-[72px] md:pb-[100px]">
+              <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[80px] items-start justify-between">
                 {/* Left Content */}
                 <div className="flex flex-col items-start max-w-[434px]">
-                  <h1 className="font-[family-name:var(--font-headings)] font-bold text-[40px] md:text-[55px] leading-[1.3] tracking-[1px] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent animate-fade-in-up">
+                  <h1 className="font-[family-name:var(--font-headings)] font-bold text-[32px] md:text-[40px] lg:text-[55px] leading-[1.3] tracking-[1px] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent animate-fade-in-up">
                     Have a Project?<br />Let&apos;s talk!
                   </h1>
 
@@ -80,6 +96,7 @@ export default function ContactPage() {
                 <ContactForm className="w-full lg:max-w-[672px] animate-fade-in-up" style={{ animationDelay: '200ms' }} />
               </div>
             </div>
+            </div>
           </div>
 
           {/* Trusted By Marquee */}
@@ -87,7 +104,7 @@ export default function ContactPage() {
 
           {/* 4 Simple Steps Section */}
           <div className="bg-white content-stretch flex flex-col items-start py-[100px] md:py-[156px] relative shrink-0 w-full">
-            <div className="max-w-[1440px] mx-auto px-4 md:px-[40px] w-full">
+            <div className="max-w-[1360px] mx-auto px-4 lg:px-0 w-full">
               <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[144px] items-start justify-between">
                 {/* Left Heading */}
                 <div className="flex flex-col items-start max-w-[400px] scroll-reveal scroll-fade-up">
@@ -136,7 +153,7 @@ export default function ContactPage() {
 
           {/* We Deliver Section - Dark */}
           <div className="bg-[#1b1b1b] content-stretch flex flex-col items-center py-[80px] md:py-[120px] relative shrink-0 w-full">
-            <div className="max-w-[1440px] mx-auto px-4 md:px-[40px] w-full">
+            <div className="max-w-[1360px] mx-auto px-4 lg:px-0 w-full">
               <div className="flex flex-col gap-[64px]">
                 {/* Heading */}
                 <div className="flex flex-col items-start">
@@ -176,7 +193,7 @@ export default function ContactPage() {
 
           {/* Headquarters Section */}
           <div className="bg-white content-stretch flex flex-col items-start py-[100px] md:py-[156px] relative shrink-0 w-full">
-            <div className="max-w-[1440px] mx-auto px-4 md:px-[40px] w-full">
+            <div className="max-w-[1360px] mx-auto px-4 lg:px-0 w-full">
               <div className="flex flex-col gap-[64px]">
                 {/* Heading */}
                 <div className="flex flex-col items-start">
@@ -196,7 +213,7 @@ export default function ContactPage() {
 
           {/* Got a Project CTA Section */}
           <div className="bg-white content-stretch flex flex-col items-start pb-[100px] md:pb-[156px] relative shrink-0 w-full">
-            <div className="max-w-[1440px] mx-auto px-4 md:px-[40px] w-full">
+            <div className="max-w-[1360px] mx-auto px-4 lg:px-0 w-full">
               <div className="flex flex-col gap-[142px]">
                 {/* Top Row - Heading and CTA */}
                 <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-[40px]">
