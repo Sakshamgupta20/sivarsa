@@ -118,12 +118,12 @@ export default function Landing() {
                   <img alt="Hero illustration" className="absolute h-full left-0 max-w-none top-0 w-[109.35%]" src={imgPurpleComposition21} />
                 </div>
               </div>
-              <div className="absolute right-[-150px] md:right-auto md:left-[40%] lg:left-[calc(50%+200px)] size-[400px] md:size-[850px] bottom-[-100px] md:bottom-auto md:top-[428.84px] opacity-40 md:opacity-100">
+              <div className="absolute left-[20%] lg:left-[calc(50%-50px)] size-[700px] md:size-[1200px] top-[200px] md:top-[380px] opacity-40 md:opacity-70 pointer-events-none">
                 <div className="absolute inset-[-37.62%]">
                   <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
                 </div>
               </div>
-              <div className="relative content-stretch flex flex-col gap-[40px] lg:gap-[80px] items-start max-w-[1360px] mx-auto px-4 lg:px-0 pt-[40px] lg:pt-[129px] w-full">
+              <div className="relative content-stretch flex flex-col gap-[40px] lg:gap-[80px] items-start max-w-[1360px] mx-auto px-4 md:px-8 lg:px-0 pt-[40px] lg:pt-[129px] w-full">
                 <div className="content-stretch flex flex-col gap-[20px] md:gap-[37px] items-start relative shrink-0 w-full lg:w-[762px] hero-content">
                   <p className="bg-clip-text font-bold leading-[1.1] not-italic relative shrink-0 text-[36px] md:text-[56px] lg:text-[82px] uppercase w-full lg:w-[786.107px] animate-fade-in-up" style={{ fontFamily: "var(--font-headings)", backgroundImage: "linear-gradient(-38.5682deg, rgb(255, 255, 255) 62.646%, rgb(0, 0, 0) 108.48%)", WebkitTextFillColor: "transparent" }}>
                     Your Growth Partner From Idea to Impact
