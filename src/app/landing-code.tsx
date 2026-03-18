@@ -94,7 +94,7 @@ export default function Landing() {
   }, []);
 
   return (
-    <div className="bg-black relative size-full">
+    <div className="bg-black relative w-full">
       <div className="w-full flex flex-col items-center">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
           <div className="relative shrink-0 w-full overflow-hidden">
@@ -120,7 +120,7 @@ export default function Landing() {
                   <img alt="Hero illustration" className="absolute h-full left-0 max-w-none top-0 w-[109.35%]" src={imgPurpleComposition21} />
                 </div>
               </div>
-              <div className="absolute left-[568.31px] size-[850px] top-[428.84px]">
+              <div className="hidden md:block absolute left-[40%] lg:left-[568.31px] size-[850px] top-[428.84px]">
                 <div className="absolute inset-[-37.62%]">
                   <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
                 </div>
@@ -216,7 +216,7 @@ export default function Landing() {
         </div>
         </div>
         <div className="bg-black content-stretch flex flex-col items-center overflow-clip pb-[60px] md:pb-[132px] pt-[60px] md:pt-[101px] relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col gap-[40px] md:gap-[66px] items-start max-w-[1360px] px-4 md:px-[37.778px] relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-[40px] md:gap-[66px] items-start max-w-[1360px] mx-auto px-4 md:px-[37.778px] relative shrink-0 w-full">
             <div className="content-stretch flex items-end relative shrink-0 w-full scroll-reveal scroll-fade-up">
               <div className="content-stretch flex flex-col items-start pb-[0.954px] relative shrink-0 w-full">
                 <div className="content-stretch flex flex-col items-start mb-[-0.954px] relative shrink-0 w-full">
@@ -303,7 +303,7 @@ export default function Landing() {
           </div>
         </div>
         <div className="bg-white content-stretch flex flex-col items-center overflow-clip py-[60px] md:py-[100px] lg:py-[147.333px] relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col gap-[40px] md:gap-[75.565px] items-start max-w-[1360px] px-4 md:px-[37.778px] relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-[40px] md:gap-[75.565px] items-start max-w-[1360px] mx-auto px-4 md:px-[37.778px] relative shrink-0 w-full">
             <div className="content-stretch flex flex-col md:flex-row md:h-[137.502px] items-start md:items-end justify-between gap-6 relative shrink-0 w-full">
               <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0">
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
@@ -395,7 +395,7 @@ export default function Landing() {
           </div>
         </div>
         <div className="bg-[#090909] content-stretch flex flex-col items-center py-[60px] md:py-[100px] lg:py-[143.556px] relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col gap-[30px] md:gap-[52.889px] items-start max-w-[1360px] px-4 md:px-[37.778px] relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-[30px] md:gap-[52.889px] items-start max-w-[1360px] mx-auto px-4 md:px-[37.778px] relative shrink-0 w-full">
             <div className="w-full">
               <h2 className="font-[family-name:var(--font-headings)] font-bold leading-[1.3] text-[26px] md:text-[38px] lg:text-[52px] text-white">
                 We deliver on time, in days and weeks
@@ -422,7 +422,7 @@ export default function Landing() {
           </div>
         </div>
         <div id="services" className="bg-[#090909] flex flex-col items-center relative w-full scroll-mt-20">
-          <div className="flex flex-col items-start max-w-[1360px] pb-[30px] md:pb-[52.889px] px-4 md:px-[37.778px] relative w-full">
+          <div className="flex flex-col items-start max-w-[1360px] mx-auto pb-[30px] md:pb-[52.889px] px-4 md:px-[37.778px] relative w-full">
             <div className="flex items-end relative w-full">
               <div className="flex flex-col items-start pb-[0.944px] relative w-full">
                 <div className="flex flex-col items-start mb-[-0.944px] relative w-full">
@@ -444,7 +444,7 @@ export default function Landing() {
           </div>
           <div className="bg-[#090909] flex flex-col items-center relative w-full">
               <div className="bg-[#3f2fee] flex flex-col items-center sticky top-0 z-10 w-full">
-                <div className="min-h-[350px] md:min-h-[400px] lg:h-[438.222px] max-w-[1360px] relative shrink-0 w-full px-4 md:px-8 lg:px-0">
+                <div className="min-h-[350px] md:min-h-[400px] lg:h-[438.222px] max-w-[1360px] mx-auto relative shrink-0 w-full px-4 md:px-8 lg:px-0">
                   <div className="relative md:absolute content-stretch flex flex-col gap-[20px] md:gap-[30.779px] items-start md:left-[52.89px] top-0 md:top-[51.94px] py-6 md:py-0 animate-fade-in-up">
                     <div className="flex flex-col font-['Inter',sans-serif] font-extrabold justify-center leading-[1.2] not-italic relative shrink-0 text-[28px] md:text-[36px] lg:text-[45px] text-white">
                       <p>Software Development</p>
@@ -500,7 +500,7 @@ export default function Landing() {
                 </div>
               </div>
               <div className="bg-white flex flex-col items-center sticky top-[60px] z-20 w-full">
-                <div className="min-h-[350px] md:min-h-[400px] lg:h-[438.222px] max-w-[1360px] relative shrink-0 w-full px-4 md:px-8 lg:px-0">
+                <div className="min-h-[350px] md:min-h-[400px] lg:h-[438.222px] max-w-[1360px] mx-auto relative shrink-0 w-full px-4 md:px-8 lg:px-0">
                   <div className="relative md:absolute content-stretch flex flex-col gap-[20px] md:gap-[30.779px] items-start md:left-[52.89px] top-0 md:top-[51.94px] py-6 md:py-0 animate-fade-in-up">
                     <div className="flex flex-col font-['Inter',sans-serif] font-extrabold justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[36px] lg:text-[45px]">
                       <p>{`Staffing Solutions`}</p>
@@ -555,7 +555,7 @@ export default function Landing() {
                 </div>
               </div>
               <div className="bg-[#ffd500] flex flex-col items-center sticky top-[120px] z-30 w-full">
-                <div className="min-h-[350px] md:min-h-[400px] lg:h-[438.222px] max-w-[1360px] relative shrink-0 w-full px-4 md:px-8 lg:px-0">
+                <div className="min-h-[350px] md:min-h-[400px] lg:h-[438.222px] max-w-[1360px] mx-auto relative shrink-0 w-full px-4 md:px-8 lg:px-0">
                   <div className="relative md:absolute content-stretch flex flex-col gap-[20px] md:gap-[30.779px] items-start md:left-[52.89px] top-0 md:top-[51.94px] py-6 md:py-0 animate-fade-in-up">
                     <div className="flex flex-col font-['Inter',sans-serif] font-extrabold justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[36px] lg:text-[45px]">
                       <p>Growth Marketing</p>
@@ -713,7 +713,7 @@ export default function Landing() {
           </div>
         </div>
         <div className="bg-[#f0f0f0] content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col gap-[40px] md:gap-[60.454px] items-start max-w-[1360px] py-[60px] md:py-[100px] lg:py-[143.556px] px-4 md:px-[37.778px] relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-[40px] md:gap-[60.454px] items-start max-w-[1360px] mx-auto py-[60px] md:py-[100px] lg:py-[143.556px] px-4 md:px-[37.778px] relative shrink-0 w-full">
             <div className="content-stretch flex items-end relative shrink-0 w-full">
               <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0 w-full">
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0 w-full">
@@ -772,7 +772,7 @@ export default function Landing() {
           </div>
         </div>
         <div className="bg-white content-stretch flex flex-col items-center pb-[60px] md:pb-[100px] lg:pb-[162.444px] pt-[60px] md:pt-[90.667px] relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col gap-[40px] md:gap-[68px] items-start max-w-[1360px] px-4 md:px-[37.778px] relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-[40px] md:gap-[68px] items-start max-w-[1360px] mx-auto px-4 md:px-[37.778px] relative shrink-0 w-full">
             <div className="content-stretch flex items-end relative shrink-0 w-full">
               <div className="content-stretch flex flex-col items-start pb-[0.652px] relative shrink-0 w-full">
                 <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[32px] md:text-[42px] lg:text-[51.339px]">

@@ -38,8 +38,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const relatedArticles = getRelatedArticles(slug, 3);
 
   return (
-    <div className="bg-white relative size-full">
-      <div className="-translate-x-1/2 absolute content-stretch flex flex-col items-start left-1/2 top-0 w-full">
+    <div className="bg-white relative w-full">
+      <div className="content-stretch flex flex-col items-start w-full">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
           {/* Hero Section with Dark Background */}
           <div className="w-full relative overflow-hidden">

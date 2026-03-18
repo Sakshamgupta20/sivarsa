@@ -55,14 +55,15 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <div className="bg-black relative size-full">
+    <div className="bg-black relative w-full">
       <div className="w-full flex flex-col items-center">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
           {/* Hero Section */}
-          <div className="min-h-[600px] lg:h-[841px] overflow-clip relative shrink-0 w-full">
+          <div className="min-h-[600px] lg:h-[841px] overflow-hidden relative shrink-0 w-full">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgHero} />
+              <img alt="" className="absolute h-full left-[-5.86%] max-w-none top-0 w-[111.73%]" src={imgHero} />
             </div>
+            <Header />
             {/* Grid pattern overlay */}
             <div className="absolute inset-0 opacity-35 overflow-hidden pointer-events-none">
               <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgPattern2} />
@@ -73,25 +74,26 @@ export default function AboutPage() {
             <div className="absolute inset-0 opacity-60 pointer-events-none">
               <img alt="" className="absolute inset-0 max-w-none object-cover size-full" src={imgStars1} />
             </div>
-            {/* Ellipse decoration (purple patch) */}
-            <div className="absolute left-[568.31px] size-[850px] top-[428.84px] pointer-events-none">
-              <div className="absolute inset-[-37.62%]">
-                <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
+
+            {/* Content wrapper constrained to max-width */}
+            <div className="relative w-full max-w-[1440px] mx-auto min-h-[500px] lg:min-h-[750px]">
+              {/* Ellipse decoration (purple patch) */}
+              <div className="hidden md:block absolute left-[40%] lg:left-[568.31px] size-[850px] top-[200px] pointer-events-none">
+                <div className="absolute inset-[-37.62%]">
+                  <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
+                </div>
               </div>
-            </div>
 
-            {/* Header */}
-            <Header />
-
-            {/* Hero Content */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="content-stretch flex flex-col gap-[37px] items-center justify-center text-center w-full max-w-[1060px] px-4">
-                <h1 className="font-[family-name:var(--font-headings)] font-bold text-[48px] md:text-[72px] lg:text-[82px] leading-[1.1] tracking-[-2px] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent animate-fade-in-up">
-                  Team behind future unicorns
-                </h1>
-                <p className="font-['Inter',sans-serif] font-medium text-[18px] md:text-[22px] lg:text-[25px] text-white/70 max-w-[600px] animate-fade-in-up delay-200">
-                  We&apos;re not just a Service agency. We&apos;re the product-thinking team behind 100M+ users, $10B+ funding, &amp; 250+ Hiring Stories.
-                </p>
+              {/* Hero Content */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="content-stretch flex flex-col gap-[37px] items-center justify-center text-center w-full max-w-[1060px] px-4">
+                  <h1 className="font-[family-name:var(--font-headings)] font-bold text-[48px] md:text-[72px] lg:text-[82px] leading-[1.1] tracking-[-2px] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent animate-fade-in-up">
+                    Team behind future unicorns
+                  </h1>
+                  <p className="font-['Inter',sans-serif] font-medium text-[18px] md:text-[22px] lg:text-[25px] text-white/70 max-w-[600px] animate-fade-in-up delay-200">
+                    We&apos;re not just a Service agency. We&apos;re the product-thinking team behind 100M+ users, $10B+ funding, &amp; 250+ Hiring Stories.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -236,7 +238,8 @@ export default function AboutPage() {
           </div>
 
           {/* Why Sivarsa Section */}
-          <div className="bg-white content-stretch flex flex-col-reverse lg:flex-row gap-[40px] lg:gap-[60px] items-start px-4 md:px-[40px] py-[60px] relative shrink-0 w-full">
+          <div className="bg-white relative shrink-0 w-full">
+            <div className="content-stretch flex flex-col-reverse lg:flex-row gap-[40px] lg:gap-[60px] items-start px-4 md:px-[40px] py-[60px] w-full max-w-[1440px] mx-auto">
             {/* Content */}
             <div className="flex flex-col items-start flex-1">
               <h3 className="font-[family-name:var(--font-headings)] font-bold text-[32px] md:text-[41px] leading-[1.4] text-[#1b1b1b]">
@@ -270,6 +273,7 @@ export default function AboutPage() {
             <div className="w-full lg:w-1/2 h-[400px] lg:h-[660px] overflow-clip rounded-[20px]">
               <img alt="Why Sivarsa" className="w-full h-full object-cover" src={imgAboutHeroImage} />
             </div>
+          </div>
           </div>
 
           {/* Services Section with Stacking Cards */}

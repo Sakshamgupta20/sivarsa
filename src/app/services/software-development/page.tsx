@@ -70,7 +70,7 @@ export default function SoftwareDevelopment() {
   }, []);
 
   return (
-    <div className="bg-black relative size-full">
+    <div className="bg-black relative w-full">
       <div className="w-full flex flex-col items-center">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
           <div className="min-h-[600px] lg:min-h-[841px] overflow-hidden relative w-full">
@@ -88,20 +88,18 @@ export default function SoftwareDevelopment() {
             <div className="absolute inset-0 opacity-60 pointer-events-none">
               <img alt="" className="absolute inset-0 max-w-none object-cover size-full" src={imgStars1} />
             </div>
-            {/* Ellipse decoration (purple patch) */}
-            <div className="absolute left-[568.31px] size-[850px] top-[428.84px] pointer-events-none">
-              <div className="absolute inset-[-37.62%]">
-                <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
-              </div>
-            </div>
-            <div className="absolute contents left-0 top-[98px]">
-              <div className="absolute contents left-0 top-[98px]">
-                <div className="absolute h-[400px] md:h-[600px] lg:h-[800.63px] right-0 lg:left-[752.39px] top-[98px] w-[300px] md:w-[450px] lg:w-[632.5px] hero-image animate-float hidden md:block">
-                  <img alt="Software Development Services" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageServicesHeroImg} />
+            {/* Content wrapper constrained to max-width */}
+            <div className="relative w-full max-w-[1440px] mx-auto min-h-[500px] lg:min-h-[750px]">
+              {/* Ellipse decoration (purple patch) */}
+              <div className="hidden md:block absolute left-[40%] lg:left-[568.31px] size-[850px] top-[428.84px] pointer-events-none">
+                <div className="absolute inset-[-37.62%]">
+                  <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
                 </div>
               </div>
-            </div>
-            <div className="relative lg:absolute content-stretch flex flex-col items-start px-4 md:px-8 lg:px-0 lg:left-[76px] pt-[40px] lg:pt-0 lg:top-[219px] w-full lg:w-[1060px] hero-content">
+              <div className="absolute h-[400px] md:h-[600px] lg:h-[800.63px] right-0 lg:left-[752.39px] top-[0px] md:top-[16px] w-[300px] md:w-[450px] lg:w-[632.5px] hero-image animate-float hidden md:block">
+                <img alt="Software Development Services" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImageServicesHeroImg} />
+              </div>
+              <div className="relative lg:absolute content-stretch flex flex-col items-start px-4 md:px-8 lg:px-0 lg:left-[76px] pt-[40px] lg:pt-0 lg:top-[129px] w-full lg:w-[1060px] hero-content">
               <div className="content-stretch flex flex-col gap-[20px] md:gap-[37px] items-start relative shrink-0 w-full lg:w-[626px]">
                 <div className="bg-clip-text font-[family-name:var(--font-headings)] font-black leading-[1.1] not-italic relative shrink-0 text-[48px] md:text-[68px] lg:text-[90px] tracking-[-2px] lg:tracking-[-4.1492px] animate-fade-in-up" style={{ backgroundImage: "linear-gradient(-38.5682deg, rgb(255, 255, 255) 62.646%, rgb(0, 0, 0) 108.48%)", WebkitTextFillColor: "transparent" }}>
                   <p className="mb-0">{`SOFTWARE `}</p>
@@ -130,10 +128,12 @@ export default function SoftwareDevelopment() {
                 </div>
               </div>
             </div>
+            </div>
           </div>
         </div>
         <TrustedByMarquee />
-        <div id="services" className="bg-white flex flex-col lg:flex-row gap-[40px] lg:gap-[80px] items-start relative w-full py-[60px] md:py-[100px] px-4 md:px-[40px] scroll-mt-20">
+        <div id="services" className="bg-white w-full scroll-mt-20">
+          <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[80px] items-start relative w-full max-w-[1360px] mx-auto py-[60px] md:py-[100px] px-4 md:px-[40px]">
           <div className="relative shrink-0 w-full lg:w-1/2 max-w-[600px]">
             <img alt="" className="max-w-none object-contain pointer-events-none w-full" src={imgImageLbImg} />
           </div>
@@ -169,9 +169,10 @@ export default function SoftwareDevelopment() {
               </div>
             </div>
           </div>
+        </div>
         {/* Our Work Speaks section - hidden for now */}
         <div className="bg-[#090909] content-stretch flex flex-col items-center overflow-clip py-[143.556px] relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col gap-[52.889px] items-start max-w-[1360px] px-[37.778px] relative shrink-0 w-[1360px]">
+          <div className="content-stretch flex flex-col gap-[52.889px] items-start max-w-[1360px] mx-auto px-4 md:px-[37.778px] relative shrink-0 w-full">
             <div className="content-stretch flex h-[137.502px] items-end relative shrink-0 w-full animate-fade-in-up">
               <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0">
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
@@ -190,8 +191,8 @@ export default function SoftwareDevelopment() {
                 </div>
               </div>
             </div>
-            <div className="h-[273.624px] relative shrink-0 w-full">
-              <div className="absolute content-stretch flex flex-col items-start left-0 right-[455.22px] top-0 animate-fade-in-up">
+            <div className="relative shrink-0 w-full">
+              <div className="content-stretch flex flex-col items-start w-full lg:w-[65%] animate-fade-in-up">
                 <div className="bg-[#242424] border-[#3a3a3a] border-b-[0.944px] border-solid content-stretch flex items-center justify-between pb-[31.167px] pt-[30.222px] px-[30.222px] relative shrink-0 w-full faq-item cursor-pointer">
                   <div className="content-stretch flex gap-[15.111px] items-center relative shrink-0">
                     <div className="content-stretch flex flex-col items-start relative shrink-0">
@@ -254,7 +255,7 @@ export default function SoftwareDevelopment() {
           </div>
         </div>
         <div id="services" className="bg-[#090909] content-stretch flex flex-col gap-[0.009px] items-center relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col items-start max-w-[1360px] pb-[52.889px] px-[37.778px] relative shrink-0 w-[1360px]">
+          <div className="content-stretch flex flex-col items-start max-w-[1360px] mx-auto pb-[52.889px] px-4 md:px-[37.778px] relative shrink-0 w-full">
             <div className="content-stretch flex h-[137.502px] items-end relative shrink-0 w-full">
               <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0">
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
@@ -277,12 +278,12 @@ export default function SoftwareDevelopment() {
           <div className="bg-[#090909] content-stretch flex flex-col items-start relative shrink-0 w-full">
             <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
               <div className="bg-[#3f2fee] content-stretch flex flex-col items-center shrink-0 sticky top-0 z-10 w-full">
-                <div className="h-[438.222px] max-w-[1360px] relative shrink-0 w-[1360px]">
+                <div className="h-[438.222px] max-w-[1360px] mx-auto relative shrink-0 w-full">
                   <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px] animate-fade-in-up">
                     <div className="flex flex-col font-bold justify-center leading-[0] not-italic relative shrink-0 text-[28px] md:text-[36px] lg:text-[44.979px] text-white" style={{ fontFamily: "'Inter', sans-serif" }}>
                       <p className="leading-[54.4px]">Web Application Development</p>
                     </div>
-                    <div className="h-[211.036px] relative shrink-0 w-[574.43px]">
+                    <div className="h-[211.036px] relative shrink-0 w-full max-w-[574.43px]">
                       <div className="absolute content-stretch flex flex-col items-start left-0 top-[-0.68px]">
                         <div className="content-stretch flex flex-col items-start max-w-[358.8888854980469px] pr-[11.806px] relative shrink-0">
                           <div className="flex flex-col font-['Inter',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[17px] text-white w-[331.988px]">
@@ -290,7 +291,7 @@ export default function SoftwareDevelopment() {
                           </div>
                         </div>
                       </div>
-                      <div className="absolute content-stretch flex flex-col items-start left-[434.44px] top-0">
+                      <div className="hidden lg:flex absolute content-stretch flex-col items-start left-[434.44px] top-0">
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
                           <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
                             <div className="flex flex-col font-['Inter',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-[14.167px] text-white whitespace-nowrap">
@@ -309,7 +310,7 @@ export default function SoftwareDevelopment() {
                       </div>
                     </div>
                   </div>
-                  <div className="absolute content-stretch flex flex-col h-[332.444px] items-start justify-center left-[940.67px] max-w-[366.4444580078125px] top-[52.89px] w-[366.444px] animate-fade-in-right">
+                  <div className="hidden lg:flex absolute content-stretch flex-col h-[332.444px] items-start justify-center left-[940.67px] max-w-[366.4444580078125px] top-[52.89px] w-[366.444px] animate-fade-in-right">
                     <div className="flex-[1_0_0] max-w-[366.4444580078125px] min-h-px min-w-px relative w-full hover-scale transition-transform duration-300">
                       <div className="absolute inset-0 overflow-hidden pointer-events-none">
                         <img alt="" className="absolute h-[100.03%] left-0 max-w-none top-[-0.02%] w-full" src={imgBrandIdentity} />
@@ -319,12 +320,12 @@ export default function SoftwareDevelopment() {
                 </div>
               </div>
               <div className="bg-white content-stretch flex flex-col items-center shrink-0 sticky top-[60px] z-20 w-full">
-                <div className="h-[438.222px] max-w-[1360px] relative shrink-0 w-[1360px]">
-                  <div className="absolute content-stretch flex flex-col gap-[26px] items-start left-[52.89px] top-[51.94px] w-[597.248px] animate-fade-in-up">
+                <div className="h-[438.222px] max-w-[1360px] mx-auto relative shrink-0 w-full">
+                  <div className="absolute content-stretch flex flex-col gap-[26px] items-start left-[52.89px] top-[51.94px] w-full max-w-[597.248px] animate-fade-in-up">
                     <div className="flex flex-col font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[36px] lg:text-[45.156px]" style={{ fontFamily: "'Inter', sans-serif" }}>
                       <p className="leading-[54.4px]">Mobile App Development</p>
                     </div>
-                    <div className="h-[211.036px] relative shrink-0 w-[597.248px]">
+                    <div className="h-[211.036px] relative shrink-0 w-full max-w-[597.248px]">
                       <div className="absolute content-stretch flex flex-col items-start left-0 top-[-0.68px]">
                         <div className="content-stretch flex flex-col items-start max-w-[358.8888854980469px] pr-[7.82px] relative shrink-0">
                           <div className="flex flex-col font-['Inter',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[16.867px] w-[358.889px]">
@@ -332,7 +333,7 @@ export default function SoftwareDevelopment() {
                           </div>
                         </div>
                       </div>
-                      <div className="absolute content-stretch flex flex-col items-start left-[434.44px] top-0">
+                      <div className="hidden lg:flex absolute content-stretch flex-col items-start left-[434.44px] top-0">
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
                           <div className="flex flex-col font-['Inter',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-[#1b1b1b] text-[14.056px] whitespace-nowrap">
                             <p className="mb-0">iOS App Development</p>
@@ -348,7 +349,7 @@ export default function SoftwareDevelopment() {
                       </div>
                     </div>
                   </div>
-                  <div className="absolute content-stretch flex flex-col h-[332.444px] items-start justify-center left-[940.67px] max-w-[366.4444580078125px] top-[52.89px] w-[366.444px] animate-fade-in-right">
+                  <div className="hidden lg:flex absolute content-stretch flex-col h-[332.444px] items-start justify-center left-[940.67px] max-w-[366.4444580078125px] top-[52.89px] w-[366.444px] animate-fade-in-right">
                     <div className="flex-[1_0_0] max-w-[366.4444580078125px] min-h-px min-w-px relative w-full hover-scale transition-transform duration-300">
                       <div className="absolute inset-0 overflow-hidden pointer-events-none">
                         <img alt="" className="absolute h-[100.03%] left-0 max-w-none top-[-0.02%] w-full" src={imgUiUxDesign} />
@@ -358,12 +359,12 @@ export default function SoftwareDevelopment() {
                 </div>
               </div>
               <div className="bg-[#ffd500] content-stretch flex flex-col items-center shrink-0 sticky top-[120px] z-30 w-full">
-                <div className="h-[438.222px] max-w-[1360px] relative shrink-0 w-[1360px]">
+                <div className="h-[438.222px] max-w-[1360px] mx-auto relative shrink-0 w-full">
                   <div className="absolute content-stretch flex flex-col gap-[30.779px] items-start left-[52.89px] top-[51.94px] animate-fade-in-up">
                     <div className="flex flex-col font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[36px] lg:text-[44.979px]" style={{ fontFamily: "'Inter', sans-serif" }}>
                       <p className="leading-[54.4px]">Custom Software Solutions</p>
                     </div>
-                    <div className="h-[211.036px] relative shrink-0 w-[599.958px]">
+                    <div className="h-[211.036px] relative shrink-0 w-full max-w-[599.958px]">
                       <div className="absolute content-stretch flex flex-col items-start left-0 top-[-0.68px]">
                         <div className="content-stretch flex flex-col items-start max-w-[358.8888854980469px] pr-[2.909px] relative shrink-0">
                           <div className="flex flex-col font-['Inter',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[16.203px] w-[358.889px]">
@@ -371,7 +372,7 @@ export default function SoftwareDevelopment() {
                           </div>
                         </div>
                       </div>
-                      <div className="absolute content-stretch flex flex-col items-start left-[434.44px] top-0">
+                      <div className="hidden lg:flex absolute content-stretch flex-col items-start left-[434.44px] top-0">
                         <div className="content-stretch flex flex-col items-start relative shrink-0">
                           <div className="flex flex-col font-['Inter',sans-serif] font-normal justify-center leading-[25.5px] not-italic relative shrink-0 text-[#1b1b1b] text-[13.613px] whitespace-nowrap">
                             <p className="mb-0">Legacy System Modernization</p>
@@ -387,7 +388,7 @@ export default function SoftwareDevelopment() {
                       </div>
                     </div>
                   </div>
-                  <div className="absolute content-stretch flex flex-col h-[332.444px] items-start justify-center left-[940.67px] max-w-[366.4444580078125px] top-[52.89px] w-[366.444px] animate-fade-in-right">
+                  <div className="hidden lg:flex absolute content-stretch flex-col h-[332.444px] items-start justify-center left-[940.67px] max-w-[366.4444580078125px] top-[52.89px] w-[366.444px] animate-fade-in-right">
                     <div className="flex-[1_0_0] max-w-[366.4444580078125px] min-h-px min-w-px relative w-full hover-scale transition-transform duration-300">
                       <div className="absolute inset-0 overflow-hidden pointer-events-none">
                         <img alt="" className="absolute h-[100.03%] left-0 max-w-none top-[-0.02%] w-full" src={imgWebDesign} />
@@ -403,18 +404,18 @@ export default function SoftwareDevelopment() {
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgSection} />
           </div>
-          <div className="content-stretch flex flex-col gap-[75.556px] items-start justify-center max-w-[1360px] mx-auto pb-[52.889px] px-[37.778px] relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-[75.556px] items-start justify-center max-w-[1360px] mx-auto pb-[52.889px] px-4 md:px-[37.778px] relative shrink-0 w-full">
             <div className="h-[265.389px] relative shrink-0 w-full">
-              <div className="-translate-x-1/2 -translate-y-1/2 absolute content-stretch flex items-center justify-center left-[calc(50%-0.47px)] top-[calc(50%+0.37px)] w-[1317.5px]">
-                <div className="content-stretch flex flex-col items-start min-w-[1171.2149658203125px] pb-[0.756px] relative shrink-0">
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute content-stretch flex items-center justify-center left-1/2 top-1/2 w-full">
+                <div className="content-stretch flex flex-col items-center pb-[0.756px] relative shrink-0 w-full">
                   <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[48px] md:text-[100px] lg:text-[170px] text-[color:var(--color\/white\/solid,white)] tracking-[0.9444px]">
                     <p className="leading-[188.7px]">achievements</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="content-stretch flex items-start justify-center min-h-[337.3744201660156px] relative shrink-0 w-full">
-              <div className="bg-[var(--color\/white\/solid,white)] border-[var(--color\/grey\/91,#e8e7e7)] border-r-[0.944px] border-solid content-stretch flex flex-col gap-[149.982px] items-start overflow-clip pl-[30.222px] pr-[31.167px] py-[30.222px] relative self-stretch shrink-0 w-[321.111px]">
+            <div className="content-stretch flex flex-wrap items-start justify-center min-h-[337.3744201660156px] relative shrink-0 w-full">
+              <div className="bg-[var(--color\/white\/solid,white)] border-[var(--color\/grey\/91,#e8e7e7)] border-r-[0.944px] border-solid content-stretch flex flex-col gap-[149.982px] items-start overflow-clip pl-[30.222px] pr-[31.167px] py-[30.222px] relative self-stretch shrink-0 w-full md:w-[321.111px]">
                 <div className="h-[49.111px] relative shrink-0 w-full">
                   <div className="-translate-y-1/2 absolute bg-[var(--color\/blue\/56,#3f2fee)] content-stretch flex items-center justify-center left-[210.61px] rounded-[49.111px] size-[49.111px] top-[calc(50%-113.33px)]">
                     <div className="content-stretch flex h-[12.835px] items-center justify-center max-w-[49.11111068725586px] overflow-clip relative shrink-0 w-[12.844px]">
@@ -441,7 +442,7 @@ export default function SoftwareDevelopment() {
                   </div>
                 </div>
               </div>
-              <div className="bg-[var(--color\/white\/solid,white)] border-[var(--color\/grey\/91,#e8e7e7)] border-r-[0.944px] border-solid content-stretch flex flex-col gap-[149.982px] items-start overflow-clip pl-[30.222px] pr-[31.167px] py-[30.222px] relative self-stretch shrink-0 w-[321.111px]">
+              <div className="bg-[var(--color\/white\/solid,white)] border-[var(--color\/grey\/91,#e8e7e7)] border-r-[0.944px] border-solid content-stretch flex flex-col gap-[149.982px] items-start overflow-clip pl-[30.222px] pr-[31.167px] py-[30.222px] relative self-stretch shrink-0 w-full md:w-[321.111px]">
                 <div className="h-[49.111px] relative shrink-0 w-full">
                   <div className="-translate-y-1/2 absolute bg-[var(--color\/blue\/56,#3f2fee)] content-stretch flex items-center justify-center left-[210.61px] rounded-[49.111px] size-[49.111px] top-[calc(50%-113.33px)]">
                     <div className="content-stretch flex h-[12.835px] items-center justify-center max-w-[49.11111068725586px] overflow-clip relative shrink-0 w-[12.844px]">
@@ -468,7 +469,7 @@ export default function SoftwareDevelopment() {
                   </div>
                 </div>
               </div>
-              <div className="bg-[var(--color\/white\/solid,white)] border-[var(--color\/grey\/91,#e8e7e7)] border-r-[0.944px] border-solid content-stretch flex flex-col gap-[149.982px] items-start overflow-clip pl-[30.222px] pr-[31.167px] py-[30.222px] relative self-stretch shrink-0 w-[321.111px]">
+              <div className="bg-[var(--color\/white\/solid,white)] border-[var(--color\/grey\/91,#e8e7e7)] border-r-[0.944px] border-solid content-stretch flex flex-col gap-[149.982px] items-start overflow-clip pl-[30.222px] pr-[31.167px] py-[30.222px] relative self-stretch shrink-0 w-full md:w-[321.111px]">
                 <div className="h-[49.111px] relative shrink-0 w-full">
                   <div className="-translate-y-1/2 absolute bg-[var(--color\/blue\/56,#3f2fee)] content-stretch flex items-center justify-center left-[210.61px] rounded-[49.111px] size-[49.111px] top-[calc(50%-113.33px)]">
                     <div className="content-stretch flex h-[12.835px] items-center justify-center max-w-[49.11111068725586px] overflow-clip relative shrink-0 w-[12.844px]">
@@ -499,7 +500,7 @@ export default function SoftwareDevelopment() {
           </div>
         </div>
         <div className="bg-[#f0f0f0] content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col gap-[60.454px] items-start max-w-[1360px] py-[143.556px] px-[37.778px] relative shrink-0 w-[1360px]">
+          <div className="content-stretch flex flex-col gap-[60.454px] items-start max-w-[1360px] mx-auto py-[143.556px] px-4 md:px-[37.778px] relative shrink-0 w-full">
             <div className="content-stretch flex h-[137.502px] items-end relative shrink-0 w-full">
               <div className="content-stretch flex flex-col items-start pb-[0.944px] relative shrink-0">
                 <div className="content-stretch flex flex-col items-start mb-[-0.944px] relative shrink-0">
@@ -634,7 +635,7 @@ export default function SoftwareDevelopment() {
               </div>
             </div>
           </div>
-          <div className="absolute font-['Inter',sans-serif] font-semibold left-[72px] not-italic text-[28px] md:text-[35px] text-white top-[122.08px] tracking-[0.4px] w-[700px] leading-[1.35]">
+          <div className="absolute font-['Inter',sans-serif] font-semibold left-[72px] not-italic text-[28px] md:text-[35px] text-white top-[122.08px] tracking-[0.4px] w-full max-w-[700px] leading-[1.35]">
             <p>Try Our Rapid Prototyping Service Only $1000 for One Week Get a clickable prototype and technical blueprint for your software idea in just 7 days.</p>
           </div>
           <div className="absolute border border-[rgba(255,255,255,0.15)] border-solid h-[30.08px] left-[72px] rounded-[100px] top-[72px] w-[191.83px]">
@@ -648,7 +649,7 @@ export default function SoftwareDevelopment() {
         </div>
         </div>
         <div className="bg-white content-stretch flex flex-col items-center pb-[60px] md:pb-[100px] lg:pb-[162.444px] pt-[60px] md:pt-[90.667px] relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col gap-[40px] md:gap-[68px] items-start max-w-[1360px] px-4 md:px-[37.778px] relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col gap-[40px] md:gap-[68px] items-start max-w-[1360px] mx-auto px-4 md:px-[37.778px] relative shrink-0 w-full">
             <div className="content-stretch flex items-end relative shrink-0 w-full">
               <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
                 <div className="flex flex-col font-[family-name:var(--font-headings)] font-bold justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[32px] md:text-[42px] lg:text-[51.339px]">

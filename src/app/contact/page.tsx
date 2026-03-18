@@ -38,7 +38,7 @@ export default function ContactPage() {
   }, []);
 
   return (
-    <div className="bg-white relative size-full">
+    <div className="bg-white relative w-full">
       <div className="w-full flex flex-col items-center">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
           {/* Hero Section with Form */}

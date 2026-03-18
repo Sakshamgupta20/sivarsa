@@ -8,6 +8,10 @@ import ContactSection from "@/components/ContactSection";
 import { BASE_PATH } from "@/lib/constants";
 
 const imgBlogHeroCurves = `${BASE_PATH}/assets/blog-hero-curves.svg`;
+const imgHero = `${BASE_PATH}/assets/hero-bg.png`;
+const imgPattern2 = `${BASE_PATH}/assets/pattern-dots.png`;
+const imgStars1 = `${BASE_PATH}/assets/stars-bg.png`;
+const imgEllipse1 = `${BASE_PATH}/assets/ellipse-decoration.svg`;
 
 // Blog article data with placeholder images
 const featuredArticle = {
@@ -156,26 +160,33 @@ export default function BlogPage() {
   }, []);
 
   return (
-    <div className="bg-white relative size-full min-h-screen">
+    <div className="bg-white relative w-full min-h-screen">
       <div className="w-full flex flex-col items-center">
         <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
-          {/* Hero Section - Light theme with purple gradient curves from Figma */}
-          <div className="h-[600px] md:h-[883px] overflow-hidden relative shrink-0 w-full bg-white">
-            {/* Purple Gradient Curves Background - exact Figma SVG */}
-            <div className="absolute left-[-109px] top-[94px] md:top-[172px] w-[1606px] h-[710px] pointer-events-none">
-              <img
-                src={imgBlogHeroCurves}
-                alt=""
-                className="w-full h-full object-contain"
-                style={{ transform: 'scale(1.15)' }}
-              />
+          {/* Hero Section - Dark theme matching landing page */}
+          <div className="min-h-[400px] md:min-h-[500px] overflow-hidden relative shrink-0 w-full">
+            {/* Background layers matching landing page */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgHero} />
+            </div>
+            <div className="absolute inset-0 opacity-35 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-cover" src={imgPattern2} />
+            </div>
+            <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(110.159deg, rgb(0, 0, 0) 21.698%, rgba(0, 0, 0, 0.26) 84.415%)" }} />
+            <div className="absolute inset-0 opacity-60 pointer-events-none">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgStars1} />
+            </div>
+            <div className="hidden md:block absolute left-[40%] lg:left-[568.31px] size-[850px] top-[200px] pointer-events-none">
+              <div className="absolute inset-[-37.62%]">
+                <img alt="" className="block max-w-none size-full" src={imgEllipse1} />
+              </div>
             </div>
 
-            <Header variant="light" />
+            <Header />
 
             {/* Hero Content */}
-            <div className="relative z-10 flex flex-col items-center justify-center pt-[100px] md:pt-[144px]">
-              <h1 className="font-[family-name:var(--font-headings)] font-bold text-[28px] md:text-[38px] lg:text-[45px] leading-[1.15] text-center text-black uppercase px-4 animate-fade-in-up whitespace-nowrap">
+            <div className="relative z-10 flex flex-col items-center justify-center pt-[100px] md:pt-[140px] pb-[80px] md:pb-[120px]">
+              <h1 className="font-[family-name:var(--font-headings)] font-bold text-[36px] md:text-[52px] lg:text-[65px] leading-[1.1] tracking-[-2px] text-center bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent px-4 animate-fade-in-up">
                 DISCOVER OUR LATEST ARTICLES
               </h1>
             </div>
