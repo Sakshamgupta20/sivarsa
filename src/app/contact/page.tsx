@@ -141,7 +141,7 @@ export default function ContactPage() {
                     <div key={index} className="flex gap-[32px] md:gap-[50px]">
                       <span className="font-['Inter',sans-serif] text-[20px] md:text-[22px] text-[#7e7e81] pt-[2px]">{step.num}</span>
                       <div className="flex flex-col gap-[11px]">
-                        <h4 className="font-['Inter',sans-serif] font-black text-[20px] md:text-[24px] text-[#1b1b1b]">{step.title}</h4>
+                        <h4 className="font-['Inter',sans-serif] font-bold text-[20px] md:text-[24px] text-[#1b1b1b]">{step.title}</h4>
                         <p className="font-['Inter',sans-serif] text-[16px] md:text-[18px] text-[#7e7e81] leading-[1.6]">{step.desc}</p>
                       </div>
                     </div>
@@ -227,7 +227,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Contact Info Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-[40px] md:gap-[30px]">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[40px] md:gap-[30px]">
                   {/* Greater Noida Office */}
                   <div className="flex flex-col gap-[12px]">
                     <div className="flex items-center gap-[8px]">
@@ -253,6 +253,20 @@ export default function ContactPage() {
                     </div>
                     <p className="font-['Inter',sans-serif] text-[14px] text-[#7e7e81] leading-[1.6]">
                       Uttar Pradesh, India
+                    </p>
+                  </div>
+
+                  {/* Dallas Office */}
+                  <div className="flex flex-col gap-[12px]">
+                    <div className="flex items-center gap-[8px]">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3f2fee" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      <h3 className="font-['Inter',sans-serif] font-bold text-[18px] text-[#1b1b1b]">Dallas</h3>
+                    </div>
+                    <p className="font-['Inter',sans-serif] text-[14px] text-[#7e7e81] leading-[1.6]">
+                      Texas, USA
                     </p>
                   </div>
 

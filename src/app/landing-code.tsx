@@ -156,8 +156,8 @@ export default function Landing() {
             {/* Mobile: stacked cards */}
             <div className="flex flex-col gap-[12px] md:hidden scroll-reveal scroll-scale-up">
               {/* Software Development Card */}
-              <Link href="/services/software-development" className="relative bg-[#1a1a2e] h-[350px] overflow-hidden w-full group cursor-pointer rounded-[12px]">
-                <div className="absolute font-['Inter',sans-serif] font-bold left-[19px] text-[20px] text-white top-[30px] tracking-[-1px] z-10">
+              <Link href="/services/software-development" className="relative bg-[#a0a9ae] h-[350px] overflow-hidden w-full group cursor-pointer rounded-[12px]">
+                <div className="absolute font-['Inter',sans-serif] font-bold left-[19px] text-[20px] text-black top-[30px] tracking-[-1px] z-10">
                   <p className="leading-[1.2]">SOFTWARE DEVELOPMENT</p>
                 </div>
                 <div className="absolute w-[60%] h-[85%] left-[20%] top-[18%]" style={{ filter: 'drop-shadow(8px -7px 17px rgba(0,0,0,0.35))' }}>
@@ -166,7 +166,7 @@ export default function Landing() {
               </Link>
 
               {/* Talent Card */}
-              <Link href="/services/staffing-solutions" className="relative bg-[#0d2e23] h-[350px] overflow-hidden w-full group cursor-pointer rounded-[12px]">
+              <Link href="/services/staffing-solutions" className="relative bg-[#17614a] h-[350px] overflow-hidden w-full group cursor-pointer rounded-[12px]">
                 <div className="absolute font-['Inter',sans-serif] font-bold left-1/2 -translate-x-1/2 text-[20px] text-white top-[30px] tracking-[-1px] whitespace-nowrap z-10">
                   <p className="leading-[1.2]">TALENT</p>
                 </div>
@@ -177,7 +177,7 @@ export default function Landing() {
               </Link>
 
               {/* Growth Card */}
-              <Link href="/services/growth-marketing" className="relative bg-[#1e0a3c] h-[350px] overflow-hidden w-full group cursor-pointer rounded-[12px]">
+              <Link href="/services/growth-marketing" className="relative bg-[#6f2fb8] h-[350px] overflow-hidden w-full group cursor-pointer rounded-[12px]">
                 <div className="absolute font-['Inter',sans-serif] font-bold left-1/2 -translate-x-1/2 text-[20px] text-white top-[30px] tracking-[-1px] whitespace-nowrap z-10">
                   <p className="leading-[1.2]">GROWTH</p>
                 </div>
@@ -195,8 +195,8 @@ export default function Landing() {
               </div>
 
               {/* Software Development Card */}
-              <Link href="/services/software-development" className="absolute bg-[#1a1a2e] h-full left-0 overflow-hidden w-1/3 group cursor-pointer">
-                <div className="absolute font-['Inter',sans-serif] font-bold left-[19px] text-[20px] lg:text-[30px] text-white top-[90px] lg:top-[107px] tracking-[-2px] whitespace-nowrap z-10">
+              <Link href="/services/software-development" className="absolute bg-[#a0a9ae] h-full left-0 overflow-hidden w-1/3 group cursor-pointer">
+                <div className="absolute font-['Inter',sans-serif] font-bold left-[19px] text-[20px] lg:text-[30px] text-black top-[90px] lg:top-[107px] tracking-[-2px] whitespace-nowrap z-10">
                   <p className="leading-[1.2]">SOFTWARE DEVELOPMENT</p>
                 </div>
                 <div className="absolute w-[172%] h-[102%] left-[-36%] top-[15.6%] transition-transform duration-500 group-hover:scale-105" style={{ filter: 'drop-shadow(8px -7px 17px rgba(0,0,0,0.35))' }}>
@@ -205,7 +205,7 @@ export default function Landing() {
               </Link>
 
               {/* Talent Card */}
-              <Link href="/services/staffing-solutions" className="absolute bg-[#0d2e23] h-full left-[33.33%] overflow-hidden w-1/3 group cursor-pointer">
+              <Link href="/services/staffing-solutions" className="absolute bg-[#17614a] h-full left-[33.33%] overflow-hidden w-1/3 group cursor-pointer">
                 <div className="absolute font-['Inter',sans-serif] font-bold left-1/2 -translate-x-1/2 text-[20px] lg:text-[30px] text-white top-[90px] lg:top-[107px] tracking-[-2px] whitespace-nowrap z-10">
                   <p className="leading-[1.2]">TALENT</p>
                 </div>
@@ -227,7 +227,7 @@ export default function Landing() {
               </Link>
 
               {/* Growth Card */}
-              <Link href="/services/growth-marketing" className="absolute bg-[#1e0a3c] h-full left-[66.66%] overflow-hidden w-1/3 group cursor-pointer">
+              <Link href="/services/growth-marketing" className="absolute bg-[#6f2fb8] h-full left-[66.66%] overflow-hidden w-1/3 group cursor-pointer">
                 <div className="absolute font-['Inter',sans-serif] font-bold left-1/2 -translate-x-1/2 text-[20px] lg:text-[30px] text-white top-[90px] lg:top-[107px] tracking-[-2px] whitespace-nowrap z-10">
                   <p className="leading-[1.2]">GROWTH</p>
                 </div>
@@ -373,7 +373,7 @@ export default function Landing() {
                 </div>
               </div>
               <div className="content-stretch flex flex-col items-start relative shrink-0">
-                <Link className="bg-[#3f2fee] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center px-[20px] md:px-[26.444px] py-[12px] md:py-[15.111px] relative rounded-[94.444px] shrink-0 btn-magnetic hover-glow glow-pulse" href="/contact">
+                <Link className="bg-[#3f2fee] content-stretch cursor-pointer flex gap-[7.556px] items-center justify-center px-[20px] md:px-[26.444px] py-[12px] md:py-[15.111px] relative rounded-[94.444px] shrink-0" href="/contact">
                   <div className="content-stretch flex flex-col items-start relative shrink-0">
                     <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[14.875px] text-left text-white whitespace-nowrap">
                       <p className="leading-[18.889px]">Start your project</p>
@@ -466,7 +466,6 @@ export default function Landing() {
                     <span className="font-['Inter',sans-serif] font-medium text-[15px] text-[#7e7e81] tracking-[1px]">{item.num}</span>
                     <span className="font-['Inter',sans-serif] font-medium text-[16px] md:text-[20px] lg:text-[22px] text-white tracking-[1px]">{item.text}</span>
                   </div>
-                  <img alt="" className="w-[15px] h-[15px] shrink-0" src={imgArrowUpIcon} />
                 </div>
               ))}
             </div>
@@ -497,7 +496,7 @@ export default function Landing() {
               <div className="bg-[#3f2fee] flex flex-col items-center sticky top-0 z-10 w-full">
                 <div className="min-h-[350px] md:min-h-[400px] lg:h-[438.222px] max-w-[1360px] mx-auto relative shrink-0 w-full px-4 md:px-8 lg:px-0">
                   <div className="relative md:absolute content-stretch flex flex-col gap-[20px] md:gap-[30.779px] items-start md:left-[52.89px] top-0 md:top-[51.94px] py-6 md:py-0 animate-fade-in-up">
-                    <div className="flex flex-col font-['Inter',sans-serif] font-extrabold justify-center leading-[1.2] not-italic relative shrink-0 text-[28px] md:text-[36px] lg:text-[45px] text-white">
+                    <div className="flex flex-col font-bold justify-center leading-[1.3] not-italic relative shrink-0 text-[28px] md:text-[36px] lg:text-[45px] text-white" style={{ fontFamily: "'Inter', sans-serif" }}>
                       <p>Software Development</p>
                     </div>
                     <div className="relative shrink-0 w-full lg:w-[574.43px]">
@@ -553,7 +552,7 @@ export default function Landing() {
               <div className="bg-white flex flex-col items-center sticky top-[60px] z-20 w-full">
                 <div className="min-h-[350px] md:min-h-[400px] lg:h-[438.222px] max-w-[1360px] mx-auto relative shrink-0 w-full px-4 md:px-8 lg:px-0">
                   <div className="relative md:absolute content-stretch flex flex-col gap-[20px] md:gap-[30.779px] items-start md:left-[52.89px] top-0 md:top-[51.94px] py-6 md:py-0 animate-fade-in-up">
-                    <div className="flex flex-col font-['Inter',sans-serif] font-extrabold justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[36px] lg:text-[45px]">
+                    <div className="flex flex-col font-bold justify-center leading-[1.3] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[36px] lg:text-[45px]" style={{ fontFamily: "'Inter', sans-serif" }}>
                       <p>{`Staffing Solutions`}</p>
                     </div>
                     <div className="relative shrink-0 w-full lg:w-[597.248px]">
@@ -608,7 +607,7 @@ export default function Landing() {
               <div className="bg-[#ffd500] flex flex-col items-center sticky top-[120px] z-30 w-full">
                 <div className="min-h-[350px] md:min-h-[400px] lg:h-[438.222px] max-w-[1360px] mx-auto relative shrink-0 w-full px-4 md:px-8 lg:px-0">
                   <div className="relative md:absolute content-stretch flex flex-col gap-[20px] md:gap-[30.779px] items-start md:left-[52.89px] top-0 md:top-[51.94px] py-6 md:py-0 animate-fade-in-up">
-                    <div className="flex flex-col font-['Inter',sans-serif] font-extrabold justify-center leading-[1.2] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[36px] lg:text-[45px]">
+                    <div className="flex flex-col font-bold justify-center leading-[1.3] not-italic relative shrink-0 text-[#1b1b1b] text-[28px] md:text-[36px] lg:text-[45px]" style={{ fontFamily: "'Inter', sans-serif" }}>
                       <p>Growth Marketing</p>
                     </div>
                     <div className="relative shrink-0 w-full lg:w-[599.958px]">
@@ -678,88 +677,19 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-            <div className="content-stretch flex flex-col md:flex-row items-stretch justify-center min-h-[200px] md:min-h-[337.3744201660156px] relative shrink-0 w-full gap-0">
-              <div className="bg-white border-[#e8e7e7] border-b md:border-b-0 md:border-r border-solid content-stretch flex flex-col gap-[40px] md:gap-[149.982px] items-start overflow-clip p-[20px] md:pl-[30.222px] md:pr-[31.167px] md:py-[30.222px] relative self-stretch shrink-0 w-full md:w-1/3 scroll-reveal scroll-fade-up stagger-1">
-                <div className="h-[49.111px] relative shrink-0 w-full">
-                  <div className="-translate-y-1/2 absolute bg-[var(--color\/blue\/56,#3f2fee)] content-stretch flex items-center justify-center left-[210.61px] rounded-[49.111px] size-[49.111px] top-[calc(50%-113.33px)]">
-                    <div className="content-stretch flex h-[12.835px] items-center justify-center max-w-[49.11111068725586px] overflow-clip relative shrink-0 w-[12.844px]">
-                      <div className="content-stretch flex flex-col h-[12.835px] items-center justify-center overflow-clip pr-[0.009px] relative shrink-0 w-[12.844px]">
-                        <div className="opacity-[var(--opacity\/100,1)] overflow-clip relative shrink-0 size-[12.835px]">
-                          <div className="absolute contents inset-0">
-                            <div className="absolute inset-[4.17%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.535px_-0.535px] mask-size-[12.835px_12.835px] opacity-[var(--opacity\/100,1)]" style={{ maskImage: `url('${imgGroup1}')` }}>
-                              <img alt="" className="block max-w-none size-full" src={imgGroup2} />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            <div className="flex flex-col md:flex-row flex-wrap items-stretch justify-center w-full">
+              {[
+                { num: "01", label: "20+ Brands" },
+                { num: "02", label: "10+ Years" },
+                { num: "03", label: "100+ Projects" },
+              ].map((item, index) => (
+                <div key={index} className="bg-white border-[#e8e7e7] border-b md:border-b-0 md:border-r last:border-r-0 flex flex-col justify-between gap-[80px] md:gap-[150px] p-[30px] w-full md:w-[321px] scroll-reveal scroll-fade-up">
+                  <div className="flex items-center">
+                    <span className="font-['Inter',sans-serif] font-bold text-[21px] text-[#b9b9b9] tracking-[1px]">{item.num}</span>
                   </div>
-                  <div className="-translate-y-1/2 absolute content-stretch flex flex-col items-start left-0 top-[calc(50%-0.01px)]">
-                    <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] max-h-[29.296667098999023px] not-italic overflow-hidden relative shrink-0 text-[20.778px] text-[color:var(--color\/grey\/73,#b9b9b9)] text-ellipsis tracking-[0.9444px] whitespace-nowrap">
-                      <p className="leading-[29.278px]">01</p>
-                    </div>
-                  </div>
+                  <span className="font-['Inter',sans-serif] font-semibold text-[24px] md:text-[29px] text-[#1b1b1b]">{item.label}</span>
                 </div>
-                <div className="content-stretch flex flex-col items-start relative shrink-0">
-                  <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[29.278px] text-[color:var(--color\/grey\/11,#1b1b1b)] whitespace-nowrap">
-                    <p className="leading-[38.354px]">20+ Brands</p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white border-[#e8e7e7] border-b md:border-b-0 md:border-r border-solid content-stretch flex flex-col gap-[40px] md:gap-[149.982px] items-start overflow-clip p-[20px] md:pl-[30.222px] md:pr-[31.167px] md:py-[30.222px] relative self-stretch shrink-0 w-full md:w-1/3 scroll-reveal scroll-fade-up stagger-2">
-                <div className="h-[49.111px] relative shrink-0 w-full">
-                  <div className="-translate-y-1/2 absolute bg-[var(--color\/blue\/56,#3f2fee)] content-stretch flex items-center justify-center left-[210.61px] rounded-[49.111px] size-[49.111px] top-[calc(50%-113.33px)]">
-                    <div className="content-stretch flex h-[12.835px] items-center justify-center max-w-[49.11111068725586px] overflow-clip relative shrink-0 w-[12.844px]">
-                      <div className="content-stretch flex flex-col h-[12.835px] items-center justify-center overflow-clip pr-[0.009px] relative shrink-0 w-[12.844px]">
-                        <div className="opacity-[var(--opacity\/100,1)] overflow-clip relative shrink-0 size-[12.835px]">
-                          <div className="absolute contents inset-0">
-                            <div className="absolute inset-[4.17%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.535px_-0.535px] mask-size-[12.835px_12.835px] opacity-[var(--opacity\/100,1)]" style={{ maskImage: `url('${imgGroup1}')` }}>
-                              <img alt="" className="block max-w-none size-full" src={imgGroup3} />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="-translate-y-1/2 absolute content-stretch flex flex-col items-start left-0 top-[calc(50%-0.01px)]">
-                    <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] max-h-[29.296667098999023px] not-italic overflow-hidden relative shrink-0 text-[20.778px] text-[color:var(--color\/grey\/73,#b9b9b9)] text-ellipsis tracking-[0.9444px] whitespace-nowrap">
-                      <p className="leading-[29.278px]">02</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="content-stretch flex flex-col items-start min-w-[259.72222900390625px] pr-[59.972px] relative shrink-0">
-                  <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[29.278px] text-[color:var(--color\/grey\/11,#1b1b1b)] whitespace-nowrap">
-                    <p className="leading-[38.354px]">10+ Years</p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white border-[#e8e7e7] md:border-r-0 border-solid content-stretch flex flex-col gap-[40px] md:gap-[149.982px] items-start overflow-clip p-[20px] md:pl-[30.222px] md:pr-[31.167px] md:py-[30.222px] relative self-stretch shrink-0 w-full md:w-1/3 scroll-reveal scroll-fade-up stagger-3">
-                <div className="h-[49.111px] relative shrink-0 w-full">
-                  <div className="-translate-y-1/2 absolute bg-[var(--color\/blue\/56,#3f2fee)] content-stretch flex items-center justify-center left-[210.61px] rounded-[49.111px] size-[49.111px] top-[calc(50%-113.33px)]">
-                    <div className="content-stretch flex h-[12.835px] items-center justify-center max-w-[49.11111068725586px] overflow-clip relative shrink-0 w-[12.844px]">
-                      <div className="content-stretch flex flex-col h-[12.835px] items-center justify-center overflow-clip pr-[0.009px] relative shrink-0 w-[12.844px]">
-                        <div className="opacity-[var(--opacity\/100,1)] overflow-clip relative shrink-0 size-[12.835px]">
-                          <div className="absolute contents inset-0">
-                            <div className="absolute inset-[4.17%_4.17%_4.17%_4.16%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-0.535px_-0.535px] mask-size-[12.835px_12.835px] opacity-[var(--opacity\/100,1)]" style={{ maskImage: `url('${imgGroup1}')` }}>
-                              <img alt="" className="block max-w-none size-full" src={imgGroup4} />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="-translate-y-1/2 absolute content-stretch flex flex-col items-start left-0 top-[calc(50%-0.01px)]">
-                    <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] max-h-[29.296667098999023px] not-italic overflow-hidden relative shrink-0 text-[20.778px] text-[color:var(--color\/grey\/73,#b9b9b9)] text-ellipsis tracking-[0.9444px] whitespace-nowrap">
-                      <p className="leading-[29.278px]">03</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="content-stretch flex flex-col items-start relative shrink-0">
-                  <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[29.278px] text-[color:var(--color\/grey\/11,#1b1b1b)] whitespace-nowrap">
-                    <p className="leading-[38.354px]">100+ Projects</p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

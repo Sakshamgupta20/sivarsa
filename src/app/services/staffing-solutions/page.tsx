@@ -193,9 +193,8 @@ export default function HRTalentManagement() {
                   <div key={index} className={`bg-[#242424] flex items-center justify-between p-[20px] md:p-[30px] w-full faq-item cursor-pointer ${index < 2 ? 'border-b border-[#3a3a3a]' : ''}`}>
                     <div className="flex gap-[15px] items-center">
                       <span className="font-['Inter',sans-serif] font-medium text-[15px] text-[#7e7e81] tracking-[1px]">{item.num}</span>
-                      <span className="font-['Inter',sans-serif] font-bold text-[14px] md:text-[18px] lg:text-[22px] text-white tracking-[1px]">{item.text}</span>
+                      <span className="font-['Inter',sans-serif] font-medium text-[14px] md:text-[18px] lg:text-[22px] text-white tracking-[1px]">{item.text}</span>
                     </div>
-                    <img alt="" className="w-[15px] h-[15px] shrink-0 ml-4" src={imgArrowUpIcon} />
                   </div>
                 ))}
               </div>
@@ -316,13 +315,8 @@ export default function HRTalentManagement() {
                 { num: "03", label: "100+ Projects", icon: imgGroup4 },
               ].map((item, index) => (
                 <div key={index} className="bg-white border-[#e8e7e7] border-r md:border-r-[0.944px] border-b md:border-b-0 flex flex-col justify-between gap-[80px] md:gap-[150px] p-[30px] w-full md:w-[321px]">
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center">
                     <span className="font-['Inter',sans-serif] font-bold text-[21px] text-[#b9b9b9] tracking-[1px]">{item.num}</span>
-                    <div className="bg-[#3f2fee] rounded-full size-[49px] flex items-center justify-center">
-                      <div className="size-[13px] relative" style={{ maskImage: `url('${imgGroup1}')`, maskSize: 'contain', maskRepeat: 'no-repeat', WebkitMaskImage: `url('${imgGroup1}')`, WebkitMaskSize: 'contain', WebkitMaskRepeat: 'no-repeat' }}>
-                        <img alt="" className="w-full h-full" src={item.icon} />
-                      </div>
-                    </div>
                   </div>
                   <span className="font-['Inter',sans-serif] font-semibold text-[24px] md:text-[29px] text-[#1b1b1b]">{item.label}</span>
                 </div>

@@ -31,5 +31,5 @@ export const contactInfo = {
   phone: "+91-9259108248",
   email: "contact@sivarsa.com",
   whatsapp: "+919259108248",
-  address: "C1-1201, JKG Palm Court, Sector 16-C, Greater Noida, Uttar Pradesh, India - 201301",
+  address: "1234 Main Street, Suite 500 Dallas, TX 75201, USA",
 };
