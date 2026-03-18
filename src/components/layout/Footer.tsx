@@ -16,7 +16,12 @@ const menuLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
-  { label: "Contact Us", href: "/contact" },
+  { label: "Contact", href: "/contact" },
+];
+
+const legalLinks = [
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms & Conditions", href: "/terms-and-conditions" },
 ];
 
 export default function Footer() {
@@ -39,7 +44,7 @@ export default function Footer() {
         {/* Footer Content */}
         <div className="relative z-10 max-w-[1360px] mx-auto px-4 md:px-8 lg:px-10 pt-10 md:pt-16 pb-6 md:pb-8">
           {/* Main Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-6 lg:gap-6 mb-12 md:mb-24">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-10 gap-x-6 lg:gap-6 mb-12 md:mb-24">
             {/* Column 1 - Logo (full width on mobile) */}
             <div className="flex flex-col col-span-2 lg:col-span-1">
               <Link href="/" className="flex items-center gap-2">
@@ -92,14 +97,32 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Column 4 - Contact (full width on mobile) */}
+            {/* Column 4 - Legal */}
+            <div className="flex flex-col gap-4">
+              <p className="font-['Inter',sans-serif] font-medium text-[11px] md:text-[12px] text-white/50 uppercase tracking-wider">
+                Legal
+              </p>
+              <div className="flex flex-col gap-3">
+                {legalLinks.map((link) => (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className="font-['Inter',sans-serif] text-[15px] md:text-[18px] text-white hover:text-white/80 transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Column 5 - Contact (full width on mobile) */}
             <div className="flex flex-col gap-4 col-span-2 lg:col-span-1 items-start lg:items-end">
               <Link
                 href="/contact"
                 className="bg-gradient-to-r from-[#265df6] to-[#7427ff] flex items-center justify-center px-8 py-3 rounded-full w-fit"
               >
                 <span className="font-['Inter',sans-serif] font-semibold text-[16px] md:text-[18px] text-white">
-                  Contact Us
+                  Contact
                 </span>
               </Link>
               <div className="flex flex-col gap-1 mt-2 items-start lg:items-end">
@@ -144,12 +167,12 @@ export default function Footer() {
 
             {/* Address */}
             <p className="font-['Inter',sans-serif] text-[13px] md:text-[15px] text-white/70 text-center order-2 md:order-2">
-              Greater Noida, Uttar Pradesh, India
+              1234 Main Street, Suite 500, Dallas, TX 75201, USA
             </p>
 
             {/* Rights */}
             <p className="font-['Inter',sans-serif] text-[13px] md:text-[15px] text-white/70 text-center order-3 md:order-3">
-              Copyright © 2026 - Sivarsa. All Rights Reserved.
+              © 2026 Sivarsa. All Rights Reserved.
             </p>
           </div>
         </div>

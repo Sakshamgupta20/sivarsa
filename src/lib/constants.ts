@@ -6,7 +6,7 @@ export const navLinks = [
   { label: "Services", href: "/services/software-development" },
   { label: "About", href: "#about" },
   { label: "Blog", href: "#blog" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export const serviceLinks = [
@@ -17,7 +17,7 @@ export const serviceLinks = [
 
 export const menuLinks = [
   { label: "Blog", href: "#blog" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Contact", href: "#contact" },
   { label: "About Us", href: "#about" },
   { label: "Career", href: "#career" },
 ];

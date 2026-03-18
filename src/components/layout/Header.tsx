@@ -7,9 +7,9 @@ import { useState } from "react";
 const BASE_PATH = "/sivarsa";
 
 const services = [
-  { label: "Software Development", href: "/services/software-development" },
-  { label: "Growth Marketing", href: "/services/growth-marketing" },
-  { label: "Staffing Solutions", href: "/services/staffing-solutions" },
+  { label: "Software Development", href: "/services/software-development", desc: "Web apps, mobile apps & custom software" },
+  { label: "Growth Marketing", href: "/services/growth-marketing", desc: "SEO, paid ads & conversion optimization" },
+  { label: "Staffing Solutions", href: "/services/staffing-solutions", desc: "Hire top talent, fast & reliably" },
 ];
 
 interface HeaderProps {
@@ -44,13 +44,6 @@ export default function Header({ variant = "dark" }: HeaderProps) {
 
       {/* Desktop Navigation */}
       <nav className={`content-stretch hidden md:flex font-['Inter',sans-serif] font-normal gap-8 lg:gap-[45px] items-center justify-center relative text-lg lg:text-[20px] ${textColor} whitespace-nowrap animate-fade-in-down z-50`}>
-        <Link
-          href="/"
-          className={`${hoverClass} link-animated cursor-pointer py-2`}
-        >
-          Home
-        </Link>
-
         {/* Services Dropdown */}
         <div
           className="relative"
@@ -77,14 +70,22 @@ export default function Header({ variant = "dark" }: HeaderProps) {
               isServicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
             }`}
           >
-            <div className={`${isDark ? 'bg-[#1a1a1a] border-[#333]' : 'bg-white border-gray-200'} border rounded-xl shadow-2xl py-2 min-w-[220px] overflow-hidden`}>
-              {services.map((service) => (
+            <div className="bg-[#111] border border-white/10 rounded-[16px] shadow-[0_16px_48px_rgba(0,0,0,0.5)] p-3 min-w-[320px] overflow-hidden">
+              {services.map((service, index) => (
                 <Link
                   key={service.href}
                   href={service.href}
-                  className={`block px-5 py-3 text-[16px] ${isDark ? 'text-white/80 hover:text-white' : 'text-[#1b1b1b]/80 hover:text-[#1b1b1b]'} hover:bg-gradient-to-r hover:from-[#265df6]/10 hover:to-[#7427ff]/10 transition-all duration-200`}
+                  className={`flex items-center gap-4 px-4 py-3.5 rounded-[10px] group hover:bg-white/5 transition-all duration-200 ${index < services.length - 1 ? 'mb-1' : ''}`}
                 >
-                  {service.label}
+                  <div className="w-10 h-10 rounded-[8px] bg-[#3f2fee]/10 border border-[#3f2fee]/20 flex items-center justify-center shrink-0 group-hover:bg-[#3f2fee]/20 transition-colors">
+                    <svg className="w-4 h-4 text-[#3f2fee]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="font-['Inter',sans-serif] font-semibold text-[14px] text-white group-hover:text-white transition-colors">{service.label}</span>
+                    <span className="font-['Inter',sans-serif] font-normal text-[12px] text-white/40 group-hover:text-white/60 transition-colors">{service.desc}</span>
+                  </div>
                 </Link>
               ))}
             </div>
@@ -107,7 +108,7 @@ export default function Header({ variant = "dark" }: HeaderProps) {
           href="/contact"
           className={`${hoverClass} link-animated cursor-pointer py-2`}
         >
-          Contact Us
+          Contact
         </Link>
       </nav>
 
@@ -139,14 +140,6 @@ export default function Header({ variant = "dark" }: HeaderProps) {
         }`}
       >
         <nav className="flex flex-col items-center justify-center h-full gap-8 font-['Inter',sans-serif] text-xl text-white">
-          <Link
-            href="/"
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="nav-item link-animated cursor-pointer py-2"
-          >
-            Home
-          </Link>
-
           {/* Mobile Services */}
           <div className="flex flex-col items-center gap-4">
             <span className="text-white/70">Services</span>
@@ -183,7 +176,7 @@ export default function Header({ variant = "dark" }: HeaderProps) {
             onClick={() => setIsMobileMenuOpen(false)}
             className="nav-item link-animated cursor-pointer py-2"
           >
-            Contact Us
+            Contact
           </Link>
 
           <Link
