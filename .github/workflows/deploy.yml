@@ -37,21 +37,12 @@ jobs:
       - name: Add known hosts
         run: ssh-keyscan -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Debug - find server paths
-        run: |
-          ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "
-            echo HOME=\$HOME &&
-            pwd &&
-            ls -la &&
-            find / -type d -name public_html 2>/dev/null || true
-          "
-
       - name: Deploy via SSH
         run: |
           cd out && tar czf ../deploy.tar.gz . && cd ..
           scp -P ${{ secrets.SSH_PORT }} deploy.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/deploy.tar.gz
           ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "
-            cd \$HOME/public_html &&
+            cd \$HOME/domains/sivarsa.com/public_html &&
             rm -rf ./* &&
             tar xzf \$HOME/deploy.tar.gz &&
             rm \$HOME/deploy.tar.gz
