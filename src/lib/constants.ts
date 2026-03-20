@@ -1,5 +1,4 @@
-// Base path for GitHub Pages deployment (must match next.config.ts basePath)
-export const BASE_PATH = "/sivarsa";
+export const BASE_PATH = "";
 
 export const navLinks = [
   { label: "Home", href: "/" },

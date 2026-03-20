@@ -12,9 +12,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // Set basePath for GitHub Pages deployment (username.github.io/repo-name)
-  basePath: "/sivarsa",
-  assetPrefix: "/sivarsa/",
 };
 
 export default nextConfig;
