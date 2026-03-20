@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { contactInfo } from "@/lib/constants";
 
-const BASE_PATH = "/sivarsa";
+const BASE_PATH = "";
 
 const infoLinks = [
   { label: "Software Development", href: "/services/software-development" },

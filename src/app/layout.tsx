@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   description: "Sivarsa is your trusted growth partner, offering software development, HR & talent management, and growth marketing services to help businesses scale from idea to impact.",
   keywords: ["growth partner", "software development", "HR management", "talent management", "growth marketing", "digital transformation"],
   icons: {
-    icon: "/sivarsa/assets/logo.svg",
-    apple: "/sivarsa/assets/logo.svg",
+    icon: "/assets/logo.svg",
+    apple: "/assets/logo.svg",
   },
   openGraph: {
     title: "Sivarsa - Your Growth Partner from Idea to Impact",

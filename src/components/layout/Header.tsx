@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-const BASE_PATH = "/sivarsa";
+const BASE_PATH = "";
 
 const services = [
   { label: "Software Development", href: "/services/software-development", desc: "Web apps, mobile apps & custom software" },

@@ -1,6 +1,6 @@
 import ContactForm from "@/components/ContactForm";
 
-const BASE_PATH = "/sivarsa";
+const BASE_PATH = "";
 const imgContactTick = `${BASE_PATH}/assets/contact-tick.png`;
 
 const bulletPoints = [

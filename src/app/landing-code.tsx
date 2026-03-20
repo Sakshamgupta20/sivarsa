@@ -9,7 +9,7 @@ import FaqAccordion from "@/components/FaqAccordion";
 import { contactInfo } from "@/lib/constants";
 
 // Base path for GitHub Pages deployment (must match next.config.ts basePath)
-const BASE_PATH = "/sivarsa";
+const BASE_PATH = "";
 
 // Hero & Background Images
 const imgHero = `${BASE_PATH}/assets/hero-bg.png`;
